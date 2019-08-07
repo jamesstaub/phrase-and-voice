@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1886.0, -179.0, 1852.0, 1045.0 ],
+		"rect" : [ 34.0, 79.0, 1612.0, 912.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,25 +39,177 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-78",
-					"maxclass" : "newobj",
+					"id" : "obj-36",
+					"maxclass" : "gain~",
+					"multichannelvariant" : 0,
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 364.0, 347.0, 139.0, 22.0 ],
-					"text" : "s input.onset-descriptors"
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 17.5, 65.0, 22.0, 140.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"hidden" : 1,
+					"id" : "obj-35",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 6.0, 201.0, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"clipheight" : 25.5,
+					"data" : 					{
+						"clips" : [ 							{
+								"filename" : "sample_test3.aif",
+								"filekind" : "audiofile",
+								"loop" : 1,
+								"content_state" : 								{
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"quality" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "duduk.aif",
+								"filekind" : "audiofile",
+								"loop" : 1,
+								"content_state" : 								{
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"quality" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"timestretch" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-33",
+					"maxclass" : "playlist~",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"patching_rect" : [ 67.5, 1.0, 255.0, 53.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1602.0, 112.0, 63.0, 35.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 1324.5, 175.0, 29.5, 22.0 ],
+					"text" : "+ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1362.0, 82.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1322.0, 49.0, 35.0, 20.0 ],
+					"text" : "input"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1085.5, 183.0, 52.0, 22.0 ],
+					"text" : "switch 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 12.0,
+					"id" : "obj-25",
+					"maxclass" : "live.tab",
+					"num_lines_patching" : 1,
+					"num_lines_presentation" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 1324.5, 134.0, 222.0, 26.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1357.5, 49.0, 191.0, 22.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_shortname" : "live.tab",
+							"parameter_enum" : [ "realtime", "temporal_model" ],
+							"parameter_type" : 2,
+							"parameter_unitstyle" : 0,
+							"parameter_longname" : "live.tab"
+						}
+
+					}
+,
+					"varname" : "live.tab"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1305.0, 778.0, 87.0, 22.0 ],
-					"text" : "include 1 2 3 4"
+					"patching_rect" : [ 1335.0, 808.0, 153.0, 22.0 ],
+					"text" : "include 1 2 3 4 5 6 7 8 9 10"
 				}
 
 			}
@@ -67,7 +219,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1305.0, 814.0, 100.0, 22.0 ],
+					"patching_rect" : [ 1335.0, 844.0, 100.0, 22.0 ],
 					"text" : "s to_knn"
 				}
 
@@ -79,7 +231,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1255.0, 683.0, 150.0, 47.0 ],
+					"patching_rect" : [ 1285.0, 713.0, 150.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 1277.0, 646.5, 150.0, 47.0 ],
@@ -94,7 +246,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1031.0, 70.0, 211.0, 60.0 ],
+					"patching_rect" : [ 1061.0, 100.0, 211.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
 					"presentation_rect" : [ 988.0, 641.0, 150.0, 74.0 ],
@@ -108,7 +260,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 429.0, 789.0, 100.0, 22.0 ],
+					"patching_rect" : [ 459.0, 819.0, 100.0, 22.0 ],
 					"text" : "s gmm.prediction"
 				}
 
@@ -124,7 +276,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -571,7 +723,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 904.0, 70.0, 125.0, 22.0 ],
+					"patching_rect" : [ 934.0, 100.0, 125.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -585,23 +737,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-77",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 592.0, 693.0, 163.0, 22.0 ],
-					"text" : "s temporal-modal.descriptors"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-23",
 					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1097.0, 697.0, 150.0, 74.0 ],
+					"patching_rect" : [ 1127.0, 727.0, 150.0, 74.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 1236.0, 569.0, 255.0, 47.0 ],
@@ -620,10 +761,10 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "temporal-model-player.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1061.0, 177.75, 586.0, 487.25 ],
+					"patching_rect" : [ 1085.5, 216.25, 586.0, 487.25 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1225.0, 46.0, 524.0, 562.0 ],
 					"viewvisibility" : 1
@@ -636,7 +777,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 949.0, 228.0, 45.0, 45.0 ]
+					"patching_rect" : [ 979.0, 258.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -649,9 +790,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 892.0, 21.0, 505.0, 38.0 ],
+					"patching_rect" : [ 922.0, 51.0, 505.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 6.0, 335.0, 38.0 ],
+					"presentation_rect" : [ 0.0, 2.0, 335.0, 38.0 ],
 					"text" : "phrase and voice "
 				}
 
@@ -662,7 +803,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 592.0, 789.0, 143.0, 22.0 ],
+					"patching_rect" : [ 622.0, 819.0, 143.0, 22.0 ],
 					"text" : "s temporal_model.concat"
 				}
 
@@ -674,7 +815,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 592.0, 738.0, 317.0, 33.0 ],
+					"patching_rect" : [ 622.0, 768.0, 317.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
 					"presentation_rect" : [ 784.0, 633.0, 151.0, 74.0 ],
@@ -688,7 +829,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 806.0, 715.0, 118.0, 22.0 ],
+					"patching_rect" : [ 836.0, 745.0, 118.0, 22.0 ],
 					"text" : "s target.maxduration"
 				}
 
@@ -699,7 +840,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 869.0, 693.0, 150.0, 20.0 ],
+					"patching_rect" : [ 899.0, 723.0, 150.0, 20.0 ],
 					"text" : "duration, max amplitude"
 				}
 
@@ -711,7 +852,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 805.75439453125, 691.0, 61.0, 22.0 ],
+					"patching_rect" : [ 835.75439453125, 721.0, 61.0, 22.0 ],
 					"text" : "unpack f f"
 				}
 
@@ -723,7 +864,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 465.5, 749.0, 50.0, 22.0 ],
+					"patching_rect" : [ 495.5, 779.0, 50.0, 22.0 ],
 					"text" : "2"
 				}
 
@@ -735,7 +876,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 592.0, 825.0, 329.0, 167.0 ],
+					"patching_rect" : [ 622.0, 855.0, 329.0, 167.0 ],
 					"text" : "record chroma along with onsegs\n\n\nload concat buffer with all bassoon samples to draw from\n\n\noctatrack programs could control macro settings of poly-concat voices such as buffer indexes, specific hamonizations, CC map to transposition or playback mode (bow, beat, etc)\n\n"
 				}
 
@@ -747,7 +888,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 592.0, 112.0, 34.0, 22.0 ],
+					"patching_rect" : [ 622.0, 142.0, 34.0, 22.0 ],
 					"text" : "*~ 1."
 				}
 
@@ -762,7 +903,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 805.75439453125, 278.0, 188.24560546875, 21.0 ],
+					"patching_rect" : [ 835.75439453125, 308.0, 188.24560546875, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 997.0, 362.5, 210.0, 18.0 ]
 				}
@@ -780,10 +921,10 @@
 					"maxclass" : "bpatcher",
 					"name" : "mfcc_plus.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 2,
+					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 33.0, 132.0, 473.0, 176.0 ],
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 63.0, 162.0, 473.0, 176.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 155.0, 288.0, 590.0 ],
 					"viewvisibility" : 1
@@ -796,7 +937,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 429.0, 643.0, 77.0, 22.0 ],
+					"patching_rect" : [ 459.0, 673.0, 77.0, 22.0 ],
 					"text" : "s gate.status"
 				}
 
@@ -813,7 +954,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1024,7 +1165,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 429.0, 708.0, 55.0, 22.0 ],
+					"patching_rect" : [ 459.0, 738.0, 55.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1043,7 +1184,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 429.0, 681.0, 32.0, 22.0 ],
+					"patching_rect" : [ 459.0, 711.0, 32.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -1055,7 +1196,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 437.0, 608.0, 135.0, 33.0 ],
+					"patching_rect" : [ 467.0, 638.0, 135.0, 33.0 ],
 					"text" : "< input noisegate also gates GMM output"
 				}
 
@@ -1067,7 +1208,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 367.0, 652.5, 32.0, 22.0 ],
+					"patching_rect" : [ 397.0, 682.5, 32.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -1079,7 +1220,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 367.0, 536.0, 71.0, 22.0 ],
+					"patching_rect" : [ 397.0, 566.0, 71.0, 22.0 ],
 					"text" : "route status"
 				}
 
@@ -1099,7 +1240,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 29.0, 324.0, 320.0, 663.0 ],
+					"patching_rect" : [ 59.0, 354.0, 320.0, 663.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 354.0, 46.0, 436.0, 651.0 ],
 					"viewvisibility" : 1
@@ -1123,7 +1264,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 62.0, 7.0, 300.0, 70.0 ],
+					"patching_rect" : [ 92.0, 37.0, 300.0, 70.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 83.0, 300.0, 70.0 ],
 					"viewvisibility" : 1
@@ -1138,14 +1279,14 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 33.0, 79.0, 159.0, 22.0 ],
+					"patching_rect" : [ 63.0, 109.0, 159.0, 22.0 ],
 					"text" : "noisegate~.model noisegate"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"clipheight" : 23.666666666666668,
+					"clipheight" : 27.0,
 					"data" : 					{
 						"clips" : [ 							{
 								"filename" : "/Users/jamesstasub/Documents/Max Projects/mxr.6-saffire.7/low-plucked-active.wav",
@@ -1153,21 +1294,21 @@
 								"selection" : [ 0.0, 0.640625 ],
 								"loop" : 1,
 								"content_state" : 								{
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
 									"pitchshift" : [ 1.0 ],
 									"mode" : [ "basic" ],
 									"quality" : [ "basic" ],
-									"speed" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"play" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
+									"play" : [ 0 ],
 									"formant" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ]
+									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ]
 								}
 
 							}
@@ -1177,21 +1318,21 @@
 								"selection" : [ 0.0, 0.791666666666667 ],
 								"loop" : 1,
 								"content_state" : 								{
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
 									"pitchshift" : [ 1.0 ],
 									"mode" : [ "basic" ],
 									"quality" : [ "basic" ],
-									"speed" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"play" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
+									"play" : [ 0 ],
 									"formant" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ]
+									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ]
 								}
 
 							}
@@ -1200,21 +1341,21 @@
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
 									"pitchshift" : [ 1.0 ],
 									"mode" : [ "basic" ],
 									"quality" : [ "basic" ],
-									"speed" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"play" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
+									"play" : [ 0 ],
 									"formant" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"slurtime" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ]
+									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ]
 								}
 
 							}
@@ -1226,7 +1367,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 364.0, 3.0, 303.0, 74.0 ]
+					"patching_rect" : [ 394.0, 33.0, 441.0, 84.0 ]
 				}
 
 			}
@@ -1237,7 +1378,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 7.0, 7.0, 45.0, 45.0 ],
+					"patching_rect" : [ 6.0, 1.0, 45.0, 45.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 48.0, 31.0, 31.0 ]
 				}
@@ -1258,7 +1399,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "signal" ],
-					"patching_rect" : [ 592.0, 186.25, 437.0, 488.25 ],
+					"patching_rect" : [ 622.0, 216.25, 437.0, 488.25 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 792.0, 46.0, 431.0, 562.0 ],
 					"viewvisibility" : 1
@@ -1345,8 +1486,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -1359,15 +1514,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-77", 0 ],
+					"destination" : [ "obj-27", 2 ],
 					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-29", 0 ]
 				}
 
 			}
@@ -1389,8 +1537,38 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"order" : 1,
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-4", 1 ]
+					"order" : 0,
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -1410,7 +1588,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 1 ],
+					"destination" : [ "obj-27", 1 ],
 					"order" : 0,
 					"source" : [ "obj-5", 1 ]
 				}
@@ -1418,7 +1596,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
+					"destination" : [ "obj-28", 1 ],
 					"order" : 1,
 					"source" : [ "obj-5", 1 ]
 				}
@@ -1440,19 +1618,20 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7::obj-11" : [ "Threshold", "Threshold", 0 ],
-			"obj-7::obj-3" : [ "Attack", "Attack", 0 ],
-			"obj-28::obj-2::obj-3" : [ "train[3]", "train", 0 ],
-			"obj-2::obj-11::obj-35" : [ "play[3]", "play", 0 ],
-			"obj-19::obj-79" : [ "live.tab[3]", "live.tab", 0 ],
-			"obj-7::obj-5" : [ "live.text", "live.text", 0 ],
-			"obj-7::obj-9" : [ "Release", "Release", 0 ],
+			"obj-25" : [ "live.tab", "live.tab", 0 ],
 			"obj-28::obj-2::obj-9" : [ "record[2]", "record", 0 ],
-			"obj-2::obj-11::obj-3" : [ "train[2]", "train", 0 ],
-			"obj-7::obj-13" : [ "Lookahead", "Lookahead", 0 ],
+			"obj-19::obj-79" : [ "live.tab[2]", "live.tab", 0 ],
 			"obj-2::obj-11::obj-9" : [ "record[1]", "record", 0 ],
-			"obj-5::obj-50" : [ "live.gain~[2]", "input", 0 ],
+			"obj-7::obj-9" : [ "Release", "Release", 0 ],
+			"obj-2::obj-11::obj-35" : [ "play[3]", "play", 0 ],
+			"obj-7::obj-13" : [ "Lookahead", "Lookahead", 0 ],
+			"obj-7::obj-5" : [ "live.text", "live.text", 0 ],
+			"obj-5::obj-50" : [ "live.gain~[3]", "input", 0 ],
+			"obj-28::obj-2::obj-3" : [ "train[3]", "train", 0 ],
+			"obj-2::obj-11::obj-3" : [ "train[2]", "train", 0 ],
+			"obj-7::obj-3" : [ "Attack", "Attack", 0 ],
 			"obj-28::obj-2::obj-35" : [ "play[1]", "play", 0 ],
+			"obj-7::obj-11" : [ "Threshold", "Threshold", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1461,14 +1640,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "onseg_record_dynamics.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/mubu_gmm_bass_gestures/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "imubu_button_ui.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/mubu_gmm_bass_gestures/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1482,71 +1661,62 @@
 , 			{
 				"name" : "mubu.stats.marker.track.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
-				"patcherrelativepath" : "../../../Max 8/Packages/MuBu For Max/patchers",
+				"patcherrelativepath" : "../../../Packages/MuBu For Max/patchers",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "low-plucked-active.wav",
-				"bootpath" : "~/Documents/Max Projects/mxr.6-saffire.7",
-				"patcherrelativepath" : "../../mxr.6-saffire.7",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "full_range_plucked_sustain.wav",
-				"bootpath" : "~/Documents/Max Projects/mxr.6-saffire.7",
-				"patcherrelativepath" : "../../mxr.6-saffire.7",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "full_range_bow_expressive.wav",
-				"bootpath" : "~/Documents/Max Projects/mxr.6-saffire.7",
-				"patcherrelativepath" : "../../mxr.6-saffire.7",
-				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noisegate~.model.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
-				"patcherrelativepath" : "../../../Max 8/Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
+				"patcherrelativepath" : "../../../Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noisegate~.view.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
-				"patcherrelativepath" : "../../../Max 8/Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
+				"patcherrelativepath" : "../../../Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gmm_record_follow.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/mubu_gmm_bass_gestures/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mfcc_plus.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/mubu_gmm_bass_gestures/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "temporal-model-player.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/mubu_gmm_bass_gestures/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "lpd8-channel-map-instance.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/mubu_gmm_bass_gestures/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "eroica.aiff",
+				"bootpath" : "C74:/docs/tutorial-patchers/msp-tut",
+				"type" : "AIFF",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "duduk.aif",
+				"bootpath" : "C74:/media/msp",
+				"type" : "AIFF",
 				"implicit" : 1
 			}
 , 			{
