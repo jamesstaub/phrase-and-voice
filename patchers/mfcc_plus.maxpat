@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,84 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-60",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1044.0, 735.0, 75.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 227.5, 566.5, 75.0, 20.0 ],
+					"text" : "fundamental"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1044.0, 713.0, 41.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 183.5, 566.5, 41.0, 20.0 ],
+					"text" : "onseg"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1044.0, 691.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 138.0, 566.5, 49.0, 20.0 ],
+					"text" : "chroma"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1044.0, 663.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 101.5, 566.5, 37.0, 20.0 ],
+					"text" : "mfcc "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1044.0, 637.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 44.5, 566.5, 55.0, 20.0 ],
+					"text" : "centroid "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1044.0, 615.0, 27.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.5, 566.5, 27.0, 20.0 ],
+					"text" : "flux"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-19",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -51,25 +129,25 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "ircam descriptors output (FundamentalFrequency PerceptualSpectralVariation SpectralCentroid MFCC Chroma)  without prefixes",
 					"id" : "obj-17",
 					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 209.75, 874.5, 30.0, 30.0 ]
+					"patching_rect" : [ 362.0, 878.5, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "pipo onseg output",
 					"id" : "obj-14",
 					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 603.0, 874.5, 30.0, 30.0 ]
+					"patching_rect" : [ 671.0, 878.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -248,41 +326,14 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-60",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1108.5, 618.0, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 267.5, 578.0, 150.0, 20.0 ],
-					"text" : "temporal model / player"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-55",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1133.0, 579.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 267.5, 531.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 272.0, 531.0, 150.0, 20.0 ],
 					"text" : "timbre model"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-48",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 865.5, 559.5, 254.0, 33.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 5.5, 499.0, 294.0, 20.0 ],
-					"text" : "  flux    centroid   mfcc    chroma  onseg   fundamental"
 				}
 
 			}
@@ -295,9 +346,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 856.5, 600.0, 152.0, 56.0 ],
+					"patching_rect" : [ 856.5, 600.0, 154.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.5, 517.5, 261.0, 94.0 ],
+					"presentation_rect" : [ 5.5, 517.5, 262.0, 47.0 ],
 					"rows" : 1
 				}
 
@@ -371,7 +422,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1002,7 +1053,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1448,13 +1499,13 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "prefixed descriptors out to timbre model",
 					"id" : "obj-3",
 					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.5, 874.5, 30.0, 30.0 ]
+					"patching_rect" : [ 38.5, 878.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -1712,13 +1763,13 @@
 					"patching_rect" : [ 380.0, 72.0, 136.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "input",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[2]",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ]
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "input",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
