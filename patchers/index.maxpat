@@ -39,6 +39,44 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-31",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 842.0, 33.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 842.0, 91.0, 67.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 59.0, 348.0, 32.0, 22.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-23",
 					"linecount" : 4,
 					"maxclass" : "comment",
@@ -46,7 +84,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1423.0, 108.0, 36.0, 60.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 871.5, 29.0, 103.0, 20.0 ],
+					"presentation_rect" : [ 871.5, 59.0, 103.0, 20.0 ],
 					"text" : "listen to knn from "
 				}
 
@@ -62,7 +100,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 200.5, 162.0, 145.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 157.0, 121.0, 24.0 ],
+					"presentation_rect" : [ 8.0, 187.0, 121.0, 24.0 ],
 					"text" : "Audio analysis"
 				}
 
@@ -93,7 +131,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 414.0, 125.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 151.75, 159.5, 113.25, 21.0 ],
+					"presentation_rect" : [ 151.75, 189.5, 113.25, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_shortname" : "live.tab",
@@ -158,7 +196,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1324.5, 134.0, 222.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 978.5, 29.0, 292.0, 22.0 ],
+					"presentation_rect" : [ 978.5, 59.0, 292.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_shortname" : "live.tab",
@@ -204,10 +242,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1061.0, 100.0, 211.0, 60.0 ],
+					"patching_rect" : [ 1031.0, 106.0, 211.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 553.0, 648.0, 150.0, 74.0 ],
+					"presentation_rect" : [ 553.0, 678.0, 150.0, 74.0 ],
 					"text" : "TODO:\nmidi note buffer change does not seem to update temporal model's mubu.play object"
 				}
 
@@ -218,7 +256,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 459.0, 819.0, 100.0, 22.0 ],
+					"patching_rect" : [ 394.0, 440.0, 100.0, 22.0 ],
 					"text" : "s gmm.prediction"
 				}
 
@@ -681,7 +719,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 917.0, 100.0, 125.0, 22.0 ],
+					"patching_rect" : [ 842.0, 136.0, 125.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -709,7 +747,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1085.5, 216.25, 586.0, 487.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 752.0, 53.0, 614.0, 741.0 ],
+					"presentation_rect" : [ 752.0, 83.0, 614.0, 741.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -733,9 +771,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 922.0, 51.0, 505.0, 38.0 ],
+					"patching_rect" : [ 922.0, 33.0, 505.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.0, 7.0, 335.0, 38.0 ],
+					"presentation_rect" : [ 48.0, 4.0, 335.0, 38.0 ],
 					"text" : "phrase and voice "
 				}
 
@@ -761,7 +799,7 @@
 					"patching_rect" : [ 622.0, 779.0, 317.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 349.0, 640.0, 151.0, 74.0 ],
+					"presentation_rect" : [ 349.0, 670.0, 151.0, 74.0 ],
 					"text" : "Temporal model has basic playback but can be controlled by sending messages to temporal_model.concat"
 				}
 
@@ -802,18 +840,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 495.5, 779.0, 50.0, 22.0 ],
-					"text" : "2"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-14",
 					"linecount" : 11,
 					"maxclass" : "comment",
@@ -848,7 +874,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 848.75439453125, 534.0, 188.24560546875, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 469.0, 374.5, 210.0, 18.0 ]
+					"presentation_rect" : [ 469.0, 404.5, 210.0, 18.0 ]
 				}
 
 			}
@@ -869,7 +895,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 63.0, 162.0, 288.0, 176.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 157.0, 288.0, 590.0 ],
+					"presentation_rect" : [ 8.0, 187.0, 288.0, 590.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -880,7 +906,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 459.0, 673.0, 77.0, 22.0 ],
+					"patching_rect" : [ 394.0, 281.0, 77.0, 22.0 ],
 					"text" : "s gate.status"
 				}
 
@@ -1108,7 +1134,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 459.0, 738.0, 55.0, 22.0 ],
+					"patching_rect" : [ 394.0, 402.0, 55.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1127,7 +1153,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 459.0, 711.0, 32.0, 22.0 ],
+					"patching_rect" : [ 394.0, 370.0, 32.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -1139,20 +1165,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 467.0, 638.0, 135.0, 33.0 ],
+					"patching_rect" : [ 92.0, 342.5, 135.0, 33.0 ],
 					"text" : "< input noisegate also gates GMM output"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-38",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 397.0, 682.5, 32.0, 22.0 ],
-					"text" : "gate"
 				}
 
 			}
@@ -1163,7 +1177,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 397.0, 566.0, 71.0, 22.0 ],
+					"patching_rect" : [ 394.0, 239.0, 71.0, 22.0 ],
 					"text" : "route status"
 				}
 
@@ -1185,7 +1199,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 59.0, 380.0, 320.0, 663.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1371.0, 53.0, 436.0, 651.0 ],
+					"presentation_rect" : [ 1371.0, 83.0, 436.0, 651.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1209,7 +1223,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 92.0, 37.0, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 53.0, 300.0, 70.0 ],
+					"presentation_rect" : [ 8.0, 83.0, 300.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1222,7 +1236,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 63.0, 109.0, 159.0, 22.0 ],
+					"patching_rect" : [ 63.0, 125.0, 159.0, 22.0 ],
 					"text" : "noisegate~.model noisegate"
 				}
 
@@ -1321,9 +1335,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 36.0, 37.0, 45.0, 45.0 ],
+					"patching_rect" : [ 37.0, 33.0, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 10.5, 31.0, 31.0 ],
+					"presentation_rect" : [ 7.0, 7.5, 31.0, 31.0 ],
 					"style" : "velvet"
 				}
 
@@ -1345,7 +1359,7 @@
 					"outlettype" : [ "", "", "signal" ],
 					"patching_rect" : [ 622.0, 216.25, 437.0, 488.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 316.0, 53.0, 431.0, 562.0 ],
+					"presentation_rect" : [ 316.0, 83.0, 431.0, 562.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1360,16 +1374,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 1 ],
-					"order" : 0,
-					"source" : [ "obj-138", 0 ]
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"order" : 1,
 					"source" : [ "obj-138", 0 ]
 				}
 
@@ -1384,7 +1396,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"order" : 2,
 					"source" : [ "obj-18", 0 ]
 				}
@@ -1395,13 +1407,6 @@
 					"destination" : [ "obj-41", 0 ],
 					"order" : 0,
 					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-38", 1 ],
-					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -1497,6 +1502,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-32", 0 ]
 				}
@@ -1519,6 +1531,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-4", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -1532,7 +1551,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-13", 1 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
