@@ -1890,7 +1890,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 279.0, 484.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 227.0, 372.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 231.0, 371.0, 150.0, 20.0 ],
 					"text" : "<abs> <rel>"
 				}
 
@@ -1909,7 +1909,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.0, 463.0, 226.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.5, 371.0, 226.0, 21.0 ],
+					"presentation_rect" : [ 2.5, 370.0, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -1928,7 +1928,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.0, 433.0, 226.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.5, 348.0, 226.0, 21.0 ],
+					"presentation_rect" : [ 2.5, 349.0, 226.0, 21.0 ],
 					"text_width" : 120.0
 				}
 
@@ -2230,8 +2230,20 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 212.25, 62.5, 485.0, 265.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.5, 90.0, 463.0, 264.0 ],
+					"presentation_rect" : [ -0.5, 90.0, 463.0, 264.0 ],
 					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "panel",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1037.0, 367.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.5, 90.0, 415.0, 41.0 ]
 				}
 
 			}
@@ -2248,7 +2260,7 @@
 					"patching_rect" : [ 39.0, 382.0, 358.0, 43.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 147.0, 585.0, 241.0, 68.0 ],
+					"presentation_rect" : [ 147.0, 585.0, 245.0, 68.0 ],
 					"text" : "Number of Gaussian components in the mixture model. Using more gaussians allows to fit the training data more precisely, but can loose generality to new data (overfitting). (replaces attribute \"mixtures\")"
 				}
 
@@ -2491,9 +2503,9 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-11::obj-9" : [ "record", "record", 0 ],
 			"obj-11::obj-3" : [ "train", "train", 0 ],
 			"obj-11::obj-35" : [ "play", "play", 0 ],
-			"obj-11::obj-9" : [ "record", "record", 0 ],
 			"parameterbanks" : 			{
 
 			}

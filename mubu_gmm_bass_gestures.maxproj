@@ -1,8 +1,8 @@
 {
 	"name" : "mubu_gmm_bass_gestures",
 	"version" : 1,
-	"creationdate" : 2082826193,
-	"modificationdate" : 3647091303,
+	"creationdate" : 2082826072,
+	"modificationdate" : 3648298206,
 	"viewrect" : [ 50.0, 95.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -36,17 +36,27 @@
 				"local" : 1
 			}
 ,
-			"mixer.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"temporal-model-player.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
 			"lpd8-channel-map-instance.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mixer.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"knn_config.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"performance_1.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

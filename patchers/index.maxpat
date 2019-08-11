@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1886.0, -127.0, 1852.0, 993.0 ],
+		"rect" : [ 0.0, 45.0, 1406.0, 821.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -22,11 +22,11 @@
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
-		"lefttoolbarpinned" : 0,
-		"toptoolbarpinned" : 0,
-		"righttoolbarpinned" : 2,
-		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 4,
+		"lefttoolbarpinned" : 2,
+		"toptoolbarpinned" : 2,
+		"righttoolbarpinned" : 1,
+		"bottomtoolbarpinned" : 1,
+		"toolbars_unpinned_last_save" : 3,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
@@ -39,14 +39,85 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-34",
-					"linecount" : 2,
+					"id" : "obj-23",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1423.0, 108.0, 36.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 871.5, 29.0, 103.0, 20.0 ],
+					"text" : "listen to knn from "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 16.0,
+					"id" : "obj-85",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 200.5, 162.0, 145.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 8.0, 157.0, 121.0, 24.0 ],
+					"text" : "Audio analysis"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1602.0, 112.0, 63.0, 35.0 ],
-					"text" : "loadmess 0"
+					"patching_rect" : [ 522.0, 125.0, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 12.0,
+					"id" : "obj-56",
+					"maxclass" : "live.tab",
+					"num_lines_patching" : 1,
+					"num_lines_presentation" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 414.0, 125.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 151.75, 159.5, 113.25, 21.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_shortname" : "live.tab",
+							"parameter_enum" : [ "config", "visiualize" ],
+							"parameter_type" : 2,
+							"parameter_unitstyle" : 0,
+							"parameter_longname" : "live.tab[2]"
+						}
+
+					}
+,
+					"varname" : "live.tab[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1594.0, 51.0, 70.0, 22.0 ],
+					"text" : "loadmess 2"
 				}
 
 			}
@@ -57,21 +128,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1324.5, 175.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1324.5, 170.0, 29.5, 22.0 ],
 					"text" : "+ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1362.0, 82.0, 150.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1247.0, 49.0, 35.0, 20.0 ],
-					"text" : "input"
 				}
 
 			}
@@ -79,11 +137,11 @@
 				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1085.5, 183.0, 52.0, 22.0 ],
-					"text" : "switch 2"
+					"text" : "switch 3"
 				}
 
 			}
@@ -100,11 +158,11 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1324.5, 134.0, 222.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1282.5, 49.0, 191.0, 22.0 ],
+					"presentation_rect" : [ 978.5, 29.0, 292.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_shortname" : "live.tab",
-							"parameter_enum" : [ "realtime", "temporal_model" ],
+							"parameter_enum" : [ "input", "temporal_model", "both" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
 							"parameter_longname" : "live.tab"
@@ -123,8 +181,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1228.0, 805.0, 153.0, 22.0 ],
-					"text" : "include 1 2 3 4 5 6 7 8 9 10"
+					"patching_rect" : [ 1610.0, 239.0, 67.0, 22.0 ],
+					"text" : "include 1 2"
 				}
 
 			}
@@ -134,7 +192,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1228.0, 841.0, 100.0, 22.0 ],
+					"patching_rect" : [ 1610.0, 275.0, 100.0, 22.0 ],
 					"text" : "s to_knn"
 				}
 
@@ -149,7 +207,7 @@
 					"patching_rect" : [ 1061.0, 100.0, 211.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 988.0, 641.0, 150.0, 74.0 ],
+					"presentation_rect" : [ 553.0, 648.0, 150.0, 74.0 ],
 					"text" : "TODO:\nmidi note buffer change does not seem to update temporal model's mubu.play object"
 				}
 
@@ -637,21 +695,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-23",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1074.0, 753.0, 150.0, 74.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1546.0, 701.0, 255.0, 47.0 ],
-					"text" : "TODO option for player (algorithmic)\n\nor KNN (input or from temporal model player <"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -666,7 +709,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 1085.5, 216.25, 586.0, 487.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1188.0, 46.0, 646.0, 715.0 ],
+					"presentation_rect" : [ 752.0, 53.0, 614.0, 741.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -692,7 +735,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 922.0, 51.0, 505.0, 38.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 2.0, 335.0, 38.0 ],
+					"presentation_rect" : [ 48.0, 7.0, 335.0, 38.0 ],
 					"text" : "phrase and voice "
 				}
 
@@ -718,7 +761,7 @@
 					"patching_rect" : [ 622.0, 779.0, 317.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 784.0, 633.0, 151.0, 74.0 ],
+					"presentation_rect" : [ 349.0, 640.0, 151.0, 74.0 ],
 					"text" : "Temporal model has basic playback but can be controlled by sending messages to temporal_model.concat"
 				}
 
@@ -805,7 +848,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 848.75439453125, 534.0, 188.24560546875, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 874.0, 367.5, 210.0, 18.0 ]
+					"presentation_rect" : [ 469.0, 374.5, 210.0, 18.0 ]
 				}
 
 			}
@@ -820,13 +863,13 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "mfcc_plus.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 3,
-					"offset" : [ 0.0, 0.0 ],
+					"offset" : [ -288.0, 0.0 ],
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 63.0, 162.0, 473.0, 176.0 ],
+					"patching_rect" : [ 63.0, 162.0, 288.0, 176.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 145.0, 288.0, 590.0 ],
+					"presentation_rect" : [ 8.0, 157.0, 288.0, 590.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1142,7 +1185,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 59.0, 354.0, 320.0, 663.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 311.0, 46.0, 436.0, 651.0 ],
+					"presentation_rect" : [ 1371.0, 53.0, 436.0, 651.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1166,7 +1209,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 92.0, 37.0, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 71.0, 300.0, 70.0 ],
+					"presentation_rect" : [ 8.0, 53.0, 300.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1280,7 +1323,8 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 36.0, 37.0, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 38.0, 31.0, 31.0 ]
+					"presentation_rect" : [ 7.0, 10.5, 31.0, 31.0 ],
+					"style" : "velvet"
 				}
 
 			}
@@ -1301,7 +1345,7 @@
 					"outlettype" : [ "", "", "signal" ],
 					"patching_rect" : [ 622.0, 216.25, 437.0, 488.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 749.0, 46.0, 431.0, 562.0 ],
+					"presentation_rect" : [ 316.0, 53.0, 431.0, 562.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1421,7 +1465,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 3 ],
+					"order" : 0,
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-27", 2 ],
+					"order" : 1,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -1458,6 +1511,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -1479,8 +1539,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 1 ],
+					"destination" : [ "obj-27", 3 ],
 					"order" : 0,
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 1 ],
+					"order" : 1,
 					"source" : [ "obj-5", 1 ]
 				}
 
@@ -1495,8 +1563,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 1 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 1 ],
+					"source" : [ "obj-56", 0 ]
 				}
 
 			}
@@ -1516,20 +1591,21 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-11::obj-3" : [ "train[2]", "train", 0 ],
+			"obj-19::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
 			"obj-28::obj-2::obj-9" : [ "record", "record", 0 ],
 			"obj-28::obj-2::obj-3" : [ "train", "train", 0 ],
 			"obj-7::obj-9" : [ "Release", "Release", 0 ],
 			"obj-28::obj-2::obj-35" : [ "play", "play", 0 ],
+			"obj-2::obj-11::obj-3" : [ "train[3]", "train", 0 ],
 			"obj-7::obj-13" : [ "Lookahead", "Lookahead", 0 ],
-			"obj-19::obj-79" : [ "live.tab[2]", "live.tab", 0 ],
+			"obj-56" : [ "live.tab[2]", "live.tab", 0 ],
+			"obj-2::obj-11::obj-35" : [ "play[4]", "play", 0 ],
 			"obj-25" : [ "live.tab", "live.tab", 0 ],
-			"obj-2::obj-11::obj-9" : [ "record[1]", "record", 0 ],
 			"obj-7::obj-11" : [ "Threshold", "Threshold", 0 ],
-			"obj-5::obj-50" : [ "live.gain~[2]", "input", 0 ],
+			"obj-5::obj-50" : [ "live.gain~[3]", "input", 0 ],
 			"obj-7::obj-3" : [ "Attack", "Attack", 0 ],
 			"obj-7::obj-5" : [ "live.text", "live.text", 0 ],
-			"obj-2::obj-11::obj-35" : [ "play[3]", "play", 0 ],
+			"obj-2::obj-11::obj-9" : [ "record[2]", "record", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1620,6 +1696,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "knn_config.maxpat",
+				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "lpd8-channel-map-instance.maxpat",
 				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
 				"patcherrelativepath" : ".",
@@ -1704,6 +1787,10 @@
 			}
 , 			{
 				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "pipo.mxo",
 				"type" : "iLaX"
 			}
 , 			{
