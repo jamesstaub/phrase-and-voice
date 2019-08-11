@@ -97,7 +97,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_shortname" : "live.tab",
-							"parameter_enum" : [ "config", "visiualize" ],
+							"parameter_enum" : [ "config", "run" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
 							"parameter_longname" : "live.tab[2]"
@@ -865,7 +865,7 @@
 					"name" : "mfcc_plus.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 3,
-					"offset" : [ -288.0, 0.0 ],
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 63.0, 162.0, 288.0, 176.0 ],
 					"presentation" : 1,
@@ -1183,7 +1183,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 59.0, 354.0, 320.0, 663.0 ],
+					"patching_rect" : [ 59.0, 380.0, 320.0, 663.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1371.0, 53.0, 436.0, 651.0 ],
 					"viewvisibility" : 1
@@ -1237,21 +1237,21 @@
 								"selection" : [ 0.0, 0.640625 ],
 								"loop" : 1,
 								"content_state" : 								{
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"quality" : [ "basic" ],
+									"mode" : [ "basic" ],
 									"play" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
 									"basictuning" : [ 440 ],
-									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"mode" : [ "basic" ],
+									"quality" : [ "basic" ],
+									"pitchshift" : [ 1.0 ],
+									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"slurtime" : [ 0.0 ]
+									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ]
 								}
 
 							}
@@ -1261,21 +1261,21 @@
 								"selection" : [ 0.0, 0.791666666666667 ],
 								"loop" : 1,
 								"content_state" : 								{
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"quality" : [ "basic" ],
+									"mode" : [ "basic" ],
 									"play" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
 									"basictuning" : [ 440 ],
-									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"mode" : [ "basic" ],
+									"quality" : [ "basic" ],
+									"pitchshift" : [ 1.0 ],
+									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"slurtime" : [ 0.0 ]
+									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ]
 								}
 
 							}
@@ -1284,21 +1284,21 @@
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchshift" : [ 1.0 ],
-									"quality" : [ "basic" ],
+									"mode" : [ "basic" ],
 									"play" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
 									"basictuning" : [ 440 ],
-									"speed" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"mode" : [ "basic" ],
+									"quality" : [ "basic" ],
+									"pitchshift" : [ 1.0 ],
+									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"slurtime" : [ 0.0 ]
+									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ]
 								}
 
 							}
@@ -1591,21 +1591,21 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-19::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
-			"obj-28::obj-2::obj-9" : [ "record", "record", 0 ],
-			"obj-28::obj-2::obj-3" : [ "train", "train", 0 ],
-			"obj-7::obj-9" : [ "Release", "Release", 0 ],
-			"obj-28::obj-2::obj-35" : [ "play", "play", 0 ],
-			"obj-2::obj-11::obj-3" : [ "train[3]", "train", 0 ],
-			"obj-7::obj-13" : [ "Lookahead", "Lookahead", 0 ],
-			"obj-56" : [ "live.tab[2]", "live.tab", 0 ],
 			"obj-2::obj-11::obj-35" : [ "play[4]", "play", 0 ],
+			"obj-56" : [ "live.tab[2]", "live.tab", 0 ],
+			"obj-5::obj-50" : [ "live.gain~[2]", "input", 0 ],
 			"obj-25" : [ "live.tab", "live.tab", 0 ],
-			"obj-7::obj-11" : [ "Threshold", "Threshold", 0 ],
-			"obj-5::obj-50" : [ "live.gain~[3]", "input", 0 ],
-			"obj-7::obj-3" : [ "Attack", "Attack", 0 ],
-			"obj-7::obj-5" : [ "live.text", "live.text", 0 ],
+			"obj-7::obj-9" : [ "Release", "Release", 0 ],
+			"obj-28::obj-2::obj-3" : [ "train", "train", 0 ],
+			"obj-2::obj-11::obj-3" : [ "train[3]", "train", 0 ],
 			"obj-2::obj-11::obj-9" : [ "record[2]", "record", 0 ],
+			"obj-28::obj-2::obj-9" : [ "record", "record", 0 ],
+			"obj-28::obj-2::obj-35" : [ "play", "play", 0 ],
+			"obj-7::obj-5" : [ "live.text", "live.text", 0 ],
+			"obj-19::obj-79" : [ "live.tab[3]", "live.tab", 0 ],
+			"obj-7::obj-11" : [ "Threshold", "Threshold", 0 ],
+			"obj-7::obj-3" : [ "Attack", "Attack", 0 ],
+			"obj-7::obj-13" : [ "Lookahead", "Lookahead", 0 ],
 			"parameterbanks" : 			{
 
 			}
