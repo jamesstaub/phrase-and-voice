@@ -39,6 +39,52 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-1",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 486.0, 516.0, 31.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 378.0, 314.0, 31.0, 21.0 ],
+					"text" : "read"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-108",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 434.5, 516.0, 32.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 338.5, 314.0, 32.0, 21.0 ],
+					"text" : "write"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.0,
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 30.0, 548.0, 474.0, 21.0 ],
+					"text" : "mubu.gmm timbre_model mfcc @mixtures 3 @likelihoodwindow 10 @varianceoffset 2. 10."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1628,8 +1674,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 325.5, 6.5, 83.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 436.0, 65.5, 83.0, 22.0 ],
 					"text" : "addtrack mfcc"
 				}
 
@@ -1976,7 +2020,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 747.5, 198.5, 296.0, 45.0 ],
+					"patching_rect" : [ 747.5, 182.5, 296.0, 45.0 ],
 					"text" : "mubu.track timbre_model mfcc @predef yes @samplerate 83.132812 @matrixcols 12 @info gui \"interface sonogram, autobounds 1\" label 1 @maxsize 120s"
 				}
 
@@ -2119,20 +2163,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
-					"id" : "obj-28",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 30.0, 548.0, 474.0, 21.0 ],
-					"text" : "mubu.gmm timbre_model mfcc @mixtures 3 @likelihoodwindow 10 @varianceoffset 2. 10."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 11.0,
 					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2212,8 +2242,22 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-108", 0 ]
 				}
 
 			}
@@ -2419,9 +2463,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11::obj-3" : [ "train", "train", 0 ],
 			"obj-11::obj-9" : [ "record", "record", 0 ],
 			"obj-11::obj-35" : [ "play", "play", 0 ],
+			"obj-11::obj-3" : [ "train", "train", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2446,19 +2490,19 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "mubu.gmm.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
 				"type" : "iLaX"
 			}
  ],
