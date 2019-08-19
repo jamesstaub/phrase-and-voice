@@ -340,11 +340,11 @@
 					"presentation_rect" : [ 204.0, 2.299988031387329, 100.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "play",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "play",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "play",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -385,11 +385,11 @@
 					"presentation_rect" : [ 103.0, 2.299988031387329, 100.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "train",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "train",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "train",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -562,11 +562,11 @@
 					"presentation_rect" : [ 1.5631103515625, 2.29998779296875, 100.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "record",
-							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "record",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_longname" : "record",
+							"parameter_mmax" : 1.0
 						}
 
 					}
@@ -586,7 +586,7 @@
 					"alignviewbounds" : 0,
 					"autobounds" : 1,
 					"autorefreshrate" : 0,
-					"autoupdate" : 120.0,
+					"autoupdate" : 500.0,
 					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"bufferchooser_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"bufferchooser_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -978,8 +978,8 @@
  ],
 		"parameters" : 		{
 			"obj-35" : [ "play", "play", 0 ],
-			"obj-9" : [ "record", "record", 0 ],
 			"obj-3" : [ "train", "train", 0 ],
+			"obj-9" : [ "record", "record", 0 ],
 			"parameterbanks" : 			{
 
 			}

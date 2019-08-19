@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 805.0, 186.0, 94.0, 22.0 ],
+					"text" : "prepend include"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 805.0, 159.5, 83.0, 22.0 ],
+					"text" : "r knn.included"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -176,7 +200,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "update" ],
-					"patching_rect" : [ 984.0, 271.0, 117.0, 22.0 ],
+					"patching_rect" : [ 984.0, 304.0, 117.0, 22.0 ],
 					"text" : "t getincluded update"
 				}
 
@@ -578,7 +602,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 656.076904296875, 194.34613037109375, 129.0, 22.0 ],
+					"patching_rect" : [ 665.076904296875, 192.5, 129.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1020,6 +1044,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
 					"source" : [ "obj-14", 0 ]
 				}
@@ -1043,6 +1074,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
 					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-35", 0 ]
 				}
 
 			}

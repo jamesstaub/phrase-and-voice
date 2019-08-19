@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
+		"rect" : [ 754.0, 79.0, 652.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,17 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 441.0, 99.0, 96.0, 22.0 ],
+					"text" : "s tmpmodel.play"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-47",
 					"maxclass" : "message",
@@ -721,10 +732,10 @@
 					"id" : "obj-52",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 330.3070068359375, 68.29998779296875, 31.0, 22.0 ],
-					"text" : "t l l"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 330.3070068359375, 60.29998779296875, 40.0, 22.0 ],
+					"text" : "t l l l"
 				}
 
 			}
@@ -1157,7 +1168,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 421.3070068359375, 133.84613037109375, 113.0, 22.0 ],
+					"patching_rect" : [ 476.3070068359375, 177.24615478515625, 113.0, 22.0 ],
 					"text" : "s player.ui.to-imubu"
 				}
 
@@ -1593,7 +1604,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 342.3070068359375, 100.0, 98.0, 22.0 ],
+					"patching_rect" : [ 397.3070068359375, 143.4000244140625, 98.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1621,11 +1632,11 @@
 					"presentation_rect" : [ 47.5, 74.0, 189.980072021484375, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.tab[1]",
 							"parameter_shortname" : "live.tab",
 							"parameter_enum" : [ "temporalmodel", "corpus" ],
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.tab[1]"
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -1724,7 +1735,7 @@
 					"bufferchooser_shape" : "buttons",
 					"bufferchooser_size" : 24,
 					"bufferchooser_visible" : 1,
-					"content" : [ null, null, null, null, null ],
+					"content" : [ 2, [ [  ] ], [ "descriptor_segments", 1, 1, 0, [  ], 1, "none", [ [ 10000, 0, 1000.0, 0.0, 1, 1, 0, [  ], [  ], 0, 0, 0, [ "gui", "interface sonogram" ] ] ] ] ],
 					"cursor_circleheight" : 3.0,
 					"cursor_circlewidth" : 3.0,
 					"cursor_color" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -1785,7 +1796,7 @@
 					"toolbar_size" : 30,
 					"toolbar_visible" : 1,
 					"useplaceholders" : 1,
-					"viewconfig" : [ "interface sonogram, , bounds -1 1, visible 1, autobounds 0, hidenotforemost 0, allbuffersvisible 0, domainalign time", "interface multibpf, , visible 1, autobounds 1, hidenotforemost 0, allbuffersvisible 0, domainalign time, showcolnames 1", "interface markers, , visible 1, autobounds 1, hidenotforemost 0, allbuffersvisible 0, domainalign time, paramcols Cue Label Duration - label" ],
+					"viewconfig" : [ "interface sonogram, , bounds -1 1, visible 1, autobounds 0, hidenotforemost 0, allbuffersvisible 0, domainalign time" ],
 					"windresize" : 0
 				}
 
@@ -4941,6 +4952,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-129", 0 ],
 					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"source" : [ "obj-52", 2 ]
 				}
 
 			}

@@ -39,6 +39,53 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 567.0, 455.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 483.0, 484.0, 176.0, 22.0 ],
+					"text" : "s temporal_model.ui.to_buttons"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 483.0, 442.0, 47.0, 22.0 ],
+					"text" : "play $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 483.0, 418.0, 94.0, 22.0 ],
+					"text" : "r tmpmodel.play"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "chroma out",
 					"id" : "obj-11",
 					"index" : 0,
@@ -3164,8 +3211,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -3289,6 +3350,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-81", 2 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -3384,9 +3452,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-9" : [ "record", "record", 0 ],
 			"obj-2::obj-3" : [ "train", "train", 0 ],
 			"obj-2::obj-35" : [ "play", "play", 0 ],
+			"obj-2::obj-9" : [ "record", "record", 0 ],
 			"parameterbanks" : 			{
 
 			}
