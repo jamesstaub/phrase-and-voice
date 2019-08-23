@@ -40,13 +40,12 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-30",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 772.0, 573.0, 50.0, 35.0 ],
-					"text" : "filtermode off"
+					"patching_rect" : [ 712.0, 534.0, 39.0, 22.0 ],
+					"text" : "part 2"
 				}
 
 			}
@@ -89,7 +88,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ -753.0, -60.0 ],
-					"patching_rect" : [ 21.0, 96.0, 606.0, 685.0 ],
+					"patching_rect" : [ 21.0, 96.0, 604.0, 680.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -389,13 +388,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 780.5, 435.5, 235.0, 22.0 ],
+					"patching_rect" : [ 781.5, 435.5, 235.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
 						"node" : "",
 						"npm" : "",
-						"watch" : 0
+						"watch" : 1
 					}
 ,
 					"text" : "node.script performance_1.js @autostart 1"
@@ -627,12 +626,12 @@
 					"presentation_rect" : [ -1.0, 2.0, 288.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.tab[3]",
 							"parameter_mmax" : 3.0,
 							"parameter_shortname" : "live.tab[3]",
 							"parameter_enum" : [ "input", "timbral", "temporal", "player" ],
 							"parameter_type" : 2,
-							"parameter_unitstyle" : 0
+							"parameter_unitstyle" : 0,
+							"parameter_longname" : "live.tab[3]"
 						}
 
 					}
@@ -1382,16 +1381,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"order" : 0,
-					"source" : [ "obj-36", 0 ]
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 1 ],
-					"order" : 1,
+					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -1427,21 +1424,21 @@
  ],
 		"parameters" : 		{
 			"obj-39::obj-7::obj-3" : [ "Attack[1]", "Attack", 0 ],
-			"obj-39::obj-19::obj-79" : [ "live.tab[4]", "live.tab", 0 ],
-			"obj-39::obj-28::obj-2::obj-35" : [ "play", "play", 0 ],
-			"obj-121" : [ "live.tab[3]", "live.tab[3]", 0 ],
-			"obj-39::obj-7::obj-9" : [ "Release[1]", "Release", 0 ],
 			"obj-39::obj-2::obj-11::obj-9" : [ "record[3]", "record", 0 ],
-			"obj-39::obj-7::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
-			"obj-39::obj-7::obj-11" : [ "Threshold[1]", "Threshold", 0 ],
+			"obj-39::obj-19::obj-79" : [ "live.tab[4]", "live.tab", 0 ],
 			"obj-39::obj-2::obj-11::obj-3" : [ "train[3]", "train", 0 ],
-			"obj-39::obj-25" : [ "live.tab[6]", "live.tab", 0 ],
+			"obj-39::obj-7::obj-5" : [ "live.text[1]", "live.text", 0 ],
+			"obj-39::obj-5::obj-50" : [ "live.gain~[3]", "input", 0 ],
+			"obj-39::obj-7::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
+			"obj-39::obj-56" : [ "live.tab[5]", "live.tab", 0 ],
 			"obj-39::obj-28::obj-2::obj-9" : [ "record", "record", 0 ],
 			"obj-39::obj-28::obj-2::obj-3" : [ "train", "train", 0 ],
-			"obj-39::obj-7::obj-5" : [ "live.text[1]", "live.text", 0 ],
+			"obj-39::obj-7::obj-9" : [ "Release[1]", "Release", 0 ],
 			"obj-39::obj-2::obj-11::obj-35" : [ "play[3]", "play", 0 ],
-			"obj-39::obj-5::obj-50" : [ "live.gain~[3]", "input", 0 ],
-			"obj-39::obj-56" : [ "live.tab[5]", "live.tab", 0 ],
+			"obj-39::obj-28::obj-2::obj-35" : [ "play", "play", 0 ],
+			"obj-121" : [ "live.tab[3]", "live.tab[3]", 0 ],
+			"obj-39::obj-7::obj-11" : [ "Threshold[1]", "Threshold", 0 ],
+			"obj-39::obj-25" : [ "live.tab[6]", "live.tab", 0 ],
 			"parameterbanks" : 			{
 
 			}

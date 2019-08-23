@@ -47,7 +47,7 @@ CORPUS_BUFFERS = {
   'wrench': [13],
 }
 
-const part = 1;
+let part = 1;
 
 /*
 	Default Parameters
@@ -64,8 +64,8 @@ const params = {
     // source: 1, //  'corpus'
   },
   concat: {
-    play: 1,
     allowrepeatmarkers: 0,
+    play: 1,
     period: [0, 1], //(abs, relative)
     // resampling: 0,
     // resamplingvar:[0, 0],
@@ -105,7 +105,7 @@ const part1 = {
     if (gmmIs('percussive')) {
       params.knn.weightPreset = WEIGHT_PRESETS['timbral'];
 
-      params.concat.period = [200, 1100, 1];
+      params.concat.period = [200, 1100];
       params.concat.allowrepeatmarkers = 1;
       params.automation.concat_period = 0;
       // params.concat.resampling = -700
