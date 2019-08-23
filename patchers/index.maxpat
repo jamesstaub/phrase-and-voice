@@ -244,14 +244,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1320.0, 67.0, 107.0, 20.0 ],
+					"patching_rect" : [ 1320.0, 67.0, 107.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 871.5, 59.0, 103.0, 33.0 ],
-					"text" : "listen to knn from :"
+					"presentation_rect" : [ 978.5, 44.0, 193.0, 20.0 ],
+					"text" : "onset-knn mode  input"
 				}
 
 			}
@@ -1405,21 +1405,21 @@
 								"selection" : [ 0.0, 0.640625 ],
 								"loop" : 1,
 								"content_state" : 								{
-									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"quality" : [ "basic" ],
 									"mode" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ],
+									"formant" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
+									"speed" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ]
 								}
 
 							}
@@ -1429,21 +1429,21 @@
 								"selection" : [ 0.0, 0.791666666666667 ],
 								"loop" : 1,
 								"content_state" : 								{
-									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"quality" : [ "basic" ],
 									"mode" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ],
+									"formant" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
+									"speed" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ]
 								}
 
 							}
@@ -1452,21 +1452,21 @@
 								"filekind" : "audiofile",
 								"loop" : 0,
 								"content_state" : 								{
-									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
-									"formant" : [ 1.0 ],
-									"quality" : [ "basic" ],
 									"mode" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ],
+									"formant" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
+									"speed" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ]
 								}
 
 							}
@@ -1787,20 +1787,20 @@
  ],
 		"parameters" : 		{
 			"obj-25" : [ "live.tab", "live.tab", 0 ],
-			"obj-28::obj-2::obj-3" : [ "train[4]", "train", 0 ],
 			"obj-7::obj-9" : [ "Release", "Release", 0 ],
 			"obj-19::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-28::obj-2::obj-3" : [ "train[4]", "train", 0 ],
+			"obj-2::obj-11::obj-9" : [ "record[2]", "record", 0 ],
 			"obj-7::obj-13" : [ "Lookahead", "Lookahead", 0 ],
 			"obj-56" : [ "live.tab[2]", "live.tab", 0 ],
-			"obj-2::obj-11::obj-3" : [ "train[3]", "train", 0 ],
+			"obj-28::obj-2::obj-35" : [ "play[1]", "play", 0 ],
+			"obj-2::obj-11::obj-35" : [ "play[4]", "play", 0 ],
+			"obj-5::obj-50" : [ "live.gain~[2]", "input", 0 ],
 			"obj-7::obj-5" : [ "live.text", "live.text", 0 ],
 			"obj-28::obj-2::obj-9" : [ "record[3]", "record", 0 ],
-			"obj-2::obj-11::obj-35" : [ "play[4]", "play", 0 ],
 			"obj-7::obj-11" : [ "Threshold", "Threshold", 0 ],
 			"obj-7::obj-3" : [ "Attack", "Attack", 0 ],
-			"obj-5::obj-50" : [ "live.gain~[2]", "input", 0 ],
-			"obj-28::obj-2::obj-35" : [ "play[1]", "play", 0 ],
-			"obj-2::obj-11::obj-9" : [ "record[2]", "record", 0 ],
+			"obj-2::obj-11::obj-3" : [ "train[3]", "train", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1809,14 +1809,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "onseg_record_dynamics.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "imubu_button_ui.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1871,35 +1871,35 @@
 			}
 , 			{
 				"name" : "gmm_record_follow.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mfcc_plus.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "temporal-model-player.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "knn_config.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "lpd8-channel-map-instance.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

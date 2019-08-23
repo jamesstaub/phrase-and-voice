@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-30",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 772.0, 573.0, 50.0, 35.0 ],
+					"text" : "filtermode off"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 964.0, 618.5, 97.0, 22.0 ],
+					"text" : "s knn.randomize"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Lantinghei TC Extralight",
 					"id" : "obj-3",
@@ -65,7 +89,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ -753.0, -60.0 ],
-					"patching_rect" : [ 21.0, 96.0, 300.0, 70.0 ],
+					"patching_rect" : [ 21.0, 96.0, 606.0, 685.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -154,7 +178,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1058.5, 557.5, 85.0, 22.0 ],
+					"patching_rect" : [ 1201.0, 557.5, 85.0, 22.0 ],
 					"text" : "s knn.included"
 				}
 
@@ -227,7 +251,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 983.0, 523.0, 194.0, 22.0 ],
+					"patching_rect" : [ 1125.5, 523.0, 194.0, 22.0 ],
 					"text" : "route weightPreset includedBuffers"
 				}
 
@@ -239,7 +263,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 983.0, 484.0, 59.0, 22.0 ],
+					"patching_rect" : [ 1125.5, 484.0, 59.0, 22.0 ],
 					"text" : "route knn"
 				}
 
@@ -248,11 +272,11 @@
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 862.5, 523.0, 115.0, 22.0 ],
-					"text" : "route concat_period"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 862.5, 523.0, 193.0, 22.0 ],
+					"text" : "route concat_period weight_preset"
 				}
 
 			}
@@ -598,12 +622,13 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 23.0, 14.0, 288.0, 21.0 ],
+					"patching_rect" : [ 23.0, 8.0, 331.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -1.0, 2.0, 288.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.tab[3]",
+							"parameter_mmax" : 3.0,
 							"parameter_shortname" : "live.tab[3]",
 							"parameter_enum" : [ "input", "timbral", "temporal", "player" ],
 							"parameter_type" : 2,
@@ -859,7 +884,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 983.0, 557.5, 74.0, 22.0 ],
+					"patching_rect" : [ 1125.5, 557.5, 74.0, 22.0 ],
 					"text" : "s knn.preset"
 				}
 
@@ -924,13 +949,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-4",
-									"linecount" : 7,
+									"linecount" : 13,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 169.0, 58.0, 479.0, 102.0 ],
-									"text" : "\"Macintosh HD:/Users/jamesstasub/Dropbox/audio/08_19_corpus/chocies_1.wav\" \"Macintosh HD:/Users/jamesstasub/Dropbox/audio/08_19_corpus/chocies_2.wav\" \"Macintosh HD:/Users/jamesstasub/Dropbox/audio/08_19_corpus/chocies_3.wav\" \"Macintosh HD:/Users/jamesstasub/Dropbox/audio/08_19_corpus/chocies_4.wav\" \"Macintosh HD:/Users/jamesstasub/Dropbox/audio/08_19_corpus/bassoon_leaps.wav\" \"Macintosh HD:/Users/jamesstasub/Dropbox/audio/08_19_corpus/organ_beat.wav\" \"Macintosh HD:/Users/jamesstasub/Dropbox/audio/08_19_corpus/organ_drone.wav\""
+									"patching_rect" : [ 168.0, 13.0855712890625, 640.0, 183.0 ],
+									"text" : "/Users/jamesstasub/Dropbox/audio/08_19_corpus/arvo.wav /Users/jamesstasub/Dropbox/audio/08_19_corpus/bassoon_leaps.wav /Users/jamesstasub/Dropbox/audio/08_19_corpus/chocies_1.wav /Users/jamesstasub/Dropbox/audio/08_19_corpus/chocies_2.wav /Users/jamesstasub/Dropbox/audio/08_19_corpus/chocies_3.wav /Users/jamesstasub/Dropbox/audio/08_19_corpus/chocies_4.wav /Users/jamesstasub/Dropbox/audio/08_19_corpus/knock_1.wav /Users/jamesstasub/Dropbox/audio/08_19_corpus/knock_2.wav /Users/jamesstasub/Dropbox/audio/08_19_corpus/knock_3.wav /Users/jamesstasub/Dropbox/audio/08_19_corpus/knock_4.wav /Users/jamesstasub/Dropbox/audio/08_19_corpus/organ_beat.wav /Users/jamesstasub/Dropbox/audio/08_19_corpus/organ_drone.wav /Users/jamesstasub/Dropbox/audio/08_19_corpus/wrench.wav"
 								}
 
 							}
@@ -1315,6 +1340,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-20", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-26", 0 ]
 				}
@@ -1351,6 +1383,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
+					"order" : 0,
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 1 ],
+					"order" : 1,
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -1385,22 +1426,22 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-39::obj-7::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
-			"obj-39::obj-28::obj-2::obj-35" : [ "play", "play", 0 ],
-			"obj-39::obj-28::obj-2::obj-3" : [ "train", "train", 0 ],
-			"obj-39::obj-56" : [ "live.tab[5]", "live.tab", 0 ],
-			"obj-39::obj-7::obj-9" : [ "Release[1]", "Release", 0 ],
-			"obj-39::obj-28::obj-2::obj-9" : [ "record", "record", 0 ],
-			"obj-39::obj-2::obj-11::obj-3" : [ "train[3]", "train", 0 ],
-			"obj-39::obj-7::obj-11" : [ "Threshold[1]", "Threshold", 0 ],
-			"obj-39::obj-2::obj-11::obj-35" : [ "play[3]", "play", 0 ],
-			"obj-39::obj-2::obj-11::obj-9" : [ "record[3]", "record", 0 ],
-			"obj-39::obj-25" : [ "live.tab[6]", "live.tab", 0 ],
-			"obj-39::obj-7::obj-5" : [ "live.text[1]", "live.text", 0 ],
-			"obj-39::obj-19::obj-79" : [ "live.tab[4]", "live.tab", 0 ],
 			"obj-39::obj-7::obj-3" : [ "Attack[1]", "Attack", 0 ],
-			"obj-39::obj-5::obj-50" : [ "live.gain~[3]", "input", 0 ],
+			"obj-39::obj-19::obj-79" : [ "live.tab[4]", "live.tab", 0 ],
+			"obj-39::obj-28::obj-2::obj-35" : [ "play", "play", 0 ],
 			"obj-121" : [ "live.tab[3]", "live.tab[3]", 0 ],
+			"obj-39::obj-7::obj-9" : [ "Release[1]", "Release", 0 ],
+			"obj-39::obj-2::obj-11::obj-9" : [ "record[3]", "record", 0 ],
+			"obj-39::obj-7::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
+			"obj-39::obj-7::obj-11" : [ "Threshold[1]", "Threshold", 0 ],
+			"obj-39::obj-2::obj-11::obj-3" : [ "train[3]", "train", 0 ],
+			"obj-39::obj-25" : [ "live.tab[6]", "live.tab", 0 ],
+			"obj-39::obj-28::obj-2::obj-9" : [ "record", "record", 0 ],
+			"obj-39::obj-28::obj-2::obj-3" : [ "train", "train", 0 ],
+			"obj-39::obj-7::obj-5" : [ "live.text[1]", "live.text", 0 ],
+			"obj-39::obj-2::obj-11::obj-35" : [ "play[3]", "play", 0 ],
+			"obj-39::obj-5::obj-50" : [ "live.gain~[3]", "input", 0 ],
+			"obj-39::obj-56" : [ "live.tab[5]", "live.tab", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1421,21 +1462,21 @@
 			}
 , 			{
 				"name" : "index.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "onseg_record_dynamics.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "imubu_button_ui.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1490,35 +1531,35 @@
 			}
 , 			{
 				"name" : "gmm_record_follow.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mfcc_plus.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "temporal-model-player.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "knn_config.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "lpd8-channel-map-instance.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
