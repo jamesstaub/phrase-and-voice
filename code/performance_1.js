@@ -19,6 +19,7 @@ GMM_CLASS = {
   "bowed_tenor": 2,
   "plucked_tenor": 3,
   "percussive": 4,
+
 }
 
 /*
@@ -38,11 +39,15 @@ PLAYER_SOURCE = {
 }
 
 CORPUS_BUFFERS = {
-  'guitar': [1,2,3,4],
-  'bassoon': [5],
-  'organ': [6,7],
+  'arvo': [1],
+  'bassoon': [2],
+  'choices': [3,4,5,6],
+  'knock': [7,8,9,10],
+  'organ': [11,12],
+  'wrench': [13],
 }
 
+const part = 1;
 
 /*
 	Default Parameters
@@ -56,15 +61,15 @@ const params = {
   },
   player: {
     playmode: 3, // 'onset-knn'
-    source: 1, //  'corpus'
+    // source: 1, //  'corpus'
   },
   concat: {
     play: 1,
     allowrepeatmarkers: 0,
     period: [0, 1], //(abs, relative)
-    resampling: 0,
-    resamplingvar:[ 500, 0],
-    filtermode: 'off',
+    // resampling: 0,
+    // resamplingvar:[0, 0],
+    // filtermode: 'off',
     // TODO hook up following
     // filterfreq: 400 ,
     // filterfreqvar $1 $2
@@ -88,41 +93,85 @@ const params = {
   }
 }
 
-const handlers = {
-
-  onGmmClass(gmmClass) {
+const part1 = {
+  onGmmClass(gmmIs) {
     /**
-     *  when percussive input is detected, set knn weights to select for timbre
-     * and select a repeating
-     */
+    *  when percussive input is detected, set knn weights to select for timbre
+    * and select a repeating
+    */
 
-    // helper function for evaluating gmm class
-    const gmmIs = (key) => gmmClass === GMM_CLASS[key];
+    params.automation.weight_preset = 1;
 
     if (gmmIs('percussive')) {
       params.knn.weightPreset = WEIGHT_PRESETS['timbral'];
-      
 
-      params.concat.period = [200, 1];
+      params.concat.period = [200, 1100, 1];
       params.concat.allowrepeatmarkers = 1;
       params.automation.concat_period = 0;
-      params.concat.resampling = -700
-      params.knn.includedBuffers = [...CORPUS_BUFFERS['organ']];
-      
+      // params.concat.resampling = -700
+      params.knn.includedBuffers = [...CORPUS_BUFFERS['wrench'], ...CORPUS_BUFFERS['organ']];
+
     } else if (gmmIs('bowed_harmonic')) {
+      params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
       params.automation.concat_period = 1;
-      params.knn.includedBuffers = 0;
-      params.concat.resampling = [0, 0, 700, 1200, 2400][Math.floor(Math.random() * 5)]; 
-    } else if (gmmIs('bowed_tenor')) { 
-      params.concat.resampling = [0, 0, 700, 1200, -1200][Math.floor(Math.random() * 5)];
+      params.automation.weight_preset = 0;
+      params.knn.includedBuffers = [...CORPUS_BUFFERS['choices']];
+      // params.concat.resampling = [0, 0, 700, 1200, 2400][Math.floor(Math.random() * 5)];
+    } else if (gmmIs('bowed_tenor')) {
+      params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
+      params.knn.includedBuffers = [...CORPUS_BUFFERS['choices'], ...CORPUS_BUFFERS['knock']];
+      // params.concat.resampling = [0, 0, 700, 1200, -1200][Math.floor(Math.random() * 5)];
       params.automation.concat_period = 0;
 
+
     } else {
-      params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
+
+      params.knn.includedBuffers = 0;
+      params.knn.weightPreset = WEIGHT_PRESETS['hybrid'];
       params.concat.allowrepeatmarkers = false;
-      params.concat.resampling = 0
+      // params.concat.resampling = 0
       params.knn.includedBuffers = 0
       params.automation.concat_period = 0;
+      params.automation.weight_preset = 0;
+    }
+  }
+}
+
+
+
+const part2 = {
+  onGmmClass(gmmIs) {
+    if (gmmIs('percussive')) {
+      params.knn.weightPreset = WEIGHT_PRESETS['hybrid'];
+      params.knn.includedBuffers = [...CORPUS_BUFFERS['wrench'], ...CORPUS_BUFFERS['bassoon']];
+    } else if (gmmIs('bowed_harmonic')) {
+      params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
+      params.knn.includedBuffers = [...CORPUS_BUFFERS['arvo']];
+      params.concat.allowrepeatmarkers = 1;
+      params.concat.period = [100, 1];
+    } else if (gmmIs('bowed_tenor')) {
+      params.knn.weightPreset = WEIGHT_PRESETS['hybrid'];
+      params.knn.includedBuffers = [...CORPUS_BUFFERS['arvo'], ...CORPUS_BUFFERS['wrench']];
+      // params.concat.resampling = [-1200, -2400][Math.floor(Math.random() * 2)];
+      params.concat.allowrepeatmarkers = 0;
+    } else if (gmmIs('plucked_tenor')) {
+      params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
+      params.knn.includedBuffers = 0;
+      params.concat.allowrepeatmarkers = 0;
+    }
+    
+  }
+}
+
+const handlers = {
+  onGmmClass(gmmClass) {
+    // helper function for more readable code in evaluating gmm class
+    const gmmIs = (key) => gmmClass === GMM_CLASS[key];
+
+    if (part === 1) {
+      part1.onGmmClass(gmmIs);
+    } else {
+      part2.onGmmClass(gmmIs);
     }
   },
 
@@ -135,6 +184,12 @@ const handlers = {
     }
   }
 }
+
+
+
+Max.addHandler("part", (partNumber) => {
+  part = partNumber;
+});
 
 // true when noisegate is active (ie there is an input signal)
 Max.addHandler("gate_status", (gateOpen) => {
