@@ -39,13 +39,63 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-24",
-					"linecount" : 2,
-					"maxclass" : "comment",
+					"id" : "obj-60",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 672.0, 465.0, 45.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 373.0, 313.0, 45.0, 22.0 ],
+					"text" : "readall"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 843.0, 510.0, 150.0, 33.0 ],
-					"text" : "TODO: save mubu with gmm model"
+					"patching_rect" : [ 13.25, 153.5, 82.0, 22.0 ],
+					"text" : "s gmm.record"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-54",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 620.0, 496.0, 156.0, 22.0 ],
+					"text" : "s timbre_model.ui.to_imubu"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 620.0, 465.0, 46.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 321.0, 313.0, 46.0, 22.0 ],
+					"text" : "writeall"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 684.5, 253.0, 80.0, 22.0 ],
+					"text" : "r gmm.record"
 				}
 
 			}
@@ -58,9 +108,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 486.0, 516.0, 31.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 378.0, 314.0, 31.0, 21.0 ],
+					"patching_rect" : [ 439.25, 506.0, 31.0, 21.0 ],
 					"text" : "read"
 				}
 
@@ -74,9 +122,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 434.5, 516.0, 32.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 338.5, 314.0, 32.0, 21.0 ],
+					"patching_rect" : [ 387.75, 506.0, 32.0, 21.0 ],
 					"text" : "write"
 				}
 
@@ -90,7 +136,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 30.0, 548.0, 474.0, 21.0 ],
+					"patching_rect" : [ 31.0, 548.0, 450.0, 21.0 ],
 					"text" : "mubu.gmm timbre_model mfcc @mixtures 3 @likelihoodwindow 10 @varianceoffset 2. 10."
 				}
 
@@ -112,7 +158,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.75, 153.5, 61.0, 22.0 ],
+					"patching_rect" : [ 23.75, 95.5, 61.0, 22.0 ],
 					"text" : "s to_gmm"
 				}
 
@@ -1655,7 +1701,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 491.5, 15.5, 161.0, 22.0 ],
+					"patching_rect" : [ 478.25, 6.5, 161.0, 22.0 ],
 					"text" : "r timbre_model.ui.to_buttons"
 				}
 
@@ -2128,7 +2174,7 @@
 					"presentation_rect" : [ -1.5, 435.0, 147.0, 92.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 2,
+					"size" : 3,
 					"slidercolor" : [ 0.733398, 0.0, 0.121332, 1.0 ]
 				}
 
@@ -2278,15 +2324,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-32", 1 ],
-					"order" : 0,
+					"destination" : [ "obj-58", 0 ],
+					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -2383,6 +2429,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 1 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
 					"source" : [ "obj-45", 0 ]
 				}
@@ -2404,8 +2457,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-60", 0 ]
 				}
 
 			}
@@ -2418,9 +2485,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11::obj-3" : [ "train", "train", 0 ],
 			"obj-11::obj-35" : [ "play", "play", 0 ],
 			"obj-11::obj-9" : [ "record", "record", 0 ],
+			"obj-11::obj-3" : [ "train", "train", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2429,7 +2496,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "imubu_button_ui.maxpat",
-				"bootpath" : "~/Documents/Max Projects/mubu_gmm_bass_gestures/patchers",
+				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

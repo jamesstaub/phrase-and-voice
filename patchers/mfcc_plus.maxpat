@@ -1656,13 +1656,13 @@
 					"patching_rect" : [ 380.0, 72.0, 136.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[2]",
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "input",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_type" : 0
 						}
 
 					}

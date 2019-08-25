@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 6,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -86,7 +86,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 477.0, 317.5, 69.0, 22.0 ],
-					"text" : "qmetro 300"
+					"text" : "qmetro 400"
 				}
 
 			}
@@ -102,7 +102,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -393,7 +393,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -446,8 +446,8 @@
 									"numinlets" : 5,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 189.0, 302.0, 105.0, 22.0 ],
-									"text" : "zmap 0. 1. 0.8 1.2"
+									"patching_rect" : [ 189.0, 302.0, 118.0, 22.0 ],
+									"text" : "zmap 0. 1. 0.98 1.02"
 								}
 
 							}
@@ -873,7 +873,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 6,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}

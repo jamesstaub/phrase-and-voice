@@ -4,7 +4,7 @@ const Max = require("max-api");
 WEIGHT_PRESETS = {
   "tonal": 1,
   "timbral": 2,
-  "hybrid": 3
+  "hybrid": 3,
 }
 
 /*
@@ -48,6 +48,8 @@ CORPUS_BUFFERS = {
 }
 
 let part = 1;
+let beat = 0;
+let bar = 0;
 
 /*
 	Default Parameters
@@ -69,13 +71,13 @@ const params = {
     period: [0, 1], //(abs, relative)
     // resampling: 0,
     // resamplingvar:[0, 0],
-    // filtermode: 'off',
+    filtermode: 'off',
     // TODO hook up following
-    // filterfreq: 400 ,
+    filterfreq: 400 ,
     // filterfreqvar $1 $2
-    // filterq $1
+    filterq: 0,
     // filterqvar $1 $2
-    // filtergain $1
+    filtergain:0,
     // off, lowpass, highpass, resonant, bandpass, peaknotch, bandstop, allpass, lowshelf, highshelf
   },
   temporalModel: {
@@ -89,7 +91,8 @@ const params = {
   automation: {
     // toggle a subpatcher that modulates concatenative synth's period
     concat_period: 0,
-    weight_preset:0
+    weight_preset:0,
+    filter_fundamental_follow: 0, // send fundamental frequency from input signal to concat synth filter 
   }
 }
 
@@ -101,38 +104,45 @@ const part1 = {
     */
 
     params.automation.weight_preset = 1;
+    params.concat.filtermode = 'off';
+
+    if ((bar % 50) > 40) {
+      params.knn.includedBuffers = CORPUS_BUFFERS['choices'];
+    } else if ((bar % 50) > 30){
+      params.knn.includedBuffers = [CORPUS_BUFFERS['choices'][2], CORPUS_BUFFERS['choices'][3]];
+    } else {
+      params.knn.includedBuffers = [CORPUS_BUFFERS['choices'][0], CORPUS_BUFFERS['choices'][1]];
+    }
+    
 
     if (gmmIs('percussive')) {
       params.knn.weightPreset = WEIGHT_PRESETS['timbral'];
 
-      params.concat.period = [200, 1100];
+      params.concat.period = [200, .125];
       params.concat.allowrepeatmarkers = 1;
-      params.automation.concat_period = 0;
-      // params.concat.resampling = -700
+      // params.automation.concat_period = 0;
+      params.concat.resampling = -700
       params.knn.includedBuffers = [...CORPUS_BUFFERS['wrench'], ...CORPUS_BUFFERS['organ']];
 
     } else if (gmmIs('bowed_harmonic')) {
       params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
       params.automation.concat_period = 1;
       params.automation.weight_preset = 0;
-      params.knn.includedBuffers = [...CORPUS_BUFFERS['choices']];
+      
       // params.concat.resampling = [0, 0, 700, 1200, 2400][Math.floor(Math.random() * 5)];
     } else if (gmmIs('bowed_tenor')) {
       params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
-      params.knn.includedBuffers = [...CORPUS_BUFFERS['choices'], ...CORPUS_BUFFERS['knock']];
       // params.concat.resampling = [0, 0, 700, 1200, -1200][Math.floor(Math.random() * 5)];
       params.automation.concat_period = 0;
 
 
     } else {
 
-      params.knn.includedBuffers = 0;
-      params.knn.weightPreset = WEIGHT_PRESETS['hybrid'];
-      params.concat.allowrepeatmarkers = false;
-      // params.concat.resampling = 0
-      params.knn.includedBuffers = 0
-      params.automation.concat_period = 0;
-      params.automation.weight_preset = 0;
+      params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
+      params.concat.allowrepeatmarkers = 1;
+      params.concat.resampling = -700;
+      params.concat.period = [50, .25];
+      params.automation.weight_preset = 1;
     }
   }
 }
@@ -141,6 +151,7 @@ const part1 = {
 
 const part2 = {
   onGmmClass(gmmIs) {
+    params.concat.filtermode = 'off';
     if (gmmIs('percussive')) {
       params.knn.weightPreset = WEIGHT_PRESETS['hybrid'];
       params.knn.includedBuffers = [...CORPUS_BUFFERS['wrench'], ...CORPUS_BUFFERS['bassoon']];
@@ -163,16 +174,37 @@ const part2 = {
   }
 }
 
+
+const part3 = {
+  onGmmClass(gmmIs) {
+    console.log('p3');
+    params.knn.includedBuffers = [...CORPUS_BUFFERS['arvo'], ...CORPUS_BUFFERS['organ']];
+    params.concat.allowrepeatmarkers = 1;
+    params.concat.period = [80, .25];
+    if (gmmIs('bowed_tenor') || gmmIs('bowed_harmonic')) {
+      params.concat.filtermode = 'resonant';
+      params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
+      params.concat.filterq = 7;
+      params.automation.filter_fundamental_follow =  1;
+      
+    } else {
+      params.concat.filtermode = 'off';
+      params.knn.weightPreset = WEIGHT_PRESETS['hybrid'];
+      params.automation.filter_fundamental_follow = 0;
+    }
+
+  } 
+}
+
+let parts = [part1, part2, part3, /*part4*/];
+
 const handlers = {
   onGmmClass(gmmClass) {
     // helper function for more readable code in evaluating gmm class
     const gmmIs = (key) => gmmClass === GMM_CLASS[key];
+    const partToUse = parts[part-1]
 
-    if (part === 1) {
-      part1.onGmmClass(gmmIs);
-    } else {
-      part2.onGmmClass(gmmIs);
-    }
+    partToUse.onGmmClass(gmmIs);
   },
 
   onGateStatus(gateOpen) {
@@ -186,9 +218,16 @@ const handlers = {
 }
 
 
+// transport bars
+Max.addHandler("bars", (currentBar) => {
+  bar = currentBar
+  // 40 bpm sets parts 1-4 at 0, 50 , 150, 200
+  part = Math.ceil(currentBar / 40);
+});
 
-Max.addHandler("part", (partNumber) => {
-  part = partNumber;
+// transport beats
+Max.addHandler("beats", (currentBeat) => {
+  beat = currentBeat;
 });
 
 // true when noisegate is active (ie there is an input signal)
@@ -203,7 +242,7 @@ Max.addHandler("gmm_class", (gmmClass) => {
   sendParams(['concat', 'knn', 'automation']);
 })
 
-Max.addHandler("concat_bang", () => { })
+
 
 
 /*
