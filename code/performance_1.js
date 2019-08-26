@@ -1,5 +1,7 @@
 const Max = require("max-api");
 
+const rand = arr => arr[Math.floor(Math.random() * arr.length)];
+
 //KNN weidhts preset object 
 WEIGHT_PRESETS = {
   "tonal": 1,
@@ -59,7 +61,8 @@ let bar = 0;
 const params = {
   knn: {
     weightPreset: 1,
-    includedBuffers: 0
+    includedBuffers: 0,
+    randomizeWeights: 0,
   },
   player: {
     playmode: 3, // 'onset-knn'
@@ -79,15 +82,18 @@ const params = {
     // filterqvar $1 $2
     filtergain:0,
     // off, lowpass, highpass, resonant, bandpass, peaknotch, bandstop, allpass, lowshelf, highshelf
+    attack: [0,0],
+    release: [0,0],
+    reverse: 0,
   },
-  temporalModel: {
-    bufferindex: 1,
-    play: 0,
-    gain: 0,
-  },
-  timbralModel: {
-    play: 1,
-  },
+  // temporalModel: {
+  //   bufferindex: 1,
+  //   play: 0,
+  //   gain: 0,
+  // },
+  // timbralModel: {
+  //   play: 1,
+  // },
   automation: {
     // toggle a subpatcher that modulates concatenative synth's period
     concat_period: 0,
@@ -98,13 +104,13 @@ const params = {
 
 const part1 = {
   onGmmClass(gmmIs) {
-    /**
-    *  when percussive input is detected, set knn weights to select for timbre
-    * and select a repeating
-    */
-
-    params.automation.weight_preset = 1;
+    params.knn.randomizeWeights = 1;
     params.concat.filtermode = 'off';
+    params.automation.filter_fundamental_follow = 0;
+    params.concat.reverse = 0;
+    params.concat.attack = [0, 0];
+    params.concat.release = [0, 0.1];
+    params.automation.onset_follow = 0;
 
     if ((bar % 50) > 40) {
       params.knn.includedBuffers = CORPUS_BUFFERS['choices'];
@@ -114,6 +120,10 @@ const part1 = {
       params.knn.includedBuffers = [CORPUS_BUFFERS['choices'][0], CORPUS_BUFFERS['choices'][1]];
     }
     
+    /**
+    *  when percussive input is detected, set knn weights to select for timbre
+    * and select a repeating
+    */
 
     if (gmmIs('percussive')) {
       params.knn.weightPreset = WEIGHT_PRESETS['timbral'];
@@ -122,12 +132,13 @@ const part1 = {
       params.concat.allowrepeatmarkers = 1;
       // params.automation.concat_period = 0;
       params.concat.resampling = -700
-      params.knn.includedBuffers = [...CORPUS_BUFFERS['wrench'], ...CORPUS_BUFFERS['organ']];
+      params.knn.includedBuffers = [CORPUS_BUFFERS['organ'][0], CORPUS_BUFFERS['choices'][2]];
+      params.automation.onset_follow = 1;
 
     } else if (gmmIs('bowed_harmonic')) {
       params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
       params.automation.concat_period = 1;
-      params.automation.weight_preset = 0;
+      params.knn.randomizeWeights = 0;
       
       // params.concat.resampling = [0, 0, 700, 1200, 2400][Math.floor(Math.random() * 5)];
     } else if (gmmIs('bowed_tenor')) {
@@ -137,12 +148,11 @@ const part1 = {
 
 
     } else {
-
       params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
       params.concat.allowrepeatmarkers = 1;
       params.concat.resampling = -700;
       params.concat.period = [50, .25];
-      params.automation.weight_preset = 1;
+      params.knn.randomizeWeights = 1;
     }
   }
 }
@@ -151,44 +161,76 @@ const part1 = {
 
 const part2 = {
   onGmmClass(gmmIs) {
+    params.concat.reverse = 0;
     params.concat.filtermode = 'off';
+    params.concat.attack = [0, 0];
+    params.concat.release = [0, 0.1];
+    params.automation.onset_follow = 0;
+    params.automation.filter_fundamental_follow = 0;
+    
+    if ((bar % 50) > 40) {
+      params.knn.includedBuffers = CORPUS_BUFFERS['knock'][3];
+    } else if ((bar % 50) > 25) {
+      params.knn.includedBuffers = [CORPUS_BUFFERS['knock'][1], CORPUS_BUFFERS['knock'][2]];
+    } else {
+      params.automation.onset_follow = 1;
+      params.knn.includedBuffers = [CORPUS_BUFFERS['knock'][0], CORPUS_BUFFERS['knock'][1]];
+
+    }
+
+    
+
     if (gmmIs('percussive')) {
       params.knn.weightPreset = WEIGHT_PRESETS['hybrid'];
-      params.knn.includedBuffers = [...CORPUS_BUFFERS['wrench'], ...CORPUS_BUFFERS['bassoon']];
+      params.concat.allowrepeatmarkers = 1;
+      params.automation.onset_follow = 1;
     } else if (gmmIs('bowed_harmonic')) {
       params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
-      params.knn.includedBuffers = [...CORPUS_BUFFERS['arvo']];
       params.concat.allowrepeatmarkers = 1;
       params.concat.period = [100, 1];
     } else if (gmmIs('bowed_tenor')) {
       params.knn.weightPreset = WEIGHT_PRESETS['hybrid'];
-      params.knn.includedBuffers = [...CORPUS_BUFFERS['arvo'], ...CORPUS_BUFFERS['wrench']];
       // params.concat.resampling = [-1200, -2400][Math.floor(Math.random() * 2)];
       params.concat.allowrepeatmarkers = 0;
     } else if (gmmIs('plucked_tenor')) {
       params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
-      params.knn.includedBuffers = 0;
+
+      params.automation.concat_period = !beat % 4;
+      params.concat.reverse = beat % 2;
+
       params.concat.allowrepeatmarkers = 0;
-    }
-    
+      params.automation.onset_follow = 1;
+    } 
   }
 }
 
 
 const part3 = {
   onGmmClass(gmmIs) {
-    console.log('p3');
-    params.knn.includedBuffers = [...CORPUS_BUFFERS['arvo'], ...CORPUS_BUFFERS['organ']];
+    params.automation.onset_follow = 0;
+    params.concat.reverse = 0;
+    params.concat.filtermode = 'off';
     params.concat.allowrepeatmarkers = 1;
-    params.concat.period = [80, .25];
+    params.concat.period = [80, 0];
+    params.concat.attack = [0, 0];
+    params.concat.release = [0, 0.1];
+    
+    params.knn.includedBuffers = [...CORPUS_BUFFERS['organ']];
+    params.knn.includedBuffers = [...CORPUS_BUFFERS['wrench'], ...CORPUS_BUFFERS['bassoon']];
+    
     if (gmmIs('bowed_tenor') || gmmIs('bowed_harmonic')) {
       params.concat.filtermode = 'resonant';
       params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
-      params.concat.filterq = 7;
+      params.concat.filterq = rand([2,3, 4,8,10]);
       params.automation.filter_fundamental_follow =  1;
-      
+    } else if (gmmIs('plucked_tenor')) {
+      params.concat.filtermode = 'off';
+      params.knn.weightPreset = WEIGHT_PRESETS['timbral'];
+      params.concat.period = [240, 0];
     } else {
       params.concat.filtermode = 'off';
+      params.concat.period = [160, 0];
+      params.automation.onset_follow = 1;
       params.knn.weightPreset = WEIGHT_PRESETS['hybrid'];
       params.automation.filter_fundamental_follow = 0;
     }
@@ -196,15 +238,58 @@ const part3 = {
   } 
 }
 
-let parts = [part1, part2, part3, /*part4*/];
+const part4 = {
+  onGmmClass(gmmIs) {
+    params.concat.allowrepeatmarkers = 1;
+    params.concat.reverse = 0;
+    params.concat.filtermode = 'off';
+    params.knn.randomizeWeights = 0;
+    params.concat.attack = [0, 0.15];
+    params.concat.release = [0, 0.1];
+    params.automation.onset_follow = 0;
+
+    if ((bar % 50) < 25) {
+      params.knn.includedBuffers = [...CORPUS_BUFFERS['arvo'], ...CORPUS_BUFFERS['knock']];
+      params.concat.resampling = rand([0, 500, -1200, -2400]);
+    } else {
+      params.knn.includedBuffers = [...CORPUS_BUFFERS['arvo'], CORPUS_BUFFERS['knock'][3]];
+    }
+
+    if (gmmIs('percussive')) {
+      params.knn.weightPreset = WEIGHT_PRESETS['timbre'];
+      params.knn.includedBuffers = [CORPUS_BUFFERS['choices'], ...CORPUS_BUFFERS['knock']];
+      params.knn.randomizeWeights = 1;
+      params.automation.onset_follow = 1;
+    } else if (gmmIs('bowed_harmonic')) {
+      params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
+      params.concat.resampling = rand([0, 500, 700, 1200, 1500, 1900]);
+      params.concat.period = [50, 0.25];
+      params.concat.attack = [25, 0.5];
+      params.concat.release = [25, 0.5];
+    } else if (gmmIs('bowed_tenor')) {
+      params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
+      params.concat.resampling = rand([0, 0, 0, -500, -700, -1200, -2400]);
+      params.concat.attack = [25, 0.5];
+      params.concat.reverse = 1;
+    } else if (gmmIs('plucked_tenor')) {
+      params.knn.weightPreset = WEIGHT_PRESETS['tonal'];
+      params.concat.reverse = rand([0,1]);
+      params.concat.resampling = 0;
+      params.concat.period = [0, 0.3];
+    } 
+  }
+}
+
+let parts = [part1, part2, part3, part4];
 
 const handlers = {
   onGmmClass(gmmClass) {
     // helper function for more readable code in evaluating gmm class
     const gmmIs = (key) => gmmClass === GMM_CLASS[key];
     const partToUse = parts[part-1]
-
-    partToUse.onGmmClass(gmmIs);
+    if (gmmClass) {
+      partToUse.onGmmClass(gmmIs);
+    }
   },
 
   onGateStatus(gateOpen) {
@@ -221,7 +306,7 @@ const handlers = {
 // transport bars
 Max.addHandler("bars", (currentBar) => {
   bar = currentBar
-  // 40 bpm sets parts 1-4 at 0, 50 , 150, 200
+  // 40 bpm sets parts 1-4 at bar 0, 50 , 150, 200
   part = Math.ceil(currentBar / 40);
 });
 
@@ -238,7 +323,9 @@ Max.addHandler("gate_status", (gateOpen) => {
 
 // gmm_class is the number of the gaussian mixture model prediction
 Max.addHandler("gmm_class", (gmmClass) => {
-  handlers.onGmmClass(gmmClass);
+  if (gmmClass) {
+    handlers.onGmmClass(gmmClass);
+  }
   sendParams(['concat', 'knn', 'automation']);
 })
 
