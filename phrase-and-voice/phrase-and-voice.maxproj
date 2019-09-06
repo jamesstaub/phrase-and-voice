@@ -1,9 +1,9 @@
 {
-	"name" : "mubu_gmm_bass_gestures",
+	"name" : "phrase-and-voice",
 	"version" : 1,
-	"creationdate" : 2082826072,
-	"modificationdate" : 3648298206,
-	"viewrect" : [ 50.0, 95.0, 300.0, 500.0 ],
+	"creationdate" : 2082825709,
+	"modificationdate" : 3650570743,
+	"viewrect" : [ 50.0, 95.0, 353.0, 714.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -41,6 +41,11 @@
 				"local" : 1
 			}
 ,
+			"knn_config.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"lpd8-channel-map-instance.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -51,12 +56,27 @@
 				"local" : 1
 			}
 ,
-			"knn_config.maxpat" : 			{
+			"performance_1.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"performance_1.maxpat" : 			{
+			"performance_example.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"index-tabs.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"_descriptors_slicer.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"_input_noisegate.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -69,6 +89,26 @@
 ,
 		"code" : 		{
 			"temporal-model-player-midi.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"api.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"defaultParams.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"performance_1.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"performance_template.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}

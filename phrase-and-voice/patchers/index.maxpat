@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-45",
@@ -50,23 +51,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-35",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 244.0, 348.0, 94.0, 22.0 ],
-					"text" : "s input_analysis"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-51",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 474.0, 225.5, 38.0, 22.0 ],
+					"patching_rect" : [ 805.0, 243.5, 38.0, 22.0 ],
 					"text" : "zl reg"
 				}
 
@@ -78,19 +68,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 474.0, 195.0, 32.0, 22.0 ],
+					"patching_rect" : [ 805.0, 207.0, 56.0, 22.0 ],
 					"text" : "t b b"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-39",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 220.0, 132.0, 100.0, 22.0 ]
 				}
 
 			}
@@ -101,7 +80,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 474.0, 251.5, 32.0, 22.0 ],
+					"patching_rect" : [ 668.75439453125, 288.0, 49.24560546875, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -123,7 +102,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 195.0, 79.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -294,7 +273,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 59.0, 348.0, 32.0, 22.0 ],
+					"patching_rect" : [ 69.0, 402.0, 32.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -321,52 +300,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 200.5, 162.0, 145.0, 24.0 ],
+					"patching_rect" : [ 200.5, 131.0, 145.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 187.0, 121.0, 24.0 ],
+					"presentation_rect" : [ 8.0, 161.0, 121.0, 24.0 ],
 					"text" : "Audio analysis"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 522.0, 125.0, 70.0, 22.0 ],
-					"text" : "loadmess 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 12.0,
-					"id" : "obj-56",
-					"maxclass" : "live.tab",
-					"num_lines_patching" : 1,
-					"num_lines_presentation" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 414.0, 125.0, 100.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 151.75, 189.5, 113.25, 21.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.tab[2]",
-							"parameter_shortname" : "live.tab",
-							"parameter_enum" : [ "config", "run" ],
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"varname" : "live.tab[1]"
 				}
 
 			}
@@ -422,11 +359,11 @@
 					"presentation_rect" : [ 978.5, 59.0, 292.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
 							"parameter_longname" : "live.tab",
 							"parameter_shortname" : "live.tab",
-							"parameter_enum" : [ "input", "temporal_model", "both" ],
-							"parameter_type" : 2
+							"parameter_enum" : [ "input", "temporal_model", "both" ]
 						}
 
 					}
@@ -456,7 +393,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 394.0, 479.0, 100.0, 22.0 ],
+					"patching_rect" : [ 394.0, 468.0, 100.0, 22.0 ],
 					"text" : "s gmm.prediction"
 				}
 
@@ -942,10 +879,10 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "temporal-model-player.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 1085.5, 216.25, 586.0, 487.25 ],
+					"patching_rect" : [ 1085.5, 216.25, 586.0, 757.25 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 752.0, 83.0, 614.0, 741.0 ],
 					"viewvisibility" : 1
@@ -984,7 +921,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 622.0, 819.0, 143.0, 22.0 ],
+					"patching_rect" : [ 637.0, 841.0, 143.0, 22.0 ],
 					"text" : "s temporal_model.concat"
 				}
 
@@ -996,7 +933,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 622.0, 779.0, 317.0, 33.0 ],
+					"patching_rect" : [ 622.0, 872.0, 317.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
 					"presentation_rect" : [ 349.0, 670.0, 151.0, 74.0 ],
@@ -1010,7 +947,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 836.0, 745.0, 118.0, 22.0 ],
+					"patching_rect" : [ 478.0, 865.0, 118.0, 22.0 ],
 					"text" : "s target.maxduration"
 				}
 
@@ -1033,7 +970,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 835.75439453125, 721.0, 61.0, 22.0 ],
+					"patching_rect" : [ 477.75439453125, 841.0, 61.0, 22.0 ],
 					"text" : "unpack f f"
 				}
 
@@ -1045,7 +982,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 622.0, 855.0, 329.0, 167.0 ],
+					"patching_rect" : [ 622.0, 931.0, 329.0, 167.0 ],
 					"text" : "record chroma along with onsegs\n\n\nload concat buffer with all bassoon samples to draw from\n\n\noctatrack programs could control macro settings of poly-concat voices such as buffer indexes, specific hamonizations, CC map to transposition or playback mode (bow, beat, etc)\n\n"
 				}
 
@@ -1057,7 +994,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 622.0, 142.0, 34.0, 22.0 ],
+					"patching_rect" : [ 459.75439453125, 281.0, 34.0, 22.0 ],
 					"text" : "*~ 1."
 				}
 
@@ -1072,9 +1009,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 848.75439453125, 534.0, 188.24560546875, 21.0 ],
+					"patching_rect" : [ 883.75439453125, 333.0, 188.24560546875, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 469.0, 404.5, 210.0, 18.0 ]
+					"presentation_rect" : [ 537.0, 538.5, 210.0, 18.0 ]
 				}
 
 			}
@@ -1089,11 +1026,11 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "mfcc_plus.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 3,
+					"numinlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 63.0, 162.0, 288.0, 176.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 48.0, 162.0, 288.0, 176.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.0, 187.0, 288.0, 590.0 ],
 					"viewvisibility" : 1
@@ -1106,7 +1043,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 378.0, 225.0, 77.0, 22.0 ],
+					"patching_rect" : [ 720.0, 288.0, 77.0, 22.0 ],
 					"text" : "s gate.status"
 				}
 
@@ -1365,7 +1302,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 378.0, 183.0, 71.0, 22.0 ],
+					"patching_rect" : [ 706.0, 243.5, 71.0, 22.0 ],
 					"text" : "route status"
 				}
 
@@ -1382,10 +1319,10 @@
 					"maxclass" : "bpatcher",
 					"name" : "gmm_record_follow.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 3,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 59.0, 380.0, 320.0, 663.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 59.0, 444.0, 320.0, 663.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1371.0, 83.0, 436.0, 651.0 ],
 					"viewvisibility" : 1
@@ -1409,7 +1346,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 87.0, 33.0, 300.0, 70.0 ],
+					"patching_rect" : [ 59.0, -4.0, 300.0, 70.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.0, 83.0, 300.0, 70.0 ],
 					"viewvisibility" : 1
@@ -1424,95 +1361,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 27.0, 125.0, 159.0, 22.0 ],
+					"patching_rect" : [ 12.0, 83.0, 159.0, 22.0 ],
 					"text" : "noisegate~.model noisegate"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"clipheight" : 27.0,
-					"data" : 					{
-						"clips" : [ 							{
-								"filename" : "/Users/jamesstasub/Documents/Max Projects/mxr.6-saffire.7/low-plucked-active.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 0.640625 ],
-								"loop" : 1,
-								"content_state" : 								{
-									"formant" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"mode" : [ "basic" ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ]
-								}
-
-							}
-, 							{
-								"filename" : "/Users/jamesstasub/Documents/Max Projects/mxr.6-saffire.7/full_range_plucked_sustain.wav",
-								"filekind" : "audiofile",
-								"selection" : [ 0.0, 0.791666666666667 ],
-								"loop" : 1,
-								"content_state" : 								{
-									"formant" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"mode" : [ "basic" ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ]
-								}
-
-							}
-, 							{
-								"filename" : "/Users/jamesstasub/Documents/Max Projects/mxr.6-saffire.7/full_range_bow_expressive.wav",
-								"filekind" : "audiofile",
-								"loop" : 0,
-								"content_state" : 								{
-									"formant" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"mode" : [ "basic" ],
-									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ]
-								}
-
-							}
- ]
-					}
-,
-					"id" : "obj-29",
-					"maxclass" : "playlist~",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 394.0, 33.0, 441.0, 84.0 ]
 				}
 
 			}
@@ -1545,7 +1395,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "signal" ],
-					"patching_rect" : [ 622.0, 216.25, 437.0, 488.25 ],
+					"patching_rect" : [ 459.75439453125, 323.75, 437.0, 488.25 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 316.0, 83.0, 431.0, 562.0 ],
 					"viewvisibility" : 1
@@ -1589,7 +1439,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -1605,7 +1455,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -1660,13 +1510,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-28", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"source" : [ "obj-28", 2 ]
 				}
 
 			}
@@ -1732,13 +1575,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-56", 0 ],
-					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-27", 3 ],
 					"order" : 0,
 					"source" : [ "obj-38", 0 ]
@@ -1777,14 +1613,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 1 ],
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
+					"destination" : [ "obj-45", 0 ],
 					"order" : 1,
 					"source" : [ "obj-5", 1 ]
 				}
@@ -1792,23 +1621,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
-					"order" : 1,
-					"source" : [ "obj-5", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
-					"order" : 0,
-					"source" : [ "obj-5", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-51", 1 ],
 					"order" : 0,
 					"source" : [ "obj-5", 1 ]
 				}
@@ -1837,13 +1650,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 1 ],
-					"source" : [ "obj-56", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-6", 2 ]
 				}
@@ -1865,21 +1671,21 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7::obj-11" : [ "Threshold", "Threshold", 0 ],
-			"obj-7::obj-3" : [ "Attack", "Attack", 0 ],
-			"obj-7::obj-13" : [ "Lookahead", "Lookahead", 0 ],
-			"obj-28::obj-2::obj-9" : [ "record[3]", "record", 0 ],
+			"obj-2::obj-11::obj-3" : [ "train[1]", "train", 0 ],
 			"obj-25" : [ "live.tab", "live.tab", 0 ],
 			"obj-28::obj-2::obj-3" : [ "train[4]", "train", 0 ],
-			"obj-19::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
-			"obj-7::obj-9" : [ "Release", "Release", 0 ],
-			"obj-2::obj-11::obj-35" : [ "play[4]", "play", 0 ],
-			"obj-5::obj-50" : [ "live.gain~[3]", "input", 0 ],
-			"obj-56" : [ "live.tab[2]", "live.tab", 0 ],
+			"obj-7::obj-13" : [ "Lookahead", "Lookahead", 0 ],
 			"obj-7::obj-5" : [ "live.text", "live.text", 0 ],
-			"obj-2::obj-11::obj-3" : [ "train[3]", "train", 0 ],
+			"obj-2::obj-11::obj-35" : [ "play[2]", "play", 0 ],
+			"obj-19::obj-24" : [ "live.tab[4]", "live.tab", 0 ],
+			"obj-7::obj-11" : [ "Threshold", "Threshold", 0 ],
+			"obj-5::obj-50" : [ "live.gain~[3]", "input", 0 ],
+			"obj-7::obj-3" : [ "Attack", "Attack", 0 ],
+			"obj-19::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-28::obj-2::obj-9" : [ "record[3]", "record", 0 ],
+			"obj-2::obj-11::obj-9" : [ "record[4]", "record", 0 ],
 			"obj-28::obj-2::obj-35" : [ "play[1]", "play", 0 ],
-			"obj-2::obj-11::obj-9" : [ "record[2]", "record", 0 ],
+			"obj-7::obj-9" : [ "Release", "Release", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1888,14 +1694,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "onseg_record_dynamics.maxpat",
-				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
+				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "imubu_button_ui.maxpat",
-				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
+				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1909,76 +1715,55 @@
 , 			{
 				"name" : "mubu.stats.marker.track.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
-				"patcherrelativepath" : "../../../Max 8/Packages/MuBu For Max/patchers",
+				"patcherrelativepath" : "../../../../Max 8/Packages/MuBu For Max/patchers",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "low-plucked-active.wav",
-				"bootpath" : "~/Documents/Max Projects/mxr.6-saffire.7",
-				"patcherrelativepath" : "../../mxr.6-saffire.7",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "full_range_plucked_sustain.wav",
-				"bootpath" : "~/Documents/Max Projects/mxr.6-saffire.7",
-				"patcherrelativepath" : "../../mxr.6-saffire.7",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "full_range_bow_expressive.wav",
-				"bootpath" : "~/Documents/Max Projects/mxr.6-saffire.7",
-				"patcherrelativepath" : "../../mxr.6-saffire.7",
-				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noisegate~.model.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
-				"patcherrelativepath" : "../../../Max 8/Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
+				"patcherrelativepath" : "../../../../Max 8/Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noisegate~.view.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
-				"patcherrelativepath" : "../../../Max 8/Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
+				"patcherrelativepath" : "../../../../Max 8/Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gmm_record_follow.maxpat",
-				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
+				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mfcc_plus.maxpat",
-				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
+				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "temporal-model-player.maxpat",
-				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
+				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "knn_config.maxpat",
-				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
+				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "lpd8-channel-map-instance.maxpat",
-				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
+				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

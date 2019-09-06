@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 969.0, 719.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,23 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"showontab" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 342.0, 186.0, 150.0, 127.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 29.0, 484.0, 460.0, 47.0 ],
+					"text" : "todo\nexperiment with increasing moving average parameter of incoming audio descriptors for timbral model (but keep it low or off for for real time input for KNN)"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-60",
 					"maxclass" : "message",
@@ -46,7 +62,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 672.0, 465.0, 45.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 373.0, 313.0, 45.0, 22.0 ],
+					"presentation_rect" : [ 370.0, 76.0, 45.0, 22.0 ],
 					"text" : "readall"
 				}
 
@@ -82,7 +98,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 620.0, 465.0, 46.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 321.0, 313.0, 46.0, 22.0 ],
+					"presentation_rect" : [ 318.0, 76.0, 46.0, 22.0 ],
 					"text" : "writeall"
 				}
 
@@ -94,7 +110,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 684.5, 253.0, 80.0, 22.0 ],
+					"patching_rect" : [ 702.5, 267.0, 80.0, 22.0 ],
 					"text" : "r gmm.record"
 				}
 
@@ -143,17 +159,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 865.5, 383.0, 32.0, 22.0 ],
-					"text" : "print"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -181,7 +186,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 629.0, 342.0, 61.0, 22.0 ],
+					"patching_rect" : [ 611.0, 360.5, 61.0, 22.0 ],
 					"text" : "s to_gmm"
 				}
 
@@ -192,7 +197,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 873.5, 341.0, 61.0, 22.0 ],
+					"patching_rect" : [ 853.5, 359.5, 61.0, 22.0 ],
 					"text" : "s to_gmm"
 				}
 
@@ -454,7 +459,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 756.5, 341.0, 109.0, 22.0 ],
+					"patching_rect" : [ 736.5, 359.5, 109.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -647,9 +652,9 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "bang", "bang" ],
-									"patching_rect" : [ 48.0, 129.5, 32.0, 22.0 ],
-									"text" : "t b b"
+									"outlettype" : [ "bang", "" ],
+									"patching_rect" : [ 48.0, 129.5, 29.5, 22.0 ],
+									"text" : "t b l"
 								}
 
 							}
@@ -708,7 +713,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 255.5, 99.0, 22.0 ],
+									"patching_rect" : [ 44.0, 266.5, 99.0, 22.0 ],
 									"text" : "route numbuffers"
 								}
 
@@ -720,7 +725,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 228.5, 115.0, 22.0 ],
+									"patching_rect" : [ 44.0, 239.5, 115.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"externalfiles" : 1,
@@ -738,7 +743,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 281.5, 153.0, 22.0 ],
+									"patching_rect" : [ 44.0, 292.5, 153.0, 22.0 ],
 									"text" : "s timbre_model.bufferindex"
 								}
 
@@ -750,7 +755,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 197.5, 86.0, 22.0 ],
+									"patching_rect" : [ 44.0, 208.5, 86.0, 22.0 ],
 									"text" : "getnumbuffers"
 								}
 
@@ -941,7 +946,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 756.5, 310.0, 228.0, 22.0 ],
+					"patching_rect" : [ 736.5, 328.5, 228.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1283,7 +1288,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 629.0, 310.0, 115.0, 22.0 ],
+					"patching_rect" : [ 611.0, 328.5, 115.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1302,7 +1307,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 595.0, 605.5, 79.0, 22.0 ],
+					"patching_rect" : [ 575.0, 611.5, 79.0, 22.0 ],
 					"text" : "prepend train"
 				}
 
@@ -1313,7 +1318,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 595.0, 633.5, 163.0, 22.0 ],
+					"patching_rect" : [ 575.0, 639.5, 163.0, 22.0 ],
 					"text" : "s timbre_model.ui.to_buttons"
 				}
 
@@ -1718,8 +1723,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 702.5, 106.5, 226.0, 69.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 0.5, 24.0, 302.5, 53.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 0.5, 24.0, 419.5, 38.0 ],
 					"text" : "Record unique timbres/textures on separate buffers. Train GMM model, Play to recognize new examples of those timbres. "
 				}
 
@@ -1746,19 +1751,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 18.0, 6.5, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "fundamental frequency",
-					"id" : "obj-41",
-					"index" : 0,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 478.25, 733.0, 30.0, 30.0 ],
-					"varname" : "log[2]"
 				}
 
 			}
@@ -1916,7 +1908,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 595.0, 576.0, 91.0, 22.0 ],
+					"patching_rect" : [ 575.0, 582.0, 91.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1936,7 +1928,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 279.0, 484.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 371.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 672.5, 97.0, 150.0, 20.0 ],
 					"text" : "<abs> <rel>"
 				}
 
@@ -1945,7 +1937,7 @@
 				"box" : 				{
 					"attr" : "regularization",
 					"fontname" : "Arial",
-					"fontsize" : 11.0,
+					"fontsize" : 16.0,
 					"id" : "obj-4",
 					"lock" : 1,
 					"maxclass" : "attrui",
@@ -1953,9 +1945,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 433.0, 226.0, 21.0 ],
+					"patching_rect" : [ 30.0, 433.0, 233.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.5, 370.0, 226.0, 21.0 ],
+					"presentation_rect" : [ 436.5, 100.0, 234.0, 26.0 ],
 					"text_width" : 120.0
 				}
 
@@ -1964,7 +1956,7 @@
 				"box" : 				{
 					"attr" : "gaussians",
 					"fontname" : "Arial",
-					"fontsize" : 11.0,
+					"fontsize" : 16.0,
 					"id" : "obj-17",
 					"lock" : 1,
 					"maxclass" : "attrui",
@@ -1972,9 +1964,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 403.0, 226.0, 21.0 ],
+					"patching_rect" : [ 30.0, 403.0, 234.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.5, 349.0, 226.0, 21.0 ],
+					"presentation_rect" : [ 436.5, 73.0, 234.0, 26.0 ],
 					"text_width" : 120.0
 				}
 
@@ -1987,7 +1979,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 371.25, 733.0, 30.0, 30.0 ],
+					"patching_rect" : [ 348.0, 742.0, 30.0, 30.0 ],
 					"varname" : "log[1]"
 				}
 
@@ -2050,7 +2042,7 @@
 					"patching_rect" : [ 935.0, 111.0, 205.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ -1.5, 589.0, 110.0, 60.0 ],
+					"presentation_rect" : [ -1.5, 574.0, 110.0, 60.0 ],
 					"text" : "escape -  clear\nR - record on\nT - record off \nSPACE toggle play"
 				}
 
@@ -2063,7 +2055,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 705.5, 84.5, 103.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.5, 567.0, 103.0, 20.0 ],
+					"presentation_rect" : [ -1.5, 552.0, 103.0, 20.0 ],
 					"text" : "CAPS keymap"
 				}
 
@@ -2092,8 +2084,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 386.25, 619.0, 137.0, 19.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 53.0, 539.0, 137.0, 19.0 ],
 					"text" : "likeliest model"
 				}
 
@@ -2108,9 +2098,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 386.25, 596.0, 50.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ -1.5, 538.0, 50.0, 21.0 ]
+					"patching_rect" : [ 386.25, 596.0, 50.0, 21.0 ]
 				}
 
 			}
@@ -2124,21 +2112,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.0, 602.0, 84.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.5, 416.0, 84.0, 19.0 ],
+					"presentation_rect" : [ -0.5, 357.0, 84.0, 19.0 ],
 					"text" : "likelihoods"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 11.0,
-					"id" : "obj-16",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 485.25, 587.0, 92.0, 21.0 ],
-					"text" : "print sratch.gmm"
 				}
 
 			}
@@ -2171,7 +2146,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 30.0, 602.0, 133.0, 114.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.5, 435.0, 147.0, 92.0 ],
+					"presentation_rect" : [ -0.5, 357.0, 430.0, 105.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"size" : 3,
@@ -2222,9 +2197,9 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 167.5, 32.0, 485.0, 265.0 ],
+					"patching_rect" : [ 167.5, 32.0, 485.0, 277.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.5, 90.0, 463.0, 264.0 ],
+					"presentation_rect" : [ -0.5, 75.0, 435.0, 280.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -2242,7 +2217,7 @@
 					"patching_rect" : [ 39.0, 352.0, 358.0, 43.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
-					"presentation_rect" : [ 147.0, 585.0, 245.0, 68.0 ],
+					"presentation_rect" : [ 147.0, 570.0, 245.0, 68.0 ],
 					"text" : "Number of Gaussian components in the mixture model. Using more gaussians allows to fit the training data more precisely, but can loose generality to new data (overfitting). (replaces attribute \"mixtures\")"
 				}
 
@@ -2340,15 +2315,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-100", 0 ],
-					"order" : 0,
-					"source" : [ "obj-28", 4 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"order" : 1,
 					"source" : [ "obj-28", 4 ]
 				}
 
@@ -2393,15 +2359,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"order" : 0,
-					"source" : [ "obj-34", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"order" : 1,
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -2485,9 +2442,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11::obj-35" : [ "play", "play", 0 ],
-			"obj-11::obj-9" : [ "record", "record", 0 ],
 			"obj-11::obj-3" : [ "train", "train", 0 ],
+			"obj-11::obj-9" : [ "record", "record", 0 ],
+			"obj-11::obj-35" : [ "play", "play", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2496,7 +2453,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "imubu_button_ui.maxpat",
-				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
+				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
