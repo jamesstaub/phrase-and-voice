@@ -13,28 +13,28 @@ module.exports = {
     allowrepeatmarkers: 0,
     play: 1,
     period: [0, 1], //(abs, relative)
-    // resampling: 0,
-    // resamplingvar:[0, 0],
-    filtermode: 'off',
+    resampling: 0,
+    resamplingvar:[0, 0],
+    filtermode: 'off', // off, lowpass, highpass, resonant, bandpass, peaknotch, bandstop, allpass, lowshelf, highshelf
     // TODO hook up following
     filterfreq: 400,
-    // filterfreqvar $1 $2
+    filterfreqvar: [0, 0],
     filterq: 0,
-    // filterqvar $1 $2
+    filterqvar: [0, 0],
     filtergain: 0,
-    // off, lowpass, highpass, resonant, bandpass, peaknotch, bandstop, allpass, lowshelf, highshelf
     attack: [0, 0],
     release: [0, 0],
     reverse: 0,
   },
-  // temporalModel: {
-  //   bufferindex: 1,
-  //   play: 0,
-  //   gain: 0,
-  // },
-  // timbralModel: {
-  //   play: 1,
-  // },
+  TemporalModel: {
+    bufferindex: 1,
+    play: 0,
+    gain: 0,
+  },
+  TimbralModel: {
+    play: 1,
+  },
+  // TODO: replace automation wtih Plugins after implementing a few plugins 
   automation: {
     // toggle a subpatcher that modulates concatenative synth's period
     concat_period: 0,

@@ -3426,7 +3426,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "onseg_record_dynamics.maxpat",
+				"name" : "TemporalModel.maxpat",
 				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -3488,21 +3488,21 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "gmm_record_follow.maxpat",
+				"name" : "TimbreModel.maxpat",
 				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mfcc_plus.maxpat",
+				"name" : "InputDescriptors.maxpat",
 				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "temporal-model-player.maxpat",
+				"name" : "KNNPlayer.maxpat",
 				"bootpath" : "~/Documents/Max Projects/timbral-temporal-modelling/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

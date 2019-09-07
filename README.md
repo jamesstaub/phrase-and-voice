@@ -23,14 +23,27 @@ Open `index-tabs.maxpat` in Max MSP to see all modules.
 # performance scenarios
 
 ## realtime input triggers sounds from corpus
+when in `onset-knn` mode, the audio segment played by `mubu.concat~` is selected by  by K nearest neighbor (`mubu.knn`), which is triggered by  the `InputDescriptors` patch.
+
 1.  load several short sound files (between 5 sec - 1 min) into the player module and analyze them (corpus), creating a buffer of beat-segmented audio with the descriptors listed above. 
+2. select playback mode `onset-knn`
+3. set input mode in player to input (stream-knn is in menu but not working yet )
+4. sound coming through the ADC inputs will be analyzed in real time and trigger segments in the player.
 
-2. select a playback mode 
-3. set input mode in player to input
+Audio recorded to the TemporalModel's buffer can also be loaded into the Player's buffer by selecting temporalmodel from the `source` tabs in the Player patch. 
 
-## recorded temporal model triggers sounds from corpus
+
+## 
+Recordings  When the temporal model patch is playing, it output's it's own audio descriptors to the Player's K
+
+
 1. record a temporal model (ensure analysis is on before recording )
 2. set input mode in player to temporal model
+
+### live input controlling player
+
+use the sliders in `KNN WEIGHTS` panel to set the priority for the KNN matching. preset 1 is for matching tonality and register of pitched sounds. preset 2 is for matching timbre of any sound. 
+
 
 
 
@@ -65,8 +78,6 @@ for my performance use cases I am training a model on different articulations of
 2. `play` to send ircamdescriptors to the player (which can be used to trigger new samples with KNN)
 (see pipo~ help file for description of ircamdescriptors)
 
-**goals**
-
 
 ## player
 patcher containing mubu.concat~ which has multiple playback modes.
@@ -81,14 +92,14 @@ or
 2. record temporal model (see above)
 3. select playback mode
 
-**soon**
-- add a mubu.granular~ for even more sonic possibilities (eg. time stretching of very short segments)
+**TO DO**
+- add granular conrol modes
 - smart gain adjustment 
+- for knn playback mode:
+  -  add configurations for knn lookup of realtime input stream vs on onset (current default behavior)
+  - 
+- A plugin pattern for subpatchers that can be loaded on the fly and triggered by the node script.
 
-### live input controlling player
-when in `onset-knn` mode, the audio segment played by `mubu.concat~` is selected by  by K nearest neighbor (`mubu.knn`), which is triggered by either the `live input analysis` patch or the temporal model patch (if has recorded buffers and is set to `play`)
-
-use the sliders in `KNN WEIGHTS` panel to set the priority for the KNN matching. preset 1 is for matching tonality and register of pitched sounds. preset 2 is for matching timbre of any sound. 
 
 
 

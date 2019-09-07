@@ -46,7 +46,6 @@ class Part extends API {
   
   Performance class is instantiated with default patcher params.
 
-  TODO: avoid readding handlers on each Part instantiation
 */
 
 new Part(defaultParams);

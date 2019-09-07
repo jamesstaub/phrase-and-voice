@@ -10,36 +10,19 @@ const Max = require("max-api");
 
 module.exports = class API {
   constructor() {
-    this.bindMessages();
-  }
-    
-  /*
-    called when the timbre model detection is running and a
-    new timbre id is received
-
-    @param string timbreId is a string name of a mubu buffer from the timbral model
-  */
-  onTimbreChange(timbreId) {
-    return;
-  }
-
-  /*
-    called when the noisegate on the input signal
-    changes
-  */
-  onInputGateChange(gateIsOpen) {
-    return;
+    Max.removeHandlers(); // remove any previous handlers
+    this.addMsgHandlers();
   }
 
   /*
     add message handlers to fire the above hooks and output 
     parameters back to the objects in the max patch
   */
-  bindMessages() {
+  addMsgHandlers() {
     // true when noisegate is active (ie there is an input signal)
     Max.addHandler("input_gate_status", (gateOpen) => {
-      this.onGateChange(gateOpen);
-      this.sendParams(['concat']);
+      this.onInputGateChange(gateOpen);
+      this.sendParams(/*['concat']*/);
     });
 
     // gmm_class is the number of the gaussian mixture model prediction
@@ -47,9 +30,29 @@ module.exports = class API {
       if (timbreId) {
         this.onTimbreChange(timbreId);
       }
-      this.sendParams(['concat', 'knn', 'automation']);
+      this.sendParams();
     });
   }
+
+  /*
+  called when the timbre model detection is running and a
+  new timbre id is received
+
+  @param String  timbreId is a string name of a mubu buffer from the timbral model
+*/
+  onTimbreChange(timbreId) {
+    return;
+  }
+
+  /*
+    called when the noisegate on the input signal changes
+    @param Bool true when input signal is active
+  */
+  onInputGateChange(gateIsOpen) {
+    return;
+  }
+
+
   
   /*
     outputs the params object, which is routed to update various modules in the maxpatch

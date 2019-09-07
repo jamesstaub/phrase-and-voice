@@ -1,8 +1,8 @@
 {
 	"name" : "phrase-and-voice",
 	"version" : 1,
-	"creationdate" : 2082825709,
-	"modificationdate" : 3650570743,
+	"creationdate" : 2082825104,
+	"modificationdate" : 3650650495,
 	"viewrect" : [ 50.0, 95.0, 353.0, 714.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -10,11 +10,6 @@
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"gmm_record_follow.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"imubu_button_ui.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -26,17 +21,27 @@
 				"toplevel" : 1
 			}
 ,
-			"onseg_record_dynamics.maxpat" : 			{
+			"InputDescriptors.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"mfcc_plus.maxpat" : 			{
+			"_descriptors_slicer.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"temporal-model-player.maxpat" : 			{
+			"TimbreModel.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"TemporalModel.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"KNNPlayer.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -46,12 +51,22 @@
 				"local" : 1
 			}
 ,
+			"Descriptors.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"temporal-model-player.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"lpd8-channel-map-instance.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"mixer.maxpat" : 			{
+			"onseg_record_dynamics.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -67,11 +82,6 @@
 			}
 ,
 			"index-tabs.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"_descriptors_slicer.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -124,10 +134,6 @@
 		}
 ,
 		"externals" : 		{
-
-		}
-,
-		"other" : 		{
 
 		}
 

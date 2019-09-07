@@ -46,7 +46,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 736.0, 397.0, 150.0, 47.0 ],
-					"presentation_linecount" : 3,
 					"text" : "use the transport to update cues in the node script"
 				}
 
@@ -1117,7 +1116,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2.0, 1.0, 294.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 63.0, 19.0, 294.0, 34.0 ],
+					"presentation_rect" : [ 379.0, 23.5, 294.0, 34.0 ],
 					"text" : "phrase and voice "
 				}
 
@@ -1798,7 +1797,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 3.5, 312.0, 107.5, 26.0 ]
+					"patching_rect" : [ 3.5, 404.0, 107.5, 26.0 ]
 				}
 
 			}
@@ -2121,7 +2120,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 4.0, 244.0, 250.0, 22.0 ],
-					"text" : "temporal-model-player"
+					"text" : "KNNPlayer"
 				}
 
 			}
@@ -2134,7 +2133,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "signal" ],
 					"patching_rect" : [ 235.0, 193.5, 298.0, 22.0 ],
-					"text" : "onseg_record_dynamics"
+					"text" : "TemporalModel"
 				}
 
 			}
@@ -2146,8 +2145,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 3.5, 282.0, 251.0, 22.0 ],
-					"text" : "gmm_record_follow"
+					"patching_rect" : [ -2.5, 307.0, 251.0, 22.0 ],
+					"text" : "TimbreModel"
 				}
 
 			}
@@ -2160,7 +2159,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 2.0, 190.0, 221.0, 22.0 ],
-					"text" : "mfcc_plus.maxpat"
+					"text" : "InputDescriptors.maxpat"
 				}
 
 			}
@@ -2276,7 +2275,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -2284,7 +2283,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -2342,21 +2341,21 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-24" : [ "live.tab", "live.tab", 0 ],
 			"obj-3::obj-11::obj-3" : [ "train[4]", "train", 0 ],
-			"obj-5::obj-38" : [ "concat synth", "concat synth", 0 ],
+			"obj-10::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
+			"obj-3::obj-11::obj-9" : [ "record[4]", "record", 0 ],
+			"obj-10::obj-9" : [ "Release[1]", "Release", 0 ],
 			"obj-2::obj-50" : [ "live.gain~[2]", "input", 0 ],
-			"obj-3::obj-11::obj-35" : [ "play[4]", "play", 0 ],
-			"obj-4::obj-2::obj-3" : [ "train", "train", 0 ],
 			"obj-4::obj-2::obj-9" : [ "record", "record", 0 ],
 			"obj-10::obj-3" : [ "Attack[1]", "Attack", 0 ],
-			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
-			"obj-10::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
 			"obj-10::obj-5" : [ "live.text[1]", "live.text", 0 ],
+			"obj-4::obj-2::obj-3" : [ "train", "train", 0 ],
+			"obj-3::obj-11::obj-35" : [ "play[4]", "play", 0 ],
 			"obj-4::obj-2::obj-35" : [ "play", "play", 0 ],
 			"obj-10::obj-11" : [ "Threshold[1]", "Threshold", 0 ],
-			"obj-10::obj-9" : [ "Release[1]", "Release", 0 ],
-			"obj-3::obj-11::obj-9" : [ "record[4]", "record", 0 ],
+			"obj-5::obj-24" : [ "live.tab", "live.tab", 0 ],
+			"obj-5::obj-38" : [ "concat synth", "concat synth", 0 ],
+			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2364,7 +2363,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "mfcc_plus.maxpat",
+				"name" : "InputDescriptors.maxpat",
 				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -2378,7 +2377,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "gmm_record_follow.maxpat",
+				"name" : "TimbreModel.maxpat",
 				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -2398,7 +2397,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "onseg_record_dynamics.maxpat",
+				"name" : "TemporalModel.maxpat",
 				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -2412,7 +2411,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "temporal-model-player.maxpat",
+				"name" : "KNNPlayer.maxpat",
 				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
