@@ -1,8 +1,8 @@
 {
 	"name" : "phrase-and-voice",
 	"version" : 1,
-	"creationdate" : 2082825104,
-	"modificationdate" : 3650650495,
+	"creationdate" : 2082824862,
+	"modificationdate" : 3650792994,
 	"viewrect" : [ 50.0, 95.0, 353.0, 714.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -51,12 +51,12 @@
 				"local" : 1
 			}
 ,
-			"Descriptors.maxpat" : 			{
+			"mubu_synth_param_sliders.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"temporal-model-player.maxpat" : 			{
+			"Descriptors.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -77,11 +77,6 @@
 			}
 ,
 			"performance_example.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"index-tabs.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

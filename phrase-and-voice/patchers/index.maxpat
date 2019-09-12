@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1372.0, 745.0 ],
+		"rect" : [ 34.0, 53.0, 803.0, 770.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -389,7 +389,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 640.0, 179.0, 150.0, 33.0 ],
+					"patching_rect" : [ 757.5, 159.0, 150.0, 33.0 ],
 					"text" : "load node script to orchestrate the patch"
 				}
 
@@ -1425,7 +1425,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 640.0, 302.0, 128.0, 22.0 ],
+					"patching_rect" : [ 757.5, 282.0, 128.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1860,7 +1860,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 640.0, 245.0, 75.0, 22.0 ],
+					"patching_rect" : [ 757.5, 225.0, 75.0, 22.0 ],
 					"text" : "timbre_id $1"
 				}
 
@@ -1872,7 +1872,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 640.0, 274.0, 203.0, 22.0 ],
+					"patching_rect" : [ 757.5, 254.0, 203.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
@@ -2108,7 +2108,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 640.0, 217.0, 55.0, 22.0 ],
+					"patching_rect" : [ 757.5, 197.0, 55.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2356,7 +2356,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 374.5, 158.0, 176.0, 22.0 ],
+					"patching_rect" : [ 199.0, 164.5, 176.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2438,8 +2438,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 4.0, 244.0, 250.0, 22.0 ],
-					"text" : "KNNPlayer"
+					"patching_rect" : [ 333.0, 282.0, 122.0, 22.0 ],
+					"text" : "KNNPlayer",
+					"varname" : "KNNPlayer"
 				}
 
 			}
@@ -2451,7 +2452,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "signal" ],
-					"patching_rect" : [ 235.0, 193.5, 298.0, 22.0 ],
+					"patching_rect" : [ 130.0, 197.5, 157.0, 22.0 ],
 					"text" : "TemporalModel"
 				}
 
@@ -2464,7 +2465,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ -2.5, 307.0, 251.0, 22.0 ],
+					"patching_rect" : [ 15.5, 324.0, 251.0, 22.0 ],
 					"text" : "TimbreModel"
 				}
 
@@ -2477,7 +2478,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 2.0, 190.0, 96.0, 22.0 ],
+					"patching_rect" : [ 2.0, 197.5, 96.0, 22.0 ],
 					"text" : "InputDescriptors"
 				}
 
@@ -2750,6 +2751,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "mubu_synth_param_sliders.maxpat",
+				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "noisegate~.model.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
 				"patcherrelativepath" : "../../../../Max 8/Packages/Jamoma/patchers/models/audio/stereo/dynamics/noisegate",
@@ -2800,6 +2808,10 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "mubu.granular~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "mubu.concat~.mxo",
 				"type" : "iLaX"
 			}
@@ -2813,10 +2825,6 @@
 			}
 , 			{
 				"name" : "mubu.knn.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.granular~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
