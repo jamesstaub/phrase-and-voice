@@ -1,7 +1,8 @@
-const API = require('./main.js');
+const API = require('../main.js');
 const Max = require('max-api');
 
-const defaultParams = require('./defaultParams');
+// defaultParams is where the keys are defined which get routed in Max to the various modules
+const defaultParams = require('../defaultParams');
 
 class Part extends API {
   constructor(params) {
@@ -10,7 +11,7 @@ class Part extends API {
       once this.params gets set on the class instance 
       you can continually update the values of params 
       as they will get output to the maxpatch after each 
-      on*Change hook is called.
+      on[message]Change hook is called.
     */
 
     this.params = params
@@ -22,12 +23,13 @@ class Part extends API {
 
     // then add your own custom message handlers
 
+    // transport current bar
     Max.addHandler("bars", (currentBar) => {
       this.bar = currentBar;
     });
 
-    // transport beats
-    Max.addHandler("beats", (currentBeat) => {
+    // transport current beat
+    Max.addHandler("beat", (currentBeat) => {
       this.beat = currentBeat;
     });
   }
@@ -46,7 +48,7 @@ class Part extends API {
   
   Performance class is instantiated with default patcher params.
 
-  TODO: avoid readding handlers on each Part instantiation
+  TODO: avoid rereadading handlers on each Part instantiation
 */
 
 new Part(defaultParams);

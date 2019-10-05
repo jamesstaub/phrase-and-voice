@@ -25,7 +25,8 @@ module.exports = class API {
       this.sendParams(/*['concat']*/);
     });
 
-    // gmm_class is the number of the gaussian mixture model prediction
+    // timbreId is the buffer index of timbre_modal mubu container
+    // which is the result of  gaussian mixture model prediction
     Max.addHandler("timbre_id", (timbreId) => {
       if (timbreId) {
         this.onTimbreChange(timbreId);
@@ -51,12 +52,10 @@ module.exports = class API {
   onInputGateChange(gateIsOpen) {
     return;
   }
-
-
   
   /*
-    outputs the params object, which is routed to update various modules in the maxpatch
-    called by various message handlers
+    sendParams iteratively outputs the params object's values, which are routed to update various modules in the maxpatch
+    this method is called by various message handlers
 
     @param Array keysToSend (optional) - array of keys belonging to the params object, indicating which params to output.
     with no argument provided all params will be updated

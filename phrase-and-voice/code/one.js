@@ -1,7 +1,9 @@
-const API = require('./main.js');
+/* Performance 1 */
+
+const API = require('../main.js');
 const Max = require('max-api');
 
-const defaultParams = require('./defaultParams');
+const defaultParams = require('../defaultParams');
 
 class Part extends API {
   constructor(params) {
@@ -27,13 +29,12 @@ class Part extends API {
     });
 
     // transport beats
-    Max.addHandler("beats", (currentBeat) => {
+    Max.addHandler("beat", (currentBeat) => {
       this.beat = currentBeat;
     });
   }
 
   onTimbreChange(timbreId) {
-    // example of how to change params when timbre changes
     if (timbreId === 'plucked_tenor') {
       this.params.concat.reverse = 1;
     }

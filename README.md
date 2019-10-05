@@ -14,7 +14,7 @@ It's under active development so features are still being completed and is not y
 - Jamoma (available via package manager) 
 - Node JS
 
-Open `index-tabs.maxpat` in Max MSP to see all modules.
+Open `index.maxpat` in Max MSP to see all modules.
 `code/main.js` is a node script to control the patch during live performance. Write custom scripts that import `main.js` to behave as performance scores allowing you to control the patch hands free, only responding to audio events like timbre detection and input onset rhythms.
 
 `code/performance_template.js` demonstrates how to import `main.js` and compose a performance score. this node script takes messages from the timbral model (GMM classification of live input) and an on/off signal from the noisegate then triggers various playback parameters based on those inputs.

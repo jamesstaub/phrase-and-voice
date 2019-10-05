@@ -361,7 +361,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "addbuffer" ],
 									"patching_rect" : [ 84.5, 40.0, 30.0, 30.0 ]
 								}
 
@@ -593,7 +593,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "addbuffer" ],
 									"patching_rect" : [ 50.0, 21.0, 30.0, 30.0 ]
 								}
 
@@ -1140,7 +1140,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "addbuffer" ],
 									"patching_rect" : [ 37.0, 22.5, 30.0, 30.0 ]
 								}
 
@@ -2196,7 +2196,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "", "addbuffer" ],
 					"patching_rect" : [ 167.5, 32.0, 485.0, 277.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -0.5, 75.0, 435.0, 280.0 ],
@@ -2443,8 +2443,8 @@
  ],
 		"parameters" : 		{
 			"obj-11::obj-3" : [ "train", "train", 0 ],
-			"obj-11::obj-9" : [ "record", "record", 0 ],
 			"obj-11::obj-35" : [ "play", "play", 0 ],
+			"obj-11::obj-9" : [ "record", "record", 0 ],
 			"parameterbanks" : 			{
 
 			}
