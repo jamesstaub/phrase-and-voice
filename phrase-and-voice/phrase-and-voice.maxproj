@@ -1,8 +1,8 @@
 {
 	"name" : "phrase-and-voice",
 	"version" : 1,
-	"creationdate" : 2082824862,
-	"modificationdate" : 3650792994,
+	"creationdate" : 2082824741,
+	"modificationdate" : 3654616412,
 	"viewrect" : [ 50.0, 95.0, 353.0, 714.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -88,10 +88,6 @@
 
 		}
 ,
-		"media" : 		{
-
-		}
-,
 		"code" : 		{
 			"temporal-model-player-midi.js" : 			{
 				"kind" : "javascript",
@@ -117,6 +113,11 @@
 				"kind" : "javascript",
 				"local" : 1
 			}
+,
+			"main.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
 
 		}
 ,
@@ -129,6 +130,10 @@
 		}
 ,
 		"externals" : 		{
+
+		}
+,
+		"other" : 		{
 
 		}
 

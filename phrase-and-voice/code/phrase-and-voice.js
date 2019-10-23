@@ -5,17 +5,17 @@ const Max = require("max-api");
   model patch and the transport.
 
 
-  You can import this module into your own script and write your code in the provided hooks. 
+  You can import this module into your own script and write your code in the provided hooks.
 */
 
-module.exports = class API {
+module.exports = class PhraseAndVoice {
   constructor() {
     Max.removeHandlers(); // remove any previous handlers
     this.addMsgHandlers();
   }
 
   /*
-    add message handlers to fire the above hooks and output 
+    add message handlers to fire the above hooks and output
     parameters back to the objects in the max patch
   */
   addMsgHandlers() {
@@ -32,6 +32,17 @@ module.exports = class API {
         this.onTimbreChange(timbreId);
       }
       this.sendParams();
+    });
+
+    Max.addHandler("bar", (currentBar) => {
+      this.bar = currentBar;
+      this.onBar(currentBar);
+    });
+
+    // transport beats
+    Max.addHandler("beat", (currentBeat) => {
+      this.beat = currentBeat;
+      this.onBeat(currentBeat);
     });
   }
 
@@ -52,7 +63,16 @@ module.exports = class API {
   onInputGateChange(gateIsOpen) {
     return;
   }
-  
+
+  onBar(currentBar) {
+    return;
+  }
+
+
+  onBeat(currentBeat) {
+    return;
+  }
+
   /*
     sendParams iteratively outputs the params object's values, which are routed to update various modules in the maxpatch
     this method is called by various message handlers
@@ -63,7 +83,7 @@ module.exports = class API {
   */
   sendParams(keysToSend) {
     let paramsEntries = Object.entries(this.params)
-    if (keysToSend.length) {
+    if (keysToSend && keysToSend.length) {
       paramsEntries = paramsEntries.filter(([key, val]) => keysToSend.includes(key));
     }
     paramsEntries.forEach(([scope, attrs]) => {
@@ -77,5 +97,3 @@ module.exports = class API {
     });
   }
 }
-
-
