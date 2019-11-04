@@ -1,10 +1,10 @@
 {
 	"name" : "phrase-and-voice",
 	"version" : 1,
-	"creationdate" : 2082824741,
-	"modificationdate" : 3654616412,
+	"creationdate" : 2082824499,
+	"modificationdate" : 3655651619,
 	"viewrect" : [ 50.0, 95.0, 353.0, 714.0 ],
-	"autoorganize" : 1,
+	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
@@ -82,6 +82,11 @@
 			}
 ,
 			"_input_noisegate.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"gmm_to_midi.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

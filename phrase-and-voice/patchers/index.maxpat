@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1612.0, 912.0 ],
+		"rect" : [ 874.0, 79.0, 772.0, 912.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,40 @@
 		"subpatcher_template" : "",
 		"showontab" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 126.0, 420.5, 67.0, 22.0 ],
+					"text" : "s timbre_id"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2.0, 409.0, 73.0, 22.0 ],
+					"text" : "speedlim 20"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2.0, 455.0, 111.0, 22.0 ],
+					"text" : "s gmm_coefficients"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-58",
 					"maxclass" : "newobj",
@@ -99,7 +133,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 592.5, 614.5, 404.0, 268.0 ],
+					"patching_rect" : [ 608.5, 614.5, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -336,7 +370,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 199.0, 403.5, 149.0, 22.0 ],
+					"patching_rect" : [ 199.0, 420.5, 149.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2414,7 +2448,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 176.0, 51.0, 22.0 ],
-									"text" : "pipe 80"
+									"text" : "pipe 50"
 								}
 
 							}
@@ -3080,6 +3114,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 2 ],
 					"source" : [ "obj-27", 1 ]
 				}
@@ -3095,6 +3136,22 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-138", 0 ],
+					"order" : 0,
+					"source" : [ "obj-3", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"order" : 1,
 					"source" : [ "obj-3", 1 ]
 				}
 
@@ -3164,23 +3221,23 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-4::obj-2::obj-9" : [ "record", "record", 0 ],
-			"obj-10::obj-5" : [ "live.text[1]", "live.text", 0 ],
-			"obj-2::obj-50" : [ "live.gain~[2]", "input", 0 ],
 			"obj-10::obj-9" : [ "Release[1]", "Release", 0 ],
 			"obj-5::obj-57" : [ "granular synth", "granular synth", 0 ],
-			"obj-10::obj-11" : [ "Threshold[1]", "Threshold", 0 ],
-			"obj-5::obj-24" : [ "live.tab", "live.tab", 0 ],
+			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-10::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
+			"obj-10::obj-3" : [ "Attack[1]", "Attack", 0 ],
+			"obj-2::obj-50" : [ "live.gain~[2]", "input", 0 ],
+			"obj-3::obj-11::obj-3" : [ "train[4]", "train", 0 ],
+			"obj-10::obj-5" : [ "live.text[1]", "live.text", 0 ],
 			"obj-3::obj-11::obj-35" : [ "play[4]", "play", 0 ],
 			"obj-4::obj-2::obj-35" : [ "play", "play", 0 ],
-			"obj-10::obj-3" : [ "Attack[1]", "Attack", 0 ],
+			"obj-5::obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
 			"obj-5::obj-38" : [ "concat synth", "concat synth", 0 ],
 			"obj-3::obj-11::obj-9" : [ "record[4]", "record", 0 ],
+			"obj-5::obj-24" : [ "live.tab", "live.tab", 0 ],
 			"obj-4::obj-2::obj-3" : [ "train", "train", 0 ],
-			"obj-3::obj-11::obj-3" : [ "train[4]", "train", 0 ],
-			"obj-10::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
-			"obj-5::obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
-			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-10::obj-11" : [ "Threshold[1]", "Threshold", 0 ],
+			"obj-4::obj-2::obj-9" : [ "record", "record", 0 ],
 			"parameterbanks" : 			{
 
 			}
