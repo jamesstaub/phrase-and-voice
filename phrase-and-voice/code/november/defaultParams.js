@@ -7,7 +7,9 @@ module.exports = {
   },
   player: {
     playmode: 3, // 'onset-knn'
-    // source: 1, //  'corpus'
+    // source: 1, //  'corpus',
+    concat_preset: 1,// sets mubu.concat's params based on params saved in a preset object 
+    granular_preset: 1, // sets mubu.granular's params based on params saved in a preset object 
   },
   concat: {
     allowrepeatmarkers: 0,
@@ -16,7 +18,6 @@ module.exports = {
     resampling: 0,
     resamplingvar:[0, 0],
     filtermode: 'off', // off, lowpass, highpass, resonant, bandpass, peaknotch, bandstop, allpass, lowshelf, highshelf
-    // TODO hook up following
     filterfreq: 400,
     filterfreqvar: [0, 0],
     filterq: 0,
@@ -25,6 +26,10 @@ module.exports = {
     attack: [0, 0],
     release: [0, 0],
     reverse: 0,
+  },
+  granular: { 
+    play: 0,
+    filtermode: 'off',
   },
   TemporalModel: {
     bufferindex: 1,

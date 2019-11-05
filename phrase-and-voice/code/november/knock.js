@@ -1,5 +1,9 @@
-module.exports = {
+module.exports = class Knock {
+  constructor(params) {
+    this.params = params;
+  }
+
   onTimbreChange(timbreId) {
-    //  set params
+    // 
   }
 }

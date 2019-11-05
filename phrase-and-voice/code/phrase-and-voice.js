@@ -22,7 +22,6 @@ module.exports = class PhraseAndVoice {
     // true when noisegate is active (ie there is an input signal)
     Max.addHandler("input_gate_status", (gateOpen) => {
       this.onInputGateChange(gateOpen);
-      this.sendParams(/*['concat']*/);
     });
 
     // timbreId is the buffer index of timbre_modal mubu container
@@ -31,13 +30,18 @@ module.exports = class PhraseAndVoice {
       if (timbreId) {
         this.onTimbreChange(timbreId);
       }
-      this.sendParams();
     });
 
     Max.addHandler("bar", (currentBar) => {
       this.bar = currentBar;
       this.onBar(currentBar);
     });
+
+    // section is a generic property which can be updated by midi program changes or any other state change
+    Max.addHandler("section", (currentSection) => {
+      this.section = currentSection;
+      this.onSection(currentSection);
+    }); 
 
     // transport beats
     Max.addHandler("beat", (currentBeat) => {
@@ -46,7 +50,8 @@ module.exports = class PhraseAndVoice {
     });
   }
 
-  /*
+
+/*
   called when the timbre model detection is running and a
   new timbre id is received
 
@@ -65,6 +70,10 @@ module.exports = class PhraseAndVoice {
   }
 
   onBar(currentBar) {
+    return;
+  }
+
+  onSection(currentSection) {
     return;
   }
 

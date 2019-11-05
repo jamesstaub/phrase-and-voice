@@ -1,11 +1,10 @@
 const PhraseAndVoice = require('../phrase-and-voice.js');
-const Max = require('max-api');
-
 const defaultParams = require('./defaultParams');
 
 // sections
-const someChoicesImplied = require('./some-choices-implied');
-const knock = require('./knock');
+const Intro = require('./intro');
+const SomeChoicesImplied = require('./some-choices-implied');
+const Knock = require('./knock');
 
 
 class Performance extends PhraseAndVoice {
@@ -18,24 +17,30 @@ class Performance extends PhraseAndVoice {
       on*Change hook is called.
     */
 
-    this.params = params
-    this.sections = [someChoicesImplied, knock];
-    this.currentSection = this.sections[0];
+    this.params = params;
+
+    // const intro
+    this.sections = [Intro, SomeChoicesImplied, Knock];
+    this.onSection(0);
   }
 
-  onBar(currentBar) {
-    // set the current section based on the current bar of the transport
-    // and this.performanceLengthBars
-    const currentSectionIdx = currentBar % this.sections.length;
-    this.currentSection = this.sections[currentSectionIdx];
+  onSection(section) {
+    this.currentSection =  new this.sections[section](this.params);
+    this.sendParams(); // update all params;
   }
 
   onTimbreChange(timbreId) {
-    this.currentSection.onTimbreChange(timbreId);
+    if (this.currentSection.onTimbreChange) {
+      const paramsToUpdate = this.currentSection.onTimbreChange(timbreId);
+      this.sendParams(paramsToUpdate);
+    }
   }
 
-  onInputGateChange(timbreId) {
-    this.currentSection.onInputGateChange(timbreId);
+  onInputGateChange(gateIsOpen) {
+    if (this.currentSection.onInputGateChange) {
+      this.currentSection.onInputGateChange(gateIsOpen);
+      this.sendParams(paramsToUpdate);
+    }
   }
 }
 

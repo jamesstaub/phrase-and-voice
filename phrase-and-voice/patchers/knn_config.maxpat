@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
+		"rect" : [ -1886.0, -101.0, 892.0, 967.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -703,7 +703,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 238.076904296875, 185.5, 72.0, 22.0 ],
+					"patching_rect" : [ 238.076904296875, 216.5, 72.0, 22.0 ],
 					"text" : "r knn.preset"
 				}
 
