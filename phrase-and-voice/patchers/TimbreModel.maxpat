@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 969.0, 719.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,10 +45,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 342.0, 186.0, 150.0, 127.0 ],
+					"patching_rect" : [ 920.0, 484.0, 150.0, 127.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 29.0, 484.0, 460.0, 47.0 ],
+					"presentation_rect" : [ -0.5, 479.0, 460.0, 47.0 ],
 					"text" : "todo\nexperiment with increasing moving average parameter of incoming audio descriptors for timbral model (but keep it low or off for for real time input for KNN)"
 				}
 
@@ -124,7 +124,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 439.25, 506.0, 31.0, 21.0 ],
+					"patching_rect" : [ 450.0, 522.0, 31.0, 21.0 ],
 					"text" : "read"
 				}
 
@@ -138,7 +138,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 387.75, 506.0, 32.0, 21.0 ],
+					"patching_rect" : [ 414.75, 522.0, 32.0, 21.0 ],
 					"text" : "write"
 				}
 
@@ -2442,8 +2442,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11::obj-3" : [ "train", "train", 0 ],
 			"obj-11::obj-35" : [ "play", "play", 0 ],
+			"obj-11::obj-3" : [ "train", "train", 0 ],
 			"obj-11::obj-9" : [ "record", "record", 0 ],
 			"parameterbanks" : 			{
 
@@ -2453,7 +2453,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "imubu_button_ui.maxpat",
-				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
+				"bootpath" : "~/Documents/Max Projects/phrase-and-voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

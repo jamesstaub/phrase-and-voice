@@ -10,9 +10,6 @@ module.exports = class Intro {
     this.knnInclude = knnInclude;
 
     //set some initial parameters
-    this.params.player.concat_preset = 1;
-    this.params.player.granular_preset = 1;
-
     this.params.granular.gated_by_input = 1;
 
     this.sendParams();
@@ -20,19 +17,26 @@ module.exports = class Intro {
 
   onTimbreChange(timbreName) {
     this.params.concat.play = 0;
+    this.params.concat.period = [0, 1];
+
+    this.params.player.concat_preset = 1;
+    this.params.player.granular_preset = 1;
+
+
     this.params.granular.play = 1;
     this.params.concat.resampling = 0;
     this.params.knn.weightPreset = 1;
     switch (timbreName) {
       case 'fork':
         this.knnInclude('cymbal');
+        this.params.player.granular_preset = 3;
         break;
       case 'bow_hi':
         this.params.concat.period = [(Math.random() * 50) + 10, 0];
         this.knnInclude('organ', 'cymbal', 'knock');
         break;
       case 'bow_lo':
-        this.params.concat.period = [150, 0];
+        this.params.concat.period = [160, 0];
         this.params.concat.resampling = -700;
         this.params.concat.play = 1;
         this.params.granular.play = 1;

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 124.0, 1372.0, 721.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -89,7 +89,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 833.5, 477.0, 267.0, 307.0 ],
+					"patching_rect" : [ 833.5, 458.0, 267.0, 307.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -2.5, 86.0, 267.0, 307.0 ],
 					"viewvisibility" : 1
@@ -404,7 +404,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "float", "" ],
-					"patching_rect" : [ 386.0, 235.5, 1442.0, 35.0 ],
+					"patching_rect" : [ 389.0, 228.5, 1442.0, 35.0 ],
 					"text" : "pipo~ slice:fft:sum:scale:onseg @slice.size 1024 @slice.hop 256 @slice.norm power @fft.mode power @fft.weighting itur468 @scale.inmin 1 @scale.inmax 10 @scale.outmin 0 @scale.outmax 10 @scale.func log @scale.base 10 @onseg.filtersize 5 @onseg.duration 1 @onseg.max 1 @onseg.offthresh -120 @onseg.threshold 7"
 				}
 
@@ -1084,13 +1084,13 @@
 					"presentation_rect" : [ 3.25, 26.0, 136.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_shortname" : "input",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[2]",
 							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "input"
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -1398,7 +1398,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "_descriptors_slicer.maxpat",
-				"bootpath" : "~/Documents/Max Projects/Phrase and Voice/phrase-and-voice/patchers",
+				"bootpath" : "~/Documents/Max Projects/phrase-and-voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
