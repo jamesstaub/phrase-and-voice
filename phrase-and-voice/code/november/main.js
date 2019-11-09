@@ -6,26 +6,44 @@ const Intro = require('./intro');
 const SomeChoicesImplied = require('./some-choices-implied');
 const Knock = require('./knock');
 
+/*
+  README
+  before running this script:
+  Create a Timbre Model with the following buffer names
+  fork bow_hi bow_low pluck tap
+*/
 
 class Performance extends PhraseAndVoice {
   constructor(params) {
     super();
-    /*
-      once this.params gets set on the class instance
-      you can continually update the values of params
-      as they will get output to the maxpatch after each
-      on*Change hook is called.
-    */
 
+    this.audioGroups = {
+      'hawthorn': [1],
+      'cymbal': [2],
+      'choices': [3, 4, 5, 6],
+      'knock': [7, 8, 9, 10],
+      'organ': [11, 12],
+      'wrench': [13],
+    }
+
+    /*
+      once this.params gets set on the Performance instance
+      you can continually update the values of params
+      as they will get output to the maxpatch any time sendParams()
+      is called.
+    */
     this.params = params;
 
-    // const intro
+    /*
+      each section is a subclass of Performance.
+    */
     this.sections = [Intro, SomeChoicesImplied, Knock];
     this.onSection(0);
   }
 
   onSection(section) {
-    this.currentSection =  new this.sections[section](this.params);
+    const SectionClass = this.sections[section];
+    this.currentSection = new SectionClass(this.params, this.audioGroups, this.sendParams, this.knnInclude);
     this.sendParams(); // update all params;
   }
 
@@ -53,3 +71,13 @@ class Performance extends PhraseAndVoice {
 */
 
 new Performance(defaultParams);
+
+
+
+/*
+
+Notes
+TODO: queue sendParams so multiple calls only output once in a method
+
+
+*/

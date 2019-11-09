@@ -29,6 +29,7 @@ module.exports = {
   },
   granular: { 
     play: 0,
+    gated_by_input: 1, // granular will only sound when an input audio signal is sounding
     filtermode: 'off',
   },
   TemporalModel: {

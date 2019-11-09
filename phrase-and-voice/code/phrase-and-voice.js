@@ -12,6 +12,25 @@ module.exports = class PhraseAndVoice {
   constructor() {
     Max.removeHandlers(); // remove any previous handlers
     this.addMsgHandlers();
+
+
+  /* audioGroups is an object containing names of groups of audio files 
+    loaded into MUBU buffers which can be referenced to 
+    enable/disable them from the KNN matching. 
+    for example if you define
+    ```
+      audioGroups = {
+        'piano' = [2,3,4]
+      }
+    
+    then call the following...
+    ```
+      this.params.knn.includedBuffers = this.audioGroups['piano']; 
+      this.sendParams(['knn'])
+    ```
+    it will tell the mubu.knn object to only match the input audio to segments of buffers 2,3 or 4.
+   */
+    this.audioGroups = {};
   }
 
   /*
@@ -39,9 +58,10 @@ module.exports = class PhraseAndVoice {
 
     // section is a generic property which can be updated by midi program changes or any other state change
     Max.addHandler("section", (currentSection) => {
+      currentSection--; // inputs from MIDI programs start at 1, but the sections array is 0 indexed
       this.section = currentSection;
       this.onSection(currentSection);
-    }); 
+    });
 
     // transport beats
     Max.addHandler("beat", (currentBeat) => {
@@ -105,4 +125,40 @@ module.exports = class PhraseAndVoice {
       })
     });
   }
+
+  /*
+    a helper method for setting the buffer indexes that are included in the knn matching. 
+    calling this method with  
+    @param groupName String - a string which is a key in the audioGroups object.
+
+    calling the method
+    ```
+      knnInclude('piano')
+    ```
+    is equivalent to calling:
+    ```
+      this.params.knn.includedBuffers = this.audioGroups['piano']
+      this.sendParams(['knn'])
+    ```
+  */
+  knnInclude(audioGroupName, sendParams) {
+    if (audioGroupName === 'all') {
+      this.params.knn.includedBuffers = 0; // setting included buffers to 0 enables all
+    } else {
+      const argsArray = Array.from(arguments);
+      // map and flatten array of arrays
+      this.params.knn.includedBuffers = argsArray.map((key) => {
+        if (!(this.audioGroups[key])) {
+          throw `${key} is not an array defined in audioGroups`;
+        }
+        return this.audioGroups[key];
+      }).reduce((acc, val) => acc.concat(val), []);
+    }
+
+    if (sendParams) {
+      this.sendParams(['knn']);
+    }
+  }
+  
+
 }
