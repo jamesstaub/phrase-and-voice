@@ -14,18 +14,18 @@ module.exports = class PhraseAndVoice {
     this.addMsgHandlers();
 
 
-  /* audioGroups is an object containing names of groups of audio files 
-    loaded into MUBU buffers which can be referenced to 
-    enable/disable them from the KNN matching. 
+  /* audioGroups is an object containing names of groups of audio files
+    loaded into MUBU buffers which can be referenced to
+    enable/disable them from the KNN matching.
     for example if you define
     ```
       audioGroups = {
         'piano' = [2,3,4]
       }
-    
+
     then call the following...
     ```
-      this.params.knn.includedBuffers = this.audioGroups['piano']; 
+      this.params.knn.includedBuffers = this.audioGroups['piano'];
       this.sendParams(['knn'])
     ```
     it will tell the mubu.knn object to only match the input audio to segments of buffers 2,3 or 4.
@@ -127,8 +127,8 @@ module.exports = class PhraseAndVoice {
   }
 
   /*
-    a helper method for setting the buffer indexes that are included in the knn matching. 
-    calling this method with  
+    a helper method for setting the buffer indexes that are included in the knn matching.
+    calling this method with
     @param groupName String - a string which is a key in the audioGroups object.
 
     calling the method
@@ -147,18 +147,20 @@ module.exports = class PhraseAndVoice {
     } else {
       const argsArray = Array.from(arguments);
       // map and flatten array of arrays
+
       this.params.knn.includedBuffers = argsArray.map((key) => {
         if (!(this.audioGroups[key])) {
           throw `${key} is not an array defined in audioGroups`;
         }
         return this.audioGroups[key];
       }).reduce((acc, val) => acc.concat(val), []);
+
     }
 
     if (sendParams) {
       this.sendParams(['knn']);
     }
   }
-  
+
 
 }

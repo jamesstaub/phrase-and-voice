@@ -8,8 +8,8 @@ module.exports = {
   player: {
     playmode: 3, // 'onset-knn'
     // source: 1, //  'corpus',
-    concat_preset: 1,// sets mubu.concat's params based on params saved in a preset object 
-    granular_preset: 1, // sets mubu.granular's params based on params saved in a preset object 
+    concat_preset: 1,// sets mubu.concat's params based on params saved in a preset object
+    granular_preset: 1, // sets mubu.granular's params based on params saved in a preset object
   },
   concat: {
     allowrepeatmarkers: 0,
@@ -27,8 +27,8 @@ module.exports = {
     release: [0, 0],
     reverse: 0,
   },
-  granular: { 
-    play: 0,
+  granular: {
+    play: 1,
     gated_by_input: 1, // granular will only sound when an input audio signal is sounding
     filtermode: 'off',
   },
@@ -40,12 +40,12 @@ module.exports = {
   TimbralModel: {
     play: 1,
   },
-  // TODO: replace automation wtih Plugins after implementing a few plugins 
+  // TODO: replace automation wtih Plugins after implementing a few plugins
   automation: {
     // toggle a subpatcher that modulates concatenative synth's period
     concat_period: 0,
     weight_preset: 0,
-    filter_fundamental_follow: 0, // send fundamental frequency from input signal to concat synth filter 
+    filter_fundamental_follow: 0, // send fundamental frequency from input signal to concat synth filter
   }
 
 }

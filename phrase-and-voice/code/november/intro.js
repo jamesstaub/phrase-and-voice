@@ -1,6 +1,11 @@
+const defaultParams = require('./defaultParams');
 module.exports = class Intro {
 
   constructor(params, audioGroups, sendParams, knnInclude) {
+    this.sendParams = sendParams;
+    this.params = defaultParams;
+    this.sendParams();
+    console.log('INTRO');
     // pass objects + methods from parent class that
     // are set or called here
     // TODO replace this pattern with proper inheritance
@@ -10,12 +15,13 @@ module.exports = class Intro {
     this.knnInclude = knnInclude;
 
     //set some initial parameters
-    this.params.granular.gated_by_input = 1;
+    this.params.granular.gated_by_input = 0;
 
     this.sendParams();
   }
 
   onTimbreChange(timbreName) {
+
     this.params.concat.play = 0;
     this.params.concat.period = [0, 1];
 
@@ -26,14 +32,19 @@ module.exports = class Intro {
     this.params.granular.play = 1;
     this.params.concat.resampling = 0;
     this.params.knn.weightPreset = 1;
+
+    this.params.knn.randomizeWeights = 0;
+
     switch (timbreName) {
       case 'fork':
         this.knnInclude('cymbal');
         this.params.player.granular_preset = 3;
+        this.params.knn.weightPreset = 1;
         break;
       case 'bow_hi':
         this.params.concat.period = [(Math.random() * 50) + 10, 0];
         this.knnInclude('organ', 'cymbal', 'knock');
+        this.params.knn.weightPreset = 1;
         break;
       case 'bow_lo':
         this.params.concat.period = [160, 0];
@@ -45,13 +56,14 @@ module.exports = class Intro {
       case 'pluck':
         this.params.concat.play = 1;
         this.params.granular.play = 0;
-        this.knnInclude('wrench', 'knock', 'cymbal');
+        this.params.knn.weightPreset = 3;
+        this.knnInclude('knock', 'cymbal', 'organ');
         break;
       case 'tap':
         this.params.concat.play = 1;
         this.params.granular.play = 0;
         this.params.knn.weightPreset = 2;
-        this.knnInclude('wrench', 'cymbal');
+        this.knnInclude('cymbal');
         break;
     }
 

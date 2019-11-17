@@ -5,6 +5,8 @@ const defaultParams = require('./defaultParams');
 const Intro = require('./intro');
 const SomeChoicesImplied = require('./some-choices-implied');
 const Knock = require('./knock');
+const KnockDrone = require('./knock-drone');
+const End = require('./end');
 
 /*
   README
@@ -37,7 +39,7 @@ class Performance extends PhraseAndVoice {
     /*
       each section is a subclass of Performance.
     */
-    this.sections = [Intro, SomeChoicesImplied, Knock];
+    this.sections = [Intro, KnockDrone, Knock, SomeChoicesImplied, End];
     this.onSection(0);
   }
 

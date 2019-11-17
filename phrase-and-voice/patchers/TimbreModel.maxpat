@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"showontab" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 273.0, 435.0, 87.0, 22.0 ],
+					"text" : "loadmess 1 10"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-7",
 					"linecount" : 9,
@@ -124,7 +136,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 450.0, 522.0, 31.0, 21.0 ],
+					"patching_rect" : [ 450.0, 582.0, 31.0, 21.0 ],
 					"text" : "read"
 				}
 
@@ -138,7 +150,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 414.75, 522.0, 32.0, 21.0 ],
+					"patching_rect" : [ 414.75, 582.0, 32.0, 21.0 ],
 					"text" : "write"
 				}
 
@@ -152,7 +164,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 31.0, 548.0, 450.0, 21.0 ],
+					"patching_rect" : [ 31.0, 608.0, 450.0, 21.0 ],
 					"text" : "mubu.gmm timbre_model mfcc @mixtures 3 @likelihoodwindow 10 @varianceoffset 2. 10."
 				}
 
@@ -175,7 +187,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 279.0, 506.0, 59.0, 22.0 ],
+					"patching_rect" : [ 279.0, 566.0, 59.0, 22.0 ],
 					"text" : "r to_gmm"
 				}
 
@@ -214,7 +226,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -482,7 +494,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -970,7 +982,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1346,7 +1358,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1782,7 +1794,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1926,7 +1938,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 279.0, 484.0, 150.0, 20.0 ],
+					"patching_rect" : [ 279.0, 544.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 672.5, 97.0, 150.0, 20.0 ],
 					"text" : "<abs> <rel>"
@@ -2017,23 +2029,6 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "varianceoffset",
-					"fontname" : "Arial",
-					"fontsize" : 11.0,
-					"id" : "obj-36",
-					"lock" : 1,
-					"maxclass" : "attrui",
-					"menu_display" : 2,
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 458.5, 226.0, 21.0 ],
-					"text_width" : 120.0
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-90",
 					"linecount" : 4,
 					"maxclass" : "comment",
@@ -2083,7 +2078,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 386.25, 619.0, 137.0, 19.0 ],
+					"patching_rect" : [ 386.25, 679.0, 137.0, 19.0 ],
 					"text" : "likeliest model"
 				}
 
@@ -2098,7 +2093,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 386.25, 596.0, 50.0, 21.0 ]
+					"patching_rect" : [ 386.25, 656.0, 50.0, 21.0 ]
 				}
 
 			}
@@ -2110,7 +2105,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 602.0, 84.0, 19.0 ],
+					"patching_rect" : [ 30.0, 662.0, 84.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -0.5, 357.0, 84.0, 19.0 ],
 					"text" : "likelihoods"
@@ -2126,7 +2121,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 30.0, 576.0, 315.0, 21.0 ],
+					"patching_rect" : [ 30.0, 636.0, 315.0, 21.0 ],
 					"text" : "route likelihood loglikelihood"
 				}
 
@@ -2144,7 +2139,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 30.0, 602.0, 133.0, 114.0 ],
+					"patching_rect" : [ 30.0, 662.0, 220.0, 74.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -0.5, 357.0, 430.0, 105.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
@@ -2284,6 +2279,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
@@ -2366,13 +2368,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
-					"source" : [ "obj-36", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -2442,9 +2437,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11::obj-35" : [ "play", "play", 0 ],
 			"obj-11::obj-3" : [ "train", "train", 0 ],
 			"obj-11::obj-9" : [ "record", "record", 0 ],
+			"obj-11::obj-35" : [ "play", "play", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2453,7 +2448,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "imubu_button_ui.maxpat",
-				"bootpath" : "~/Documents/Max Projects/phrase-and-voice/phrase-and-voice/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
