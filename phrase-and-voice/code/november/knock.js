@@ -23,7 +23,6 @@ module.exports = class Intro {
 
   onTimbreChange(timbreName) {
     this.params.knn.includedBuffers = [7, 8];
-    this.params.automation.concat_period = 0;
     this.params.player.concat_preset = 1;
     this.params.player.granular_preset = 4;
 
@@ -32,7 +31,6 @@ module.exports = class Intro {
       case 'fork':
         break;
       case 'bow_hi':
-        this.params.automation.concat_period = Math.round(Math.random());
         this.params.player.concat_preset = [1,4][Math.round(Math.random())];
         this.params.knn.weightPreset = 1;
         break;
@@ -46,7 +44,6 @@ module.exports = class Intro {
       case 'tap':
         this.params.knn.weightPreset = 2;
         this.params.player.concat_preset = 3;
-        this.params.automation.concat_period;
         this.knnInclude('cymbal');
         break;
     }

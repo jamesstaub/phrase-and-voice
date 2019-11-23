@@ -24,7 +24,6 @@ module.exports = class Intro {
 
   onTimbreChange(timbreName) {
     this.params.knn.includedBuffers = [3, 4];
-    this.params.automation.concat_period = 0;
 
     this.params.granular.play = 1;
     this.params.concat.play = 1;
@@ -37,7 +36,6 @@ module.exports = class Intro {
       case 'fork':
         break;
       case 'bow_hi':
-        this.params.automation.concat_period = Math.round(Math.random());
         this.params.player.concat_preset = [1, 4][Math.round(Math.random())];
         this.params.knn.weightPreset = 1;
         break;

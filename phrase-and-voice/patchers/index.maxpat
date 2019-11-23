@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 35.0, 589.0, 24.0, 24.0 ]
+					"patching_rect" : [ 26.5, 578.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -69,8 +69,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 59.0, 547.0, 83.0, 22.0 ],
-					"text" : "metro 100000"
+					"patching_rect" : [ 59.0, 547.0, 76.0, 22.0 ],
+					"text" : "metro 30000"
 				}
 
 			}
@@ -88,13 +88,14 @@
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 22.0,
 					"id" : "obj-59",
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 144.0, 668.0, 50.0, 22.0 ]
+					"patching_rect" : [ 63.0, 617.5, 68.0, 33.0 ]
 				}
 
 			}
@@ -155,45 +156,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 979.0, 64.0, 150.0, 167.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 27,
-					"presentation_rect" : [ 227.0, 116.0, 44.0, 382.0 ],
+					"presentation_linecount" : 11,
+					"presentation_rect" : [ 389.0, 95.0, 146.0, 167.0 ],
 					"text" : "volume pedal down\n\nLoad audio files\nLoad GMM, play\nturn on audio\n\nprerecord octatrack buffer\n\n\n\nstart section metro\n"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-52",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 385.0, 427.0, 29.5, 22.0 ],
-					"text" : "70"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-50",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 350.0, 425.0, 29.5, 22.0 ],
-					"text" : "700"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-44",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 350.0, 401.0, 47.0, 22.0 ],
-					"text" : "sel fork"
 				}
 
 			}
@@ -404,7 +369,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 543.0, 522.5, 55.0, 22.0 ],
+					"patching_rect" : [ 548.0, 522.5, 55.0, 22.0 ],
 					"text" : "del 1000"
 				}
 
@@ -675,30 +640,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1052.0, 401.0, 50.0, 22.0 ],
-					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1048.0, 368.0, 50.0, 22.0 ],
-					"text" : "2"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-45",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -715,7 +656,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 802.0, 374.5, 60.0, 22.0 ],
+					"patching_rect" : [ 870.5, 389.0, 60.0, 22.0 ],
 					"text" : "loadmess"
 				}
 
@@ -727,7 +668,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 757.0, 383.0, 41.0, 22.0 ],
+					"patching_rect" : [ 820.5, 389.0, 41.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 156.0, 116.0, 69.0, 22.0 ],
 					"text" : "Pro24"
@@ -741,7 +682,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 757.0, 440.0, 41.0, 22.0 ],
+					"patching_rect" : [ 820.5, 446.0, 41.0, 22.0 ],
 					"text" : "pgmin"
 				}
 
@@ -764,7 +705,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 126.0, 420.5, 67.0, 22.0 ],
+					"patching_rect" : [ 234.0, 316.5, 67.0, 22.0 ],
 					"text" : "s timbre_id"
 				}
 
@@ -1090,7 +1031,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 199.0, 420.5, 149.0, 22.0 ],
+					"patching_rect" : [ 233.0, 379.5, 149.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3296,7 +3237,7 @@
 						"defer" : 0,
 						"node" : "",
 						"npm" : "",
-						"watch" : 0
+						"watch" : 1
 					}
 ,
 					"text" : "node.script ./november/main.js @autostart 1"
@@ -3546,7 +3487,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 199.0, 390.5, 55.0, 22.0 ],
+					"patching_rect" : [ 234.0, 349.5, 149.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3554,7 +3495,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p dejitter"
+					"text" : "p dejitter_timbre_selection"
 				}
 
 			}
@@ -3876,7 +3817,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 248.0, 304.0, 122.0, 22.0 ],
+					"patching_rect" : [ 278.0, 254.0, 122.0, 22.0 ],
 					"text" : "KNNPlayer",
 					"varname" : "KNNPlayer"
 				}
@@ -3903,7 +3844,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 2.0, 346.0, 251.0, 22.0 ],
+					"patching_rect" : [ 2.0, 276.0, 251.0, 22.0 ],
 					"text" : "TimbreModel"
 				}
 
@@ -3963,7 +3904,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 757.0, 409.0, 150.0, 22.0 ],
+					"patching_rect" : [ 820.5, 415.0, 150.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 116.0, 150.0, 22.0 ]
 				}
@@ -4204,7 +4145,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-49", 1 ],
+					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -4276,24 +4217,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 1 ],
-					"order" : 0,
-					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"order" : 1,
 					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 1 ],
-					"source" : [ "obj-32", 1 ]
 				}
 
 			}
@@ -4337,15 +4262,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"order" : 1,
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"order" : 0,
 					"source" : [ "obj-38", 0 ]
 				}
 
@@ -4387,20 +4303,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-50", 0 ],
-					"source" : [ "obj-44", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-52", 0 ],
-					"source" : [ "obj-44", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-47", 0 ]
 				}
@@ -4417,20 +4319,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-49", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-138", 1 ],
-					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-138", 1 ],
-					"source" : [ "obj-52", 0 ]
 				}
 
 			}
@@ -4562,23 +4450,23 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-24" : [ "live.tab", "live.tab", 0 ],
-			"obj-2::obj-50" : [ "live.gain~[2]", "input", 0 ],
-			"obj-4::obj-2::obj-3" : [ "train", "train", 0 ],
-			"obj-3::obj-11::obj-9" : [ "record[4]", "record", 0 ],
-			"obj-5::obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
-			"obj-4::obj-2::obj-9" : [ "record", "record", 0 ],
-			"obj-10::obj-11" : [ "Threshold[1]", "Threshold", 0 ],
-			"obj-3::obj-11::obj-3" : [ "train[4]", "train", 0 ],
-			"obj-10::obj-5" : [ "live.text[1]", "live.text", 0 ],
-			"obj-4::obj-2::obj-35" : [ "play", "play", 0 ],
-			"obj-3::obj-11::obj-35" : [ "play[4]", "play", 0 ],
-			"obj-5::obj-38" : [ "concat synth", "concat synth", 0 ],
-			"obj-10::obj-3" : [ "Attack[1]", "Attack", 0 ],
-			"obj-10::obj-9" : [ "Release[1]", "Release", 0 ],
-			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
-			"obj-5::obj-57" : [ "granular synth", "granular synth", 0 ],
 			"obj-10::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
+			"obj-3::obj-11::obj-35" : [ "play[1]", "play", 0 ],
+			"obj-4::obj-2::obj-3" : [ "train", "train", 0 ],
+			"obj-10::obj-9" : [ "Release[1]", "Release", 0 ],
+			"obj-5::obj-24" : [ "live.tab", "live.tab", 0 ],
+			"obj-3::obj-11::obj-3" : [ "train[1]", "train", 0 ],
+			"obj-2::obj-50" : [ "live.gain~[2]", "input", 0 ],
+			"obj-10::obj-3" : [ "Attack[1]", "Attack", 0 ],
+			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-3::obj-11::obj-9" : [ "record[1]", "record", 0 ],
+			"obj-5::obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
+			"obj-10::obj-11" : [ "Threshold[1]", "Threshold", 0 ],
+			"obj-4::obj-2::obj-35" : [ "play", "play", 0 ],
+			"obj-4::obj-2::obj-9" : [ "record", "record", 0 ],
+			"obj-5::obj-57" : [ "granular synth", "granular synth", 0 ],
+			"obj-5::obj-38" : [ "concat synth", "concat synth", 0 ],
+			"obj-10::obj-5" : [ "live.text[1]", "live.text", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -4596,6 +4484,13 @@
 				"name" : "_descriptors_slicer.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sum.maxpat",
+				"bootpath" : "~/Documents/Max 8/Library/RTC-lib_50/put content into patches/RTC-lib/Lists",
+				"patcherrelativepath" : "../../../../Library/RTC-lib_50/put content into patches/RTC-lib/Lists",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4631,6 +4526,13 @@
 				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
 				"patcherrelativepath" : "../../../../Packages/MuBu For Max/patchers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "157278.wav",
+				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/examples/mubu-pipo/overview/corpus",
+				"patcherrelativepath" : "../../../../Packages/MuBu For Max/examples/mubu-pipo/overview/corpus",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{

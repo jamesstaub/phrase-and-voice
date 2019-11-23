@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -497,11 +497,11 @@
 					"presentation_rect" : [ 202.0, 2.299988031387329, 100.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "play",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "play",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "play"
 						}
 
 					}
@@ -542,11 +542,11 @@
 					"presentation_rect" : [ 101.0, 2.299988031387329, 100.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "train",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "train",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "train"
 						}
 
 					}
@@ -719,11 +719,11 @@
 					"presentation_rect" : [ -0.4368896484375, 2.29998779296875, 100.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "record",
 							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "record",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "record"
 						}
 
 					}
@@ -759,7 +759,7 @@
 					"cursor_shape" : "bar",
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
-					"cursor_visible" : 0,
+					"cursor_visible" : 1,
 					"domain_bounds" : [ 0.0, 1.0 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -835,6 +835,18 @@
 					"patching_rect" : [ 76.5, 311.0, 505.0, 61.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -1.4368896484375, 0.0, 429.4368896484375, 288.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "cursor_visible",
+					"id" : "obj-41",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 456.0, 95.29998779296875, 150.0, 22.0 ]
 				}
 
 			}
@@ -1121,6 +1133,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-42", 0 ]
 				}
@@ -1228,8 +1247,8 @@
  ],
 		"parameters" : 		{
 			"obj-3" : [ "train", "train", 0 ],
-			"obj-9" : [ "record", "record", 0 ],
 			"obj-35" : [ "play", "play", 0 ],
+			"obj-9" : [ "record", "record", 0 ],
 			"parameterbanks" : 			{
 
 			}

@@ -21,10 +21,6 @@ module.exports = class Intro {
   }
 
   onTimbreChange(timbreName) {
-
-    this.params.concat.play = 0;
-    this.params.concat.period = [0, 1];
-
     this.params.player.concat_preset = 1;
     this.params.player.granular_preset = 1;
 
@@ -42,12 +38,10 @@ module.exports = class Intro {
         this.params.knn.weightPreset = 1;
         break;
       case 'bow_hi':
-        this.params.concat.period = [(Math.random() * 50) + 10, 0];
         this.knnInclude('organ', 'cymbal', 'knock');
         this.params.knn.weightPreset = 1;
         break;
       case 'bow_lo':
-        this.params.concat.period = [160, 0];
         this.params.concat.resampling = -700;
         this.params.concat.play = 1;
         this.params.granular.play = 1;
