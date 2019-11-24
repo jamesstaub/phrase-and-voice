@@ -40,13 +40,25 @@
 		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-31",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 297.0, 205.0, 208.0, 47.0 ],
+					"text" : "TODO move knn input source toggle outof player to this patch, generalize inputs to knnplayer"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-68",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 26.5, 578.0, 24.0, 24.0 ]
+					"patching_rect" : [ 17.5, 641.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -58,7 +70,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 63.0, 498.5, 24.0, 24.0 ]
+					"patching_rect" : [ 54.0, 561.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -69,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 59.0, 547.0, 76.0, 22.0 ],
+					"patching_rect" : [ 50.0, 610.0, 76.0, 22.0 ],
 					"text" : "metro 30000"
 				}
 
@@ -81,7 +93,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 63.0, 578.0, 69.0, 22.0 ],
+					"patching_rect" : [ 54.0, 641.0, 69.0, 22.0 ],
 					"text" : "counter 1 5"
 				}
 
@@ -95,7 +107,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 63.0, 617.5, 68.0, 33.0 ]
+					"patching_rect" : [ 54.0, 669.5, 68.0, 33.0 ]
 				}
 
 			}
@@ -656,7 +668,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 870.5, 389.0, 60.0, 22.0 ],
+					"patching_rect" : [ 405.0, 472.5, 60.0, 22.0 ],
 					"text" : "loadmess"
 				}
 
@@ -668,7 +680,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 820.5, 389.0, 41.0, 22.0 ],
+					"patching_rect" : [ 355.0, 472.5, 41.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 156.0, 116.0, 69.0, 22.0 ],
 					"text" : "Pro24"
@@ -682,7 +694,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 820.5, 446.0, 41.0, 22.0 ],
+					"patching_rect" : [ 355.0, 529.5, 41.0, 22.0 ],
 					"text" : "pgmin"
 				}
 
@@ -740,7 +752,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 448.0, 338.0, 48.0, 22.0 ],
+					"patching_rect" : [ 527.0, 425.0, 48.0, 22.0 ],
 					"text" : "change"
 				}
 
@@ -751,7 +763,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 687.0, 280.0, 150.0, 20.0 ],
+					"patching_rect" : [ 766.0, 367.0, 150.0, 20.0 ],
 					"text" : "BPM"
 				}
 
@@ -763,7 +775,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 652.0, 240.5, 83.0, 22.0 ],
+					"patching_rect" : [ 715.75, 337.5, 83.0, 22.0 ],
 					"text" : "loadmess 100"
 				}
 
@@ -776,7 +788,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 636.75, 280.0, 50.0, 22.0 ]
+					"patching_rect" : [ 715.75, 367.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -1423,7 +1435,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 448.0, 229.5, 199.0, 33.0 ],
+					"patching_rect" : [ 527.0, 316.5, 199.0, 33.0 ],
 					"text" : "use the transport to update cues in the node script"
 				}
 
@@ -1435,7 +1447,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 553.0, 539.5, 163.0, 20.0 ],
+					"patching_rect" : [ 620.0, 545.5, 163.0, 20.0 ],
 					"text" : "performance script"
 				}
 
@@ -2756,7 +2768,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 614.25, 337.0, 43.0, 21.0 ],
+					"patching_rect" : [ 693.25, 424.0, 43.0, 21.0 ],
 					"text" : "beats",
 					"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 				}
@@ -2770,7 +2782,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 508.25, 337.0, 37.0, 21.0 ],
+					"patching_rect" : [ 587.25, 424.0, 37.0, 21.0 ],
 					"text" : "bars",
 					"textcolor" : [ 0.50196099281311, 0.50196099281311, 0.50196099281311, 1.0 ]
 				}
@@ -2786,7 +2798,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 558.0, 337.0, 53.0, 23.0 ]
+					"patching_rect" : [ 637.0, 424.0, 53.0, 23.0 ]
 				}
 
 			}
@@ -2797,7 +2809,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 573.5, 285.0, 22.0, 22.0 ],
+					"patching_rect" : [ 652.5, 372.0, 22.0, 22.0 ],
 					"text" : "t 0"
 				}
 
@@ -2809,7 +2821,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 478.0, 276.0, 35.0, 22.0 ],
+					"patching_rect" : [ 557.0, 363.0, 35.0, 22.0 ],
 					"text" : "reset"
 				}
 
@@ -3187,7 +3199,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 448.0, 309.0, 207.75, 22.0 ],
+					"patching_rect" : [ 527.0, 396.0, 207.75, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3207,7 +3219,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 448.0, 276.0, 20.0, 20.0 ]
+					"patching_rect" : [ 527.0, 363.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -3904,7 +3916,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 820.5, 415.0, 150.0, 22.0 ],
+					"patching_rect" : [ 355.0, 498.5, 150.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 116.0, 150.0, 22.0 ]
 				}
@@ -4450,23 +4462,23 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-10::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
-			"obj-3::obj-11::obj-35" : [ "play[1]", "play", 0 ],
-			"obj-4::obj-2::obj-3" : [ "train", "train", 0 ],
-			"obj-10::obj-9" : [ "Release[1]", "Release", 0 ],
-			"obj-5::obj-24" : [ "live.tab", "live.tab", 0 ],
-			"obj-3::obj-11::obj-3" : [ "train[1]", "train", 0 ],
-			"obj-2::obj-50" : [ "live.gain~[2]", "input", 0 ],
-			"obj-10::obj-3" : [ "Attack[1]", "Attack", 0 ],
-			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
 			"obj-3::obj-11::obj-9" : [ "record[1]", "record", 0 ],
+			"obj-3::obj-11::obj-3" : [ "train[1]", "train", 0 ],
 			"obj-5::obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
+			"obj-4::obj-2::obj-3" : [ "train", "train", 0 ],
+			"obj-2::obj-50" : [ "live.gain~[2]", "input", 0 ],
+			"obj-10::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
+			"obj-5::obj-57" : [ "granular synth", "granular synth", 0 ],
+			"obj-3::obj-11::obj-35" : [ "play[1]", "play", 0 ],
+			"obj-10::obj-5" : [ "live.text[1]", "live.text", 0 ],
+			"obj-5::obj-38" : [ "concat synth", "concat synth", 0 ],
 			"obj-10::obj-11" : [ "Threshold[1]", "Threshold", 0 ],
+			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-10::obj-3" : [ "Attack[1]", "Attack", 0 ],
 			"obj-4::obj-2::obj-35" : [ "play", "play", 0 ],
 			"obj-4::obj-2::obj-9" : [ "record", "record", 0 ],
-			"obj-5::obj-57" : [ "granular synth", "granular synth", 0 ],
-			"obj-5::obj-38" : [ "concat synth", "concat synth", 0 ],
-			"obj-10::obj-5" : [ "live.text[1]", "live.text", 0 ],
+			"obj-5::obj-24" : [ "live.tab", "live.tab", 0 ],
+			"obj-10::obj-9" : [ "Release[1]", "Release", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -4537,6 +4549,13 @@
 			}
 , 			{
 				"name" : "KNNPlayer.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "knn_config.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
