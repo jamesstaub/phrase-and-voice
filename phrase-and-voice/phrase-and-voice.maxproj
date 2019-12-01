@@ -1,8 +1,8 @@
 {
 	"name" : "phrase-and-voice",
 	"version" : 1,
-	"creationdate" : 2082824499,
-	"modificationdate" : 3655651619,
+	"creationdate" : 2082824378,
+	"modificationdate" : 3657966074,
 	"viewrect" : [ 50.0, 95.0, 353.0, 714.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -90,6 +90,15 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"_button_config.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+
+		}
+,
+		"media" : 		{
 
 		}
 ,
@@ -131,14 +140,20 @@
 				"kind" : "textfile",
 				"local" : 1
 			}
+,
+			"button_config.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/data",
+					"projectrelativepath" : "./data"
+				}
+
+			}
 
 		}
 ,
 		"externals" : 		{
-
-		}
-,
-		"other" : 		{
 
 		}
 

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1612.0, 912.0 ],
+		"rect" : [ 34.0, 53.0, 1612.0, 938.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -795,21 +795,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"play" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ],
 									"slurtime" : [ 0.0 ],
+									"quality" : [ "basic" ],
 									"timestretch" : [ 0 ],
 									"formantcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
 									"formant" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"originaltempo" : [ 120.0 ],
 									"mode" : [ "basic" ],
-									"basictuning" : [ 440 ]
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"play" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"speed" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -857,7 +857,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1066.5, 536.5, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 209.0631103515625, 93.29998779296875, 87.0, 20.0 ],
+					"presentation_rect" : [ 559.0631103515625, 129.29998779296875, 161.0, 20.0 ],
 					"textcolor" : [ 0.811764717102051, 0.811764717102051, 0.811764717102051, 1.0 ]
 				}
 
@@ -2445,7 +2445,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "addbuffer" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 16.0, 30.0, 30.0 ]
 								}
 
@@ -2895,7 +2895,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 23.0, 280.0, 166.0, 22.0 ],
+					"patching_rect" : [ 23.0, 270.0, 166.0, 22.0 ],
 					"text" : "r temporal_model.ui.to-imubu"
 				}
 
@@ -3185,7 +3185,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 42.5, 662.0, 226.0, 74.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.4368896484375, 347.0, 420.0, 99.0 ],
+					"presentation_rect" : [ -0.4368896484375, 358.0, 488.0, 88.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"size" : 28,
 					"spacing" : 1
@@ -3559,7 +3559,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "onseg-dynamics" ],
+					"args" : [ "temporal_model" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -3572,10 +3572,10 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "addbuffer" ],
-					"patching_rect" : [ 28.0, 306.0, 445.0, 256.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 23.0, 306.0, 445.0, 256.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.4368896484375, 90.0, 488.0, 262.0 ],
+					"presentation_rect" : [ -0.4368896484375, 90.0, 730.0, 262.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -3592,7 +3592,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 23.0, 306.0, 205.0, 125.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.4368896484375, 90.0, 500.0, 356.0 ],
+					"presentation_rect" : [ -0.4368896484375, 90.0, 751.0, 356.0 ],
 					"proportion" : 0.5
 				}
 
@@ -4622,16 +4622,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-2::obj-35" : [ "play[1]", "play", 0 ],
-			"obj-2::obj-3" : [ "train[1]", "train", 0 ],
-			"obj-2::obj-9" : [ "record[1]", "record", 0 ],
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "imubu_button_ui.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
@@ -4643,6 +4633,20 @@
 				"name" : "thru.maxpat",
 				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "_button_config.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "button_config.txt",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

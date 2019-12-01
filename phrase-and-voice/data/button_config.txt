@@ -1,0 +1,9 @@
+0, @text record @texton stop @mode 1;
+1, @text play @texton stop @mode 1;
+2, @text train @texton stop @mode 1;
+3, @text addbuffer @mode 0;
+4, @text removebuffer @mode 0;
+5, @text readappend @mode 0;
+6, @text readall @mode 0;
+7, @text writeall @mode 0;
+8, @text clearall @mode 0;
