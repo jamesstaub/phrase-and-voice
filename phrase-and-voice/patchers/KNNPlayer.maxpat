@@ -5598,6 +5598,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-35",
@@ -5738,18 +5739,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-18",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "float", "" ],
-									"patching_rect" : [ 695.0, 329.0, 40.0, 21.0 ],
-									"text" : "pipo"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"fontsize" : 14.0,
 									"id" : "obj-43",
 									"maxclass" : "newobj",
@@ -5881,11 +5870,10 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-27",
-									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 828.5, 338.99993896484375, 176.0, 31.0 ],
+									"patching_rect" : [ 828.5, 324.99993896484375, 203.0, 19.0 ],
 									"text" : "loadbanged from InputDescriptors patch"
 								}
 
@@ -5971,7 +5959,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 828.5, 457.99993896484375, 198.0, 21.0 ],
+									"patching_rect" : [ 831.0, 461.0, 198.0, 21.0 ],
 									"text" : "ircamdescriptor.ChromaResolution $1",
 									"textcolor" : [ 1.0, 0.003922000061721, 0.003922000061721, 1.0 ]
 								}
@@ -8491,10 +8479,6 @@
 			}
 , 			{
 				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "pipo.mxo",
 				"type" : "iLaX"
 			}
 , 			{

@@ -259,11 +259,11 @@
 					"presentation_rect" : [ 104.5, 421.09814453125, 335.0, 26.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_unitstyle" : 0,
 							"parameter_longname" : "live.tab[3]",
 							"parameter_shortname" : "live.tab",
 							"parameter_enum" : [ "InputDescriptors", "TemporalModel", "Both" ],
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -1347,7 +1347,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 507.25, 73.5, 197.0, 24.0 ],
-					"text" : "ready",
 					"textcolor" : [ 0.886274516582489, 0.552941203117371, 0.031372550874949, 1.0 ]
 				}
 
@@ -4777,17 +4776,17 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-10::obj-5" : [ "live.text[1]", "live.text", 0 ],
-			"obj-5::obj-57" : [ "granular synth", "granular synth", 0 ],
-			"obj-5::obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
 			"obj-10::obj-3" : [ "Attack[1]", "Attack", 0 ],
+			"obj-10::obj-5" : [ "live.text[1]", "live.text", 0 ],
+			"obj-5::obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
+			"obj-10::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
 			"obj-10::obj-9" : [ "Release[1]", "Release", 0 ],
 			"obj-5::obj-38" : [ "concat synth", "concat synth", 0 ],
-			"obj-10::obj-11" : [ "Threshold[1]", "Threshold", 0 ],
 			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-10::obj-11" : [ "Threshold[1]", "Threshold", 0 ],
 			"obj-2::obj-50" : [ "live.gain~[2]", "input", 0 ],
+			"obj-5::obj-57" : [ "granular synth", "granular synth", 0 ],
 			"obj-70" : [ "live.tab[3]", "live.tab", 0 ],
-			"obj-10::obj-13" : [ "Lookahead[1]", "Lookahead", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -4803,6 +4802,13 @@
 			}
 , 			{
 				"name" : "_descriptors_slicer.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "slice_ircamdescriptors.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -4926,15 +4932,19 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "mubu.gmm.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -4959,14 +4969,6 @@
 			}
 , 			{
 				"name" : "mubu.concat~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "pipo.mxo",
 				"type" : "iLaX"
 			}
 , 			{

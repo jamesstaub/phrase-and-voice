@@ -1,8 +1,8 @@
 {
 	"name" : "phrase-and-voice",
 	"version" : 1,
-	"creationdate" : 2082824378,
-	"modificationdate" : 3657966074,
+	"creationdate" : 2082824257,
+	"modificationdate" : 3658003318,
 	"viewrect" : [ 50.0, 95.0, 353.0, 714.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -11,6 +11,11 @@
 	"contents" : 	{
 		"patchers" : 		{
 			"imubu_button_ui.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"_button_config.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -91,7 +96,7 @@
 				"local" : 1
 			}
 ,
-			"_button_config.maxpat" : 			{
+			"slice_ircamdescriptors.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -136,19 +141,14 @@
 		}
 ,
 		"data" : 		{
-			"octatrack_cc.txt" : 			{
+			"button_config.txt" : 			{
 				"kind" : "textfile",
 				"local" : 1
 			}
 ,
-			"button_config.txt" : 			{
+			"octatrack_cc.txt" : 			{
 				"kind" : "textfile",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/data",
-					"projectrelativepath" : "./data"
-				}
-
+				"local" : 1
 			}
 
 		}
