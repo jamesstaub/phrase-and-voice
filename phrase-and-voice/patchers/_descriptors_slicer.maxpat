@@ -142,7 +142,7 @@
 				"box" : 				{
 					"comment" : "flux centroid mfcc joined for timbre model",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -154,7 +154,7 @@
 				"box" : 				{
 					"comment" : "ircamdescriptors",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -304,7 +304,7 @@
 					"presentation_rect" : [ 2.5, 133.20001220703125, 254.0, 80.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 12,
+					"size" : 11,
 					"slidercolor" : [ 0.474509803921569, 0.537254901960784, 0.545098039215686, 0.99 ]
 				}
 
@@ -467,15 +467,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "slice_ircamdescriptors.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

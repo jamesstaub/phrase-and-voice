@@ -1945,7 +1945,7 @@
 				"box" : 				{
 					"comment" : "descriptors to GMM",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2176,7 +2176,7 @@
 				"box" : 				{
 					"comment" : "likeliest model",
 					"id" : "obj-21",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2190,7 +2190,7 @@
 					"annotation" : "likelihood",
 					"comment" : "",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2348,7 +2348,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 39.0, 352.0, 358.0, 43.0 ],
+					"patching_rect" : [ 273.0, 386.0, 358.0, 43.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 5,
 					"presentation_rect" : [ 147.0, 570.0, 245.0, 68.0 ],
@@ -2576,55 +2576,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "imubu_button_ui.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_button_config.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "button_config.txt",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/data",
-				"patcherrelativepath" : "../data",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.gmm.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
