@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1612.0, 912.0 ],
+		"rect" : [ 34.0, 53.0, 1612.0, 938.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -259,11 +259,11 @@
 					"presentation_rect" : [ 104.5, 421.09814453125, 335.0, 26.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.tab",
 							"parameter_enum" : [ "InputDescriptors", "TemporalModel", "Both" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.tab[3]"
+							"parameter_longname" : "live.tab[3]",
+							"parameter_shortname" : "live.tab"
 						}
 
 					}
@@ -1332,6 +1332,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 507.25, 73.5, 197.0, 24.0 ],
+					"text" : "ready",
 					"textcolor" : [ 0.886274516582489, 0.552941203117371, 0.031372550874949, 1.0 ]
 				}
 
@@ -3787,7 +3788,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 323.0, 329.14996337890625, 122.0, 22.0 ],
+					"patching_rect" : [ 323.0, 333.14996337890625, 122.0, 22.0 ],
 					"text" : "KNNPlayer",
 					"varname" : "KNNPlayer"
 				}
@@ -4446,17 +4447,17 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-26::obj-9" : [ "Release", "Release", 0 ],
-			"obj-2::obj-26::obj-13" : [ "Lookahead", "Lookahead", 0 ],
-			"obj-2::obj-26::obj-5" : [ "live.text", "live.text", 0 ],
-			"obj-2::obj-26::obj-11" : [ "Threshold", "Threshold", 0 ],
-			"obj-2::obj-26::obj-3" : [ "Attack", "Attack", 0 ],
-			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-5::obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
+			"obj-70" : [ "live.tab[3]", "live.tab", 0 ],
 			"obj-2::obj-50" : [ "live.gain~[2]", "input", 0 ],
 			"obj-5::obj-57" : [ "granular synth", "granular synth", 0 ],
 			"obj-5::obj-38" : [ "concat synth", "concat synth", 0 ],
-			"obj-5::obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
-			"obj-70" : [ "live.tab[3]", "live.tab", 0 ],
+			"obj-2::obj-26::obj-11" : [ "Threshold", "Threshold", 0 ],
+			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-2::obj-26::obj-3" : [ "Attack", "Attack", 0 ],
+			"obj-2::obj-26::obj-13" : [ "Lookahead", "Lookahead", 0 ],
+			"obj-2::obj-26::obj-5" : [ "live.text", "live.text", 0 ],
+			"obj-2::obj-26::obj-9" : [ "Release", "Release", 0 ],
 			"parameterbanks" : 			{
 
 			}
