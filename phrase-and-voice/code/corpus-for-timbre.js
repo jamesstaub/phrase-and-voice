@@ -10,8 +10,6 @@ function list()
 	})
 	.filter(function(weightIndex){ 
 		var w = weightIndex[0];
-		post(w + " \n");
-		post(thresh + " \n");
 		return w > thresh;
 	})
 	.map(function(weightIndex){

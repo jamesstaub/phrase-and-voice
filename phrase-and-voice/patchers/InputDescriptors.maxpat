@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1259.0, 900.0 ],
+		"rect" : [ 34.0, 79.0, 1475.0, 900.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"showontab" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-55",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 119.5, 484.25, 210.0, 100.0 ],
+					"text" : "TODO\nnormalize code [zl nth]s the first list item (copied from example with magnatide?)\n\nwhat's getting sliced here? \nfundamental?"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
@@ -329,7 +341,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ -177.72222900390625, 770.0, 54.0, 22.0 ],
+					"patching_rect" : [ -158.5, 831.0, 54.0, 22.0 ],
 					"text" : "s to_knn"
 				}
 
@@ -1952,7 +1964,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ -186.22222900390625, 707.5, 71.0, 22.0 ],
+					"patching_rect" : [ -188.5, 736.5, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2021,7 +2033,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ -177.72222900390625, 743.5, 100.0, 22.0 ],
+					"patching_rect" : [ -158.5, 804.5, 100.0, 22.0 ],
 					"text" : "prepend scaling"
 				}
 
@@ -2164,7 +2176,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 757.0, 842.0, 153.0, 60.0 ],
+					"patching_rect" : [ 779.0, 842.0, 153.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 272.0, 110.0, 184.0, 60.0 ],
@@ -2204,7 +2216,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 357.5, 610.25, 363.0, 22.0 ],
+					"patching_rect" : [ 357.5, 610.25, 359.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 273.5, 316.5, 346.0, 22.0 ],
 					"text_width" : 270.5
@@ -2394,7 +2406,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 773.0, 367.0, 151.0, 33.0 ],
+					"patching_rect" : [ 651.5, 361.0, 151.0, 33.0 ],
 					"text" : "window, hop, fundamental settings for upright bass"
 				}
 
@@ -2406,7 +2418,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "int", "int" ],
-					"patching_rect" : [ 773.0, 432.0, 65.0, 22.0 ],
+					"patching_rect" : [ 651.5, 426.0, 65.0, 22.0 ],
 					"text" : "unpack i i i"
 				}
 
@@ -2418,7 +2430,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 773.0, 405.0, 137.0, 22.0 ],
+					"patching_rect" : [ 651.5, 399.0, 137.0, 22.0 ],
 					"text" : "loadmess 2048 4096 40"
 				}
 
@@ -2432,7 +2444,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 357.5, 468.75, 355.0, 22.0 ],
+					"patching_rect" : [ 357.5, 468.75, 359.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 273.5, 285.0, 340.0, 22.0 ],
 					"text_width" : 269.5
@@ -2448,7 +2460,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 357.5, 506.0, 355.0, 22.0 ],
+					"patching_rect" : [ 357.5, 506.0, 359.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 273.5, 254.0, 340.0, 22.0 ],
 					"text_width" : 269.5
@@ -2614,7 +2626,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 29.5, 884.0, 30.0, 30.0 ]
+					"patching_rect" : [ 29.5, 876.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -3299,11 +3311,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-107",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 167.22222900390625, 416.0, 150.0, 47.0 ],
+					"patching_rect" : [ 119.5, 401.0, 185.0, 33.0 ],
 					"text" : "does moving average make sense on zcr and energy?"
 				}
 
@@ -3316,7 +3328,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 357.5, 639.0, 363.0, 22.0 ],
+					"patching_rect" : [ 357.5, 639.0, 359.0, 22.0 ],
 					"text_width" : 274.5
 				}
 
@@ -3405,7 +3417,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 326.0, -109.0999755859375, 30.0, 30.0 ]
+					"patching_rect" : [ 414.0, -85.0999755859375, 30.0, 30.0 ]
 				}
 
 			}
@@ -3440,13 +3452,13 @@
 					"presentation_rect" : [ 3.25, 26.0, 136.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_shortname" : "input",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[2]"
+							"parameter_longname" : "live.gain~[2]",
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0.0 ]
 						}
 
 					}
@@ -3516,7 +3528,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 357.5, 576.25, 361.0, 22.0 ],
+					"patching_rect" : [ 357.5, 576.25, 359.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 275.25, 225.0, 345.0, 22.0 ],
 					"text_width" : 273.5
@@ -3600,13 +3612,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-125", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"source" : [ "obj-125", 0 ]
 				}
 
 			}
@@ -3711,6 +3716,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-125", 0 ],
+					"order" : 1,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"order" : 0,
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -3964,11 +3978,11 @@
  ],
 		"parameters" : 		{
 			"obj-26::obj-9" : [ "Release", "Release", 0 ],
-			"obj-26::obj-13" : [ "Lookahead", "Lookahead", 0 ],
 			"obj-26::obj-5" : [ "live.text", "live.text", 0 ],
+			"obj-50" : [ "live.gain~[2]", "input", 0 ],
+			"obj-26::obj-13" : [ "Lookahead", "Lookahead", 0 ],
 			"obj-26::obj-11" : [ "Threshold", "Threshold", 0 ],
 			"obj-26::obj-3" : [ "Attack", "Attack", 0 ],
-			"obj-50" : [ "live.gain~[2]", "input", 0 ],
 			"parameterbanks" : 			{
 
 			}

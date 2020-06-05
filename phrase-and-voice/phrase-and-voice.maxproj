@@ -1,9 +1,9 @@
 {
 	"name" : "phrase-and-voice",
 	"version" : 1,
-	"creationdate" : 2082824257,
-	"modificationdate" : 3658003318,
-	"viewrect" : [ 50.0, 95.0, 353.0, 714.0 ],
+	"creationdate" : 2082823652,
+	"modificationdate" : 3673509913,
+	"viewrect" : [ 21.0, 119.0, 353.0, 714.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -36,6 +36,11 @@
 				"local" : 1
 			}
 ,
+			"slice_ircamdescriptors.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"TimbreModel.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -57,6 +62,11 @@
 			}
 ,
 			"mubu_synth_param_sliders.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"cluster_corpus.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -96,7 +106,7 @@
 				"local" : 1
 			}
 ,
-			"slice_ircamdescriptors.maxpat" : 			{
+			"web_ui.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -134,6 +144,16 @@
 			}
 ,
 			"main.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"web-ui.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"corpus-for-timbre.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}

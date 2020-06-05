@@ -1156,7 +1156,7 @@
 				"box" : 				{
 					"comment" : "onset input",
 					"id" : "obj-66",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2432,13 +2432,13 @@
 					"presentation_rect" : [ 610.5, 104.0, 131.0, 184.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "granular synth",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "granular synth"
+							"parameter_longname" : "granular synth",
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "granular synth"
 						}
 
 					}
@@ -2476,13 +2476,13 @@
 					"presentation_rect" : [ 471.5, 104.0, 131.0, 184.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ],
-							"parameter_shortname" : "concat synth",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "concat synth"
+							"parameter_longname" : "concat synth",
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0.0 ],
+							"parameter_shortname" : "concat synth"
 						}
 
 					}
@@ -4205,7 +4205,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1000.0833740234375, 440.94427490234375, 52.0, 22.0 ],
+					"patching_rect" : [ 1000.0833740234375, 488.94427490234375, 52.0, 22.0 ],
 					"text" : "r to_knn"
 				}
 
@@ -4988,7 +4988,7 @@
 				"box" : 				{
 					"comment" : "all descriptors input from live input signal",
 					"id" : "obj-76",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -5046,12 +5046,12 @@
 					"presentation_rect" : [ 266.5, 101.0, 188.980072021484375, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmax" : 1.0,
-							"parameter_shortname" : "live.tab",
 							"parameter_enum" : [ "temporalmodel", "corpus" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.tab[1]"
+							"parameter_longname" : "live.tab[1]",
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "live.tab"
 						}
 
 					}
@@ -5138,17 +5138,17 @@
 					"bufferchooser_shape" : "buttons",
 					"bufferchooser_size" : 24,
 					"bufferchooser_visible" : 1,
-					"content" : [ null, null, null, null, null, null ],
+					"content" : [ 2, [ [  ] ], [ "markers", 1, 2, 0, [ "Duration", "LoudnessMax" ], 1, "none", [ [ 128, 0, 1000.0, 0.0, 1, 2, 0, [  ], [  ], 0, 0, 0, [ "gui", "interface markers, autobounds 1, paramcols Cue Label Duration" ] ] ] ], [ "descriptor_segments", 1, 1, 0, [  ], 1, "none", [ [ 10000, 0, 1000.0, 0.0, 1, 1, 0, [  ], [  ], 0, 0, 0, [ "gui", "interface sonogram" ] ] ] ] ],
 					"cursor_circleheight" : 3.0,
 					"cursor_circlewidth" : 3.0,
 					"cursor_color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"cursor_followmouse" : 0,
-					"cursor_position" : 8798.533185165162649,
+					"cursor_position" : -1.0,
 					"cursor_shape" : "bar",
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ 0.0, 56137.120181405894982 ],
+					"domain_bounds" : [ 0.0, 1.0 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -5199,7 +5199,7 @@
 					"toolbar_size" : 30,
 					"toolbar_visible" : 1,
 					"useplaceholders" : 1,
-					"viewconfig" : [ "interface markers, , visible 1, autobounds 1, hidenotforemost 0, allbuffersvisible 0, domainalign time, paramcols Cue Label Duration - label", "interface sonogram, , visible 1, autobounds 0, hidenotforemost 0, allbuffersvisible 0, domainalign time", "interface wave, , bounds -1 1, visible 1, autobounds 0, hidenotforemost 0, allbuffersvisible 0, domainalign time", "interface multibpf, , visible 1, autobounds 1, hidenotforemost 0, allbuffersvisible 0, domainalign time, showcolnames 1" ],
+					"viewconfig" : [ "interface markers, , visible 1, autobounds 1, hidenotforemost 0, allbuffersvisible 0, domainalign time, paramcols Cue Label Duration - label", "interface sonogram, , visible 1, autobounds 0, hidenotforemost 0, allbuffersvisible 0, domainalign time" ],
 					"windresize" : 0
 				}
 
@@ -7604,11 +7604,11 @@
 					"presentation_rect" : [ 745.0, 126.0, 74.0, 64.25 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.tab[2]",
 							"parameter_enum" : [ "off", "freeze", "timestretch" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.tab[2]"
+							"parameter_longname" : "live.tab[2]",
+							"parameter_shortname" : "live.tab[2]"
 						}
 
 					}
@@ -8422,6 +8422,74 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
+			"obj-57" : [ "granular synth", "granular synth", 0 ],
+			"obj-38" : [ "concat synth", "concat synth", 0 ],
+			"obj-79" : [ "live.tab[1]", "live.tab", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "mubu.stats.marker.track.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
+				"patcherrelativepath" : "../../../../Packages/MuBu For Max/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "knn_config.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mubu_synth_param_sliders.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mubu.granular~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.concat~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.knn.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
