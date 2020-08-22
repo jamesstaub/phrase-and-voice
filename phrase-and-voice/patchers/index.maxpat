@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1612.0, 901.0 ],
+		"rect" : [ 34.0, 79.0, 1316.0, 901.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,12 +41,12 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 154.0, 120.0, 45.0, 22.0 ],
-					"text" : "dac~ 3"
+					"id" : "obj-25",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 128.0, 811.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -108,7 +108,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "cluster_corpus.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
@@ -142,7 +142,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -339,10 +339,10 @@
 					"presentation_rect" : [ 104.5, 421.09814453125, 335.0, 26.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "InputDescriptors", "TemporalModel", "Both" ],
 							"parameter_longname" : "live.tab[3]",
 							"parameter_mmax" : 2,
 							"parameter_shortname" : "live.tab",
-							"parameter_enum" : [ "InputDescriptors", "TemporalModel", "Both" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0
 						}
@@ -363,18 +363,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.5, 424.09814453125, 103.0, 20.0 ],
 					"text" : "KNN input source"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "active",
-					"id" : "obj-71",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 398.0833740234375, 168.00006103515625, 150.0, 22.0 ]
 				}
 
 			}
@@ -499,7 +487,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -676,7 +664,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -954,7 +942,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 212.0, 280.14996337890625, 67.0, 22.0 ],
+					"patching_rect" : [ 128.0, 367.0, 67.0, 22.0 ],
 					"text" : "s timbre_id"
 				}
 
@@ -1061,7 +1049,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1283,7 +1271,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 239.5, 389.5, 149.0, 22.0 ],
+					"patching_rect" : [ 199.5, 397.0, 149.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1328,6 +1316,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 507.25, 73.5, 197.0, 24.0 ],
+					"text" : "ready",
 					"textcolor" : [ 0.886274516582489, 0.552941203117371, 0.031372550874949, 1.0 ]
 				}
 
@@ -1356,7 +1345,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1390,7 +1379,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-31",
@@ -1403,7 +1391,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1529,13 +1517,13 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+										"rect" : [ 59.0, 104.0, 1212.0, 726.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1565,14 +1553,27 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
-													"id" : "obj-11",
+													"id" : "obj-1",
 													"linecount" : 39,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 100.0, 1171.0, 531.0 ],
+													"patching_rect" : [ 324.0, 252.0, 1171.0, 531.0 ],
 													"text" : "\"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 01 1 Metasonix D1000.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 02 Metasonix D1000.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 05 Metasonix D1000.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 06 Metasonix D1000.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 07 Metasonix D1000.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 08 Metasonix D1000.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 09 Metasonix D1000.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 10 Metasonix D1000.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 16 Soundtrack Acoustics.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 17 Soundtrack Acoustics.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 18 Soundtrack Acoustics.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 19 Soundtrack Acoustics.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 20 Soundtrack Acoustics.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 21 Ciat-Lonbarde Cuts.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 22 Ciat-Lonbarde Cuts.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 23 Ciat-Lonbarde Cuts.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 24 Ciat-Lonbarde Cuts.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 25 Ciat-Lonbarde Cuts.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 26 Ciat-Lonbarde Cuts.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 27 Ciat-Lonbarde Cuts.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 35 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 41 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 45 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 46 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 47 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 48 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 03 Metasonix D1000.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 04 Metasonix D1000.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 32 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 33 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 34 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 36 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 37 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 38 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 39 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 40 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 42 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 43 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 44 Test Equipment.wav\""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-11",
+													"linecount" : 19,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 100.0, 981.0, 263.0 ],
+													"text" : "\"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 35 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 41 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 45 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 46 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 47 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 48 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 03 Metasonix D1000.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 04 Metasonix D1000.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 32 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 33 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 34 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 36 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 37 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 38 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 39 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 40 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 42 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 43 Test Equipment.wav\" \"Macintosh HD:/Users/jamesstaub/Documents/MUSIC/Samples/Hainbach - Isolation Loops (soundpack)/Hainbach - Isolation Loops (soundpack) - 44 Test Equipment.wav\""
 												}
 
 											}
@@ -1734,7 +1735,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2134,7 +2135,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-25", 0 ],
+									"destination" : [ "obj-31", 0 ],
 									"source" : [ "obj-14", 1 ]
 								}
 
@@ -2319,7 +2320,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2492,7 +2493,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2750,7 +2751,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3224,7 +3225,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 4,
+											"revision" : 5,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3698,7 +3699,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4108,8 +4109,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -4129,7 +4128,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 4,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4361,7 +4360,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 239.5, 342.5, 149.0, 22.0 ],
+					"patching_rect" : [ 199.0, 367.0, 149.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -4568,15 +4567,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"order" : 1,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"order" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -4985,13 +4975,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-70", 0 ],
-					"source" : [ "obj-71", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-120", 0 ],
 					"source" : [ "obj-78", 0 ]
 				}
@@ -5000,6 +4983,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-128", 0 ],
+					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -5008,6 +4992,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 1 ],
+					"order" : 1,
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -5027,18 +5019,18 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-26::obj-5" : [ "live.text", "live.text", 0 ],
-			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
-			"obj-5::obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
-			"obj-70" : [ "live.tab[3]", "live.tab", 0 ],
-			"obj-2::obj-26::obj-9" : [ "Release", "Release", 0 ],
-			"obj-2::obj-26::obj-13" : [ "Lookahead", "Lookahead", 0 ],
-			"obj-5::obj-57" : [ "granular synth", "granular synth", 0 ],
 			"obj-10::obj-133" : [ "live.tab", "live.tab", 0 ],
-			"obj-5::obj-38" : [ "concat synth", "concat synth", 0 ],
 			"obj-2::obj-26::obj-11" : [ "Threshold", "Threshold", 0 ],
+			"obj-2::obj-26::obj-13" : [ "Lookahead", "Lookahead", 0 ],
 			"obj-2::obj-26::obj-3" : [ "Attack", "Attack", 0 ],
+			"obj-2::obj-26::obj-5" : [ "live.text", "live.text", 0 ],
+			"obj-2::obj-26::obj-9" : [ "Release", "Release", 0 ],
 			"obj-2::obj-50" : [ "live.gain~[2]", "input", 0 ],
+			"obj-5::obj-38" : [ "concat synth", "concat synth", 0 ],
+			"obj-5::obj-57" : [ "granular synth", "granular synth", 0 ],
+			"obj-5::obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
+			"obj-5::obj-79" : [ "live.tab[1]", "live.tab", 0 ],
+			"obj-70" : [ "live.tab[3]", "live.tab", 0 ],
 			"parameterbanks" : 			{
 
 			}

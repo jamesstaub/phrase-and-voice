@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 1,
+			"minor" : 1,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1920.0, -135.0, 1920.0, 1035.0 ],
+		"rect" : [ 0.0, 46.0, 1680.0, 967.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-18",
@@ -44,8 +45,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1131.0, 81.5, 55.0, 22.0 ],
-					"text" : "pipe 500"
+					"patching_rect" : [ 1131.0, 81.5, 61.0, 22.0 ],
+					"text" : "pipe 3000"
 				}
 
 			}
@@ -56,7 +57,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 778.0, 152.0, 114.0 ],
+					"patching_rect" : [ 30.0, 778.0, 155.0, 114.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
 					"presentation_rect" : [ 540.0, 23.0, 386.0, 74.0 ],
@@ -75,8 +76,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 1,
+							"minor" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -109,6 +110,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-34",
@@ -136,13 +138,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-50",
-									"linecount" : 6,
+									"linecount" : 10,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 350.0, 246.5, 75.0, 89.0 ],
-									"text" : "\"James Staub:/phrase-and-voice/phrase-and-voice/patchers/\""
+									"text" : "\"Macintosh HD:/Users/jamesstaub/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers/\""
 								}
 
 							}
@@ -173,13 +175,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-37",
-									"linecount" : 6,
+									"linecount" : 10,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 93.0, 261.5, 75.0, 89.0 ],
-									"text" : "\"James Staub:/phrase-and-voice/phrase-and-voice/patchers/\""
+									"text" : "\"Macintosh HD:/Users/jamesstaub/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers/\""
 								}
 
 							}
@@ -238,7 +240,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 458.25, 247.0, 49.0, 22.0 ]
+									"patching_rect" : [ 458.25, 247.0, 49.0, 22.0 ],
+									"text" : "concat"
 								}
 
 							}
@@ -261,7 +264,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 170.5, 261.5, 50.0, 22.0 ]
+									"patching_rect" : [ 170.5, 261.5, 50.0, 22.0 ],
+									"text" : "concat"
 								}
 
 							}
@@ -570,7 +574,7 @@
 				"box" : 				{
 					"comment" : "to preset",
 					"id" : "obj-19",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -657,7 +661,7 @@
 					"patching_rect" : [ 22.5, 62.0, 65.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 12.0, 3.5, 73.0, 24.0 ],
-					"text" : "name"
+					"text" : "concat"
 				}
 
 			}
@@ -713,7 +717,24 @@
 					"outlettype" : [ "preset", "int", "preset", "int" ],
 					"patching_rect" : [ 825.0, 45.0, 230.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 54.0, 298.0, 34.0 ]
+					"presentation_rect" : [ 10.0, 54.0, 298.0, 34.0 ],
+					"preset_data" : [ 						{
+							"number" : 1,
+							"data" : [ 5, "obj-87", "flonum", "float", 0.0, 5, "obj-86", "slider", "float", 1200.0, 5, "obj-80", "flonum", "float", 0.0, 5, "obj-79", "slider", "float", 0.0, 5, "obj-110", "flonum", "float", 0.0, 5, "obj-109", "slider", "float", 100.0, 5, "obj-112", "flonum", "float", 0.0, 5, "obj-111", "slider", "float", 0.0, 5, "obj-94", "slider", "float", 0.0, 5, "obj-83", "flonum", "float", 0.0, 5, "obj-82", "flonum", "float", 1.0, 5, "obj-81", "slider", "float", 1.0, 5, "obj-140", "slider", "float", 0.0, 5, "obj-139", "flonum", "float", 0.0, 5, "obj-138", "flonum", "float", 0.055555555969477, 5, "obj-137", "slider", "float", 0.0, 5, "obj-172", "slider", "float", 0.0, 5, "obj-170", "flonum", "float", 0.0, 5, "obj-169", "flonum", "float", 1.0, 5, "obj-168", "slider", "float", 1.0, 5, "obj-158", "slider", "float", 0.0, 5, "obj-157", "flonum", "float", 0.0, 5, "obj-156", "flonum", "float", 0.0, 5, "obj-155", "slider", "float", 0.0, 5, "obj-189", "slider", "float", 5.0, 5, "obj-187", "flonum", "float", 5.0, 5, "obj-186", "flonum", "float", 0.0, 5, "obj-185", "slider", "float", 0.0, 5, "obj-201", "slider", "float", 5.0, 5, "obj-199", "flonum", "float", 5.0, 5, "obj-198", "flonum", "float", 0.0, 5, "obj-197", "slider", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-6", "slider", "float", 0.0, 5, "obj-4", "flonum", "float", 0.0, 5, "obj-3", "slider", "float", 0.0, 5, "obj-11", "umenu", "int", 0 ]
+						}
+, 						{
+							"number" : 2,
+							"data" : [ 5, "obj-87", "flonum", "float", 0.0, 5, "obj-86", "slider", "float", 1200.0, 5, "obj-80", "flonum", "float", 0.0, 5, "obj-79", "slider", "float", 0.0, 5, "obj-110", "flonum", "float", 0.0, 5, "obj-109", "slider", "float", 100.0, 5, "obj-112", "flonum", "float", 0.0, 5, "obj-111", "slider", "float", 0.0, 5, "obj-94", "slider", "float", 153.846160888671875, 5, "obj-83", "flonum", "float", 160.0, 5, "obj-82", "flonum", "float", 0.0, 5, "obj-81", "slider", "float", 0.0, 5, "obj-140", "slider", "float", 0.0, 5, "obj-139", "flonum", "float", 0.0, 5, "obj-138", "flonum", "float", 0.0, 5, "obj-137", "slider", "float", 0.0, 5, "obj-172", "slider", "float", 0.0, 5, "obj-170", "flonum", "float", 0.0, 5, "obj-169", "flonum", "float", 1.0, 5, "obj-168", "slider", "float", 1.0, 5, "obj-158", "slider", "float", 0.0, 5, "obj-157", "flonum", "float", 0.0, 5, "obj-156", "flonum", "float", 0.0, 5, "obj-155", "slider", "float", 0.0, 5, "obj-189", "slider", "float", 10.213675498962402, 5, "obj-187", "flonum", "float", 10.213675498962402, 5, "obj-186", "flonum", "float", 0.0, 5, "obj-185", "slider", "float", 0.0, 5, "obj-201", "slider", "float", 5.0, 5, "obj-199", "flonum", "float", 5.0, 5, "obj-198", "flonum", "float", 0.0, 5, "obj-197", "slider", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-6", "slider", "float", 0.0, 5, "obj-4", "flonum", "float", 0.0, 5, "obj-3", "slider", "float", 0.0, 5, "obj-11", "umenu", "int", 0 ]
+						}
+, 						{
+							"number" : 3,
+							"data" : [ 5, "obj-87", "flonum", "float", 0.0, 5, "obj-86", "slider", "float", 1200.0, 5, "obj-80", "flonum", "float", 10.0, 5, "obj-79", "slider", "float", 10.0, 5, "obj-110", "flonum", "float", -3.076919555664062, 5, "obj-109", "slider", "float", 96.923080444335938, 5, "obj-112", "flonum", "float", 7.962606906890869, 5, "obj-111", "slider", "float", 7.962606906890869, 5, "obj-94", "slider", "float", 85.470085144042969, 5, "obj-83", "flonum", "float", 80.0, 5, "obj-82", "flonum", "float", 0.0, 5, "obj-81", "slider", "float", 0.0, 5, "obj-140", "slider", "float", 100.534187316894531, 5, "obj-139", "flonum", "float", 100.0, 5, "obj-138", "flonum", "float", 0.0, 5, "obj-137", "slider", "float", 0.0, 5, "obj-172", "slider", "float", 201.175216674804688, 5, "obj-170", "flonum", "float", 160.0, 5, "obj-169", "flonum", "float", 0.0, 5, "obj-168", "slider", "float", 0.0, 5, "obj-158", "slider", "float", 0.0, 5, "obj-157", "flonum", "float", 0.0, 5, "obj-156", "flonum", "float", 0.0, 5, "obj-155", "slider", "float", 0.0, 5, "obj-189", "slider", "float", 5.0, 5, "obj-187", "flonum", "float", 5.0, 5, "obj-186", "flonum", "float", 0.0, 5, "obj-185", "slider", "float", 0.0, 5, "obj-201", "slider", "float", 19.690170288085938, 5, "obj-199", "flonum", "float", 20.0, 5, "obj-198", "flonum", "float", 0.0, 5, "obj-197", "slider", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-6", "slider", "float", 0.0, 5, "obj-4", "flonum", "float", 0.0, 5, "obj-3", "slider", "float", 0.0, 5, "obj-11", "umenu", "int", 0 ]
+						}
+, 						{
+							"number" : 4,
+							"data" : [ 5, "obj-87", "flonum", "float", 709.0, 5, "obj-86", "slider", "float", 1909.0, 5, "obj-80", "flonum", "float", 10.0, 5, "obj-79", "slider", "float", 10.0, 5, "obj-110", "flonum", "float", 0.0, 5, "obj-109", "slider", "float", 100.0, 5, "obj-112", "flonum", "float", 5.850427150726318, 5, "obj-111", "slider", "float", 5.850427150726318, 5, "obj-94", "slider", "float", 153.846160888671875, 5, "obj-83", "flonum", "float", 160.0, 5, "obj-82", "flonum", "float", 0.0, 5, "obj-81", "slider", "float", 0.0, 5, "obj-140", "slider", "float", 0.0, 5, "obj-139", "flonum", "float", 0.0, 5, "obj-138", "flonum", "float", 0.359081208705902, 5, "obj-137", "slider", "float", 0.359081208705902, 5, "obj-172", "slider", "float", 302.350433349609375, 5, "obj-170", "flonum", "float", 302.350433349609375, 5, "obj-169", "flonum", "float", 0.0, 5, "obj-168", "slider", "float", 0.0, 5, "obj-158", "slider", "float", 0.0, 5, "obj-157", "flonum", "float", 0.0, 5, "obj-156", "flonum", "float", 0.0, 5, "obj-155", "slider", "float", 0.0, 5, "obj-189", "slider", "float", 3.418803453445435, 5, "obj-187", "flonum", "float", 3.418803453445435, 5, "obj-186", "flonum", "float", 0.0, 5, "obj-185", "slider", "float", 0.0, 5, "obj-201", "slider", "float", 5.0, 5, "obj-199", "flonum", "float", 5.0, 5, "obj-198", "flonum", "float", 0.0, 5, "obj-197", "slider", "float", 0.0, 5, "obj-13", "flonum", "float", 0.0, 5, "obj-6", "slider", "float", 0.0, 5, "obj-4", "flonum", "float", 0.0, 5, "obj-3", "slider", "float", 0.0, 5, "obj-11", "umenu", "int", 0 ]
+						}
+ ]
 				}
 
 			}
@@ -734,11 +755,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-248",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "front" ],
 					"patching_rect" : [ 334.0, 11.0, 30.0, 30.0 ]
 				}
 
@@ -754,24 +775,24 @@
 					"restore" : 					{
 						"attack_abs" : [ 5.0 ],
 						"attack_rel" : [ 0.0 ],
-						"duration_abs" : [ 100.0 ],
-						"duration_rel" : [ 0.0 ],
+						"duration_abs" : [ 0.0 ],
+						"duration_rel" : [ 1.0 ],
 						"durationvar_abs" : [ 0.0 ],
 						"durationvar_rel" : [ 0.0 ],
 						"level" : [ 0.0 ],
 						"levelvar" : [ 0.0 ],
-						"period_abs" : [ 158.119658119658112 ],
+						"period_abs" : [ 0.0 ],
 						"period_rel" : [ 1.0 ],
-						"periodvar_abs" : [ 15.384615384615385 ],
-						"periodvar_rel" : [ 0.055555555555556 ],
+						"periodvar_abs" : [ 0.0 ],
+						"periodvar_rel" : [ 0.0 ],
 						"position" : [ 0.0 ],
-						"positionvar" : [ 15.811965811965811 ],
+						"positionvar" : [ 0.0 ],
 						"release_abs" : [ 5.0 ],
 						"release_rel" : [ 0.0 ],
 						"resampling" : [ 0.0 ],
 						"resamplingvar" : [ 0.0 ],
 						"slider" : [ 1200 ],
-						"slider[10]" : [ 0.0 ],
+						"slider[10]" : [ 1.0 ],
 						"slider[11]" : [ 0.0 ],
 						"slider[12]" : [ 0.0 ],
 						"slider[13]" : [ 5.0 ],
@@ -787,12 +808,12 @@
 						"slider[6]" : [ 1.0 ],
 						"slider[7]" : [ 0.0 ],
 						"slider[8]" : [ 0.0 ],
-						"slider[9]" : [ 100.0 ],
+						"slider[9]" : [ 0.0 ],
 						"window" : [ 0 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u920009822"
+					"varname" : "u277001386"
 				}
 
 			}
@@ -2513,7 +2534,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-43",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3199,14 +3220,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

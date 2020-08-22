@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 0,
+			"minor" : 1,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1020.0, 900.0 ],
+		"rect" : [ 34.0, 79.0, 1612.0, 900.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,17 +37,33 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 339.0, 50.0, 250.0, 87.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 7,
+					"presentation_rect" : [ 608.0, 232.0, 150.0, 114.0 ],
+					"text" : "TODO could just replace this with a simple algorithm to split the corpus buffers up by timbre ID without any kind of timbre matchin :(\n\n"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-135",
 					"linecount" : 13,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 318.0, 308.0, 150.0, 181.0 ],
+					"patching_rect" : [ 1298.0, 630.0, 150.0, 181.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 6,
-					"presentation_rect" : [ 5.5, 330.0, 348.0, 87.0 ],
+					"presentation_rect" : [ 5.5, 330.0, 351.0, 87.0 ],
 					"text" : "similarity will calculate which cluster the timbre model's samples belong to. this tends to favor corpus buffers that are similar to the timbre model\n\nnumerically simply maps timbre_id 1-N to cluster 1-N, so each timbre will select a cluster, regardless if they are similar. this "
 				}
 
@@ -57,22 +73,23 @@
 					"fontsize" : 12.0,
 					"id" : "obj-133",
 					"maxclass" : "live.tab",
-					"num_lines_patching" : 0,
+					"num_lines_patching" : 1,
 					"num_lines_presentation" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1343.0, 713.0, 100.0, 20.0 ],
+					"patching_rect" : [ 623.5, 155.0, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.5, 305.0, 256.0, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "live.tab",
 							"parameter_enum" : [ "similarity", "numerically" ],
 							"parameter_type" : 2,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.tab"
+							"parameter_longname" : "live.tab",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.tab"
 						}
 
 					}
@@ -88,7 +105,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 64.5, 408.0, 150.0, 33.0 ],
+					"patching_rect" : [ 1298.0, 452.5, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 76.5, 558.0, 216.0, 20.0 ],
 					"text" : "corpus buffers to include in KNN player"
@@ -101,7 +118,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 39.0, 414.0, 150.0, 20.0 ],
+					"patching_rect" : [ 1306.0, 430.5, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.5, 558.0, 61.0, 20.0 ],
 					"text" : "Timbre ID"
@@ -111,11 +128,10 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-128",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 167.0, 365.0, 151.0, 33.0 ],
+					"patching_rect" : [ -108.0, 820.5, 310.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 167.0, 527.0, 314.0, 20.0 ],
 					"text" : "mapping of timbre_model ID to cluster"
@@ -125,11 +141,10 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-127",
-					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 166.0, 329.0, 150.0, 47.0 ],
+					"patching_rect" : [ -108.0, 850.0, 310.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 167.0, 493.0, 314.0, 20.0 ],
 					"text" : "the corpus IDs per cluster, after thresholding the weight"
@@ -139,11 +154,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-126",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 198.0, 305.0, 150.0, 47.0 ],
+					"patching_rect" : [ -108.0, 875.5, 309.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 167.0, 465.0, 314.0, 20.0 ],
 					"text" : "the weights of cluster membership for each corpus buffer "
@@ -157,7 +172,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 80.0, 9.0, 150.0, 33.0 ],
+					"patching_rect" : [ 0.0, 37.0, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 160.0, 13.0, 237.0, 20.0 ],
 					"text" : "calculate (must bang after param changes)"
@@ -170,7 +185,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 85.0, 249.0, 150.0, 20.0 ],
+					"patching_rect" : [ 450.0, 596.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 167.0, 244.0, 31.0, 20.0 ],
 					"text" : "max"
@@ -183,7 +198,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 85.0, 227.0, 150.0, 20.0 ],
+					"patching_rect" : [ 450.0, 574.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 167.0, 221.0, 32.0, 20.0 ],
 					"text" : "med"
@@ -196,7 +211,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 97.0, 209.0, 150.0, 20.0 ],
+					"patching_rect" : [ 450.0, 556.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 167.0, 198.0, 32.0, 20.0 ],
 					"text" : "min"
@@ -206,11 +221,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-116",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 160.0, 37.0, 150.0, 47.0 ],
+					"patching_rect" : [ 252.5, 447.0, 172.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 160.0, 66.0, 276.0, 20.0 ],
 					"text" : "number of clusters for corpus (KNN player) buffers"
@@ -224,7 +239,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1352.0, 99.0, 150.0, 33.0 ],
+					"patching_rect" : [ 1302.5, 390.0, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 160.0, 101.0, 199.0, 20.0 ],
 					"text" : "how much overlap between clusters"
@@ -254,8 +269,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -288,6 +303,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-82",
@@ -595,7 +611,7 @@
 					"patching_rect" : [ 444.5, 619.0, 59.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 87.5, 196.0, 73.0, 22.0 ],
-					"text" : "0.028862"
+					"text" : "0.310299"
 				}
 
 			}
@@ -609,7 +625,7 @@
 					"patching_rect" : [ 586.75, 619.0, 59.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 87.5, 244.0, 73.0, 22.0 ],
-					"text" : "0.262417"
+					"text" : "0.689701"
 				}
 
 			}
@@ -623,7 +639,7 @@
 					"patching_rect" : [ 508.0, 619.0, 73.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 87.5, 220.0, 73.0, 22.0 ],
-					"text" : "0.17026"
+					"text" : "0.5"
 				}
 
 			}
@@ -646,7 +662,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 554.0, 474.0, 70.0, 22.0 ],
+					"patching_rect" : [ 554.0, 487.0, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -661,7 +677,7 @@
 					"patching_rect" : [ 468.0, 378.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.5, 580.0, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "3"
 				}
 
 			}
@@ -686,7 +702,7 @@
 					"patching_rect" : [ 524.0, 378.0, 152.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 76.5, 580.0, 152.0, 22.0 ],
-					"text" : "1 2 3 4 5 7 8 9 10 13"
+					"text" : "3 4 5"
 				}
 
 			}
@@ -699,7 +715,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 524.0, 300.5, 130.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 0,
+						"precision" : 6
 					}
 ,
 					"text" : "coll cluster_corpus_ids"
@@ -717,7 +734,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 5.5, 525.0, 111.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 0,
+						"precision" : 6
 					}
 ,
 					"text" : "coll timbre_clusters"
@@ -733,19 +751,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 524.0, 223.0, 65.0, 22.0 ],
 					"text" : "r timbre_id"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "calculate clusters for timbre and corpus",
-					"id" : "obj-88",
-					"index" : 0,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 624.0, 82.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -772,8 +777,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -806,6 +811,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-80",
@@ -994,7 +1000,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ -119.0, 714.0, 111.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 0,
+						"precision" : 6
 					}
 ,
 					"text" : "coll timbre_clusters"
@@ -1178,7 +1185,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1106.0, 166.5, 47.0, 22.0 ],
+					"patching_rect" : [ 992.0, 166.25, 47.0, 22.0 ],
 					"text" : "clearall"
 				}
 
@@ -1194,8 +1201,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1228,6 +1235,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-81",
@@ -1459,8 +1467,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1493,6 +1501,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
@@ -1876,7 +1885,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 276.0, 538.0, 29.5, 22.0 ],
+					"patching_rect" : [ 272.25, 585.5, 29.5, 22.0 ],
 					"text" : "t l b"
 				}
 
@@ -1892,7 +1901,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 5.5, 493.0, 130.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 0,
+						"precision" : 6
 					}
 ,
 					"text" : "coll cluster_corpus_ids"
@@ -1910,8 +1920,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1944,6 +1954,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -2652,7 +2663,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 5.5, 465.0, 155.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 0,
+						"precision" : 6
 					}
 ,
 					"text" : "coll corpus_cluster_weights"
@@ -2666,7 +2678,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 303.0, 410.5, 80.0, 22.0 ],
+					"patching_rect" : [ 303.0, 395.5, 80.0, 22.0 ],
 					"text" : "r cluster.clear"
 				}
 
@@ -2713,7 +2725,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 252.5, 438.0, 39.0, 22.0 ],
+					"patching_rect" : [ 252.5, 423.0, 39.0, 22.0 ],
 					"text" : "dump"
 				}
 
@@ -2725,7 +2737,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1128.5, 659.5, 150.0, 60.0 ],
+					"patching_rect" : [ 1014.5, 659.25, 150.0, 60.0 ],
 					"text" : "improvement: only take average of MFCCs above a certain magnitude\nuse min/max to determine"
 				}
 
@@ -2737,7 +2749,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 900.5, 706.5, 50.0, 22.0 ]
+					"patching_rect" : [ 786.5, 706.25, 50.0, 22.0 ]
 				}
 
 			}
@@ -2748,7 +2760,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 900.5, 678.5, 222.0, 22.0 ],
+					"patching_rect" : [ 786.5, 678.25, 222.0, 22.0 ],
 					"text" : "mubu.track corpus descriptor_segments"
 				}
 
@@ -2767,8 +2779,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2801,6 +2813,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-15",
@@ -3145,7 +3158,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 903.0, 584.5, 263.5, 20.0 ],
+					"patching_rect" : [ 789.0, 584.25, 263.5, 20.0 ],
 					"text" : "TODO ensure timbre model has 13 MFCCs"
 				}
 
@@ -3172,7 +3185,7 @@
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ 0.0, 110.0 ],
+					"domain_bounds" : [ 0.0, 1.0 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -3202,7 +3215,7 @@
 					"outputtimeselection" : 0,
 					"outputvalues" : 0,
 					"outputviewname" : 0,
-					"patching_rect" : [ 903.0, 201.0, 332.25, 376.5 ],
+					"patching_rect" : [ 789.0, 200.75, 332.25, 376.5 ],
 					"rangeruler_grid" : 0,
 					"rangeruler_size" : 30,
 					"rangeruler_visible" : 1,
@@ -3233,7 +3246,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 903.0, 166.5, 187.0, 22.0 ]
+					"patching_rect" : [ 789.0, 166.25, 187.0, 22.0 ]
 				}
 
 			}
@@ -3245,7 +3258,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 903.0, 142.5, 187.0, 22.0 ]
+					"patching_rect" : [ 789.0, 142.25, 187.0, 22.0 ]
 				}
 
 			}
@@ -3269,7 +3282,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 903.0, 76.0, 372.0, 60.0 ],
+					"patching_rect" : [ 789.0, 75.75, 372.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 505.25, 36.0, 469.0, 47.0 ],
@@ -3284,7 +3297,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1297.0, 88.0, 246.0, 328.0 ],
+					"patching_rect" : [ 1279.0, 29.0, 246.0, 328.0 ],
 					"text" : "after soudn files are loaded into the corpus mubu buffer\n\ncluster them based on mfcc \n\nclusters will be used by the timbre model to select which corpus samples to allow corresponding to a given inputtimbre\n\n\n\nfor example, \n\nload in drums, pianos \n\nbowed bass tibre will select piano sounds, while plucking selects drums \n\n\"selecting\" means telling the KNN to only match the input signal with those files in the corpus\n\n\n"
 				}
 
@@ -3296,7 +3309,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 900.5, 648.5, 47.0, 22.0 ],
+					"patching_rect" : [ 786.5, 648.25, 47.0, 22.0 ],
 					"text" : "getsize"
 				}
 
@@ -3308,7 +3321,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 950.5, 648.5, 64.0, 22.0 ],
+					"patching_rect" : [ 836.5, 648.25, 64.0, 22.0 ],
 					"text" : "getsize $1"
 				}
 
@@ -3321,7 +3334,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 252.5, 474.0, 142.0, 22.0 ],
+					"patching_rect" : [ 252.5, 487.0, 142.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.5, 66.0, 150.0, 22.0 ]
 				}
@@ -3334,7 +3347,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 303.0, 438.0, 50.0, 22.0 ],
+					"patching_rect" : [ 303.0, 423.0, 50.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -3359,7 +3372,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 399.0, 474.0, 150.0, 22.0 ],
+					"patching_rect" : [ 399.0, 487.0, 150.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.5, 99.0, 150.0, 22.0 ]
 				}
@@ -3906,7 +3919,8 @@
 			"parameterbanks" : 			{
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
