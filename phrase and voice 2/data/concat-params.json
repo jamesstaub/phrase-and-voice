@@ -1,0 +1,120 @@
+{
+    "resampling" : {
+        "type": "cents",
+        "min": -2400,
+        "max": 2400,
+        "default": 0
+    },
+    "resamplingvar" : {
+        "type": "cents",
+        "min": 0, 
+        "max": 4800,
+        "default": 0
+    },
+    "period" : {
+        "type": "milliseconds",
+        "min": 10,
+        "max": 2000,
+        "default": 200
+    },
+    "periodvar" : {
+        "type": "milliseconds",
+        "min": 0,
+        "max": 2400,
+        "default": 0
+    },
+    "positionvar" : {
+        "type": "milliseconds",
+        "min": 0,
+        "max": 2000,
+        "default": 0
+    },
+    "level" : {
+        "type": "intRange",
+        "min": -100,
+        "max": 0,
+        "default": 0
+    },
+    "levelvar" : {
+        "type": "intRange",
+        "min": 0,
+        "max": 12,
+        "default": 0
+    },
+    "attack" : {
+        "type": "milliseconds",
+        "min": 0,
+        "max": 1000,
+        "default": 0
+    },
+    "release" : {
+        "type": "milliseconds",
+        "min": 0,
+        "max": 1000,
+        "default": 0
+    },
+    "duration" : {
+        "type": "milliseconds",
+        "min": 0,
+        "max": 5000,
+        "default": 0
+    },
+    "durationvar" : {
+        "type": "milliseconds",
+        "min": 0,
+        "max": 5000,
+        "default": 0
+    },
+    "maxduration" : {
+        "type": "milliseconds",
+        "min": 0,
+        "max": 5000,
+        "default": 0
+    },
+    "reverse" : {
+        "type": "bool",
+        "min": 0,
+        "max": 1
+    },
+    "filterfreq" : {
+        "type": "frequency",
+        "min": 60,
+        "max": 10000,
+        "default": 10000
+    },
+    "filterfreqvar" : {
+        "type": "frequency",
+        "min": 0,
+        "max": 1000
+    },
+    "filtergain" : {
+        "type": "floatRange",
+        "min": 0,
+        "max": 18,
+        "default": 0
+    },
+    "filtermode" : {
+        "type": "intRange",
+        "min": 0,
+        "max": 9,
+        "default": 1
+    },
+    "filterq" : {
+        "type": "floatRange",
+        "min": 0,
+        "max": 24,
+        "default": 0
+    },
+    "filterqvar" : {
+        "type": "floatRange",
+        "min": 0,
+        "max": 24
+    },
+    "allowrepeatmarkers" : {
+        "type": "bool",
+        "min": 0,
+        "max": 1,
+        "default": 0
+    }
+    
+}

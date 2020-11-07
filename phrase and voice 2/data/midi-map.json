@@ -1,0 +1,23 @@
+{
+	"resampling" : [ "steps", -24, 24, 0 ],
+	"resamplingvar" : [ "steps", 0, 48, 0 ],
+	"period" : [ "milliseconds", 10, 2000, 200 ],
+	"periodvar" : [ "milliseconds", 0, 2400, 0 ],
+	"positionvar" : [ "milliseconds", 0, 2000, 0 ],
+	"level" : [ "intRange", -32, 0, 0 ],
+	"levelvar" : [ "intRange", 0, 10, 0 ],
+	"attack" : [ "milliseconds", 0, 1000, 0 ],
+	"release" : [ "milliseconds", 0, 1000, 0 ],
+	"duration" : [ "milliseconds", 0, 1, 1 ],
+	"durationvar" : [ "milliseconds", 0, 1, 1 ],
+	"maxduration" : [ "milliseconds", 0, 5000, 5000 ],
+	"reverse" : [ "bool" ],
+	"filterfreq" : [ "frequency", 60, 8000, 440 ],
+	"filterfreqvar" : [ "frequency", 0, 5000, 0 ],
+	"filtergain" : [ "floatRange", 0, 1, 0 ],
+	"filtermode" : [ "intRange", 0, 9, 0 ],
+	"filterq" : [ "floatRange", 0, 24, 0 ],
+	"filterqvar" : [ "floatRange", 0, 24, 0 ],
+	"allowrepeatmarkers" : [ "bool", 1 ],
+	"autotrigger" : [ "bool", 0 ]
+}

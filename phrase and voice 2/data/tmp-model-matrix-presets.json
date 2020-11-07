@@ -1,0 +1,17 @@
+{
+	"pattrstorage" : 	{
+		"name" : "temporal-model-#0",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"descriptor-matrix" : [ 1, 2, 1, 1, 9, 1, 5, 5, 1, 6, 13, 1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
