@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -77.0, -977.0, 1852.0, 943.0 ],
+		"rect" : [ -77.0, -977.0, 1439.0, 943.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,23 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 0.0 ],
+					"fontface" : 1,
+					"fontname" : "Ableton Sans Medium",
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 851.0, 494.0, 97.0, 21.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 3.5, 241.274993999999765, 291.0, 21.0 ],
+					"text" : "Filter Output",
+					"textcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
@@ -88,7 +105,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1200.0, 208.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.5, 254.274993999999765, 50.0, 22.0 ]
+					"presentation_rect" : [ 3.5, 263.274993999999765, 50.0, 22.0 ]
 				}
 
 			}
@@ -108,7 +125,7 @@
 				"box" : 				{
 					"comment" : "to knn",
 					"id" : "obj-19",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -353,7 +370,7 @@
 				"box" : 				{
 					"comment" : "YIN out",
 					"id" : "obj-5",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -365,7 +382,7 @@
 				"box" : 				{
 					"comment" : "ircamdescriptors out",
 					"id" : "obj-4",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -377,7 +394,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -454,7 +471,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1207.5, 247.274993999999765, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 55.5, 255.274993999999765, 150.0, 20.0 ],
+					"presentation_rect" : [ 55.5, 264.274993999999765, 150.0, 20.0 ],
 					"text" : "periodicity threshold"
 				}
 
@@ -554,15 +571,17 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 0.0 ],
+					"fontface" : 1,
 					"fontname" : "Ableton Sans Medium",
 					"id" : "obj-101",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 836.0, 479.0, 97.0, 21.0 ],
+					"patching_rect" : [ 836.0, 479.0, 97.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 347.0, 0.5, 291.0, 21.0 ],
-					"text" : "defaults for bass",
+					"text" : "default analysis for bass",
 					"textcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
 				}
 
@@ -1309,11 +1328,11 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 840.0, 7.0, 30.0, 30.0 ]
 				}
 
@@ -1363,7 +1382,7 @@
 					"outlettype" : [ "list", "list", "list" ],
 					"patching_rect" : [ 11.0, 326.0, 391.0, 207.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 347.0, 99.5, 331.0, 205.0 ],
+					"presentation_rect" : [ 347.0, 104.5, 331.0, 205.0 ],
 					"varname" : "knn-lookup",
 					"viewvisibility" : 1
 				}
@@ -1392,7 +1411,7 @@
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ -16.326530612244898, 28372.562358276642044 ],
+					"domain_bounds" : [ 0.0, 1.0 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -1481,7 +1500,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 11.0, 12.25, 385.0, 201.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.5, 329.5, 304.0 ],
+					"presentation_rect" : [ 0.0, 0.5, 329.5, 315.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1954,6 +1973,53 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "corpus-analyze.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mubu.stats.marker.track.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
+				"patcherrelativepath" : "../../../../Packages/MuBu For Max/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "knn-lookup.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.knn.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "pipo~.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

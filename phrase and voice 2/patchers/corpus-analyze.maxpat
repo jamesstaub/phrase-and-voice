@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 127.0, 1461.0, 820.0 ],
+		"rect" : [ -77.0, -977.0, 1852.0, 943.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -109,7 +109,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 165.0, 288.500031000000035, 90.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 98.500031000000035, 168.0, 21.0 ],
+					"presentation_rect" : [ 2.0, 90.500031000000035, 168.0, 21.0 ],
 					"text" : "segmentation",
 					"textcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
 				}
@@ -208,7 +208,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 234.0, 98.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 175.0, 121.500031000000035, 50.0, 22.0 ],
+					"presentation_rect" : [ 175.0, 113.500031000000035, 50.0, 22.0 ],
 					"text" : "analyze"
 				}
 
@@ -236,7 +236,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8.0, 98.0, 49.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 175.0, 145.500031000000035, 49.0, 22.0 ],
+					"presentation_rect" : [ 175.0, 137.500031000000035, 49.0, 22.0 ],
 					"text" : "clearall",
 					"textjustification" : 1
 				}
@@ -307,7 +307,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 38.0, 509.0, 356.920440999999983, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 202.0, 315.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 194.0, 315.0, 13.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"slidercolor" : [ 0.516304, 0.516304, 0.516304, 1.0 ],
@@ -339,7 +339,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 49.0, 630.5, 356.920440999999983, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 224.5, 315.0, 20.0 ],
+					"presentation_rect" : [ 2.0, 208.5, 315.0, 13.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"size" : 9,
@@ -514,7 +514,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 165.0, 367.500030999999979, 164.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 171.500031000000035, 164.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 163.500031000000035, 164.0, 22.0 ],
 					"text_width" : 113.0
 				}
 
@@ -529,7 +529,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 165.0, 341.500030999999979, 164.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 121.500031000000035, 164.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 113.500031000000035, 164.0, 22.0 ],
 					"text_width" : 114.0
 				}
 
@@ -544,7 +544,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 165.0, 425.500031000000035, 164.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 146.500031000000035, 164.0, 22.0 ],
+					"presentation_rect" : [ 2.0, 138.500031000000035, 164.0, 22.0 ],
 					"text_width" : 114.0
 				}
 
@@ -781,7 +781,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "mubu.stats.marker.track.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
-				"patcherrelativepath" : "../../../Packages/MuBu For Max/patchers",
+				"patcherrelativepath" : "../../../../Packages/MuBu For Max/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

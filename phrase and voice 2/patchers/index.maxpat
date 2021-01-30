@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 104.0, 1612.0, 843.0 ],
+		"rect" : [ -77.0, -947.0, 1436.0, 943.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 920.0, 103.0, 50.0, 49.0 ],
-					"text" : "594813.968246"
+					"text" : "3636314.561819"
 				}
 
 			}
@@ -1680,28 +1680,28 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Voice.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "input.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "input-normalize.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "corpus-analyze.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1709,55 +1709,55 @@
 , 			{
 				"name" : "mubu.stats.marker.track.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
-				"patcherrelativepath" : "../../../Packages/MuBu For Max/patchers",
+				"patcherrelativepath" : "../../../../Packages/MuBu For Max/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "knn-lookup.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "poly-concat.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi-map.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Phrase.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "quantize-onsets.js",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase and voice 2/code",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tmp-model-matrix-presets.json",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase and voice 2/data",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/data",
 				"patcherrelativepath" : "../data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "temporal-model-synth-params.js",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase and voice 2/code",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
