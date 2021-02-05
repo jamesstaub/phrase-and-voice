@@ -40,6 +40,18 @@
 		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 819.5, 211.0, 423.0, 87.0 ],
+					"text" : "FIXME/verfy\n\nthat this is either ONLY MFCC (12)\nor centroid flux MFCC  (15)\n\nappears to be centroid, flux, mffcc but cutoff at lenght of 12 "
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-107",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -55,7 +67,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 34.0, 79.0, 604.0, 900.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -84,12 +96,90 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-14",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 18.0, 510.5, 150.0, 33.0 ],
+									"text" : "send buffer names\nto matrix ctrl ui"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "train" ],
+									"patching_rect" : [ 165.0, 386.0, 49.0, 22.0 ],
+									"text" : "t b train"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 18.0, 640.0, 94.0, 22.0 ],
+									"text" : "s timbre_buffers"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 18.0, 605.5, 76.0, 22.0 ],
+									"text" : "route buffers"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 18.0, 548.5, 62.0, 22.0 ],
+									"text" : "getbuffers"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 18.0, 576.5, 115.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"embed" : 0,
+										"externalfiles" : 1,
+										"resamplefiles" : 0,
+										"savegui" : 0
+									}
+,
+									"text" : "mubu timbre_model"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-99",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 216.0, 285.0, 34.0, 22.0 ],
+									"patching_rect" : [ 206.0, 285.0, 34.0, 22.0 ],
 									"text" : "sel 1"
 								}
 
@@ -101,7 +191,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 279.0, 608.0, 49.0, 22.0 ],
+									"patching_rect" : [ 341.0, 568.0, 49.0, 22.0 ],
 									"text" : "train $1"
 								}
 
@@ -113,7 +203,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 222.0, 608.0, 47.0, 22.0 ],
+									"patching_rect" : [ 284.0, 568.0, 47.0, 22.0 ],
 									"text" : "play $1"
 								}
 
@@ -136,7 +226,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 70.0, 442.0, 61.0, 22.0 ],
+									"patching_rect" : [ 50.0, 432.0, 61.0, 22.0 ],
 									"text" : "s to_gmm"
 								}
 
@@ -178,24 +268,12 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-40",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 165.0, 390.0, 32.0, 22.0 ],
-									"text" : "train"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-41",
 									"maxclass" : "newobj",
 									"numinlets" : 4,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 58.0, 238.0, 125.0, 22.0 ],
+									"patching_rect" : [ 59.0, 212.0, 125.0, 22.0 ],
 									"text" : "route play record train"
 								}
 
@@ -251,7 +329,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 263.0, 352.0, 166.0, 21.0 ],
+									"patching_rect" : [ 261.0, 337.0, 166.0, 21.0 ],
 									"text" : "mubu.record timbre_model mfcc"
 								}
 
@@ -277,7 +355,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 185.0, 494.5, 65.0, 22.0 ],
+									"patching_rect" : [ 247.0, 460.5, 65.0, 22.0 ],
 									"text" : "sel clearall"
 								}
 
@@ -288,7 +366,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 196.0, 701.0, 156.0, 22.0 ],
+									"patching_rect" : [ 258.0, 607.0, 156.0, 22.0 ],
 									"text" : "s timbre_model.ui.to_imubu"
 								}
 
@@ -300,7 +378,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "clearall" ],
-									"patching_rect" : [ 185.0, 539.0, 53.0, 22.0 ],
+									"patching_rect" : [ 247.0, 499.0, 53.0, 22.0 ],
 									"text" : "t clearall"
 								}
 
@@ -312,7 +390,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "", "int" ],
-									"patching_rect" : [ 185.0, 574.75, 41.0, 22.0 ],
+									"patching_rect" : [ 247.0, 534.75, 41.0, 22.0 ],
 									"text" : "t b s 0"
 								}
 
@@ -326,12 +404,19 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 115.5, 40.0, 30.0, 30.0 ]
+									"patching_rect" : [ 177.0, 45.0, 30.0, 30.0 ]
 								}
 
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-41", 0 ],
 									"order" : 1,
@@ -344,6 +429,20 @@
 									"destination" : [ "obj-83", 0 ],
 									"order" : 0,
 									"source" : [ "obj-106", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"source" : [ "obj-12", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-12", 0 ]
 								}
 
 							}
@@ -370,15 +469,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-40", 0 ],
+									"destination" : [ "obj-12", 0 ],
 									"source" : [ "obj-39", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
-									"source" : [ "obj-40", 0 ]
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -472,6 +571,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-50", 0 ],
 									"source" : [ "obj-97", 0 ]
 								}
@@ -494,7 +600,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 633.5, 325.0, 145.0, 22.0 ],
+					"patching_rect" : [ 575.0, 332.0, 145.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1053,7 +1159,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 167.5, 338.0, 142.0, 21.0 ],
+					"patching_rect" : [ 109.0, 355.0, 142.0, 21.0 ],
 					"text" : "s timbre_model.bufferindex"
 				}
 
@@ -1067,7 +1173,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 167.5, 316.0, 93.0, 21.0 ],
+					"patching_rect" : [ 109.0, 323.0, 93.0, 21.0 ],
 					"text" : "route bufferindex"
 				}
 
@@ -1088,7 +1194,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 167.5, 27.5, 485.0, 277.0 ],
+					"patching_rect" : [ 109.0, 36.5, 704.0, 275.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.5, 64.0, 800.0, 280.0 ],
 					"viewvisibility" : 1
@@ -1124,7 +1230,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1542,7 +1648,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 167.5, -1.5, 154.0, 22.0 ],
+					"patching_rect" : [ 109.0, 5.5, 154.0, 22.0 ],
 					"text" : "r timbre_model.ui.to_imubu"
 				}
 
@@ -1899,7 +2005,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 702.5, 21.0, 69.0, 22.0 ],
+					"patching_rect" : [ 819.5, 21.0, 69.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1918,7 +2024,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 505.0, -6.5, 161.0, 22.0 ],
+					"patching_rect" : [ 446.5, 0.5, 161.0, 22.0 ],
 					"text" : "r timbre_model.ui.to_buttons"
 				}
 
@@ -1933,7 +2039,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 702.5, 106.5, 226.0, 69.0 ],
+					"patching_rect" : [ 819.5, 106.5, 226.0, 69.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 0.5, 24.0, 419.5, 38.0 ],
@@ -1945,7 +2051,7 @@
 				"box" : 				{
 					"comment" : "descriptors to GMM",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1963,7 +2069,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 705.5, 54.0, 240.0, 22.0 ],
+					"patching_rect" : [ 822.5, 54.0, 240.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.5, 1.0, 302.0, 22.0 ],
 					"text" : "Timbre model:"
@@ -2176,7 +2282,7 @@
 				"box" : 				{
 					"comment" : "likeliest model",
 					"id" : "obj-21",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2190,7 +2296,7 @@
 					"annotation" : "likelihood",
 					"comment" : "",
 					"id" : "obj-14",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2223,7 +2329,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 935.0, 111.0, 205.0, 60.0 ],
+					"patching_rect" : [ 1052.0, 111.0, 205.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
 					"presentation_rect" : [ -1.5, 574.0, 110.0, 60.0 ],
@@ -2237,7 +2343,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 705.5, 84.5, 103.0, 20.0 ],
+					"patching_rect" : [ 822.5, 84.5, 103.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ -1.5, 552.0, 103.0, 20.0 ],
 					"text" : "CAPS keymap"
@@ -2249,13 +2355,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
 					"id" : "obj-87",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 702.5, 182.5, 296.0, 45.0 ],
-					"text" : "mubu.track timbre_model mfcc @predef yes @samplerate 83.132812 @matrixcols 12 @info gui \"interface sonogram, autobounds 1\" label 1 @maxsize 120s"
+					"patching_rect" : [ 819.5, 182.5, 772.0, 21.0 ],
+					"text" : "mubu.track timbre_model mfcc @predef yes @samplerate 83.132812 @matrixcols 15 @info gui \"interface sonogram, autobounds 1\" label 1 @maxsize 120s"
 				}
 
 			}
@@ -2576,6 +2681,55 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "imubu_button_ui.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "_button_config.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "button_config.txt",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase-and-voice/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.gmm.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
