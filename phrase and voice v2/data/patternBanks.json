@@ -1,0 +1,47 @@
+{
+	"pattrstorage" : 	{
+		"name" : "patternBanks",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"live.gain~" : [ 0.0 ],
+					"tonal-player::1024-model-frequency" : [ 1.0 ],
+					"tonal-player::1024-model-timing" : [ 0.0 ],
+					"tonal-player::concatenative synth" : [ -3.434592980710121 ],
+					"tonal-player::live.dial" : [ 2.0 ],
+					"tonal-segment-stack-trig::live.text[1]" : [ 1.0 ],
+					"tonal-segment-stack-trig::live.text[2]" : [ 1.0 ],
+					"tonal-segment-stack-trig::stack_onset_duration" : [ 0.0 ],
+					"tonal-segment-stack-trig::stack_size_#1" : [ 16 ],
+					"percussive-player::1010-model-frequency" : [ 0.0 ],
+					"percussive-player::1010-model-timing" : [ 1.0 ],
+					"percussive-player::concatenative synth" : [ 0.0 ],
+					"percussive-player::live.dial" : [ 1.0 ],
+					"percussive-segment-stack-trig::live.text[1]" : [ 1.0 ],
+					"percussive-segment-stack-trig::live.text[2]" : [ 1.0 ],
+					"percussive-segment-stack-trig::stack_onset_duration" : [ 0.0 ],
+					"percussive-segment-stack-trig::stack_size_#1" : [ 32 ],
+					"yin-gate[1]::rslider" : [ 3.850574712643678, 20.0 ],
+					"yin-gate[1]::rslider[1]" : [ 42.241379310344826, 100.0 ],
+					"yin-gate[1]::rslider[2]" : [ 20.0, 2000.0 ],
+					"yin-gate[2]::rslider" : [ 0.0, 10.517241379310345 ],
+					"yin-gate[2]::rslider[1]" : [ 38.793103448275865, 100.0 ],
+					"yin-gate[2]::rslider[2]" : [ 20.0, 2000.0 ],
+					"ATC-tonal::tonal-#2-#3" : [ -1 ],
+					"ATC-tonal::live.tab" : [ 0.0 ],
+					"ATC-tonal::normalization_type" : [ 1 ],
+					"ATC-tonal::knn-lookup::tonal-#2-weights" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"ATC-percusssive::percussive-#2-#3" : [ -1 ],
+					"ATC-percusssive::live.tab" : [ 0.0 ],
+					"ATC-percusssive::normalization_type" : [ 1 ],
+					"ATC-percusssive::knn-lookup::percussive-#2-weights" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

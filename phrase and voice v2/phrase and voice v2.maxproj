@@ -1,21 +1,15 @@
 {
-	"name" : "phrase and voice 2",
+	"name" : "phrase and voice v2",
 	"version" : 1,
 	"creationdate" : 3682245889,
-	"modificationdate" : 3686215587,
-	"viewrect" : [ -111.0, -977.0, 1920.0, 943.0 ],
-	"autoorganize" : 1,
+	"modificationdate" : 3696062301,
+	"viewrect" : [ 0.0, 79.0, 368.0, 900.0 ],
+	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"index.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"toplevel" : 1
-			}
-,
 			"Voice.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -61,12 +55,38 @@
 				"local" : 1
 			}
 ,
-			"index2.maxpat" : 			{
+			"poly-concat-sync.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"poly-concat-sync.maxpat" : 			{
+			"yin-gate.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"clocked-stack-distributor.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"temporal-model-sketch.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"performance.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"toplevel" : 1
+			}
+,
+			"modeling-synth.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"AnalyzeTriggerCorpus.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
