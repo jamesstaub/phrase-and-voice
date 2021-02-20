@@ -107,12 +107,14 @@
 					"bgcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 0.0 ],
 					"fontname" : "Ableton Sans Medium",
 					"id" : "obj-9",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 556.0, 208.0, 90.0, 21.0 ],
+					"patching_rect" : [ 556.0, 208.0, 90.0, 50.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 360.0, 7.0, 261.0, 21.0 ],
+					"text" : "Chroma PerceptualSpectralCentroid",
 					"textcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
 				}
 
@@ -179,7 +181,7 @@
 				"box" : 				{
 					"comment" : "non-normalized out",
 					"id" : "obj-51",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -191,11 +193,11 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 287.0, 13.0, 30.0, 30.0 ]
 				}
 
@@ -204,7 +206,7 @@
 				"box" : 				{
 					"comment" : "normalized list out",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -216,7 +218,7 @@
 				"box" : 				{
 					"comment" : "to pipo~ ircamdescriptor. prepend with ircamdescriptor.descriptors or config messages therefor. also prepend \"scaling\" or \"record_normalization\"",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -503,39 +505,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "input-normalize.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pipo~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "pipo.ircamdescriptor.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

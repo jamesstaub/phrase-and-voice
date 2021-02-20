@@ -2,7 +2,7 @@
 	"name" : "phrase and voice v2",
 	"version" : 1,
 	"creationdate" : 3682245889,
-	"modificationdate" : 3696062301,
+	"modificationdate" : 3696604124,
 	"viewrect" : [ 0.0, 79.0, 368.0, 900.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -90,6 +90,16 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"GMM.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
 
 		}
 ,
@@ -149,5 +159,5 @@
 	"devpathtype" : 0,
 	"devpath" : ".",
 	"sortmode" : 0,
-	"viewmode" : 0
+	"viewmode" : 1
 }

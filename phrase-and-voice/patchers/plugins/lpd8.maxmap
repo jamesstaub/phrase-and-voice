@@ -1,0 +1,64 @@
+{
+	"parameter_map" : 	{
+		"midi" : 		{
+			"record[1]" : 			{
+				"srcname" : "5.ctrl.2.chan.midi",
+				"min" : 0.0,
+				"max" : 1.0,
+				"flags" : 2
+			}
+,
+			"record" : 			{
+				"srcname" : "5.ctrl.2.chan.midi",
+				"min" : 0.0,
+				"max" : 1.0,
+				"flags" : 2
+			}
+,
+			"add buffer[4]" : 			{
+				"srcname" : "1.ctrl.2.chan.midi",
+				"min" : 0.0,
+				"max" : 1.0,
+				"flags" : 2
+			}
+,
+			"add buffer[3]" : 			{
+				"srcname" : "1.ctrl.2.chan.midi",
+				"min" : 0.0,
+				"max" : 1.0,
+				"flags" : 2
+			}
+,
+			"remove buffer[4]" : 			{
+				"srcname" : "2.ctrl.2.chan.midi",
+				"min" : 0.0,
+				"max" : 1.0,
+				"flags" : 2
+			}
+,
+			"remove buffer[3]" : 			{
+				"srcname" : "2.ctrl.2.chan.midi",
+				"min" : 0.0,
+				"max" : 1.0,
+				"flags" : 2
+			}
+,
+			"clearall[4]" : 			{
+				"srcname" : "3.ctrl.2.chan.midi",
+				"min" : 0.0,
+				"max" : 1.0,
+				"flags" : 2
+			}
+,
+			"clearall[3]" : 			{
+				"srcname" : "3.ctrl.2.chan.midi",
+				"min" : 0.0,
+				"max" : 1.0,
+				"flags" : 2
+			}
+
+		}
+
+	}
+
+}
