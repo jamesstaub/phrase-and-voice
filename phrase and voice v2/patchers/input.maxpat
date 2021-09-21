@@ -84,7 +84,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 6.72222900390625, 13.0, 210.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 223.0, 204.0, 26.0 ],
+					"presentation_rect" : [ 0.0, 136.0, 204.0, 26.0 ],
 					"text" : "settings",
 					"textcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
 				}
@@ -143,7 +143,7 @@
 					"patching_rect" : [ 273.0, 59.0, 90.0, 64.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 3.0, 323.25, 168.0, 35.0 ],
+					"presentation_rect" : [ 0.0, 351.25, 168.0, 35.0 ],
 					"text" : "window, hop, fundamental settings for upright bass",
 					"textcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
 				}
@@ -172,7 +172,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 10.72222900390625, 179.0, 29.5, 22.0 ],
+					"patching_rect" : [ 13.361114501953125, 289.0, 29.5, 22.0 ],
 					"text" : "t l l"
 				}
 
@@ -181,7 +181,7 @@
 				"box" : 				{
 					"comment" : "non-normalized out",
 					"id" : "obj-51",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -193,11 +193,11 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-14",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 287.0, 13.0, 30.0, 30.0 ]
 				}
 
@@ -206,7 +206,7 @@
 				"box" : 				{
 					"comment" : "normalized list out",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -218,7 +218,7 @@
 				"box" : 				{
 					"comment" : "to pipo~ ircamdescriptor. prepend with ircamdescriptor.descriptors or config messages therefor. also prepend \"scaling\" or \"record_normalization\"",
 					"id" : "obj-4",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -242,9 +242,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.361114501953125, 360.0, 644.27777099609375, 198.0 ],
+					"patching_rect" : [ 13.361114501953125, 360.0, 644.27777099609375, 136.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 28.0, 293.0, 205.0 ],
+					"presentation_rect" : [ 0.0, 30.0, 293.0, 104.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -284,7 +284,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6.72222900390625, 53.75, 262.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 249.0, 262.0, 22.0 ],
+					"presentation_rect" : [ 0.0, 162.0, 262.0, 22.0 ],
 					"text_width" : 186.5
 				}
 
@@ -300,7 +300,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6.72222900390625, 80.0, 262.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 274.25, 262.0, 22.0 ],
+					"presentation_rect" : [ 0.0, 187.25, 262.0, 22.0 ],
 					"text_width" : 185.5
 				}
 
@@ -316,7 +316,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 6.72222900390625, 104.0, 262.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 299.25, 262.0, 22.0 ],
+					"presentation_rect" : [ 0.0, 212.25, 262.0, 22.0 ],
 					"text_width" : 185.5
 				}
 
@@ -328,12 +328,27 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "float", "" ],
-					"patching_rect" : [ 6.72222900390625, 143.0, 282.0, 22.0 ],
+					"patching_rect" : [ 13.361114501953125, 258.0, 282.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"active" : 1
 					}
 ,
 					"text" : "pipo~ ircamdescriptor @ircamdescriptor.descriptors"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "ircamdescriptor.F0MaxFreq",
+					"id" : "obj-17",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 6.72222900390625, 132.0, 262.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 238.0, 262.0, 22.0 ],
+					"text_width" : 186.0
 				}
 
 			}
@@ -422,6 +437,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -505,6 +527,35 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "input-normalize.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pipo~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

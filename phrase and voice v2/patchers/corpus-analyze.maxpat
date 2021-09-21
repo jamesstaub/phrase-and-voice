@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1086.0, 943.0 ],
+		"rect" : [ 34.0, 79.0, 1612.0, 937.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 697.0, 138.0, 317.0, 87.0 ],
+					"text" : "this patch takes an argument such as Chroma or MFCC and creates an analysis track for that plus a stats track of that analysis track, broken up by the same segmentation as the onset markers track\n\n(eg, chroma-segments track)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Ableton Sans Bold",
 					"fontsize" : 16.0,
 					"id" : "obj-46",
@@ -61,7 +73,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 761.0, 84.0, 29.5, 22.0 ],
+					"patching_rect" : [ 629.0, 63.0, 29.5, 22.0 ],
 					"text" : "t b l"
 				}
 
@@ -131,11 +143,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-19",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.0, 378.0, 151.0, 74.0 ],
+					"patching_rect" : [ 380.0, 378.0, 293.0, 60.0 ],
 					"text" : "TODO implement different segment options eg.\nonset\nfundamental frequency\nperiodicity"
 				}
 
@@ -173,7 +185,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 764.0, 42.0, 30.0, 30.0 ]
+					"patching_rect" : [ 632.0, 21.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -183,7 +195,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 865.0, 42.0, 303.0, 20.0 ],
+					"patching_rect" : [ 697.0, 85.0, 303.0, 20.0 ],
 					"text" : "takes patcher args for mubu container and track names"
 				}
 
@@ -357,8 +369,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 49.0, 712.5, 271.0, 24.0 ],
-					"text" : "mubu.stats.marker.track #1 #2 markers #3"
+					"patching_rect" : [ 49.0, 712.5, 336.0, 24.0 ],
+					"text" : "mubu.stats.marker.track #1 #2 markers #2-segments"
 				}
 
 			}

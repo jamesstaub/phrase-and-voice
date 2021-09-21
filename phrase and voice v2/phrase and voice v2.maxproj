@@ -2,7 +2,7 @@
 	"name" : "phrase and voice v2",
 	"version" : 1,
 	"creationdate" : 3682245889,
-	"modificationdate" : 3696604124,
+	"modificationdate" : 3696968650,
 	"viewrect" : [ 0.0, 79.0, 368.0, 900.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -93,12 +93,12 @@
 ,
 			"GMM.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-					"projectrelativepath" : "./patchers"
-				}
-
+				"local" : 1
+			}
+,
+			"imubu-scatterplot.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 
 		}
@@ -116,7 +116,12 @@
 ,
 			"scale-params.js" : 			{
 				"kind" : "javascript",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
 			}
 
 		}
