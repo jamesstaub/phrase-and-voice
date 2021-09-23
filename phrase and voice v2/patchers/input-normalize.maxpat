@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1116.0, 937.0 ],
+		"rect" : [ -147.0, -965.0, 1852.0, 931.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,21 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "led",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"oncolor" : [ 1.0, 0.345098039215686, 0.298039215686275, 1.0 ],
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 539.0, 235.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 122.0, 2.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
@@ -109,7 +124,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "int", "" ],
-					"patching_rect" : [ 688.0, 624.0, 338.0, 22.0 ],
+					"patching_rect" : [ 688.0, 624.0, 345.0, 22.0 ],
 					"text" : "mubu.process #0-target audio ircamdescriptor @name descr  "
 				}
 
@@ -334,7 +349,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 712.69439697265625, 506.0, 324.0, 22.0 ],
+					"patching_rect" : [ 712.69439697265625, 506.0, 334.0, 22.0 ],
 					"text" : "mubu.record~ #0-target audio @maxsize 60s @predef yes "
 				}
 
@@ -363,7 +378,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -690,7 +705,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -956,7 +971,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1412,13 +1427,14 @@
 					"bgcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 0.0 ],
 					"fontname" : "Ableton Sans Medium",
 					"id" : "obj-2",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 594.193551659584045, 42.0, 91.0, 21.0 ],
+					"patching_rect" : [ 594.193551659584045, 42.0, 91.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 144.98608398632814, 3.0, 129.0, 21.0 ],
-					"text" : "record training",
+					"presentation_rect" : [ 152.0, 3.0, 135.0, 21.0 ],
+					"text" : "record training example",
 					"textcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
 				}
 
@@ -1426,13 +1442,14 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 0.0 ],
+					"fontface" : 1,
 					"fontname" : "Ableton Sans Medium",
 					"fontsize" : 12.0,
 					"id" : "obj-48",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 594.193551659584045, 16.112896680831909, 114.0, 21.0 ],
+					"patching_rect" : [ 594.193551659584045, 16.112896680831909, 115.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 2.0, 114.0, 21.0 ],
 					"text" : "normalize",
@@ -1502,7 +1519,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1839,20 +1856,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-61",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 688.0, 235.0, 20.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 123.98608398632814, 3.0, 20.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1952,7 +1955,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-61", 0 ],
+					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-11", 1 ]
 				}
 
@@ -2106,13 +2109,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-86", 0 ],
-					"source" : [ "obj-61", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-145", 3 ],
 					"order" : 0,
 					"source" : [ "obj-64", 1 ]
@@ -2189,6 +2185,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-93", 0 ],
 					"source" : [ "obj-73", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-86", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}

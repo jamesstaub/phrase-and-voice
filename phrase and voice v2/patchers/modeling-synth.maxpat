@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 571.0, 79.0, 918.0, 937.0 ],
+		"rect" : [ -145.0, -965.0, 1852.0, 931.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -66,7 +66,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[5]",
+							"parameter_longname" : "live.text[4]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -142,18 +142,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 235.5, 400.0, 49.0, 22.0 ],
-					"text" : "target 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -183,8 +171,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 311.0, 71.0, 22.0 ],
-					"text" : "prepend yin"
+					"patching_rect" : [ 225.0, 311.0, 85.0, 22.0 ],
+					"text" : "prepend descr"
 				}
 
 			}
@@ -212,8 +200,8 @@
 
 					}
 ,
-					"text" : "filter centroid",
-					"texton" : "filter centroid",
+					"text" : "filter follow f0",
+					"texton" : "filter follow f0",
 					"varname" : "#0-model-frequency[1]"
 				}
 
@@ -227,11 +215,11 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 338.0, 37.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"#0-model-frequency" : [ 0.0 ],
-						"#0-model-frequency[1]" : [ 0.0 ],
-						"#0-model-timing" : [ 0.0 ],
+						"1156-model-frequency" : [ 0.0 ],
+						"1156-model-frequency[1]" : [ 0.0 ],
+						"1156-model-timing" : [ 0.0 ],
 						"concatenative synth" : [ 0.0 ],
-						"live.dial" : [ 3.0 ]
+						"live.dial" : [ 1.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -292,7 +280,7 @@
 					"patching_rect" : [ 669.25, 94.0, 123.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 4.199982000000091, 277.0, 26.0 ],
-					"text" : "#1 player"
+					"text" : "tonal player"
 				}
 
 			}
@@ -336,7 +324,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-11",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -376,7 +364,7 @@
 				"box" : 				{
 					"comment" : "input onseg analysis in",
 					"id" : "obj-12",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -401,7 +389,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[4]",
+							"parameter_longname" : "live.text[6]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -447,9 +435,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "input YIN descriptors ",
+					"comment" : "input Descr~ descriptors ",
 					"id" : "obj-8",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -474,7 +462,7 @@
 				"box" : 				{
 					"comment" : "segment marker + buffer to concat synth",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -498,22 +486,22 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-71",
-					"lastchannelcount" : 4,
+					"lastchannelcount" : 1,
 					"maxclass" : "mc.live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"orientation" : 1,
 					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 23.0, 514.0, 300.0, 59.0 ],
+					"patching_rect" : [ 23.0, 514.0, 300.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 154.5, 284.0, 59.0 ],
+					"presentation_rect" : [ 2.0, 154.5, 284.0, 41.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -12 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "concatenative synth",
+							"parameter_longname" : "live.gain~[2]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "concatenative synth",
@@ -534,7 +522,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 489.0, 728.0, 326.5, 74.0 ],
+					"patching_rect" : [ 477.75, 718.0, 326.5, 74.0 ],
 					"text" : "NEXT STEPS:\n\nthis should eventually receive the temporal model as input\ncreate a feedback from concat synth done to stack pop\n"
 				}
 
@@ -547,7 +535,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 323.0, 91.0, 22.0 ],
+					"patching_rect" : [ 24.0, 267.0, 91.0, 22.0 ],
 					"text" : "prepend concat"
 				}
 
@@ -560,7 +548,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.0, 351.0, 79.0, 22.0 ],
+					"patching_rect" : [ 30.0, 327.0, 79.0, 22.0 ],
 					"text" : "prepend note"
 				}
 
@@ -573,8 +561,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 23.0, 445.5, 236.0, 22.0 ],
-					"text" : "mc.poly~ poly-concat-sync 4 @args #1  #2"
+					"patching_rect" : [ 23.0, 445.5, 272.0, 22.0 ],
+					"text" : "mc.poly~ poly-concat-sync 4 @args #1  #2 "
 				}
 
 			}
@@ -586,7 +574,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 66.0, 400.0, 131.0, 22.0 ],
+					"patching_rect" : [ 313.0, 445.5, 131.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 114.5, 137.0, 22.0 ],
 					"text_width" : 74.0,
@@ -688,13 +676,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"source" : [ "obj-19", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"order" : 1,
 					"source" : [ "obj-2", 0 ]
@@ -737,13 +718,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-141", 1 ],
-					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -846,37 +820,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-1" : [ "live.text[2]", "live.text", 0 ],
-			"obj-10" : [ "live.text[4]", "live.text", 0 ],
-			"obj-14" : [ "retrigger factor", "legato retrigger factor", 0 ],
-			"obj-20" : [ "live.text[5]", "live.text", 0 ],
-			"obj-4" : [ "live.text[3]", "live.text", 0 ],
-			"obj-71" : [ "concatenative synth", "concatenative synth", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "poly-concat-sync.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mubu.concat~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -943,9 +886,9 @@
 , 			{
 				"name" : "tap-dark",
 				"default" : 				{
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"fontname" : [ "Ableton Sans Light Regular" ],
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 				}
 ,

@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -77.0, -947.0, 1436.0, 943.0 ],
+		"rect" : [ -147.0, -965.0, 1852.0, 931.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 920.0, 103.0, 50.0, 49.0 ],
-					"text" : "3636314.561819"
+					"text" : "243925.623578"
 				}
 
 			}
@@ -216,7 +216,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1645.0, 245.5, 87.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 372.0, 393.0, 87.0, 21.0 ],
+					"presentation_rect" : [ 371.0, 320.0, 87.0, 21.0 ],
 					"text" : "fake midi clock"
 				}
 
@@ -265,7 +265,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-26",
-					"items" : [ "to Max 1", ",", "to Max 2" ],
+					"items" : [ "PreSonus AudioBox iTwo AudioBox iTwo MIDI OUT", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -273,7 +273,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1502.0, 208.5, 115.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 461.0, 393.0, 113.0, 23.0 ]
+					"presentation_rect" : [ 464.0, 320.0, 113.0, 23.0 ]
 				}
 
 			}
@@ -357,7 +357,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1619.0, 243.5, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 346.0, 392.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 341.0, 320.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -375,7 +375,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -601,7 +601,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 5,
+											"revision" : 11,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1090,7 +1090,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 774.0, 225.5, 685.0, 840.0 ],
+					"patching_rect" : [ 767.0, 229.5, 685.0, 840.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 831.0, 1.0, 805.0, 805.0 ],
 					"varname" : "Phrase",
@@ -1129,13 +1129,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 79.0, 772.0, 864.0 ],
+						"rect" : [ -147.0, -965.0, 1852.0, 931.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1294,7 +1294,7 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 6.0, 2.5, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 224.0, 29.0, 45.0, 45.0 ]
+					"presentation_rect" : [ 289.0, 27.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -1314,7 +1314,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal", "" ],
-					"patching_rect" : [ 6.0, 225.5, 766.0, 715.0 ],
+					"patching_rect" : [ -6.0, 225.5, 766.0, 715.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 8.0, 1.0, 781.0, 713.0 ],
 					"varname" : "Voice",
@@ -1375,13 +1375,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 2 ],
 					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"source" : [ "obj-18", 2 ]
 				}
 
 			}
@@ -1680,28 +1673,28 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Voice.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "input.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "input-normalize.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "corpus-analyze.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1715,49 +1708,49 @@
 			}
 , 			{
 				"name" : "knn-lookup.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "poly-concat.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi-map.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Phrase.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "quantize-onsets.js",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/code",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tmp-model-matrix-presets.json",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/data",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/data",
 				"patcherrelativepath" : "../data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "temporal-model-synth-params.js",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/code",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -1780,10 +1773,6 @@
 			}
 , 			{
 				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "pipo.ircamdescriptor.mxo",
 				"type" : "iLaX"
 			}
 , 			{

@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 105.0, 1612.0, 874.0 ],
+		"rect" : [ -145.0, -937.0, 1475.0, 903.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 182.0, 325.75, 61.0, 22.0 ],
+					"text" : "getmin $1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "newobj",
@@ -81,7 +93,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 141.0, 360.5, 50.0, 21.0 ],
+					"patching_rect" : [ 116.333333333333329, 83.5, 50.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 26.0, 68.0, 21.0 ],
 					"text" : "weights",
@@ -99,7 +111,7 @@
 					"patching_rect" : [ 364.0, 158.75, 387.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, -0.5, 286.0, 21.0 ],
-					"text" : "knn tree for #1 track : #2-segments",
+					"text" : "knn tree for tonal track : chroma-segments",
 					"textcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
 				}
 
@@ -113,7 +125,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 371.0, 33.75, 56.0, 22.0 ],
 					"restore" : 					{
-						"#1-#2-weights" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+						"tonal-#2-weights" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.336683422327042, 0.301507532596588, 0.216080397367477, 0.226130649447441, 0.19597989320755, 0.16582915186882, 0.150753766298294, 0.135678395628929, 0.125628143548965, 0.115577891469002, 0.105527639389038, 0.095477387309074, 0.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -125,7 +137,7 @@
 				"box" : 				{
 					"comment" : "weights",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -138,11 +150,11 @@
 				"box" : 				{
 					"comment" : "knn distances",
 					"id" : "obj-13",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 116.333333333333329, 427.0, 30.0, 30.0 ]
+					"patching_rect" : [ 119.486134847005204, 557.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -150,11 +162,11 @@
 				"box" : 				{
 					"comment" : "knn buffer indecies",
 					"id" : "obj-12",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 60.666666666666657, 427.0, 30.0, 30.0 ]
+					"patching_rect" : [ 63.819468180338532, 557.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -190,7 +202,7 @@
 				"box" : 				{
 					"comment" : "to knn",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -218,7 +230,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 364.0, 105.75, 249.0, 22.0 ],
+					"patching_rect" : [ 364.0, 105.75, 289.0, 22.0 ],
 					"text" : "loadmess knn tree for #1 track : #2-segments"
 				}
 
@@ -241,11 +253,11 @@
 				"box" : 				{
 					"comment" : "knn marker indecies",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1.847198486328125, 427.0, 30.0, 30.0 ]
+					"patching_rect" : [ 5.0, 557.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -264,7 +276,7 @@
 					"presentation_rect" : [ 0.0, 49.0, 282.0, 99.5 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 13,
+					"size" : 25,
 					"varname" : "#1-#2-weights"
 				}
 
@@ -276,7 +288,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "list", "list", "list" ],
-					"patching_rect" : [ 5.0, 392.75, 151.0, 22.0 ],
+					"patching_rect" : [ 10.0, 453.75, 190.0, 22.0 ],
 					"text" : "mubu.knn #1 #2-segments"
 				}
 
@@ -364,7 +376,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 828.0, 529.0, 157.0, 22.0 ],
+					"patching_rect" : [ 828.0, 529.0, 197.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"verbose" : 1
 					}
@@ -430,6 +442,30 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 828.0, 495.0, 96.0, 22.0 ],
 					"text" : "getmatrixcols $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 10.0, 423.75, 73.0, 22.0 ],
+					"text" : "gettarget $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 182.0, 353.75, 65.0, 22.0 ],
+					"text" : "getmax $1"
 				}
 
 			}
@@ -578,6 +614,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -587,6 +630,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-35", 0 ]
 				}
 
 			}
@@ -640,16 +697,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.knn.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
