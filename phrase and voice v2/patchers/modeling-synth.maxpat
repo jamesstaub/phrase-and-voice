@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -145.0, -965.0, 1852.0, 931.0 ],
+		"rect" : [ 35.0, 115.0, 1612.0, 852.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 297.0, 393.0, 49.0, 22.0 ],
+					"text" : "target 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 529.0, 419.5, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
@@ -215,9 +239,9 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 338.0, 37.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"1156-model-frequency" : [ 0.0 ],
-						"1156-model-frequency[1]" : [ 0.0 ],
-						"1156-model-timing" : [ 0.0 ],
+						"1148-model-frequency" : [ 0.0 ],
+						"1148-model-frequency[1]" : [ 0.0 ],
+						"1148-model-timing" : [ 0.0 ],
 						"concatenative synth" : [ 0.0 ],
 						"live.dial" : [ 1.0 ]
 					}
@@ -453,7 +477,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 489.0, 634.0, 288.0, 74.0 ],
+					"patching_rect" : [ 478.0, 611.0, 288.0, 74.0 ],
 					"text" : "This patch should be initialized in a parent patch with a patcher argument matching the Mubu container name of the corpus\n(eg. \"tonal\")\n"
 				}
 
@@ -486,16 +510,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-71",
-					"lastchannelcount" : 1,
+					"lastchannelcount" : 4,
 					"maxclass" : "mc.live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"orientation" : 1,
 					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 23.0, 514.0, 300.0, 41.0 ],
+					"patching_rect" : [ 23.0, 514.0, 300.0, 59.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 154.5, 284.0, 41.0 ],
+					"presentation_rect" : [ 2.0, 154.5, 284.0, 59.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -12 ],
@@ -518,12 +542,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-161",
-					"linecount" : 4,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 477.75, 718.0, 326.5, 74.0 ],
-					"text" : "NEXT STEPS:\n\nthis should eventually receive the temporal model as input\ncreate a feedback from concat synth done to stack pop\n"
+					"patching_rect" : [ 477.75, 704.0, 326.5, 100.0 ],
+					"text" : "TODO:\nthe rhythmic GMM mubu buffer could be used as a temporal model for timings and dynamics\n\nalso create an algorithm that takes FundamentalFreq + Chroma + Harmonicity and derives a harmony to trigger chords to the polyconcat"
 				}
 
 			}
@@ -561,8 +585,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 23.0, 445.5, 272.0, 22.0 ],
-					"text" : "mc.poly~ poly-concat-sync 4 @args #1  #2 "
+					"patching_rect" : [ 24.0, 445.5, 272.0, 22.0 ],
+					"text" : "mc.poly~ poly-concat-sync 4 @args #1  #2  "
 				}
 
 			}
@@ -574,11 +598,23 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 313.0, 445.5, 131.0, 22.0 ],
+					"patching_rect" : [ 382.0, 445.5, 131.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 114.5, 137.0, 22.0 ],
 					"text_width" : 74.0,
 					"varname" : "attrui"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "steal",
+					"id" : "obj-22",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 529.0, 446.5, 150.0, 22.0 ]
 				}
 
 			}
@@ -676,6 +712,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-19", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"order" : 1,
 					"source" : [ "obj-2", 0 ]
@@ -718,6 +761,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-141", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-141", 1 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -886,10 +950,10 @@
 , 			{
 				"name" : "tap-dark",
 				"default" : 				{
+					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"fontname" : [ "Ableton Sans Light Regular" ],
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

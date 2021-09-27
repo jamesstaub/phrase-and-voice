@@ -1,0 +1,6 @@
+	MFCC, 13;
+Chroma, 12;
+FundamentalFrequency, 1;
+Inharmonicity, 1;
+HarmonicEnergy, 1;
+PerceptualSpectralCentroid, 1;

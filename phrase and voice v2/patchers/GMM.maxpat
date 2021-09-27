@@ -40,6 +40,43 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-25",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 736.0, 395.0, 150.0, 33.0 ],
+					"text" : "more gaussians, fit more closely"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 300.0, 187.0, 77.0, 22.0 ],
+					"text" : "loadmess 12"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "matrixcols (number of coeffiecients for model)",
+					"id" : "obj-19",
+					"index" : 2,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 266.0, 24.75, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -118,7 +155,7 @@
 					"presentation_rect" : [ 2.0, 264.0, 317.0, 68.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 3,
+					"size" : 2,
 					"slidercolor" : [ 0.733398, 0.0, 0.121332, 1.0 ]
 				}
 
@@ -132,7 +169,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 96.625, 33.75, 109.0, 83.0 ],
+					"patching_rect" : [ 102.0, 24.75, 109.0, 83.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 1.75, 317.0, 26.0 ],
 					"text" : "GMM: train and detect examples of a sound"
@@ -173,7 +210,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 214.0, 379.5, 120.0, 22.0 ],
+					"patching_rect" : [ 214.0, 379.5, 131.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -590,7 +627,7 @@
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 0,
-					"domain_bounds" : [ 0.0, 914.199798750943273 ],
+					"domain_bounds" : [ 0.0, 300.723618010178711 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -706,7 +743,7 @@
 					"patching_rect" : [ 769.0, 587.0, 133.0, 114.0 ],
 					"setminmax" : [ -150.0, 0.0 ],
 					"setstyle" : 1,
-					"size" : 3,
+					"size" : 2,
 					"slidercolor" : [ 0.733398, 0.0, 0.121332, 1.0 ]
 				}
 
@@ -788,8 +825,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 621.0, 522.0, 485.0, 21.0 ],
-					"text" : "mubu.gmm #1 @trackid descr @mixtures 3 @varianceoffset 1. 0.1 @likelihoodwindow 15"
+					"patching_rect" : [ 621.0, 522.0, 495.0, 21.0 ],
+					"text" : "mubu.gmm #1 @trackid descr @mixtures 3 @varianceoffset 1. 0.1 @likelihoodwindow 15 "
 				}
 
 			}
@@ -803,7 +840,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 477.0, 208.5, 108.0, 21.0 ],
+					"patching_rect" : [ 496.0, 139.5, 108.0, 21.0 ],
 					"text" : "prepend bufferindex"
 				}
 
@@ -818,7 +855,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 477.0, 179.5, 124.0, 21.0 ],
+					"patching_rect" : [ 496.0, 110.5, 124.0, 21.0 ],
 					"text" : "r #0.gmm.bufferindex"
 				}
 
@@ -846,8 +883,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 31.0, 346.0, 768.0, 21.0 ],
-					"text" : "mubu.record #1 descr @predef yes @samplerate 83.132812 @matrixcols 12 @info gui \"interface sonogram, autobounds 1\" label 1 @maxsize 120s"
+					"patching_rect" : [ 31.0, 346.0, 699.0, 21.0 ],
+					"text" : "mubu.record #1 descr @predef yes @samplerate 83.132812  @info gui \"interface sonogram, autobounds 1\" label 1 @maxsize 120s"
 				}
 
 			}
@@ -865,6 +902,30 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, -3.0, 360.0, 496.0 ],
 					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "matrixcols",
+					"id" : "obj-20",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 106.0, 316.0, 150.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"attr" : "gaussians",
+					"id" : "obj-22",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 621.0, 492.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -901,6 +962,34 @@
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}

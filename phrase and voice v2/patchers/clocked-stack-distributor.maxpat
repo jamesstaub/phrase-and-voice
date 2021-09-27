@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -145.0, -965.0, 1852.0, 931.0 ],
+		"rect" : [ 34.0, 115.0, 1093.0, 852.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,47 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"appearance" : 3,
+					"hint" : "",
+					"id" : "obj-27",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 152.5, 404.5, 119.0, 63.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 240.75, 198.5, 93.5, 63.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "number of triggers",
+							"parameter_mmax" : 16.0,
+							"parameter_mmin" : 1.0,
+							"parameter_shortname" : "number of triggers",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
+						}
+
+					}
+,
+					"varname" : "live.dial[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "int" ],
+					"patching_rect" : [ 97.666666666666671, 434.0, 40.0, 22.0 ],
+					"text" : "uzi 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -57,7 +98,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 96.666666666666671, 332.5, 70.0, 22.0 ],
+					"patching_rect" : [ 96.666666666666671, 282.5, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -92,7 +133,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 172.0, 356.5, 150.0, 33.0 ],
+					"patching_rect" : [ 137.0, 336.0, 150.0, 33.0 ],
 					"text" : "dont bang if theres nothing in the stack"
 				}
 
@@ -104,7 +145,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 96.666666666666671, 386.0, 32.0, 22.0 ],
+					"patching_rect" : [ 96.666666666666671, 336.0, 32.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -147,7 +188,7 @@
 				"box" : 				{
 					"comment" : "markerindex bufferindex",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -167,7 +208,7 @@
 					"patching_rect" : [ 1.0, 959.0, 383.0, 154.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 10,
-					"presentation_rect" : [ -2.0, 303.0, 383.0, 154.0 ],
+					"presentation_rect" : [ -2.0, 303.0, 424.0, 154.0 ],
 					"text" : "stack  the knn selected markers \nso there is a last in first out memory of recent marker selections\nthese can be used to elongate playback without simply looping the last\nchosen marker.\n\nthe KNN selection fills the stack, then\na bang pops segments off of the stack\nto select for synthesis.\n\n\n"
 				}
 
@@ -248,11 +289,11 @@
 				"box" : 				{
 					"comment" : "metro time",
 					"id" : "obj-14",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 796.0, 71.5, 30.0, 30.0 ]
 				}
 
@@ -261,11 +302,11 @@
 				"box" : 				{
 					"comment" : "onset bang",
 					"id" : "obj-13",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 663.0, 69.0, 30.0, 30.0 ]
 				}
 
@@ -274,7 +315,7 @@
 				"box" : 				{
 					"comment" : "segment to concat",
 					"id" : "obj-12",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1359,7 +1400,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 172.0, 504.0, 150.0, 18.0 ],
+					"patching_rect" : [ 178.0, 579.0, 150.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 235.0, 198.0, 18.0 ],
 					"size" : 16.0
@@ -1429,7 +1470,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 96.666666666666671, 415.5, 42.0, 42.0 ],
+					"patching_rect" : [ 102.666666666666671, 490.5, 42.0, 42.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 209.0, 223.0, 30.0, 30.0 ]
 				}
@@ -1470,7 +1511,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -145.0, -937.0, 1852.0, 903.0 ],
+						"rect" : [ 34.0, 115.0, 1612.0, 852.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1862,7 +1903,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 10.0, 471.0, 149.0, 22.0 ],
+					"patching_rect" : [ 16.0, 546.0, 149.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1881,7 +1922,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 172.0, 409.0, 147.0, 21.0 ],
+					"patching_rect" : [ 178.0, 484.0, 147.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 52.0, 212.0, 147.0, 21.0 ],
 					"text" : "stack max size"
@@ -1909,7 +1950,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 224.0, 434.0, 77.0, 22.0 ],
+					"patching_rect" : [ 230.0, 509.0, 77.0, 22.0 ],
 					"text" : "loadmess 16"
 				}
 
@@ -1923,7 +1964,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 172.0, 434.0, 49.0, 22.0 ],
+					"patching_rect" : [ 178.0, 509.0, 49.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 211.0, 49.0, 22.0 ],
 					"varname" : "stack_size_#1"
@@ -2167,7 +2208,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-26",
-					"items" : [ "AU DLS Synth 1", ",", "PreSonus AudioBox iTwo AudioBox iTwo MIDI IN", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -2267,7 +2308,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 172.0, 471.0, 150.0, 22.0 ]
+					"patching_rect" : [ 178.0, 546.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -2321,6 +2362,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-83", 0 ],
 					"source" : [ "obj-109", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-105", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -2447,6 +2495,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 1 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-81", 1 ],
 					"source" : [ "obj-28", 1 ]
 				}
@@ -2500,7 +2555,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
+					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -2601,6 +2656,20 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-27" : [ "number of triggers", "number of triggers", 0 ],
+			"obj-6" : [ "live.text", "live.text", 0 ],
+			"obj-8" : [ "live.text[1]", "live.text", 0 ],
+			"obj-9" : [ "live.text[5]", "live.text", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -2668,8 +2737,8 @@
 				"name" : "tap-dark",
 				"default" : 				{
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"fontname" : [ "Ableton Sans Light Regular" ],
 					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
+					"fontname" : [ "Ableton Sans Light Regular" ],
 					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 				}
 ,

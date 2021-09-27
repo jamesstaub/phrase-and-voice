@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -145.0, -999.0, 1423.0, 965.0 ],
+		"rect" : [ 34.0, 53.0, 1336.0, 914.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,67 +40,233 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 16.0,
-					"id" : "obj-7",
+					"id" : "obj-27",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 453.0, 503.0, 185.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 442.0, 211.0, 121.0, 24.0 ],
-					"text" : "2. load sounds",
-					"textcolor" : [ 0.250980392156863, 0.203921568627451, 0.937254901960784, 1.0 ]
+					"patching_rect" : [ 761.0, 145.0, 153.0, 33.0 ],
+					"text" : "FIXME: input-normalize should exclude NoteName "
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 16.0,
-					"id" : "obj-16",
+					"id" : "obj-26",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.0, 1004.0, 295.0, 78.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 7.0, 655.0, 265.0, 78.0 ],
-					"text" : "1. record Gaussian Mixture Model\neach buffer as a different timbre.\nTrain, then play model to detect timbre",
-					"textcolor" : [ 0.250980392156863, 0.203921568627451, 0.937254901960784, 1.0 ]
+					"patching_rect" : [ 766.0, 13.5, 153.0, 60.0 ],
+					"text" : "NOTE:\nthis list must match corpus \nTODO: read from presaved corpus info"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-71",
-					"linecount" : 11,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 909.0, 119.0, 156.0, 154.0 ],
-					"text" : "TODO: create a select menu for known descriptor combinations\n\neach item will have a determined setting for GMM as well, in some cases only MFCC will be used for GMM but MFCC + Chroma is used for KNN lookup"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-69",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 7.0, 224.349991000000045, 153.0, 74.0 ],
-					"text" : "assumption is that GMM performs better on the raw input rather than normalized for the task of Timbre recognition"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-64",
+					"id" : "obj-51",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 11,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 34.0, 115.0, 1612.0, 852.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"id" : "obj-26",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 50.0, 125.0, 46.0, 23.0 ],
+									"text" : "-~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"id" : "obj-27",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 77.0, 100.0, 104.0, 23.0 ],
+									"text" : "onepole~ 80. Hz"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-51",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 50.0, 158.453765999999973, 30.0, 22.0 ],
+									"text" : "*~ 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-25",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 57.5, 39.999999999999972, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-29",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 50.0, 240.453765999999973, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"order" : 1,
+									"source" : [ "obj-25", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-27", 0 ],
+									"order" : 0,
+									"source" : [ "obj-25", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-51", 0 ],
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 1 ],
+									"source" : [ "obj-27", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 0 ],
+									"source" : [ "obj-51", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 11.0, 81.546233999999998, 67.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p highpass"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "tonal", "chroma" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-8",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "AnalyzeTriggerCorpus.maxpat",
+					"numinlets" : 5,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 360.0, 307.61129799999992, 360.0, 952.40753200000006 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 342.0, 10.0, 562.0, 906.0 ],
+					"varname" : "ATC-tonal",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 7.0, 989.0, 241.0, 33.0 ],
+					"text" : "this model could automatically re-record, retrain throughout performance"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-98",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patcher" : 					{
@@ -144,13 +310,489 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-22",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 377.0, 341.0, 150.0, 60.0 ],
+									"text" : "not sure, but idea is to \"demagnify\" the centroid frequency to be a little less fickle"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"patching_rect" : [ 339.0, 332.0, 29.0, 22.0 ],
+									"text" : "sqrt"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 392.0, 165.0, 150.0, 33.0 ],
+									"text" : "naively scale onset time and level "
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 5,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 251.5, 160.407531999999946, 111.0, 22.0 ],
+									"text" : "zmap 0 5000 0. 10."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "newobj",
+									"numinlets" : 5,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 251.5, 199.407531999999946, 103.0, 22.0 ],
+									"text" : "zmap -80. -3. 0. 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 182.0, 35.0, 150.0, 60.0 ],
+									"text" : "lace current onset with prior onset to give some semblance of short time to the model"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 394.5, 259.407531999999946, 51.0, 20.0 ],
+									"text" : "centroid"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 5,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 125.5, 439.0, 67.0, 22.0 ],
+									"text" : "pack f f f f f"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "float" ],
+									"patching_rect" : [ 172.5, 312.407531999999946, 61.0, 22.0 ],
+									"text" : "unpack f f"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "bang" ],
+									"patching_rect" : [ 162.0, 233.0, 29.5, 22.0 ],
+									"text" : "t f b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 172.5, 282.0, 45.0, 22.0 ],
+									"text" : "zl reg"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 129.5, 85.0, 29.5, 22.0 ],
+									"text" : "t l l"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-96",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "float", "float" ],
+									"patching_rect" : [ 51.0, 101.407531999999946, 61.0, 22.0 ],
+									"text" : "unpack f f"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-81",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 339.0, 290.815063999999893, 47.0, 22.0 ],
+									"text" : "zl nth 6"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-80",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 339.0, 259.407531999999946, 51.0, 22.0 ],
+									"text" : "r #0_yin"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-29",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 51.0, 31.0, 65.0, 22.0 ],
+									"text" : "r #0_onset"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-97",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 125.5, 479.407592999999906, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 1 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-96", 0 ],
+									"source" : [ "obj-1", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 4 ],
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-6", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 1 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 3 ],
+									"source" : [ "obj-7", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 2 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-97", 0 ],
+									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-81", 0 ],
+									"source" : [ "obj-80", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"source" : [ "obj-81", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-96", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"source" : [ "obj-96", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 7.0, 1020.0, 130.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p onsets centroid gmm"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-90",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 7.0, 950.0, 198.0, 33.0 ],
+					"text" : "GMM for rhythmic phrases\nonset duration, onset level, centroid"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-77",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 280.0, 1013.0, 70.0, 22.0 ],
+					"text" : "loadmess 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "rhythm-gmm" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-18",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "GMM.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "", "bang" ],
+					"patching_rect" : [ 7.0, 1046.907531999999946, 343.0, 296.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.0, 655.0, 324.0, 443.092468000000054 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 16.0,
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 453.0, 503.0, 185.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 533.5, 215.5, 121.0, 24.0 ],
+					"text" : "2. load sounds",
+					"textcolor" : [ 0.250980392156863, 0.203921568627451, 0.937254901960784, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-71",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 761.0, 189.0, 327.0, 114.0 ],
+					"text" : "TODO: create a select menu for known descriptor combinations\n\neach item will have a determined setting for GMM as well, in some cases only MFCC will be used for GMM but MFCC + Chroma is used for KNN lookup\n\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 7.0, 239.349991000000045, 257.0, 47.0 ],
+					"text" : "assumption is that GMM performs better on the raw input rather than normalized for the task of Timbre recognition"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-64",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 11,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 35.0, 115.0, 1612.0, 852.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 100.0, 282.0, 225.0, 47.0 ],
+									"text" : "TODO get the sliced descriptor arrays from a global state (analysis_descriptor_menu patch)"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-53",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 61.0, 22.0 ],
-									"text" : "zl slice 12"
+									"text" : "zl slice 13"
 								}
 
 							}
@@ -273,7 +915,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1.5, 300.907532000000003, 122.0, 22.0 ],
+					"patching_rect" : [ 7.0, 300.349991000000045, 122.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -282,18 +924,6 @@
 					}
 ,
 					"text" : "p PrepMFCCforGMM"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-56",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 783.0, 21.5, 150.0, 33.0 ],
-					"text" : "GMM expects MFCC (12) to be the first descriptor"
 				}
 
 			}
@@ -311,262 +941,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patcher" : 					{
-						"fileversion" : 1,
-						"appversion" : 						{
-							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
-							"architecture" : "x64",
-							"modernui" : 1
-						}
-,
-						"classnamespace" : "box",
-						"rect" : [ -145.0, -965.0, 1852.0, 931.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
-						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
-						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-7",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 82.0, 152.0, 592.0, 20.0 ],
-									"text" : "This frame expression writes converted Energy and Frequency at the right indices and returns a."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"attr" : "js.expr",
-									"id" : "obj-18",
-									"maxclass" : "attrui",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 82.0, 171.0, 516.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"attr" : "js.labelexpr",
-									"id" : "obj-25",
-									"maxclass" : "attrui",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 82.0, 121.0, 516.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-26",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 82.0, 100.0, 592.0, 20.0 ],
-									"text" : "This labelexpr renames columns Energy and Frequency to Loudness and NoteNumber in array l and returns l."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-27",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 50.0, 100.0, 24.0, 24.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-29",
-									"linecount" : 2,
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 4,
-									"outlettype" : [ "", "", "int", "" ],
-									"patching_rect" : [ 50.0, 203.862503000000061, 713.0, 35.0 ],
-									"text" : "mubu.process pipo-js-help audio slice:yin:js @name yin_renamed @js.expr \"a[c.Energy] = atodb(a[c.Energy]); a[c.Frequency] = ftom(a[c.Frequency]); a\" @js.labelexpr \"l[c.Energy] = 'Loudness'; l[c.Frequency] = 'NoteNumber'; l\" @info gui \"fgcolor orange\""
-								}
-
-							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"source" : [ "obj-18", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"source" : [ "obj-25", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"source" : [ "obj-27", 0 ]
-								}
-
-							}
- ]
-					}
-,
-					"patching_rect" : [ 748.0, 150.0, 131.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
-					"text" : "p mutate_note_column"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-40",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 1.5, 797.5, 84.0, 22.0 ],
+					"patching_rect" : [ 1081.0, 1063.5, 84.0, 22.0 ],
 					"text" : "mc.unpack~ 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-51",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 18.0, 78.453765999999973, 30.0, 22.0 ],
-					"text" : "*~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-50",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1367.0, 508.907531999999946, 83.0, 22.0 ],
-					"text" : "positionvar $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-49",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1367.0, 422.815063999999893, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-47",
-					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 4,
-					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 1367.0, 388.907531999999946, 85.0, 22.0 ],
-					"text" : "counter 2 16 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-43",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1367.0, 472.907531999999946, 69.0, 22.0 ],
-					"text" : "period $1 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-38",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1367.0, 356.907531999999946, 116.0, 22.0 ],
-					"text" : "qmetro 100 @active"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-35",
-					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 1360.0, 308.407531999999946, 54.0, 22.0 ],
-					"text" : "sel 1 2 3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-34",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1360.0, 273.907531999999946, 50.0, 22.0 ],
-					"text" : "1"
 				}
 
 			}
@@ -577,8 +958,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 688.0, 50.592468000000054, 89.0, 22.0 ],
-					"text" : "MFCC Chroma"
+					"patching_rect" : [ 688.0, 85.546234000000027, 275.0, 22.0 ],
+					"text" : "MFCC Chroma Loudness FundamentalFrequency"
 				}
 
 			}
@@ -589,7 +970,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1241.0, 50.592468000000054, 202.0, 60.0 ],
+					"patching_rect" : [ 1038.0, 55.592468000000054, 202.0, 60.0 ],
 					"text" : "imubu\n-show all buffers same scatterplot\n-scatterplot descr-segments\n-hide all others"
 				}
 
@@ -597,24 +978,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
-					"linecount" : 10,
+					"linecount" : 13,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 751.5, 324.0, 377.0, 141.0 ],
-					"text" : "use scatterplot to select segments within selector range (frequency, periodicity, loudness, duration)\n\nthen either scale the input descriptors, or filter the output of KNN\nto be within this range\n\n\n\nfor the ircamdescriptors-segment track (eg. chroma, mfcc), within the range"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 688.0, 78.5, 468.0, 22.0 ],
-					"text" : "MFCC FundamentalFrequency Inharmonicity HarmonicEnergy NoiseEnergy Noisiness"
+					"patching_rect" : [ 755.5, 333.0, 377.0, 194.0 ],
+					"text" : "use scatterplot to select segments within selector range (frequency, periodicity, loudness, duration)\n\nthen either scale (or offset?) the input descriptors, or filter the output of KNN\nto be within this range\n\n\n\nfor the ircamdescriptors-segment track (eg. chroma, mfcc), within the range\n\n\n"
 				}
 
 			}
@@ -630,7 +999,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "GMM.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "bang" ],
@@ -683,7 +1052,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 54.0, 78.546234000000027, 85.0, 21.907531999999946 ],
+					"patching_rect" : [ 60.5, 10.0, 85.0, 21.907531999999946 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 49.5, 10.0, 279.0, 37.5 ]
 				}
@@ -704,7 +1073,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 360.0, 13.5, 314.0, 250.0 ],
+					"patching_rect" : [ 359.0, 13.5, 315.0, 250.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.0, 55.907531999999946, 324.0, 245.0 ],
 					"varname" : "yin-gate[1]",
@@ -730,7 +1099,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -147.0, -965.0, 1482.0, 931.0 ],
+						"rect" : [ 34.0, 116.0, 1612.0, 851.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -925,7 +1294,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 486.5, 749.27502400000003, 68.0, 19.0 ],
+									"patching_rect" : [ 494.5, 749.27502400000003, 68.0, 19.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"tricolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 									"triscale" : 0.9
@@ -1333,7 +1702,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 418.0, 341.0, 150.0, 47.0 ],
+									"patching_rect" : [ 418.0, 341.0, 154.0, 47.0 ],
 									"text" : "< change this if error PIPO FIFO is full\n"
 								}
 
@@ -1572,7 +1941,7 @@
 								"patchline" : 								{
 									"destination" : [ "obj-55", 0 ],
 									"hidden" : 1,
-									"midpoints" : [ 511.75, 609.77502400000003, 478.754394999999988, 609.77502400000003, 478.754394999999988, 654.77502400000003, 478.754394999999988, 654.77502400000003, 478.754394999999988, 735.77502400000003, 496.0, 735.77502400000003 ],
+									"midpoints" : [ 511.75, 609.77502400000003, 478.754394999999988, 609.77502400000003, 478.754394999999988, 654.77502400000003, 478.754394999999988, 654.77502400000003, 478.754394999999988, 735.77502400000003, 504.0, 735.77502400000003 ],
 									"source" : [ "obj-12", 5 ]
 								}
 
@@ -1682,7 +2051,7 @@
 								"patchline" : 								{
 									"destination" : [ "obj-42", 0 ],
 									"hidden" : 1,
-									"midpoints" : [ 496.0, 791.77502400000003, 496.0, 791.77502400000003 ],
+									"midpoints" : [ 504.0, 791.77502400000003, 496.0, 791.77502400000003 ],
 									"source" : [ "obj-55", 0 ]
 								}
 
@@ -1797,25 +2166,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-72",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 178.0, 741.5, 70.0, 22.0 ],
-					"text" : "loadmess 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"hidden" : 1,
 					"id" : "obj-19",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 178.0, 657.0, 74.0, 22.0 ],
+					"patching_rect" : [ 1257.5, 923.0, 74.0, 22.0 ],
 					"text" : "loadmess -9"
 				}
 
@@ -1828,7 +2185,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 104.0, 657.0, 70.0, 22.0 ],
+					"patching_rect" : [ 1183.5, 923.0, 70.0, 22.0 ],
 					"text" : "loadmess 6"
 				}
 
@@ -1841,7 +2198,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 105.0, 686.0, 135.0, 22.0 ],
+					"patching_rect" : [ 1184.5, 952.0, 135.0, 22.0 ],
 					"text_width" : 84.0
 				}
 
@@ -1853,7 +2210,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 1.5, 766.5, 92.0, 22.0 ],
+					"patching_rect" : [ 1081.0, 1032.5, 92.0, 22.0 ],
 					"text" : "mc.mixdown~ 2"
 				}
 
@@ -1865,7 +2222,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 1.5, 708.5, 58.0, 22.0 ],
+					"patching_rect" : [ 1081.0, 974.5, 58.0, 22.0 ],
 					"text" : "mc.limi~"
 				}
 
@@ -1878,7 +2235,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 105.0, 716.0, 135.0, 22.0 ],
+					"patching_rect" : [ 1184.5, 982.0, 135.0, 22.0 ],
 					"text_width" : 84.0
 				}
 
@@ -1890,7 +2247,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 3,
 					"outlettype" : [ "multichannelsignal", "", "float" ],
-					"patching_rect" : [ 1.5, 665.0, 78.0, 22.0 ],
+					"patching_rect" : [ 1081.0, 931.0, 78.0, 22.0 ],
 					"text" : "mc.bands~ 3"
 				}
 
@@ -1902,7 +2259,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 66.5, 877.5, 176.0, 47.0 ],
+					"patching_rect" : [ 728.0, 571.5, 176.0, 47.0 ],
 					"text" : "The stack output should also be poly voice aware, output in chunks or sequencers"
 				}
 
@@ -1916,7 +2273,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1673.0, 58.0, 35.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 924.0, 42.0, 35.0, 21.0 ],
+					"presentation_rect" : [ 947.0, 42.0, 35.0, 21.0 ],
 					"text" : "Bank"
 				}
 
@@ -1930,7 +2287,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1720.0, 18.0, 49.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1056.0, 3.0, 49.0, 21.0 ],
+					"presentation_rect" : [ 1032.0, 3.0, 49.0, 21.0 ],
 					"text" : "Pattern"
 				}
 
@@ -1946,7 +2303,7 @@
 					"patching_rect" : [ 1715.0, 50.5, 263.0, 53.0 ],
 					"pattrstorage" : "patternBanks",
 					"presentation" : 1,
-					"presentation_rect" : [ 967.0, 26.0, 260.0, 53.0 ]
+					"presentation_rect" : [ 990.0, 26.0, 260.0, 53.0 ]
 				}
 
 			}
@@ -1958,7 +2315,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 223.0, 126.5, 24.0, 24.0 ]
+					"patching_rect" : [ 239.0, 153.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -1992,7 +2349,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 732.0, 659.0, 333.0, 435.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 924.0, 93.5, 336.0, 268.0 ],
+					"presentation_rect" : [ 947.0, 93.5, 336.0, 268.0 ],
 					"varname" : "tonal-segment-stack-trig",
 					"viewvisibility" : 1
 				}
@@ -2005,7 +2362,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 223.0, 154.703765999999973, 39.0, 22.0 ],
+					"patching_rect" : [ 239.0, 181.703765999999973, 40.0, 22.0 ],
 					"text" : "gate~"
 				}
 
@@ -2236,7 +2593,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 816.0, 436.0 ],
+						"rect" : [ 34.0, 115.0, 1612.0, 853.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2442,7 +2799,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 84.0, 154.5, 131.0, 22.0 ],
+					"patching_rect" : [ 94.0, 154.5, 131.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2460,7 +2817,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 84.0, 178.5, 67.0, 22.0 ],
+					"patching_rect" : [ 94.0, 178.5, 67.0, 22.0 ],
 					"text" : "s #0_onset"
 				}
 
@@ -2558,33 +2915,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 18.0, 5.592468000000054, 45.0, 45.0 ],
+					"patching_rect" : [ 11.0, 10.0, 45.0, 45.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 10.0, 37.5, 37.5 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "tonal", "chroma" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-8",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "AnalyzeTriggerCorpus.maxpat",
-					"numinlets" : 5,
-					"numoutlets" : 3,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 360.0, 307.61129799999992, 360.0, 952.40753200000006 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 342.0, 17.0, 506.0, 906.0 ],
-					"varname" : "ATC-tonal",
-					"viewvisibility" : 1
 				}
 
 			}
@@ -2594,7 +2927,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.0, 869.5, 45.0, 45.0 ]
+					"patching_rect" : [ 1081.0, 1091.5, 45.0, 45.0 ]
 				}
 
 			}
@@ -2616,7 +2949,7 @@
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 1081.0, 690.0, 296.0, 204.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 924.0, 379.5, 336.0, 227.0 ],
+					"presentation_rect" : [ 947.0, 379.5, 336.0, 227.0 ],
 					"varname" : "tonal-player",
 					"viewvisibility" : 1
 				}
@@ -2643,6 +2976,24 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2019.0, 86.747130999999996, 34.0, 22.0 ],
 					"text" : "write"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 16.0,
+					"id" : "obj-16",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 55.0, 317.699982000000091, 284.0, 78.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 7.0, 655.0, 265.0, 78.0 ],
+					"text" : "1. record Gaussian Mixture Model\neach buffer as a different timbre.\nTrain, then play model to detect timbre",
+					"textcolor" : [ 0.250980392156863, 0.203921568627451, 0.937254901960784, 1.0 ]
 				}
 
 			}
@@ -2750,15 +3101,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 3 ],
-					"source" : [ "obj-31", 0 ]
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-32", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-32", 0 ]
+					"destination" : [ "obj-51", 0 ],
+					"source" : [ "obj-33", 1 ]
 				}
 
 			}
@@ -2773,13 +3124,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-47", 0 ],
-					"source" : [ "obj-38", 0 ]
 				}
 
 			}
@@ -2831,13 +3175,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 2 ],
 					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-49", 0 ],
-					"source" : [ "obj-47", 0 ]
 				}
 
 			}
@@ -2911,16 +3248,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 1 ],
-					"order" : 0,
-					"source" : [ "obj-67", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-8", 4 ],
-					"order" : 1,
 					"source" : [ "obj-67", 1 ]
 				}
 
@@ -2929,6 +3257,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
 					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 1 ],
+					"source" : [ "obj-77", 0 ]
 				}
 
 			}
@@ -2974,6 +3309,13 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-98", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
 			"obj-14::obj-1" : [ "live.text[2]", "live.text", 0 ],
@@ -2982,6 +3324,7 @@
 			"obj-14::obj-20" : [ "live.text[4]", "live.text", 0 ],
 			"obj-14::obj-4" : [ "live.text[3]", "live.text", 0 ],
 			"obj-14::obj-71" : [ "live.gain~[2]", "concatenative synth", 0 ],
+			"obj-37::obj-27" : [ "number of triggers", "number of triggers", 0 ],
 			"obj-37::obj-6" : [ "live.text", "live.text", 0 ],
 			"obj-37::obj-8" : [ "live.text[1]", "live.text", 0 ],
 			"obj-37::obj-9" : [ "live.text[5]", "live.text", 0 ],
@@ -3036,55 +3379,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "AnalyzeTriggerCorpus.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "input.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "input-normalize.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "corpus-analyze.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mubu.stats.marker.track.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
-				"patcherrelativepath" : "../../../../Packages/MuBu For Max/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "knn-lookup.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tonal.json",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/data",
-				"patcherrelativepath" : "../data",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "clocked-stack-distributor.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
@@ -3119,6 +3413,62 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "AnalyzeTriggerCorpus.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "input.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "input-normalize.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "_js_mutate_descriptors.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "corpus-analyze.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mubu.stats.marker.track.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
+				"patcherrelativepath" : "../../../../Packages/MuBu For Max/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "knn-lookup.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tonal.json",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "mubu.concat~.mxo",
 				"type" : "iLaX"
 			}
@@ -3128,6 +3478,14 @@
 			}
 , 			{
 				"name" : "pipo~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.gmm.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -3148,14 +3506,6 @@
 			}
 , 			{
 				"name" : "mubu.knn.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.gmm.mxo",
 				"type" : "iLaX"
 			}
  ],
@@ -3226,10 +3576,10 @@
 , 			{
 				"name" : "tap-dark",
 				"default" : 				{
+					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"fontname" : [ "Ableton Sans Light Regular" ],
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
