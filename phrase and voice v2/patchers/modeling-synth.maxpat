@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 115.0, 1612.0, 852.0 ],
+		"rect" : [ 34.0, 115.0, 1612.0, 853.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -195,8 +195,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 311.0, 85.0, 22.0 ],
-					"text" : "prepend descr"
+					"patching_rect" : [ 225.0, 311.0, 71.0, 22.0 ],
+					"text" : "prepend yin"
 				}
 
 			}
@@ -239,9 +239,9 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 338.0, 37.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"1148-model-frequency" : [ 0.0 ],
-						"1148-model-frequency[1]" : [ 0.0 ],
-						"1148-model-timing" : [ 0.0 ],
+						"1014-model-frequency" : [ 1.0 ],
+						"1014-model-frequency[1]" : [ 1.0 ],
+						"1014-model-timing" : [ 0.0 ],
 						"concatenative synth" : [ 0.0 ],
 						"live.dial" : [ 1.0 ]
 					}
@@ -459,7 +459,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "input Descr~ descriptors ",
+					"comment" : "input yin",
 					"id" : "obj-8",
 					"index" : 3,
 					"maxclass" : "inlet",
@@ -510,16 +510,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-71",
-					"lastchannelcount" : 4,
+					"lastchannelcount" : 1,
 					"maxclass" : "mc.live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"orientation" : 1,
 					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 23.0, 514.0, 300.0, 59.0 ],
+					"patching_rect" : [ 23.0, 514.0, 300.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 154.5, 284.0, 59.0 ],
+					"presentation_rect" : [ 2.0, 154.5, 284.0, 41.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -12 ],
@@ -585,7 +585,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 24.0, 445.5, 272.0, 22.0 ],
+					"patching_rect" : [ 24.0, 445.5, 284.0, 22.0 ],
 					"text" : "mc.poly~ poly-concat-sync 4 @args #1  #2  "
 				}
 
@@ -951,8 +951,8 @@
 				"name" : "tap-dark",
 				"default" : 				{
 					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
-					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"fontname" : [ "Ableton Sans Light Regular" ],
+					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ]
 				}
 ,

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 33.0, 116.0, 1612.0, 852.0 ],
+		"rect" : [ -145.0, -965.0, 1852.0, 882.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,42 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"attr" : "js.expr",
-					"id" : "obj-27",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 96.0, 654.5, 587.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "js.labelexpr",
-					"id" : "obj-23",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 96.0, 626.5, 369.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 191.69439697265625, 564.0, 133.0, 22.0 ],
-					"text" : "_js_mutate_descriptors"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "led",
@@ -134,7 +98,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 929.69439697265625, 406.0, 47.0, 22.0 ],
+					"patching_rect" : [ 871.69439697265625, 378.0, 47.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 225.0, 30.0, 47.0, 22.0 ],
 					"text" : "clearall"
@@ -148,7 +112,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 948.0, 660.0, 78.0, 22.0 ],
+					"patching_rect" : [ 1026.0, 663.0, 78.0, 22.0 ],
 					"text" : "route alldone"
 				}
 
@@ -160,8 +124,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "int", "" ],
-					"patching_rect" : [ 688.0, 624.0, 350.0, 22.0 ],
-					"text" : "mubu.process #0-target audio ircamdescriptor:js @name descr  "
+					"patching_rect" : [ 688.0, 624.0, 345.0, 22.0 ],
+					"text" : "mubu.process #0-target audio ircamdescriptor @name descr  "
 				}
 
 			}
@@ -169,7 +133,7 @@
 				"box" : 				{
 					"comment" : "list of ircamdescriptors arguments for analysis",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -182,11 +146,11 @@
 				"box" : 				{
 					"comment" : "audio in",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 567.0, 95.0, 30.0, 30.0 ]
 				}
 
@@ -397,7 +361,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.5, 471.0, 151.0, 60.0 ],
+					"patching_rect" : [ 257.5, 478.0, 151.0, 60.0 ],
 					"text" : "then scale the normalized list to 0-1 range (based on the min/max of recorded sample)"
 				}
 
@@ -420,7 +384,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 116.0, 1612.0, 852.0 ],
+						"rect" : [ -145.0, -965.0, 1852.0, 882.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -747,7 +711,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ -145.0, -965.0, 1852.0, 882.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1013,7 +977,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 494.0, 164.0, 640.0, 664.0 ],
+						"rect" : [ -145.0, -965.0, 1852.0, 882.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1497,7 +1461,7 @@
 				"box" : 				{
 					"comment" : "normalized list out",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1561,7 +1525,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 116.0, 1612.0, 852.0 ],
+						"rect" : [ -145.0, -965.0, 1852.0, 882.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1821,7 +1785,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 157.0833740234375, 328.0, 145.0, 22.0 ],
+					"patching_rect" : [ 145.250040690104186, 322.0, 145.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1849,7 +1813,7 @@
 				"box" : 				{
 					"comment" : "list of descriptors for KNN or prepend \"scaling\" (int) or \"record\" (0-1)",
 					"id" : "obj-39",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2040,37 +2004,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"midpoints" : [ 127.0, 680.0 ],
-					"source" : [ "obj-19", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-86", 0 ],
 					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -2324,31 +2259,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "_js_mutate_descriptors.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -2416,9 +2326,9 @@
 				"name" : "tap-dark",
 				"default" : 				{
 					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"fontname" : [ "Ableton Sans Light Regular" ],
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ]
+					"fontname" : [ "Ableton Sans Light Regular" ]
 				}
 ,
 				"parentstyle" : "",

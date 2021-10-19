@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 33.0, 116.0, 1612.0, 852.0 ],
+		"rect" : [ -145.0, -965.0, 1576.0, 882.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,42 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"attr" : "js.expr",
-					"id" : "obj-27",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 721.0, 293.5, 587.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"attr" : "js.labelexpr",
-					"id" : "obj-23",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 721.0, 265.5, 369.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 721.0, 240.0, 133.0, 22.0 ],
-					"text" : "_js_mutate_descriptors"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-32",
 					"linecount" : 6,
@@ -174,7 +138,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 498.0, 326.0, 93.0, 22.0 ],
+					"patching_rect" : [ 91.0, 323.0, 93.0, 22.0 ],
 					"text" : "prepend scaling"
 				}
 
@@ -212,12 +176,14 @@
 					"bgcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 0.0 ],
 					"fontname" : "Ableton Sans Medium",
 					"id" : "obj-9",
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 556.0, 208.0, 96.0, 21.0 ],
+					"patching_rect" : [ 556.0, 208.0, 96.0, 64.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 360.0, 7.0, 261.0, 21.0 ],
+					"presentation_rect" : [ 360.0, 7.0, 267.0, 21.0 ],
+					"text" : "MFCC Chroma Loudness FundamentalFrequency",
 					"textcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
 				}
 
@@ -243,7 +209,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 273.0, 59.0, 90.0, 64.0 ],
+					"patching_rect" : [ 290.5, 59.0, 90.0, 64.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 0.0, 351.25, 168.0, 35.0 ],
@@ -284,7 +250,7 @@
 				"box" : 				{
 					"comment" : "non-normalized out",
 					"id" : "obj-51",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -296,11 +262,11 @@
 				"box" : 				{
 					"comment" : "signal",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 287.0, 13.0, 30.0, 30.0 ]
 				}
 
@@ -309,7 +275,7 @@
 				"box" : 				{
 					"comment" : "normalized list out",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -321,7 +287,7 @@
 				"box" : 				{
 					"comment" : "to pipo~ ircamdescriptor. prepend with ircamdescriptor.descriptors or config messages therefor. also prepend \"scaling\" or \"record_normalization\"",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -431,12 +397,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "float", "" ],
-					"patching_rect" : [ 13.361114501953125, 258.0, 294.0, 22.0 ],
+					"patching_rect" : [ 13.361114501953125, 258.0, 282.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"active" : 1
 					}
 ,
-					"text" : "pipo~ ircamdescriptor:js @ircamdescriptor.descriptors"
+					"text" : "pipo~ ircamdescriptor @ircamdescriptor.descriptors"
 				}
 
 			}
@@ -561,20 +527,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-19", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -598,20 +550,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-21", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -679,42 +617,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "input-normalize.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_js_mutate_descriptors.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pipo~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -782,9 +684,9 @@
 				"name" : "tap-dark",
 				"default" : 				{
 					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"fontname" : [ "Ableton Sans Light Regular" ],
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ]
+					"fontname" : [ "Ableton Sans Light Regular" ]
 				}
 ,
 				"parentstyle" : "",

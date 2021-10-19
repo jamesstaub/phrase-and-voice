@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 116.0, 1612.0, 852.0 ],
+		"rect" : [ -145.0, -937.0, 1852.0, 854.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,7 +42,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-12",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -53,14 +53,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 247.0, 372.0, 393.0, 35.0 ],
-					"presentation_linecount" : 3,
-					"text" : "\"a[c.FundamentalFrequency] = ftom(a[c.FundamentalFrequency] || 0.1); \na\""
+					"patching_rect" : [ 102.0, 383.0, 414.0, 22.0 ],
+					"text" : "\"a[c.Energy] = atodb(a[c.Energy]); a[c.Frequency] = ftom(a[c.Frequency]); a\""
 				}
 
 			}
@@ -104,7 +102,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -129,7 +127,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 116.0, 1612.0, 852.0 ],
+						"rect" : [ -145.0, -937.0, 1214.0, 854.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -280,13 +278,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-35",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 22.0, 145.500030999999979, 328.0, 35.0 ],
-					"text" : "\"l[c.FundamentalFrequency] = 'NoteNumber';\nl\""
+					"patching_rect" : [ 22.0, 145.500030999999979, 322.0, 22.0 ],
+					"presentation_linecount" : 3,
+					"text" : "\"l[c.Energy] = 'Loudness'; l[c.Frequency] = 'NoteNumber'; l\""
 				}
 
 			}
@@ -327,12 +325,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -400,9 +392,9 @@
 				"name" : "tap-dark",
 				"default" : 				{
 					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"fontname" : [ "Ableton Sans Light Regular" ],
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ]
+					"fontname" : [ "Ableton Sans Light Regular" ]
 				}
 ,
 				"parentstyle" : "",

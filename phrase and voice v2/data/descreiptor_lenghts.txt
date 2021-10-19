@@ -1,6 +1,4 @@
-	MFCC, 13;
-Chroma, 12;
-FundamentalFrequency, 1;
-Inharmonicity, 1;
-HarmonicEnergy, 1;
-PerceptualSpectralCentroid, 1;
+0, MFCC 13;
+1, Chroma 12;
+2, PerceptualSpectralVariation 1;
+3, PerceptualSpectralCentroid 1;

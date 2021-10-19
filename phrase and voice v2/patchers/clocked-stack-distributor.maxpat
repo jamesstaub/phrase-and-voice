@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 115.0, 1093.0, 852.0 ],
+		"rect" : [ 33.0, 115.0, 1612.0, 853.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -176,7 +176,7 @@
 						"live.text[1]" : [ 1.0 ],
 						"live.text[2]" : [ 1.0 ],
 						"stack_onset_duration" : [ 0.0 ],
-						"stack_size_#1" : [ 16 ]
+						"stack_size_#1" : [ 32 ]
 					}
 ,
 					"text" : "autopattr",
@@ -188,7 +188,7 @@
 				"box" : 				{
 					"comment" : "markerindex bufferindex",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -289,11 +289,11 @@
 				"box" : 				{
 					"comment" : "metro time",
 					"id" : "obj-14",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 796.0, 71.5, 30.0, 30.0 ]
 				}
 
@@ -302,11 +302,11 @@
 				"box" : 				{
 					"comment" : "onset bang",
 					"id" : "obj-13",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 663.0, 69.0, 30.0, 30.0 ]
 				}
 
@@ -315,7 +315,7 @@
 				"box" : 				{
 					"comment" : "segment to concat",
 					"id" : "obj-12",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1403,7 +1403,7 @@
 					"patching_rect" : [ 178.0, 579.0, 150.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 235.0, 198.0, 18.0 ],
-					"size" : 16.0
+					"size" : 32.0
 				}
 
 			}
@@ -1511,7 +1511,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 115.0, 1612.0, 852.0 ],
+						"rect" : [ 33.0, 115.0, 1612.0, 853.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2656,20 +2656,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-27" : [ "number of triggers", "number of triggers", 0 ],
-			"obj-6" : [ "live.text", "live.text", 0 ],
-			"obj-8" : [ "live.text[1]", "live.text", 0 ],
-			"obj-9" : [ "live.text[5]", "live.text", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -2736,9 +2722,9 @@
 , 			{
 				"name" : "tap-dark",
 				"default" : 				{
+					"fontname" : [ "Ableton Sans Light Regular" ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"fontname" : [ "Ableton Sans Light Regular" ],
 					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 				}
 ,
