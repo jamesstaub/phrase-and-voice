@@ -2,8 +2,8 @@
 	"name" : "phrase and voice v2",
 	"version" : 1,
 	"creationdate" : 3682245889,
-	"modificationdate" : 3715522390,
-	"viewrect" : [ 1.0, 115.0, 1680.0, 852.0 ],
+	"modificationdate" : 3717957873,
+	"viewrect" : [ -2.0, 116.0, 1680.0, 901.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -96,6 +96,11 @@
 				"local" : 1
 			}
 ,
+			"_js_mutate_descriptors.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"imubu-scatterplot.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -111,10 +116,14 @@
 				"local" : 1
 			}
 ,
-			"_js_mutate_descriptors.maxpat" : 			{
+			"poly-granular.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
+
+		}
+,
+		"media" : 		{
 
 		}
 ,

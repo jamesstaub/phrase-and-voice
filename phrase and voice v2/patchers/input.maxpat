@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -145.0, -965.0, 1576.0, 882.0 ],
+		"rect" : [ 34.0, 171.0, 1612.0, 796.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,18 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-32",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 730.0, 356.0, 150.0, 87.0 ],
-					"text" : "TODO:\ncollection of descriptior coefficient lengths + order to be used for parsing elsewhere in the patch (such as GMM)"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"attr" : "ircamdescriptor.NumMFCCs",
 					"id" : "obj-30",
 					"maxclass" : "attrui",
@@ -62,48 +50,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 4.72222900390625, 162.0, 262.0, 22.0 ],
 					"text_width" : 186.0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 883.0, 159.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 886.5, 104.0, 43.0, 22.0 ],
-					"text" : "getattr"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-104",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 730.0, 458.0, 203.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1001.0, 721.0, 157.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 0,
-						"precision" : 6
-					}
-,
-					"text" : "coll ircamdescriptor_lengths"
 				}
 
 			}
@@ -180,10 +126,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 556.0, 208.0, 96.0, 64.0 ],
+					"patching_rect" : [ 556.0, 208.0, 40.0, 64.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 360.0, 7.0, 267.0, 21.0 ],
-					"text" : "MFCC Chroma Loudness FundamentalFrequency",
+					"text" : "MFCC Chroma",
 					"textcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
 				}
 
@@ -513,20 +459,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 1 ],
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-18", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -683,10 +615,10 @@
 , 			{
 				"name" : "tap-dark",
 				"default" : 				{
-					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"fontname" : [ "Ableton Sans Light Regular" ]
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
+					"fontname" : [ "Ableton Sans Light Regular" ],
+					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

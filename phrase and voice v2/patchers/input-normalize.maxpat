@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -145.0, -965.0, 1852.0, 882.0 ],
+		"rect" : [ 34.0, 171.0, 1612.0, 796.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 302.0, 38.0, 117.0, 22.0 ],
+					"text" : "select import writeall"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "led",
@@ -1962,6 +1974,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-102", 0 ],
+					"source" : [ "obj-12", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-131", 0 ]
 				}
@@ -2061,6 +2087,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"order" : 0,
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -2325,10 +2360,10 @@
 , 			{
 				"name" : "tap-dark",
 				"default" : 				{
-					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"fontname" : [ "Ableton Sans Light Regular" ]
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
+					"fontname" : [ "Ableton Sans Light Regular" ],
+					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

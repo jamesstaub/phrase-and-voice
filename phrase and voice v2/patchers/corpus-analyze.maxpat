@@ -683,10 +683,10 @@
 , 							{
 								"name" : "tap-dark",
 								"default" : 								{
+									"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
-									"fontname" : [ "Ableton Sans Light Regular" ],
 									"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-									"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ]
+									"fontname" : [ "Ableton Sans Light Regular" ]
 								}
 ,
 								"parentstyle" : "",
@@ -704,23 +704,6 @@
 					}
 ,
 					"text" : "p yinstats"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 0.0 ],
-					"fontname" : "Ableton Sans Medium",
-					"fontsize" : 12.0,
-					"id" : "obj-34",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 341.0, 40.500031000000035, 256.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 594.0, 9.299972534179688, 308.0, 21.0 ],
-					"text" : "tonal descriptor",
-					"textcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
 				}
 
 			}
@@ -1431,7 +1414,7 @@
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 0,
-					"domain_bounds" : [ 0.0, 257910.430839002277935 ],
+					"domain_bounds" : [ 0.0, 73284.512471655325498 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -2140,13 +2123,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"hidden" : 1,
 					"source" : [ "obj-70", 0 ]
@@ -2264,10 +2240,10 @@
 , 			{
 				"name" : "tap-dark",
 				"default" : 				{
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
-					"fontname" : [ "Ableton Sans Light Regular" ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ]
+					"fontname" : [ "Ableton Sans Light Regular" ]
 				}
 ,
 				"parentstyle" : "",
