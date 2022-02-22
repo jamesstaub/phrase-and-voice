@@ -2,8 +2,8 @@
 	"name" : "phrase and voice v2",
 	"version" : 1,
 	"creationdate" : 3682245889,
-	"modificationdate" : 3717957873,
-	"viewrect" : [ -2.0, 116.0, 1680.0, 901.0 ],
+	"modificationdate" : 3728300649,
+	"viewrect" : [ 0.0, 115.0, 1680.0, 901.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -86,6 +86,11 @@
 				"local" : 1
 			}
 ,
+			"poly-granular.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"GMM.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -115,11 +120,6 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
-,
-			"poly-granular.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
 
 		}
 ,
@@ -146,6 +146,11 @@
 					"projectrelativepath" : "./patchers"
 				}
 
+			}
+,
+			"flucoma-cli.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
 			}
 
 		}

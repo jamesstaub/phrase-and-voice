@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 82.0, 1612.0, 885.0 ],
+		"rect" : [ 34.0, 81.0, 1612.0, 935.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,57 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"basictuning" : 440,
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "MUSIC:/Mix Refs/Chill Breaks/Guatemala Dreams.mp3",
+								"filename" : "Guatemala Dreams.mp3",
+								"filekind" : "audiofile",
+								"id" : "u581006590",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+ ]
+					}
+,
+					"followglobaltempo" : 0,
+					"formantcorrection" : 0,
+					"id" : "obj-48",
+					"maxclass" : "playlist~",
+					"mode" : "basic",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"originallength" : [ 0.0, "ticks" ],
+					"originaltempo" : 120.0,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 444.0, -1.5, 150.0, 30.0 ],
+					"pitchcorrection" : 0,
+					"quality" : "basic",
+					"timestretch" : [ 0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 959.0, 520.315063999999893, 150.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 531.0, 686.0, 150.0, 60.0 ],
+					"text" : "TODO:\ninspect normalization of input when yin-segments selected (should be none)"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-34",
 					"maxclass" : "newobj",
@@ -78,7 +129,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 33.0, 116.0, 1612.0, 901.0 ],
+						"rect" : [ 34.0, 144.0, 1612.0, 873.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -149,18 +200,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-5",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 114.0, 139.0, 70.0, 22.0 ],
-									"text" : "loadmess 1"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-23",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -177,7 +216,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 77.5, 609.0, 255.0, 20.0 ],
+									"patching_rect" : [ 84.5, 606.0, 255.0, 20.0 ],
 									"text" : "send bufferindex N + markerindex N in one list"
 								}
 
@@ -189,7 +228,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 10.0, 609.0, 61.0, 22.0 ],
+									"patching_rect" : [ 17.0, 606.0, 61.0, 22.0 ],
 									"text" : "zl group 4"
 								}
 
@@ -243,7 +282,7 @@
 									"restore" : 									{
 										"live.text[1]" : [ 0.0 ],
 										"live.text[2]" : [ 1.0 ],
-										"stack_onset_duration" : [ 0.0 ],
+										"stack_onset_duration" : [ 1.0 ],
 										"stack_size_#1" : [ 16 ]
 									}
 ,
@@ -387,7 +426,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 654.0, 30.0, 30.0 ]
+									"patching_rect" : [ 17.0, 654.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1468,7 +1507,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 178.0, 579.0, 150.0, 18.0 ],
+									"patching_rect" : [ 178.0, 581.0, 150.0, 18.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 1.0, 235.0, 198.0, 18.0 ],
 									"size" : 16.0
@@ -1579,7 +1618,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 33.0, 143.0, 1612.0, 825.0 ],
+										"rect" : [ 34.0, 144.0, 1612.0, 873.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2005,7 +2044,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 77.5, 654.0, 282.0, 181.0 ],
+									"patching_rect" : [ 84.5, 636.0, 282.0, 181.0 ],
 									"text" : "stack  the knn selected markers \nso there is a last in first out memory of recent marker selections\nthese can be used to elongate playback without simply looping the last\nchosen marker.\n\nthe KNN selection fills the stack, then\na bang pops segments off of the stack\nto select for synthesis.\n\n\n"
 								}
 
@@ -2278,7 +2317,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-26",
-									"items" : [ "to Max 1", ",", "to Max 2" ],
+									"items" : [ "to Max 1", ",", "to Max 2", ",", "PreSonus AudioBox iTwo MIDI OUT" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2634,13 +2673,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-113", 0 ],
 									"source" : [ "obj-6", 0 ]
 								}
@@ -2794,10 +2826,10 @@
 , 							{
 								"name" : "tap-dark",
 								"default" : 								{
-									"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-									"fontname" : [ "Ableton Sans Light Regular" ],
+									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
 									"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
+									"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
+									"fontname" : [ "Ableton Sans Light Regular" ]
 								}
 ,
 								"parentstyle" : "",
@@ -2937,7 +2969,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 32.0, 116.0, 1300.0, 901.0 ],
+						"rect" : [ 34.0, 141.0, 1612.0, 847.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3029,7 +3061,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 147.0, 334.0, 150.0, 60.0 ],
+									"patching_rect" : [ 147.0, 334.0, 152.0, 60.0 ],
 									"text" : "\n\nnodes to walk through knn weights"
 								}
 
@@ -3224,12 +3256,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-26",
-					"linecount" : 15,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1145.0, 50.5, 239.0, 208.0 ],
-					"text" : "NOTE:\nthis list must match corpus \nTODO: read from presaved corpus info\nTODO: remove FundamentalFreq + Loudness, then use a separate Yin analysis for match frequency\n\nTODO: let KNN dynamically select track (yin or ircam descriptor) would need to refactor the mubu.process js freq to midi\n\ninput normalize should onyl use ircamdescriptors\nYIN track should not be normalized for knn or input"
+					"patching_rect" : [ 791.0, 124.5, 239.0, 100.0 ],
+					"text" : "\nTODO: read from presaved corpus info\n\ninput normalize should onyl use ircamdescriptors\nYIN track should not be normalized for knn or input"
 				}
 
 			}
@@ -4171,7 +4203,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1145.0, 261.349991000000045, 239.0, 60.0 ],
+					"patching_rect" : [ 1054.0, 124.5, 239.0, 60.0 ],
 					"text" : "imubu\n-show all buffers same scatterplot\n-scatterplot descr-segments\n-hide all others"
 				}
 
@@ -4229,7 +4261,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.0, 194.5, 53.0, 22.0 ],
+					"patching_rect" : [ 7.0, 181.703765999999973, 53.0, 22.0 ],
 					"text" : "s #0_yin"
 				}
 
@@ -4625,12 +4657,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
-					"linecount" : 32,
+					"linecount" : 38,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1427.0, 157.5, 270.0, 449.0 ],
-					"text" : "TODO \n\n- segment duration legato per voice\n- concat params interface (filter, randomize etc). should accept midi + temporal model input\ncreate a feedback from concat synth done to stack pop\n\n\npreset lists of corpus samples\n\nScene presets map to filter/include from KNN \n\nTimbre ID map to Scene midi out (timbre:scene mapping different per Pattern)\n\nadd more voice-specific mappings \n\n(automate period on timbre id)\n\nAdd granular voice:\n - when input has high periodicity, trigger an enveloped granular voice for the current KNN segment.\n\nOnset duration could map to octatrack slider to trigger reverb when short samples are triggered few and farbetween, or even if a lot of empty space is detected in the output \n\n\n\n"
+					"patching_rect" : [ 1313.5, 85.0, 270.0, 529.0 ],
+					"text" : "TODO \n\n- segment duration legato per voice\n- concat params interface (filter, randomize etc). should accept midi + temporal model input\ncreate a feedback from concat synth done to stack pop\n\n\npreset lists of corpus samples\n\nScene presets map to filter/include from KNN \n\nTimbre ID map to Scene midi out (timbre:scene mapping different per Pattern)\n\nadd more voice-specific mappings \n\n(automate period on timbre id)\n\nAdd granular voice:\n - when input has high periodicity, trigger an enveloped granular voice for the current KNN segment.\n\nGranular could be an extension of the concat, where it hits the same markerindex but dynamically modulates the position and period for cloudy/stutter/timestretch of the segment.\n\n\nOnset duration could map to octatrack slider to trigger reverb when short samples are triggered few and farbetween, or even if a lot of empty space is detected in the output \n\n\n\n"
 				}
 
 			}
@@ -4655,7 +4687,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1949.0, 160.747131000000024, 56.0, 22.0 ],
 					"restore" : 					{
-						"mc.live.gain~" : [ -5.441511357842856 ]
+						"mc.live.gain~" : [ -2.580128023565436 ]
 					}
 ,
 					"text" : "autopattr",
@@ -4685,10 +4717,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1715.0, 116.747131000000024, 290.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 358, 173 ],
+						"client_rect" : [ 0, 115, 1680, 968 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
+						"storage_rect" : [ 0, 115, 1680, 968 ]
 					}
 ,
 					"text" : "pattrstorage patternBanks @greedy 1 @savemode 2",
@@ -5414,7 +5446,7 @@
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 1082.0, 687.0, 337.0, 578.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 922.0, 463.592468000000054, 653.0, 607.0 ],
+					"presentation_rect" : [ 917.0, 462.592468000000054, 653.0, 607.0 ],
 					"varname" : "tonal-player",
 					"viewvisibility" : 1
 				}
@@ -5678,6 +5710,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 0,
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"order" : 1,
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"midpoints" : [ 1323.0, 638.907531999999946 ],
 					"source" : [ "obj-50", 0 ]
@@ -5839,10 +5887,6 @@
 			"obj-14::obj-21.2::obj-72" : [ "live.tab[3]", "live.tab[2]", 0 ],
 			"obj-14::obj-21.3::obj-72" : [ "live.tab[4]", "live.tab[2]", 0 ],
 			"obj-14::obj-21.4::obj-72" : [ "live.tab[5]", "live.tab[2]", 0 ],
-			"obj-14::obj-21.5::obj-72" : [ "live.tab[7]", "live.tab[2]", 0 ],
-			"obj-14::obj-21.6::obj-72" : [ "live.tab[8]", "live.tab[2]", 0 ],
-			"obj-14::obj-21.7::obj-72" : [ "live.tab[9]", "live.tab[2]", 0 ],
-			"obj-14::obj-21.8::obj-72" : [ "live.tab[10]", "live.tab[2]", 0 ],
 			"obj-14::obj-27" : [ "granular", "granular", 0 ],
 			"obj-14::obj-28" : [ "multislider[1]", "multislider[1]", 0 ],
 			"obj-14::obj-4" : [ "live.text[3]", "live.text", 0 ],
@@ -5888,22 +5932,6 @@
 ,
 				"obj-14::obj-21.4::obj-72" : 				{
 					"parameter_longname" : "live.tab[5]"
-				}
-,
-				"obj-14::obj-21.5::obj-72" : 				{
-					"parameter_longname" : "live.tab[7]"
-				}
-,
-				"obj-14::obj-21.6::obj-72" : 				{
-					"parameter_longname" : "live.tab[8]"
-				}
-,
-				"obj-14::obj-21.7::obj-72" : 				{
-					"parameter_longname" : "live.tab[9]"
-				}
-,
-				"obj-14::obj-21.8::obj-72" : 				{
-					"parameter_longname" : "live.tab[10]"
 				}
 ,
 				"obj-14::obj-27" : 				{
@@ -5979,7 +6007,7 @@
 					"parameter_exponent" : 2.0,
 					"parameter_longname" : "speed",
 					"parameter_modmode" : 0,
-					"parameter_range" : [ 500.0, 10000.0 ],
+					"parameter_range" : [ 500.0, 600000.0 ],
 					"parameter_shortname" : "speed",
 					"parameter_steps" : 1
 				}
@@ -6213,10 +6241,10 @@
 , 			{
 				"name" : "tap-dark",
 				"default" : 				{
-					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"fontname" : [ "Ableton Sans Light Regular" ],
+					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
 					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
+					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
+					"fontname" : [ "Ableton Sans Light Regular" ]
 				}
 ,
 				"parentstyle" : "",

@@ -132,7 +132,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 115.0, 1612.0, 852.0 ],
+						"rect" : [ 34.0, 115.0, 1612.0, 853.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -160,6 +160,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -3329,7 +3330,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 210.5, 399.0, 29.5, 22.0 ],
+					"patching_rect" : [ 176.5, 386.5, 29.5, 22.0 ],
 					"text" : "t l b"
 				}
 
@@ -3397,11 +3398,11 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 338.0, 65.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"24429-model-frequency" : [ 1.0 ],
-						"24429-model-frequency[1]" : [ 0.0 ],
-						"24429-model-timing" : [ 1.0 ],
-						"concatenative synth" : [ -2.347335069172132 ],
-						"live.dial" : [ 0.0 ]
+						"2863-model-frequency" : [ 0.0 ],
+						"2863-model-frequency[1]" : [ 0.0 ],
+						"2863-model-timing" : [ 1.0 ],
+						"concatenative synth" : [ -3.50352919032531 ],
+						"live.dial" : [ 2.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -4292,10 +4293,10 @@
 , 			{
 				"name" : "tap-dark",
 				"default" : 				{
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"fontname" : [ "Ableton Sans Light Regular" ]
+					"fontname" : [ "Ableton Sans Light Regular" ],
+					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

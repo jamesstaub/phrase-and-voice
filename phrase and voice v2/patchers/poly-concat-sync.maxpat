@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 143.0, 1612.0, 824.0 ],
+		"rect" : [ 34.0, 171.0, 1612.0, 796.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-47",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 480.0, 544.0, 210.0, 60.0 ],
+					"text" : "TODO: \nrethink onseg trigger of play here. result is unexpected triggering even when there are no descriptors"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-45",
 					"linecount" : 4,
 					"maxclass" : "comment",
@@ -57,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 387.0, 79.300017999999909, 47.0, 22.0 ],
+					"patching_rect" : [ 397.0, 70.300017999999909, 47.0, 22.0 ],
 					"text" : "zl nth 1"
 				}
 
@@ -157,7 +169,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-20",
@@ -166,7 +177,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 631.0, 455.0, 259.0, 22.0 ],
-									"text" : "periodvar 0. 0.1125"
+									"text" : "periodvar 0. 0."
 								}
 
 							}
@@ -215,7 +226,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 457.0, 323.0, 92.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "periodvar $1 $2"
 								}
 
@@ -990,7 +1000,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 446.0, 581.0, 175.0, 22.0 ],
+					"patching_rect" : [ 446.0, 651.0, 175.0, 22.0 ],
 					"text" : "allowrepeatmarkers $1, play $1"
 				}
 
@@ -2357,7 +2367,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 694.0, 528.0, 58.0, 22.0 ],
+					"patching_rect" : [ 639.0, 627.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -2381,6 +2391,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 28.0, 749.0, 42.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
@@ -2393,6 +2407,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 28.0, 11.0, 28.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -2404,7 +2422,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 694.0, 552.0, 296.0, 22.0 ],
+					"patching_rect" : [ 639.0, 651.0, 296.0, 22.0 ],
 					"text" : "autotrigger 1, allowrepeatmarkers 1, play 0, period 0 1"
 				}
 
@@ -3383,10 +3401,10 @@
 , 			{
 				"name" : "tap-dark",
 				"default" : 				{
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"fontname" : [ "Ableton Sans Light Regular" ]
+					"fontname" : [ "Ableton Sans Light Regular" ],
+					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
