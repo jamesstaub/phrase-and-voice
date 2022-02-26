@@ -9,13 +9,13 @@ const flucomaProcess = (directory, file) => {
     const filePath = path.join( directory, file )
     // const [fp, ext] = filePath.split('.');
     const cmd = `/Users/admin/FluidCorpusManipulation/bin/fluid-hpss -source ${filePath} -harmonic ${directory}harmonic/${file} -percussive ${directory}percussive/${file}`
-
+ 	console.log(cmd);
     dir = exec(cmd, function(err, stdout, stderr) {
         if (err) {
             console.log('ERROR:', err);
           // should have err.code here?  
         }
-        // console.log(stdout);
+        
       });
       
       dir.on('exit', function (code) {

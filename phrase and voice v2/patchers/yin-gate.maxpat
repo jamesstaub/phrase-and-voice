@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 80.0, 1264.0, 899.0 ],
+		"rect" : [ 34.0, 115.0, 1612.0, 901.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,11 +41,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-24",
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 166.0, 92.0, 50.0, 22.0 ]
+					"patching_rect" : [ 166.0, 92.0, 50.0, 102.0 ],
+					"text" : "93. 0.001445 0. 0.887373"
 				}
 
 			}
@@ -159,8 +161,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 523.0, 79.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"rslider" : [ 8.678160919540231, 20.0 ],
-						"rslider[1]" : [ 54.885057471264368, 100.0 ]
+						"rslider" : [ 0.0, 20.0 ],
+						"rslider[1]" : [ 0.0, 100.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -467,7 +469,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 203.5, 8.75, 150.0, 74.0 ],
+					"patching_rect" : [ 203.5, 8.75, 153.0, 74.0 ],
 					"text" : "Yin Descriptors with logical gates to switch which analysis/resynthesis pathways to take\n"
 				}
 
@@ -479,7 +481,7 @@
 					"floatoutput" : 1,
 					"id" : "obj-35",
 					"maxclass" : "rslider",
-					"min" : -100,
+					"min" : -100.0,
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
@@ -556,10 +558,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 177.625, 309.75, 52.25, 91.0 ],
+					"patching_rect" : [ 177.625, 309.75, 52.0, 91.0 ],
 					"peakcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.5, 106.75, 52.25, 91.0 ],
+					"presentation_rect" : [ 91.5, 106.75, 52.0, 91.0 ],
 					"setminmax" : [ -100.0, 0.0 ],
 					"setstyle" : 3,
 					"varname" : "multislider[1]"
@@ -604,10 +606,10 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 36.625, 309.75, 46.5, 91.0 ],
+					"patching_rect" : [ 36.625, 309.75, 47.0, 91.0 ],
 					"peakcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 17.375, 106.75, 46.5, 91.0 ],
+					"presentation_rect" : [ 17.375, 106.75, 47.0, 91.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 2,
 					"varname" : "multislider[2]"
@@ -722,7 +724,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 591.0, 413.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, -0.25, 372.0, 245.0 ],
+					"presentation_rect" : [ 1.0, -0.25, 374.0, 405.0 ],
 					"proportion" : 0.5
 				}
 

@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 81.0, 1612.0, 935.0 ],
+		"rect" : [ 34.0, 81.0, 1340.0, 935.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,10 +43,10 @@
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "MUSIC:/Mix Refs/Chill Breaks/Guatemala Dreams.mp3",
-								"filename" : "Guatemala Dreams.mp3",
+								"absolutepath" : "Macintosh HD:/Users/admin/Dropbox/audio/septembersynths/guitar improv.WAV",
+								"filename" : "guitar improv.WAV",
 								"filekind" : "audiofile",
-								"id" : "u581006590",
+								"id" : "u910006850",
 								"loop" : 0,
 								"content_state" : 								{
 
@@ -58,7 +58,7 @@
 ,
 					"followglobaltempo" : 0,
 					"formantcorrection" : 0,
-					"id" : "obj-48",
+					"id" : "obj-70",
 					"maxclass" : "playlist~",
 					"mode" : "basic",
 					"numinlets" : 1,
@@ -67,7 +67,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 444.0, -1.5, 150.0, 30.0 ],
+					"patching_rect" : [ 758.0, 231.0, 150.0, 30.0 ],
 					"pitchcorrection" : 0,
 					"quality" : "basic",
 					"timestretch" : [ 0 ]
@@ -76,28 +76,51 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-47",
-					"linecount" : 4,
+					"id" : "obj-21",
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 959.0, 520.315063999999893, 150.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 531.0, 686.0, 150.0, 60.0 ],
-					"text" : "TODO:\ninspect normalization of input when yin-segments selected (should be none)"
+					"patching_rect" : [ 1028.0, 262.0, 211.0, 114.0 ],
+					"text" : "TODO:\n\nsaving +  loading timbre model should sync with synth and KNN presets\n\ndifferent mappings for cellos vs bass\n\n "
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-34",
-					"maxclass" : "newobj",
+					"id" : "obj-52",
+					"maxclass" : "gain~",
+					"multichannelvariant" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 644.0, 128.0, 151.0, 19.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "ezdac~",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 236.0, 42.0, 74.0, 22.0 ],
-					"text" : "delay~ 1024"
+					"numoutlets" : 0,
+					"patching_rect" : [ 644.0, 155.5, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1028.0, 184.349991000000045, 235.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 552.0, 823.0, 150.0, 60.0 ],
+					"text" : "TODO:\ninspect normalization of input when yin-segments selected (should be none)"
 				}
 
 			}
@@ -112,6 +135,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-37",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "clocked-stack-distributor.maxpat",
 					"numinlets" : 3,
@@ -122,8 +146,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -282,7 +306,7 @@
 									"restore" : 									{
 										"live.text[1]" : [ 0.0 ],
 										"live.text[2]" : [ 1.0 ],
-										"stack_onset_duration" : [ 1.0 ],
+										"stack_onset_duration" : [ 0.0 ],
 										"stack_size_#1" : [ 16 ]
 									}
 ,
@@ -504,7 +528,6 @@
 							}
 , 							{
 								"box" : 								{
-									"activebgoncolor" : [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
 									"appearance" : 1,
 									"bgoncolor" : [ 0.611764705882353, 0.6, 0.6, 1.0 ],
 									"fontsize" : 12.0,
@@ -518,6 +541,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 1.0, 71.0, 140.0, 26.0 ],
 									"saved_attribute_attributes" : 									{
+										"bgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_longname" : "live.text",
@@ -545,8 +572,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 11,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -647,8 +674,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 11,
+															"minor" : 2,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -873,8 +900,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 11,
+																			"minor" : 2,
+																			"revision" : 2,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -1611,8 +1638,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 11,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2103,8 +2130,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 11,
+											"minor" : 2,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2826,10 +2853,10 @@
 , 							{
 								"name" : "tap-dark",
 								"default" : 								{
-									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
-									"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 									"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-									"fontname" : [ "Ableton Sans Light Regular" ]
+									"fontname" : [ "Ableton Sans Light Regular" ],
+									"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
+									"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2840,7 +2867,7 @@
 ,
 					"patching_rect" : [ 732.0, 659.0, 333.0, 435.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 572.0, 386.5, 336.0, 268.0 ],
+					"presentation_rect" : [ 916.0, 88.907531999999946, 336.0, 273.0 ],
 					"varname" : "tonal-segment-stack-trig",
 					"viewvisibility" : 1
 				}
@@ -2854,9 +2881,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 659.0, 284.0, 24.0 ],
+					"patching_rect" : [ 12.0, 740.0, 284.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 191.0, -89.25, 311.0, 24.0 ],
+					"presentation_rect" : [ 191.0, 223.092468000000054, 290.0, 24.0 ],
 					"text" : "1. record timbre examples, train",
 					"textcolor" : [ 0.250980392156863, 0.203921568627451, 0.937254901960784, 1.0 ]
 				}
@@ -2917,43 +2944,6 @@
 			}
 , 			{
 				"box" : 				{
-					"basictuning" : 440,
-					"clipheight" : 27.0,
-					"data" : 					{
-						"clips" : [ 							{
-								"absolutepath" : "d_11.wav",
-								"filename" : "d_11.wav",
-								"filekind" : "audiofile",
-								"id" : "u379002474",
-								"loop" : 1,
-								"content_state" : 								{
-									"loop" : 1
-								}
-
-							}
- ]
-					}
-,
-					"followglobaltempo" : 0,
-					"formantcorrection" : 0,
-					"id" : "obj-35",
-					"maxclass" : "playlist~",
-					"mode" : "basic",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"originallength" : [ 0.0, "ticks" ],
-					"originaltempo" : 120.0,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 236.0, -16.5, 150.0, 28.0 ],
-					"pitchcorrection" : 0,
-					"quality" : "basic",
-					"timestretch" : [ 0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -2962,14 +2952,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 141.0, 1612.0, 847.0 ],
+						"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3070,7 +3060,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 692.0, 17.5, 64.0, 22.0 ],
+					"patching_rect" : [ 916.0, 13.5, 64.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3094,7 +3084,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1525.0, 998.01882999999998, 293.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1098.0, 1075.092468000000054, 293.0, 47.0 ],
+					"presentation_rect" : [ 1082.0, 876.092468000000054, 405.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "main out",
@@ -3141,7 +3131,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 692.0, 61.0, 68.0, 22.0 ],
+					"patching_rect" : [ 916.0, 57.0, 68.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"externalfiles" : 1,
@@ -3164,7 +3154,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 692.0, 85.0, 99.0, 22.0 ],
+					"patching_rect" : [ 916.0, 81.0, 99.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"externalfiles" : 1,
@@ -3194,74 +3184,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "gain~",
-					"multichannelvariant" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 312.0, 31.0, 22.0, 140.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 236.0, 69.0, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"basictuning" : 440,
-					"clipheight" : 29.0,
-					"data" : 					{
-						"clips" : [ 							{
-								"absolutepath" : "skloop.mp3",
-								"filename" : "skloop.mp3",
-								"filekind" : "audiofile",
-								"id" : "u309011214",
-								"loop" : 1,
-								"content_state" : 								{
-									"loop" : 1,
-									"speed" : 0.49
-								}
-
-							}
- ]
-					}
-,
-					"followglobaltempo" : 0,
-					"formantcorrection" : 0,
-					"id" : "obj-27",
-					"maxclass" : "playlist~",
-					"mode" : "basic",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"originallength" : [ 0.0, "ticks" ],
-					"originaltempo" : 120.0,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 75.0, 13.5, 150.0, 30.0 ],
-					"pitchcorrection" : 0,
-					"quality" : "basic",
-					"timestretch" : [ 0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-26",
-					"linecount" : 7,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 791.0, 124.5, 239.0, 100.0 ],
-					"text" : "\nTODO: read from presaved corpus info\n\ninput normalize should onyl use ircamdescriptors\nYIN track should not be normalized for knn or input"
+					"patching_rect" : [ 1033.0, 42.0, 206.0, 47.0 ],
+					"text" : "\nTODO: read from presaved corpus info"
 				}
 
 			}
@@ -3276,8 +3205,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3439,6 +3368,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-8",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "AnalyzeTriggerCorpus.maxpat",
 					"numinlets" : 5,
@@ -3447,7 +3377,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 360.0, 307.61129799999992, 360.0, 952.40753200000006 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 7.0, 251.092468000000054, 901.0, 882.0 ],
+					"presentation_rect" : [ 7.0, 251.092468000000054, 834.0, 832.0 ],
 					"varname" : "ATC-tonal",
 					"viewvisibility" : 1
 				}
@@ -3460,7 +3390,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.0, 837.592468000000054, 241.0, 33.0 ],
+					"patching_rect" : [ 12.0, 843.092468000000054, 241.0, 33.0 ],
 					"text" : "this model could automatically re-record, retrain throughout performance"
 				}
 
@@ -3476,8 +3406,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3888,7 +3818,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 7.0, 868.592468000000054, 130.0, 22.0 ],
+					"patching_rect" : [ 12.0, 874.092468000000054, 130.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3907,7 +3837,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 7.0, 798.592468000000054, 241.0, 33.0 ],
+					"patching_rect" : [ 12.0, 804.092468000000054, 241.0, 33.0 ],
 					"text" : "GMM for rhythmic phrases\nonset duration, onset level, centroid"
 				}
 
@@ -3934,15 +3864,16 @@
 					"enablevscroll" : 0,
 					"id" : "obj-18",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "GMM.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "bang" ],
-					"patching_rect" : [ 7.0, 895.5, 343.0, 296.0 ],
+					"patching_rect" : [ 12.0, 901.0, 343.0, 296.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 517.0, -109.0, 324.0, 348.092468000000054 ],
+					"presentation_rect" : [ 517.0, -109.0, 324.0, 356.092468000000054 ],
 					"viewvisibility" : 1
 				}
 
@@ -3950,12 +3881,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-71",
-					"linecount" : 7,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 797.0, 233.349991000000045, 339.0, 114.0 ],
-					"text" : "TODO: create a select menu for known descriptor combinations\n\neach item will have a determined setting for GMM as well, in some cases only MFCC will be used for GMM but MFCC + Chroma is used for KNN lookup\n\n"
+					"patching_rect" : [ 1028.0, 108.0, 300.0, 74.0 ],
+					"text" : "each item will have a determined setting for GMM as well, in some cases only MFCC will be used for GMM but MFCC + Chroma is used for KNN lookup\n\n"
 				}
 
 			}
@@ -3982,14 +3913,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -145.0, -965.0, 1852.0, 882.0 ],
+						"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4198,30 +4129,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-28",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1054.0, 124.5, 239.0, 60.0 ],
-					"text" : "imubu\n-show all buffers same scatterplot\n-scatterplot descr-segments\n-hide all others"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"linecount" : 9,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 797.0, 349.349991000000045, 503.0, 141.0 ],
-					"text" : "use scatterplot to select segments within selector range (frequency, periodicity, loudness, duration)\n\nthen either scale/clip/offset the input descriptors, or filter the output of KNN\nto be within this range\n\n\n\nfor the ircamdescriptors-segment track (eg. chroma, mfcc), within the range\n"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"args" : [ "tonal-gmm", "timbre" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -4230,6 +4137,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-67",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "GMM.maxpat",
 					"numinlets" : 2,
@@ -4238,7 +4146,7 @@
 					"outlettype" : [ "", "", "bang" ],
 					"patching_rect" : [ 7.0, 335.907531999999946, 343.0, 296.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 191.0, -109.0, 324.0, 348.092468000000054 ],
+					"presentation_rect" : [ 191.0, -109.0, 324.0, 356.092468000000054 ],
 					"viewvisibility" : 1
 				}
 
@@ -4300,6 +4208,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-157",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "yin-gate.maxpat",
 					"numinlets" : 1,
@@ -4325,8 +4234,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4657,12 +4566,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
-					"linecount" : 38,
+					"linecount" : 37,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1313.5, 85.0, 270.0, 529.0 ],
-					"text" : "TODO \n\n- segment duration legato per voice\n- concat params interface (filter, randomize etc). should accept midi + temporal model input\ncreate a feedback from concat synth done to stack pop\n\n\npreset lists of corpus samples\n\nScene presets map to filter/include from KNN \n\nTimbre ID map to Scene midi out (timbre:scene mapping different per Pattern)\n\nadd more voice-specific mappings \n\n(automate period on timbre id)\n\nAdd granular voice:\n - when input has high periodicity, trigger an enveloped granular voice for the current KNN segment.\n\nGranular could be an extension of the concat, where it hits the same markerindex but dynamically modulates the position and period for cloudy/stutter/timestretch of the segment.\n\n\nOnset duration could map to octatrack slider to trigger reverb when short samples are triggered few and farbetween, or even if a lot of empty space is detected in the output \n\n\n\n"
+					"patching_rect" : [ 1341.5, 32.5, 270.0, 516.0 ],
+					"text" : "TODO \n\n- segment duration legato per voice\n- concat params interface (filter, randomize etc). should accept midi + temporal model input\ncreate a feedback from concat synth done to stack pop\n\n\nScene presets map to filter/include from KNN \n(co-existing with timbre-based includes)\n\nTimbre ID map to Scene midi out (timbre:scene mapping different per Pattern)\n\nadd more voice-specific mappings \n\n(automate period on timbre id)\n\nAdd granular voice:\n - when input has high periodicity, trigger an enveloped granular voice for the current KNN segment.\n\nGranular could be an extension of the concat, where it hits the same markerindex but dynamically modulates the position and period for cloudy/stutter/timestretch of the segment.\n\n\nOnset duration could map to octatrack slider to trigger reverb when short samples are triggered few and farbetween, or even if a lot of empty space is detected in the output \n\n\n\n"
 				}
 
 			}
@@ -4764,7 +4673,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1597.5, 901.0, 135.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 922.0, 1075.092468000000054, 155.0, 22.0 ],
+					"presentation_rect" : [ 916.0, 876.092468000000054, 155.0, 22.0 ],
 					"text_width" : 84.0
 				}
 
@@ -4791,7 +4700,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1597.5, 931.0, 135.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 922.0, 1102.092468000000054, 155.0, 22.0 ],
+					"presentation_rect" : [ 916.0, 903.092468000000054, 155.0, 22.0 ],
 					"text_width" : 84.0
 				}
 
@@ -4817,7 +4726,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1673.0, 58.0, 35.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 957.0, 366.0, 35.0, 21.0 ],
+					"presentation_rect" : [ 916.0, 412.0, 35.0, 21.0 ],
 					"text" : "Bank"
 				}
 
@@ -4831,7 +4740,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1720.0, 18.0, 49.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1042.0, 327.0, 49.0, 21.0 ],
+					"presentation_rect" : [ 1001.0, 373.0, 49.0, 21.0 ],
 					"text" : "Pattern"
 				}
 
@@ -4847,7 +4756,7 @@
 					"patching_rect" : [ 1715.0, 50.5, 263.0, 53.0 ],
 					"pattrstorage" : "patternBanks",
 					"presentation" : 1,
-					"presentation_rect" : [ 1000.0, 350.0, 260.0, 53.0 ]
+					"presentation_rect" : [ 959.0, 396.0, 260.0, 53.0 ]
 				}
 
 			}
@@ -5106,8 +5015,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5438,6 +5347,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-14",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "modeling-synth.maxpat",
 					"numinlets" : 5,
@@ -5446,7 +5356,7 @@
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 1082.0, 687.0, 337.0, 578.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 917.0, 462.592468000000054, 653.0, 607.0 ],
+					"presentation_rect" : [ 916.0, 479.592468000000054, 589.0, 382.0 ],
 					"varname" : "tonal-player",
 					"viewvisibility" : 1
 				}
@@ -5476,27 +5386,8 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"attr" : "speed",
-					"id" : "obj-1",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 75.0, -13.5, 150.0, 22.0 ]
-				}
-
-			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-11", 0 ]
@@ -5583,31 +5474,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"order" : 0,
-					"source" : [ "obj-27", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-51", 0 ],
-					"order" : 1,
-					"source" : [ "obj-27", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
 					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
-					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -5622,38 +5490,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 1 ],
-					"order" : 0,
-					"source" : [ "obj-34", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"order" : 1,
-					"source" : [ "obj-34", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"order" : 0,
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-51", 0 ],
-					"order" : 1,
-					"source" : [ "obj-35", 0 ]
 				}
 
 			}
@@ -5710,22 +5546,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"order" : 0,
-					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-51", 0 ],
-					"order" : 1,
-					"source" : [ "obj-48", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"midpoints" : [ 1323.0, 638.907531999999946 ],
 					"source" : [ "obj-50", 0 ]
@@ -5761,6 +5581,22 @@
 					"destination" : [ "obj-39", 0 ],
 					"order" : 2,
 					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 1 ],
+					"order" : 0,
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"order" : 1,
+					"source" : [ "obj-52", 0 ]
 				}
 
 			}
@@ -5804,6 +5640,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
 					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"order" : 1,
+					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"order" : 0,
+					"source" : [ "obj-70", 0 ]
 				}
 
 			}
@@ -5884,9 +5736,6 @@
 			"obj-14::obj-14" : [ "retrigger factor", "legato retrigger factor", 0 ],
 			"obj-14::obj-20" : [ "live.text[4]", "live.text", 0 ],
 			"obj-14::obj-21.1::obj-72" : [ "live.tab[2]", "live.tab[2]", 0 ],
-			"obj-14::obj-21.2::obj-72" : [ "live.tab[3]", "live.tab[2]", 0 ],
-			"obj-14::obj-21.3::obj-72" : [ "live.tab[4]", "live.tab[2]", 0 ],
-			"obj-14::obj-21.4::obj-72" : [ "live.tab[5]", "live.tab[2]", 0 ],
 			"obj-14::obj-27" : [ "granular", "granular", 0 ],
 			"obj-14::obj-28" : [ "multislider[1]", "multislider[1]", 0 ],
 			"obj-14::obj-4" : [ "live.text[3]", "live.text", 0 ],
@@ -5920,18 +5769,6 @@
 ,
 				"obj-14::obj-20" : 				{
 					"parameter_longname" : "live.text[4]"
-				}
-,
-				"obj-14::obj-21.2::obj-72" : 				{
-					"parameter_longname" : "live.tab[3]"
-				}
-,
-				"obj-14::obj-21.3::obj-72" : 				{
-					"parameter_longname" : "live.tab[4]"
-				}
-,
-				"obj-14::obj-21.4::obj-72" : 				{
-					"parameter_longname" : "live.tab[5]"
 				}
 ,
 				"obj-14::obj-27" : 				{
@@ -6018,11 +5855,109 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "AnalyzeTriggerCorpus.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "GMM.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "_js_mutate_descriptors.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "corpus-analyze.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "guitar improv.WAV",
+				"bootpath" : "~/Dropbox/audio/septembersynths",
+				"patcherrelativepath" : "../../../../../../Dropbox/audio/septembersynths",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "input-normalize.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "input.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "knn-lookup.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "modeling-synth.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "mubu.concat~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.gmm.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.granular~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.knn.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.stats.marker.track.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
+				"patcherrelativepath" : "../../../../Packages/MuBu For Max/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "patternBanks.json",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pipo.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "pipo~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "poly-concat-sync.maxpat",
@@ -6039,7 +5974,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "patternBanks.json",
+				"name" : "tonal.json",
 				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/data",
 				"patcherrelativepath" : "../data",
 				"type" : "JSON",
@@ -6051,127 +5986,6 @@
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "GMM.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "AnalyzeTriggerCorpus.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "input.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "input-normalize.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "corpus-analyze.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mubu.stats.marker.track.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
-				"patcherrelativepath" : "../../../../Packages/MuBu For Max/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "_js_mutate_descriptors.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "knn-lookup.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tonal.json",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/data",
-				"patcherrelativepath" : "../data",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "skloop.mp3",
-				"bootpath" : "~/Dropbox/audio/Drum Machines mp3/Casio SK1/Casio SK-1",
-				"patcherrelativepath" : "../../../../../../Dropbox/audio/Drum Machines mp3/Casio SK1/Casio SK-1",
-				"type" : "Mp3",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "d_11.wav",
-				"bootpath" : "~/Dropbox/audio/dexterity",
-				"patcherrelativepath" : "../../../../../../Dropbox/audio/dexterity",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.concat~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.granular~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "pipo~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.gmm.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.knn.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
@@ -6241,10 +6055,10 @@
 , 			{
 				"name" : "tap-dark",
 				"default" : 				{
-					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ],
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"fontname" : [ "Ableton Sans Light Regular" ]
+					"fontname" : [ "Ableton Sans Light Regular" ],
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
+					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
