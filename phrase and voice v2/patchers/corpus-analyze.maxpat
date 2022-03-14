@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 115.0, 1612.0, 901.0 ],
+		"rect" : [ 31.0, 176.0, 1612.0, 845.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,35 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 457.0, 555.0, 185.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 206.0, 234.500031000000035, 141.0, 33.0 ],
+					"text" : "analyze descriptors only (after markers)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 428.0, 555.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 177.0, 234.500031000000035, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
@@ -551,7 +580,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1045.0, 376.500031000000035, 87.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 331.5, 39.599945068359375, 214.0, 21.0 ]
+					"presentation_rect" : [ 343.5, 39.599945068359375, 214.0, 21.0 ]
 				}
 
 			}
@@ -586,7 +615,7 @@
 					"presentation_rect" : [ 2.0, 267.500031000000035, 313.0, 30.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 3,
+					"size" : 13,
 					"slidercolor" : [ 0.516304, 0.516304, 0.516304, 1.0 ],
 					"spacing" : 1
 				}
@@ -622,7 +651,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 115.0, 1612.0, 901.0 ],
+						"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -783,17 +812,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 50.0, 491.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-58",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 206.0, 225.0, 216.0, 20.0 ],
-									"text" : "calculate yin stats on marker segments"
 								}
 
 							}
@@ -1074,7 +1092,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 115.0, 1612.0, 901.0 ],
+						"rect" : [ 31.0, 176.0, 1612.0, 845.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1102,6 +1120,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-14",
@@ -1120,7 +1139,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 34.0, 115.0, 1612.0, 901.0 ],
+										"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1221,8 +1240,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 4,
 													"outlettype" : [ "", "", "int", "" ],
-													"patching_rect" : [ 51.0, 232.0, 568.0, 24.0 ],
-													"text" : "mubu.process #1 yin chop @name yin-segments @process 0 @chop.mean 1"
+													"patching_rect" : [ 31.0, 232.0, 842.0, 24.0 ],
+													"text" : "mubu.process #1 yin chop @name yin-segments @process 0 @chop.max 1 @chop.min 1 @chop.max 1 @chop.stddev 1"
 												}
 
 											}
@@ -1263,8 +1282,27 @@
 												}
 
 											}
+, 											{
+												"box" : 												{
+													"attr" : "bufferindex",
+													"id" : "obj-1",
+													"maxclass" : "attrui",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 219.5, 202.0, 150.0, 22.0 ]
+												}
+
+											}
  ],
 										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-18", 0 ],
+													"source" : [ "obj-1", 0 ]
+												}
+
+											}
+, 											{
 												"patchline" : 												{
 													"destination" : [ "obj-13", 0 ],
 													"source" : [ "obj-18", 3 ]
@@ -1323,7 +1361,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 55.0, 467.0, 103.0, 22.0 ],
+									"patching_rect" : [ 46.0, 451.0, 103.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1463,7 +1501,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 77.0, 171.5, 369.0, 22.0 ]
+									"patching_rect" : [ 77.0, 171.5, 587.0, 22.0 ]
 								}
 
 							}
@@ -1499,7 +1537,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "int", "" ],
-									"patching_rect" : [ 40.0, 313.0, 369.0, 49.0 ],
+									"patching_rect" : [ 40.0, 334.0, 369.0, 49.0 ],
 									"text" : "mubu.process #1 audio slice:yin:js @name yin  @progressoutput input @process 0 @info gui \"interface multiwave, colormode rainbow\""
 								}
 
@@ -1526,6 +1564,18 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 830.0, 186.0, 188.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"attr" : "bufferindex",
+									"id" : "obj-2",
+									"maxclass" : "attrui",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 40.0, 283.0, 150.0, 22.0 ]
 								}
 
 							}
@@ -1569,6 +1619,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-56", 0 ],
 									"source" : [ "obj-14", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-43", 0 ],
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -2454,7 +2511,7 @@
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 0,
-					"domain_bounds" : [ 0.0, 132806.507936507929116 ],
+					"domain_bounds" : [ 0.0, 89035.714285714289872 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -2488,7 +2545,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1370.0, 235.500031000000035, 191.0, 170.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 331.5, 2.0, 214.0, 35.599945068359375 ],
+					"presentation_rect" : [ 343.5, 2.0, 214.0, 35.599945068359375 ],
 					"rangeruler_grid" : 0,
 					"rangeruler_size" : 30,
 					"rangeruler_visible" : 0,
@@ -2522,7 +2579,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1364.0, 515.59997606835941, 191.0, 207.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 331.5, 61.599945068359375, 214.0, 227.0 ]
+					"presentation_rect" : [ 343.5, 61.599945068359375, 214.0, 227.0 ]
 				}
 
 			}
@@ -2780,7 +2837,7 @@
 					"orientation" : 0,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 48.0, 484.0, 621.0, 29.0 ],
+					"patching_rect" : [ 48.0, 496.099945068359375, 621.0, 29.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"slidercolor" : [ 0.516304, 0.516304, 0.516304, 1.0 ],
@@ -2819,13 +2876,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-89",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "int", "" ],
-					"patching_rect" : [ 48.0, 406.500031000000035, 650.0, 62.0 ],
-					"text" : "mubu.process #1 audio slice:fft:sum:scale:onseg @name markers @slice.size 1024 @slice.hop 256 @slice.norm power @fft.mode power @fft.weighting itur468 @scale.inmin 1 @scale.inmax 10 @scale.outmin 0 @scale.outmax 10 @scale.func log @scale.base 10 @onseg.filtersize 5 @onseg.mininter 50 @onseg.duration 1 @onseg.max 1 @onseg.offthresh -120 @info gui \"interface markers, autobounds 1, paramcols Cue Label Duration\""
+					"patching_rect" : [ 48.0, 406.500031000000035, 629.0, 76.0 ],
+					"text" : "mubu.process #1 audio slice:fft:sum:scale:onseg @name markers @slice.size 1024 @slice.hop 256 @slice.norm power @fft.mode power @fft.weighting itur468 @scale.inmin 1 @scale.inmax 10 @scale.outmin 0 @scale.outmax 10 @scale.func log @scale.base 10 @onseg.filtersize 5 @onseg.mininter 50 @onseg.duration 1 @onseg.max 1  @onseg.min 1  @onseg.mean 1  @onseg.stddev 1 @onseg.offthresh -120 @info gui \"interface markers, autobounds 1, paramcols Cue Label Duration\""
 				}
 
 			}
@@ -3008,6 +3065,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-13", 0 ]
 				}
 
 			}

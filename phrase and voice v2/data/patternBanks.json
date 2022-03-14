@@ -5,21 +5,25 @@
 			"1" : 			{
 				"id" : 1,
 				"data" : 				{
-					"tonal-player::1354-model-frequency" : [ 0.0 ],
-					"tonal-player::1354-model-frequency[1]" : [ 0.0 ],
-					"tonal-player::1354-model-timing" : [ 0.0 ],
-					"tonal-player::concatenative synth" : [ -4.0 ],
-					"tonal-player::live.dial" : [ 9.0 ],
+					"mc.live.gain~" : [ -2.187900073641856 ],
+					"tonal-player::1222-model-frequency" : [ 0.0 ],
+					"tonal-player::1222-model-frequency[1]" : [ 0.0 ],
+					"tonal-player::1222-model-frequency[2]" : [ 0.0 ],
+					"tonal-player::1222-model-frequency[3]" : [ 1.0 ],
+					"tonal-player::1222-model-timing" : [ 0.0 ],
+					"tonal-player::concatenative synth" : [ -7.472095868494542 ],
+					"tonal-player::live.dial" : [ 5.0 ],
+					"yin-gate[1]::rslider" : [ 2.471264367816092, 20.0 ],
+					"yin-gate[1]::rslider[1]" : [ 0.0, 100.0 ],
+					"ATC-tonal::tonal" : [ 3 ],
+					"ATC-tonal::live.slider" : [ 6000.0 ],
+					"ATC-tonal::normalization_type" : [ 1 ],
+					"ATC-tonal::knn-lookup::live.tab" : [ 0.0 ],
+					"ATC-tonal::knn-lookup::tonal-#2-weights" : [ 0.071429379284382, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.081986516714096, 0.189855217933655, 0.303716510534286, 0.426320910453796, 0.531876027584076, 0.616870939731598, 0.645102918148041, 0.610749959945679, 0.521863698959351, 0.41482013463974, 0.291915625333786, 0.291915625333786 ],
 					"tonal-segment-stack-trig::live.text[1]" : [ 1.0 ],
 					"tonal-segment-stack-trig::live.text[2]" : [ 1.0 ],
 					"tonal-segment-stack-trig::stack_onset_duration" : [ 0.0 ],
-					"tonal-segment-stack-trig::stack_size_#1" : [ 16 ],
-					"yin-gate[1]::rslider" : [ 0.0, 20.0 ],
-					"yin-gate[1]::rslider[1]" : [ 0.0, 100.0 ],
-					"yin-gate[1]::rslider[2]" : [ 20.0, 2000.0 ],
-					"ATC-tonal::tonal" : [ 2 ],
-					"ATC-tonal::normalization_type" : [ 1 ],
-					"ATC-tonal::knn-lookup::tonal-#2-weights" : [ 0.638190925121307, 0.798994958400726, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+					"tonal-segment-stack-trig::stack_size_#1" : [ 8 ]
 				}
 
 			}

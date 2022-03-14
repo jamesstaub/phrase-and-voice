@@ -2,7 +2,7 @@
 	"name" : "phrase and voice v2",
 	"version" : 1,
 	"creationdate" : 3682245889,
-	"modificationdate" : 3728300649,
+	"modificationdate" : 3730049856,
 	"viewrect" : [ 0.0, 115.0, 1680.0, 901.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -81,12 +81,7 @@
 				"toplevel" : 1
 			}
 ,
-			"modeling-synth.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"poly-granular.maxpat" : 			{
+			"AnalyzeTriggerCorpus.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -96,7 +91,12 @@
 				"local" : 1
 			}
 ,
-			"AnalyzeTriggerCorpus.maxpat" : 			{
+			"modeling-synth.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"poly-granular.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -120,6 +120,11 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"get_track_for_segment.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
@@ -138,6 +143,11 @@
 				"local" : 1
 			}
 ,
+			"flucoma-cli.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
 			"scale-params.js" : 			{
 				"kind" : "javascript",
 				"local" : 1,
@@ -146,11 +156,6 @@
 					"projectrelativepath" : "./patchers"
 				}
 
-			}
-,
-			"flucoma-cli.js" : 			{
-				"kind" : "javascript",
-				"local" : 1
 			}
 
 		}
