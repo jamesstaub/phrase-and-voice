@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 109.0, 1431.0, 907.0 ],
+		"rect" : [ 34.0, 81.0, 1612.0, 935.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 7.0, 64.5, 58.0, 16.0 ]
+					"patching_rect" : [ 30.0, 57.5, 58.0, 16.0 ]
 				}
 
 			}
@@ -1059,11 +1059,11 @@
 								"filename" : "guitar improv.WAV",
 								"filekind" : "audiofile",
 								"id" : "u910006850",
-								"selection" : [ 0.104651162790698, 1.0 ],
+								"selection" : [ 0.488372093023256, 1.0 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1,
-									"speed" : 1.1
+									"speed" : 5.100000000000001
 								}
 
 							}
@@ -1325,7 +1325,7 @@
 										"live.text[1]" : [ 0.0 ],
 										"live.text[2]" : [ 1.0 ],
 										"stack_onset_duration" : [ 0.0 ],
-										"stack_size_#1" : [ 8 ]
+										"stack_size_#1" : [ 16 ]
 									}
 ,
 									"text" : "autopattr",
@@ -2555,7 +2555,7 @@
 									"patching_rect" : [ 178.0, 581.0, 150.0, 18.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 1.0, 235.0, 198.0, 18.0 ],
-									"size" : 8.0
+									"size" : 16.0
 								}
 
 							}
@@ -3898,7 +3898,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 7.0, -16.0, 58.0, 58.0 ],
+					"patching_rect" : [ 7.0, -8.5, 58.0, 58.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 5.0, -24.0, 47.0, 47.0 ]
 				}
@@ -4139,7 +4139,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 368.75, 2.0, 51.0, 22.0 ],
+					"patching_rect" : [ 317.75, 2.0, 51.0, 22.0 ],
 					"text" : "r #0_yin"
 				}
 
@@ -6813,6 +6813,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
+					"order" : 1,
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 0,
 					"source" : [ "obj-33", 0 ]
 				}
 
