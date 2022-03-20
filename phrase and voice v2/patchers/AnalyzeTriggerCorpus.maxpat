@@ -3469,7 +3469,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "list", "list", "list" ],
-					"patching_rect" : [ 11.0, 522.875, 574.0, 268.249999999999886 ],
+					"patching_rect" : [ 11.0, 534.073271537414598, 574.0, 268.249999999999886 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 169.499989986419678, 6.0, 686.500010013580322, 282.5 ],
 					"varname" : "knn-lookup",

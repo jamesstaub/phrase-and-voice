@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 81.0, 1612.0, 935.0 ],
+		"rect" : [ 34.0, 109.0, 1612.0, 907.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,71 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 788.0, 274.5, 214.0, 60.0 ],
+					"presentation_linecount" : 4,
+					"text" : "TODO:\n\nfilter anything pitch-tracked by a common periodicity-gate object"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 788.0, 136.0, 235.0, 127.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 10,
+					"presentation_rect" : [ 842.0, 118.349991000000045, 150.0, 154.0 ],
+					"text" : "TODO:\ncreate change-o-meter as an analysis parameter. comparison of short and medium term averages for periodicity, loudness etc or GMM timbres\n\ntrigger parameter changes such as bufferincludes \n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"basictuning" : 440,
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "hawthorn.wav",
+								"filename" : "hawthorn.wav",
+								"filekind" : "audiofile",
+								"id" : "u320002865",
+								"selection" : [ 0.315789473684211, 0.189473684210526 ],
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+ ]
+					}
+,
+					"followglobaltempo" : 0,
+					"formantcorrection" : 0,
+					"id" : "obj-34",
+					"maxclass" : "playlist~",
+					"mode" : "basic",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"originallength" : [ 0.0, "ticks" ],
+					"originaltempo" : 120.0,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 132.0, -37.0, 150.0, 30.0 ],
+					"pitchcorrection" : 0,
+					"quality" : "basic",
+					"timestretch" : [ 0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
@@ -736,7 +801,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-39",
-					"items" : [ "moog.mubu", ",", "piano-in-progress.mubu" ],
+					"items" : [ "moog.mubu", ",", "pbass-traynor.mubu", ",", "piano-in-progress.mubu", ",", "piano-synth-traynor.mubu" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -990,7 +1055,7 @@
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ 0.0, 74025.19274376417161 ],
+					"domain_bounds" : [ 0.0, 89035.714285714289872 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -1093,12 +1158,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
-					"linecount" : 8,
+					"linecount" : 12,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1028.0, 246.5, 214.0, 114.0 ],
-					"text" : "TODO:\n\nsaving +  loading timbre model should sync with synth and KNN presets\n\ndifferent mappings for cellos vs bass\n\n "
+					"patching_rect" : [ 1338.0, 447.5, 214.0, 167.0 ],
+					"text" : "TODO: input normalization\n\nshould GMM model get normalized after creation, and receive normalized inputs as well?\n\nsaving +  loading timbre model should sync with synth and KNN presets\n\ndifferent mappings for cellos vs bass\n\n "
 				}
 
 			}
@@ -1111,7 +1176,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 128.0, 80.5, 151.0, 19.0 ],
+					"patching_rect" : [ 132.0, 84.046233999999998, 151.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 54.0, 6.0, 141.0, 17.0 ]
 				}
@@ -1324,7 +1389,7 @@
 									"restore" : 									{
 										"live.text[1]" : [ 0.0 ],
 										"live.text[2]" : [ 1.0 ],
-										"stack_onset_duration" : [ 0.0 ],
+										"stack_onset_duration" : [ 1.0 ],
 										"stack_size_#1" : [ 16 ]
 									}
 ,
@@ -4146,18 +4211,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-26",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1033.0, 42.0, 206.0, 47.0 ],
-					"text" : "\nTODO: read from presaved corpus info"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-51",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -5721,12 +5774,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-23",
-					"linecount" : 37,
+					"linecount" : 29,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1339.5, 13.5, 270.0, 516.0 ],
-					"text" : "TODO \n\n- segment duration legato per voice\n- concat params interface (filter, randomize etc). should accept midi + temporal model input\ncreate a feedback from concat synth done to stack pop\n\n\nScene presets map to filter/include from KNN \n(co-existing with timbre-based includes)\n\nTimbre ID map to Scene midi out (timbre:scene mapping different per Pattern)\n\nadd more voice-specific mappings \n\n(automate period on timbre id)\n\nAdd granular voice:\n - when input has high periodicity, trigger an enveloped granular voice for the current KNN segment.\n\nGranular could be an extension of the concat, where it hits the same markerindex but dynamically modulates the position and period for cloudy/stutter/timestretch of the segment.\n\n\nOnset duration could map to octatrack slider to trigger reverb when short samples are triggered few and farbetween, or even if a lot of empty space is detected in the output \n\n\n\n"
+					"patching_rect" : [ 1330.0, 13.5, 270.0, 409.0 ],
+					"text" : "TODO \n\n- concat params interface (filter, randomize etc). should accept midi + temporal model input\ncreate a feedback from concat synth done to stack pop\n\nScene presets map to filter/include from KNN \n(co-existing with timbre-based includes)\n\nTimbre ID map to Scene midi out (timbre:scene mapping different per Pattern)\n\nadd more voice-specific mappings \n\n(automate period on timbre id)\n\nAdd granular voice:\n - when input has high periodicity, trigger an enveloped granular voice for the current KNN segment.\n\nOnset duration could map to octatrack slider to trigger reverb when short samples are triggered few and farbetween, or even if a lot of empty space is detected in the output \n\n\n\n"
 				}
 
 			}
@@ -5751,7 +5804,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1956.0, 159.747131000000024, 56.0, 22.0 ],
 					"restore" : 					{
-						"mc.live.gain~" : [ -4.247324853624065 ]
+						"mc.live.gain~" : [ -0.717141126589922 ]
 					}
 ,
 					"text" : "autopattr",
@@ -6828,6 +6881,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"order" : 1,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"order" : 0,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-37", 0 ]
 				}
@@ -7257,6 +7326,13 @@
 				"name" : "guitar improv.WAV",
 				"bootpath" : "~/Dropbox/audio/septembersynths",
 				"patcherrelativepath" : "../../../../../../Dropbox/audio/septembersynths",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hawthorn.wav",
+				"bootpath" : "~/Dropbox/audio/11_19_corpus",
+				"patcherrelativepath" : "../../../../../../Dropbox/audio/11_19_corpus",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
