@@ -71,7 +71,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 982.25, 701.0, 157.0, 234.0 ],
+					"patching_rect" : [ 982.25, 701.0, 159.0, 234.0 ],
 					"text" : "TODO: FITTING\nget the trough value of the average distance\n\nevery new low, save descriptors to a collection\n\nset the index of the item to a number scaling the actual distance value (0-4ish) to a large range like 0-100\n\nperiodically resort and prune the collection and set weights from the lowest value\n"
 				}
 
@@ -9976,7 +9976,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 87.0, 647.5, 32.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 828.0, 34.0, 20.0 ],
+					"presentation_rect" : [ 301.581739961759126, 535.0, 34.0, 20.0 ],
 					"text" : "0",
 					"textcolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 1.0 ]
 				}
@@ -10004,7 +10004,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 87.0, 592.0, 34.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 772.5, 35.0, 20.0 ],
+					"presentation_rect" : [ 301.581739961759126, 479.5, 35.0, 20.0 ],
 					"text" : "0.5",
 					"textcolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 1.0 ]
 				}
@@ -10032,7 +10032,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 87.0, 540.5, 32.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 77.0, 721.0, 34.0, 20.0 ],
+					"presentation_rect" : [ 301.581739961759126, 428.0, 34.0, 20.0 ],
 					"text" : "1",
 					"textcolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 1.0 ]
 				}
@@ -10060,7 +10060,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 230.0, 647.5, 32.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 828.0, 34.0, 20.0 ],
+					"presentation_rect" : [ 370.581739961759126, 535.0, 34.0, 20.0 ],
 					"text" : "0",
 					"textcolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 1.0 ]
 				}
@@ -10088,7 +10088,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 230.0, 592.0, 34.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 772.5, 35.0, 20.0 ],
+					"presentation_rect" : [ 370.581739961759126, 479.5, 35.0, 20.0 ],
 					"text" : "0.5",
 					"textcolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 1.0 ]
 				}
@@ -10116,7 +10116,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 230.0, 540.5, 32.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.0, 721.0, 34.0, 20.0 ],
+					"presentation_rect" : [ 370.581739961759126, 428.0, 34.0, 20.0 ],
 					"text" : "1",
 					"textcolor" : [ 0.313725490196078, 0.313725490196078, 0.313725490196078, 1.0 ]
 				}
@@ -10719,7 +10719,7 @@
 					"patching_rect" : [ 163.0, 485.5, 73.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 100.75, 672.0, 66.5, 35.0 ],
+					"presentation_rect" : [ 325.331739961759126, 379.0, 66.5, 35.0 ],
 					"text" : "Spectral Centroid",
 					"textjustification" : 1
 				}
@@ -10738,7 +10738,7 @@
 					"patching_rect" : [ 22.5, 485.5, 73.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 30.0, 672.0, 72.0, 35.0 ],
+					"presentation_rect" : [ 254.581739961759126, 379.0, 72.0, 35.0 ],
 					"text" : "Spectral Variation",
 					"textjustification" : 1
 				}
@@ -10755,7 +10755,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 200.0, 532.5, 20.0, 140.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.0, 713.0, 20.0, 140.0 ],
+					"presentation_rect" : [ 348.581739961759126, 420.0, 20.0, 140.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"slidercolor" : [ 1.0, 0.345098039215686, 0.298039215686275, 1.0 ]
@@ -10773,7 +10773,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 49.0, 532.5, 20.0, 140.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 56.0, 713.0, 20.0, 140.0 ],
+					"presentation_rect" : [ 280.581739961759126, 420.0, 20.0, 140.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"slidercolor" : [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ]
@@ -11444,7 +11444,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 2.0, 0.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 216.0, 676.0, 563.0 ],
+					"presentation_rect" : [ 1.0, 216.0, 676.0, 620.0 ],
 					"proportion" : 0.5
 				}
 

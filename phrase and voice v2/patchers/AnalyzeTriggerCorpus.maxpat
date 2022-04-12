@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 115.0, 1612.0, 873.0 ],
+		"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -193,7 +193,7 @@
 					"patching_rect" : [ 1011.720001637935638, 500.592435717582703, 190.279998362064362, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 697.0, 149.521593340137542, 186.0, 33.0 ],
+					"presentation_rect" : [ 1.0, 543.521593340137542, 186.0, 33.0 ],
 					"text" : "set included KNN buffers \nby matching timbre model buffers"
 				}
 
@@ -641,7 +641,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 91.831195533275604, 261.0, 30.0, 30.0 ]
+													"patching_rect" : [ 79.831195533275604, 270.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -664,7 +664,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 92.081195533275604, 218.452979207038879, 29.5, 22.0 ],
+													"patching_rect" : [ 80.081195533275604, 227.452979207038879, 29.5, 22.0 ],
 													"text" : "join"
 												}
 
@@ -676,7 +676,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 105.999998986721039, 137.1324662566185, 125.0, 22.0 ],
+													"patching_rect" : [ 185.999998986721039, 116.1324662566185, 125.0, 22.0 ],
 													"text" : "0 0 0 0 0 0 0 0 0 0 0 0"
 												}
 
@@ -688,7 +688,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 80.769231081008911, 157.264957845211029, 29.5, 22.0 ],
+													"patching_rect" : [ 46.769231081008911, 154.264957845211029, 29.5, 22.0 ],
 													"text" : "0 0"
 												}
 
@@ -700,7 +700,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 83.333333671092987, 183.760684609413147, 29.5, 22.0 ],
+													"patching_rect" : [ 71.333333671092987, 192.760684609413147, 29.5, 22.0 ],
 													"text" : "join"
 												}
 
@@ -1004,12 +1004,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-172",
-									"linecount" : 5,
+									"linecount" : 9,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 133.376069068908691, 100.0, 268.0, 74.0 ],
-									"text" : "query the corpus KNN with a mving average of the timbre model's MFCC\n\nuse the matched bufferes to assign which buffers should be included when "
+									"patching_rect" : [ 133.376069068908691, 100.0, 268.0, 127.0 ],
+									"text" : "query the corpus KNN with a mving average of the timbre model's MFCC\n\nuse the matched bufferes to assign which buffers should be included when a given timbre is playing\n\nTODO: double check the MFCC padding while not high as fuck"
 								}
 
 							}
@@ -1796,20 +1796,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-161",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 988.116198062896729, 505.092435717582703, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 871.0, 28.93068475315863, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-156",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2509,7 +2495,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1422.220001637935638, 481.0, 200.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 667.0, 30.612503000000061, 191.0, 20.0 ],
+					"presentation_rect" : [ 1.0, 409.612503000000061, 191.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "manual", "timbre" ],
@@ -2635,7 +2621,7 @@
 					"patching_rect" : [ 1422.220001637935638, 518.25, 284.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 697.0, 192.612503000000061, 218.0, 60.0 ],
+					"presentation_rect" : [ 1.0, 586.612503000000061, 191.0, 60.0 ],
 					"text" : "the currently identified timbre in the GMM model sets the included bufferindexes of what the KNN can lookup from the corpus"
 				}
 
@@ -2649,7 +2635,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1422.220001637935638, 453.0, 211.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 668.0, 8.612503000000061, 191.0, 21.0 ],
+					"presentation_rect" : [ 2.0, 387.612503000000061, 191.0, 21.0 ],
 					"text" : "Enabled buffers for knn lookup"
 				}
 
@@ -2664,7 +2650,7 @@
 					"patching_rect" : [ 1455.220001637935638, 876.0, 48.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 669.0, 74.93068475315863, 35.0, 60.0 ],
+					"presentation_rect" : [ 3.0, 453.93068475315863, 35.0, 60.0 ],
 					"text" : "gmm\n   |\n   |\n   |"
 				}
 
@@ -2677,7 +2663,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1369.220001637935638, 847.578967094421387, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 702.0, 59.43068475315863, 98.0, 20.0 ],
+					"presentation_rect" : [ 36.0, 438.43068475315863, 98.0, 20.0 ],
 					"text" : "bufferindex ––––"
 				}
 
@@ -2767,16 +2753,16 @@
 , 			{
 				"box" : 				{
 					"autosize" : 1,
-					"columns" : 13,
+					"columns" : 4,
 					"id" : "obj-22",
 					"maxclass" : "matrixctrl",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1531.720001637935638, 886.0, 210.0, 66.0 ],
+					"patching_rect" : [ 1531.720001637935638, 886.0, 66.0, 66.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 702.0, 81.43068475315863, 210.0, 66.0 ],
+					"presentation_rect" : [ 36.0, 460.43068475315863, 66.0, 66.0 ],
 					"varname" : "gmm-knn-include-matrix"
 				}
 
@@ -2890,7 +2876,7 @@
 					"patching_rect" : [ 960.5, 150.999999999999886, 85.0, 22.0 ],
 					"restore" : 					{
 						"live.slider" : [ 20000.000000000003638 ],
-						"normalization_type" : [ 2 ]
+						"normalization_type" : [ 0 ]
 					}
 ,
 					"text" : "autopattr #1",
@@ -3504,31 +3490,6 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1", "#2", "#3" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 1,
-					"enablevscroll" : 0,
-					"id" : "obj-64",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "knn-lookup.maxpat",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "list", "list", "list" ],
-					"patching_rect" : [ 11.0, 534.073271537414598, 456.0, 388.249999999999886 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 200.499989986419678, 6.0, 740.500010013580322, 781.5 ],
-					"varname" : "knn-lookup",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"attr" : "name",
 					"id" : "obj-36",
 					"maxclass" : "attrui",
@@ -3575,7 +3536,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 98.0, 593.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 667.0, 2.612503000000061, 297.0, 281.818180680274963 ],
+					"presentation_rect" : [ 1.0, 381.612503000000061, 197.499989986419678, 281.818180680274963 ],
 					"proportion" : 0.5
 				}
 
@@ -3802,6 +3763,45 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 4.612503000000061, 194.499989986419678, 372.887496999999939 ],
 					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "#1", "#2", "#3" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 1,
+					"enablevscroll" : 0,
+					"id" : "obj-64",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "knn-lookup.maxpat",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "list", "list", "list" ],
+					"patching_rect" : [ 11.0, 534.073271537414598, 456.0, 388.249999999999886 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 200.499989986419678, 6.0, 460.500010013580322, 577.5 ],
+					"varname" : "knn-lookup",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-161",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 988.116198062896729, 505.092435717582703, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 205.0, 407.93068475315863, 24.0, 24.0 ]
 				}
 
 			}

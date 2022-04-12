@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 81.0, 1446.0, 907.0 ],
+		"rect" : [ 34.0, 81.0, 1612.0, 935.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,82 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "tonal", "descriptor", "yin" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-8",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "AnalyzeTriggerCorpus.maxpat",
+					"numinlets" : 6,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 380.999999999999886, 365.111297999999806, 462.500000000000114, 696.407532000000174 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.0, 315.092468000000054, 683.0, 589.0 ],
+					"varname" : "ATC-tonal",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"basictuning" : 440,
+					"data" : 					{
+						"clips" : [ 							{
+								"absolutepath" : "airy-plucks.wav",
+								"filename" : "airy-plucks.wav",
+								"filekind" : "audiofile",
+								"id" : "u246015443",
+								"loop" : 1,
+								"content_state" : 								{
+									"loop" : 1,
+									"speed" : 3.6
+								}
+
+							}
+ ]
+					}
+,
+					"followglobaltempo" : 0,
+					"formantcorrection" : 0,
+					"id" : "obj-47",
+					"maxclass" : "playlist~",
+					"mode" : "basic",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"originallength" : [ 0.0, "ticks" ],
+					"originaltempo" : 120.0,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 128.0, 38.0, 150.0, 30.0 ],
+					"pitchcorrection" : 0,
+					"presentation" : 1,
+					"presentation_rect" : [ 54.0, -24.0, 133.0, 28.0 ],
+					"quality" : "basic",
+					"timestretch" : [ 0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1475.0, 1128.092467999999826, 97.0, 22.0 ],
+					"text" : "scale 0. 1. 0.2 1."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-127",
 					"linecount" : 2,
@@ -129,7 +205,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 1485.0, 1058.0, 45.0, 45.0 ]
+					"patching_rect" : [ 1466.0, 1017.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -140,7 +216,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 1485.0, 1118.0, 82.0, 22.0 ],
+					"patching_rect" : [ 1461.0, 1074.0, 82.0, 22.0 ],
 					"text" : "peakamp~ 10"
 				}
 
@@ -250,7 +326,7 @@
 					"outlettype" : [ "", "", "bang", "" ],
 					"patching_rect" : [ 13.0, 788.0, 343.0, 408.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 717.092468000000054, 324.0, 356.092468000000054 ],
+					"presentation_rect" : [ 519.0, -24.0, 324.0, 356.092468000000054 ],
 					"viewvisibility" : 1
 				}
 
@@ -274,7 +350,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 797.0, 290.349991000000045, 51.0, 22.0 ],
+					"patching_rect" : [ 824.5, 328.5, 51.0, 22.0 ],
 					"text" : "r #0_yin"
 				}
 
@@ -973,7 +1049,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 693.5, 54.5, 168.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1226.0, -13.5, 201.0, 22.0 ]
+					"presentation_rect" : [ 845.0, -22.5, 201.0, 22.0 ]
 				}
 
 			}
@@ -1219,7 +1295,7 @@
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ 0.0, 89035.714285714289872 ],
+					"domain_bounds" : [ 0.0, 74025.19274376417161 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -1253,7 +1329,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 855.0, 402.0, 490.5, 183.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1226.0, 13.13870200000008, 589.0, 172.453765999999973 ],
+					"presentation_rect" : [ 845.0, 4.13870200000008, 589.0, 172.453765999999973 ],
 					"rangeruler_grid" : 0,
 					"rangeruler_size" : 30,
 					"rangeruler_visible" : 0,
@@ -1276,44 +1352,6 @@
 					"useplaceholders" : 1,
 					"verbose" : 1,
 					"windresize" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"basictuning" : 440,
-					"data" : 					{
-						"clips" : [ 							{
-								"absolutepath" : "high-range-shorter.wav",
-								"filename" : "high-range-shorter.wav",
-								"filekind" : "audiofile",
-								"id" : "u366010412",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
- ]
-					}
-,
-					"followglobaltempo" : 0,
-					"formantcorrection" : 0,
-					"id" : "obj-70",
-					"maxclass" : "playlist~",
-					"mode" : "basic",
-					"numinlets" : 1,
-					"numoutlets" : 5,
-					"originallength" : [ 0.0, "ticks" ],
-					"originaltempo" : 120.0,
-					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 128.0, 39.5, 150.0, 30.0 ],
-					"pitchcorrection" : 0,
-					"presentation" : 1,
-					"presentation_rect" : [ 54.0, -24.0, 133.0, 28.0 ],
-					"quality" : "basic",
-					"timestretch" : [ 0 ]
 				}
 
 			}
@@ -4097,7 +4135,7 @@
 ,
 					"patching_rect" : [ 851.0, 672.0, 333.0, 435.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1226.0, 187.592468000000054, 581.0, 272.0 ],
+					"presentation_rect" : [ 845.0, 178.592468000000054, 581.0, 272.0 ],
 					"varname" : "tonal-segment-stack-trig",
 					"viewvisibility" : 1
 				}
@@ -4258,7 +4296,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1195.0, 1269.092467999999826, 293.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1383.0, 730.092468000000054, 405.0, 47.0 ],
+					"presentation_rect" : [ 1002.0, 721.092468000000054, 405.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "main out",
@@ -5422,7 +5460,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 637.5, 249.5, 89.0, 22.0 ],
+					"patching_rect" : [ 647.5, 317.5, 89.0, 22.0 ],
 					"text" : "MFCC Chroma"
 				}
 
@@ -5446,7 +5484,7 @@
 					"outlettype" : [ "", "", "bang", "" ],
 					"patching_rect" : [ 7.0, 335.907531999999946, 343.0, 358.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 357.0, 324.0, 356.092468000000054 ],
+					"presentation_rect" : [ 193.0, -24.0, 324.0, 356.092468000000054 ],
 					"viewvisibility" : 1
 				}
 
@@ -6026,7 +6064,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 637.5, 218.5, 58.0, 22.0 ],
+					"patching_rect" : [ 647.5, 286.5, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -6040,7 +6078,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 2046.0, 159.747131000000024, 56.0, 22.0 ],
 					"restore" : 					{
-						"live.gain~" : [ -58.132966869707317 ],
+						"live.gain~" : [ -12.794978457881456 ],
 						"mc.live.gain~" : [ -1.413130912592749 ]
 					}
 ,
@@ -6071,10 +6109,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1812.0, 115.747131000000024, 290.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 0, 79, 570, 834 ],
+						"client_rect" : [ 0, 115, 1680, 968 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 227, 45, 1280, 800 ]
+						"storage_rect" : [ 0, 115, 1680, 968 ]
 					}
 ,
 					"text" : "pattrstorage patternBanks @greedy 1 @savemode 2",
@@ -6118,7 +6156,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1267.5, 1110.073637999999846, 135.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1226.0, 723.092468000000054, 155.0, 22.0 ],
+					"presentation_rect" : [ 845.0, 714.092468000000054, 155.0, 22.0 ],
 					"text_width" : 84.0
 				}
 
@@ -6145,7 +6183,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1267.5, 1140.073637999999846, 135.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1226.0, 750.092468000000054, 155.0, 22.0 ],
+					"presentation_rect" : [ 845.0, 741.092468000000054, 155.0, 22.0 ],
 					"text_width" : 84.0
 				}
 
@@ -6171,7 +6209,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1765.0, 71.0, 35.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1221.0, 818.5, 35.0, 21.0 ],
+					"presentation_rect" : [ 840.0, 809.5, 35.0, 21.0 ],
 					"text" : "Bank"
 				}
 
@@ -6185,7 +6223,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1817.0, 17.0, 49.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1306.0, 779.5, 49.0, 21.0 ],
+					"presentation_rect" : [ 925.0, 770.5, 49.0, 21.0 ],
 					"text" : "Pattern"
 				}
 
@@ -6201,7 +6239,7 @@
 					"patching_rect" : [ 1812.0, 49.5, 263.0, 53.0 ],
 					"pattrstorage" : "patternBanks",
 					"presentation" : 1,
-					"presentation_rect" : [ 1264.0, 802.5, 310.0, 53.0 ]
+					"presentation_rect" : [ 883.0, 793.5, 310.0, 53.0 ]
 				}
 
 			}
@@ -6930,7 +6968,7 @@
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 1195.0, 710.5, 552.0, 287.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1226.0, 464.092468000000054, 589.0, 257.0 ],
+					"presentation_rect" : [ 845.0, 455.092468000000054, 589.0, 257.0 ],
 					"varname" : "tonal-player",
 					"viewvisibility" : 1
 				}
@@ -6969,31 +7007,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 128.0, 9.5, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "tonal", "descriptor", "yin" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-8",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "AnalyzeTriggerCorpus.maxpat",
-					"numinlets" : 6,
-					"numoutlets" : 3,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 380.999999999999886, 365.111297999999806, 446.500000000000114, 695.40753200000006 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 198.0, -28.907531999999946, 1026.0, 984.0 ],
-					"varname" : "ATC-tonal",
-					"viewvisibility" : 1
 				}
 
 			}
@@ -7144,6 +7157,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-101", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 5 ],
 					"source" : [ "obj-27", 0 ]
 				}
@@ -7151,7 +7171,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-70", 0 ],
+					"destination" : [ "obj-47", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -7230,6 +7250,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 2 ],
 					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"order" : 1,
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-52", 0 ],
+					"order" : 0,
+					"source" : [ "obj-47", 0 ]
 				}
 
 			}
@@ -7398,22 +7434,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-51", 0 ],
-					"order" : 1,
-					"source" : [ "obj-70", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-52", 0 ],
-					"order" : 0,
-					"source" : [ "obj-70", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-18", 1 ],
 					"source" : [ "obj-77", 0 ]
 				}
@@ -7465,7 +7485,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-101", 0 ],
+					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-83", 0 ]
 				}
 
@@ -7542,9 +7562,9 @@
 			"obj-14::obj-27" : [ "granular", "granular", 0 ],
 			"obj-14::obj-28" : [ "multislider[1]", "multislider[1]", 0 ],
 			"obj-14::obj-4" : [ "live.text[3]", "live.text", 0 ],
+			"obj-14::obj-40" : [ "live.tab[2]", "live.tab[2]", 0 ],
 			"obj-14::obj-71" : [ "live.gain~[2]", "concatenative synth", 0 ],
 			"obj-14::obj-92" : [ "live.text[15]", "live.text", 0 ],
-			"obj-14::obj-95" : [ "live.text[17]", "live.text", 0 ],
 			"obj-18::obj-24" : [ "live.text[11]", "live.text[8]", 0 ],
 			"obj-18::obj-27" : [ "live.text[10]", "live.text[8]", 0 ],
 			"obj-37::obj-27" : [ "number of triggers", "number of triggers", 0 ],
@@ -7608,6 +7628,16 @@
 					"parameter_longname" : "live.text[3]"
 				}
 ,
+				"obj-14::obj-40" : 				{
+					"parameter_invisible" : 0,
+					"parameter_longname" : "live.tab[2]",
+					"parameter_modmode" : 0,
+					"parameter_range" : [ "off", "resample", "transpose" ],
+					"parameter_shortname" : "live.tab[2]",
+					"parameter_type" : 2,
+					"parameter_unitstyle" : 9
+				}
+,
 				"obj-14::obj-71" : 				{
 					"parameter_longname" : "live.gain~[2]"
 				}
@@ -7615,14 +7645,6 @@
 				"obj-14::obj-92" : 				{
 					"parameter_invisible" : 0,
 					"parameter_longname" : "live.text[15]",
-					"parameter_modmode" : 0,
-					"parameter_type" : 2,
-					"parameter_unitstyle" : 10
-				}
-,
-				"obj-14::obj-95" : 				{
-					"parameter_invisible" : 0,
-					"parameter_longname" : "live.text[17]",
 					"parameter_modmode" : 0,
 					"parameter_type" : 2,
 					"parameter_unitstyle" : 10
@@ -7903,6 +7925,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "airy-plucks.wav",
+				"bootpath" : "~/Dropbox/audio/timbrespaces/loftpiano",
+				"patcherrelativepath" : "../../../../../../Dropbox/audio/timbrespaces/loftpiano",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "analysis_descriptor_menu.maxpat",
 				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
@@ -7918,13 +7947,6 @@
 				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "high-range-shorter.wav",
-				"bootpath" : "~/Dropbox/audio/timbrespaces/loftpiano",
-				"patcherrelativepath" : "../../../../../../Dropbox/audio/timbrespaces/loftpiano",
-				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
@@ -8258,6 +8280,13 @@
 , 			{
 				"name" : "spectrumdraw~.mxo",
 				"type" : "iLaX"
+			}
+, 			{
+				"name" : "synth-voice-common.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "tonal.json",
