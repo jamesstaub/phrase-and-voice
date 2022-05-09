@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 115.0, 1612.0, 873.0 ],
+		"rect" : [ 34.0, 115.0, 1612.0, 853.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -109,7 +109,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "float", "" ],
 					"patching_rect" : [ 546.0, 484.0, 166.0, 24.0 ],
-					"text" : "pipo delta @delta.size 16"
+					"text" : "pipo delta @delta.size 15"
 				}
 
 			}
@@ -176,8 +176,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 523.0, 79.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"rslider" : [ 6.0, 20.0 ],
-						"rslider[1]" : [ 30.0, 100.0 ]
+						"rslider" : [ 2.471264367816092, 20.0 ],
+						"rslider[1]" : [ 0.0, 100.0 ]
 					}
 ,
 					"text" : "autopattr",

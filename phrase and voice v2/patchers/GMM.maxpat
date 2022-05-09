@@ -146,7 +146,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 400.0, 802.0, 161.0, 22.0 ],
+					"patching_rect" : [ 400.0, 802.0, 171.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"verbose" : 1
 					}
@@ -162,7 +162,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1248.5, 442.0, 99.0, 22.0 ],
+					"patching_rect" : [ 1248.5, 442.0, 109.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"externalfiles" : 1,
@@ -185,7 +185,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1006.0, 133.0, 171.0, 22.0 ],
+					"patching_rect" : [ 1006.0, 133.0, 185.0, 22.0 ],
 					"text" : "GMM-model #1 #2"
 				}
 
@@ -233,7 +233,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 822.0, 133.0, 171.0, 22.0 ],
+					"patching_rect" : [ 822.0, 133.0, 185.0, 22.0 ],
 					"text" : "GMM-model #1 #2"
 				}
 
@@ -329,10 +329,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1180.0, 59.0, 109.0, 26.0 ],
+					"patching_rect" : [ 1180.0, 59.0, 113.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 1.0, 280.0, 26.0 ],
-					"text" : "GMM:  timbre",
+					"text" : "GMM:  rhythm",
 					"textcolor" : [ 0.156862745098039, 0.156862745098039, 0.156862745098039, 1.0 ]
 				}
 
@@ -352,7 +352,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[9]",
+							"parameter_longname" : "live.text[10]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[8]",
 							"parameter_type" : 2
@@ -380,7 +380,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[8]",
+							"parameter_longname" : "live.text[11]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[8]",
 							"parameter_type" : 2
@@ -527,7 +527,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 218.0, 253.5, 186.0, 22.0 ]
+					"patching_rect" : [ 43.0, 317.5, 186.0, 22.0 ]
 				}
 
 			}
@@ -538,7 +538,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 218.0, 225.5, 131.0, 22.0 ],
+					"patching_rect" : [ 98.0, 246.5, 131.0, 22.0 ],
 					"text" : "loadmess #1"
 				}
 
@@ -843,7 +843,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 149.0, 225.5, 66.0, 21.0 ],
+					"patching_rect" : [ 43.0, 282.5, 66.0, 21.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -937,7 +937,7 @@
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 0,
-					"domain_bounds" : [ 0.0, 8011.277183791160496 ],
+					"domain_bounds" : [ 0.0, 1.0 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -1075,7 +1075,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 621.0, 522.0, 503.0, 21.0 ],
+					"patching_rect" : [ 621.0, 522.0, 513.0, 21.0 ],
 					"text" : "mubu.gmm #1 @trackid descr @gaussians 4 @regularization 1.15 .01  @likelihoodwindow 8"
 				}
 
@@ -1090,7 +1090,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 341.0, 54.5, 108.0, 21.0 ],
+					"patching_rect" : [ 603.0, 134.5, 108.0, 21.0 ],
 					"text" : "prepend bufferindex"
 				}
 
@@ -1105,7 +1105,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 341.0, 25.5, 131.0, 21.0 ],
+					"patching_rect" : [ 603.0, 105.5, 131.0, 21.0 ],
 					"text" : "r #0.gmm.bufferindex"
 				}
 
@@ -1532,7 +1532,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -1540,7 +1540,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 1 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
