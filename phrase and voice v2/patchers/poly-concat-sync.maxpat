@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 115.0, 1612.0, 853.0 ],
+		"rect" : [ 34.0, 115.0, 1443.0, 852.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1417.0, 464.5, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1417.0, 496.5, 89.0, 22.0 ],
+					"text" : "periodvar 0 0.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-50",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -56,7 +80,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
+						"rect" : [ 34.0, 116.0, 1612.0, 853.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -91,7 +115,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 263.0, 40.0, 150.0, 114.0 ],
+									"patching_rect" : [ 263.0, 40.0, 151.0, 114.0 ],
 									"text" : "when the legato facor is greater than 2\n\ntake the input's periodicity and use it to subdivide the playback period value (which is derived from the input's onset)"
 								}
 
@@ -301,7 +325,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1080.0, 458.0, 189.0, 22.0 ],
+					"patching_rect" : [ 1023.299999999999955, 452.0, 189.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -320,7 +344,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 1005.799999999999955, 469.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1006.799999999999955, 481.0, 29.5, 22.0 ],
 					"text" : "* 1."
 				}
 
@@ -332,7 +356,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.5, 183.300017999999909, 235.0, 22.0 ],
+					"patching_rect" : [ 42.5, 195.300017999999909, 235.0, 22.0 ],
 					"text" : "synth-voice-common #1 #2 #0"
 				}
 
@@ -392,7 +416,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 320.25, 233.300017999999909, 59.0, 22.0 ],
+					"patching_rect" : [ 320.25, 238.300017999999909, 59.0, 22.0 ],
 					"text" : "mute 0, 1"
 				}
 
@@ -527,7 +551,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
+						"rect" : [ 34.0, 116.0, 1612.0, 853.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -822,7 +846,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 115.0, 1612.0, 901.0 ],
+						"rect" : [ 34.0, 116.0, 1612.0, 853.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1097,7 +1121,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 111.0, 497.5, 216.0, 22.0 ]
+					"patching_rect" : [ 111.0, 497.5, 301.25, 22.0 ]
 				}
 
 			}
@@ -1503,7 +1527,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 111.0, 406.25, 58.0, 22.0 ],
+					"patching_rect" : [ 111.0, 380.25, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -1558,7 +1582,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 111.0, 432.5, 296.0, 22.0 ],
+					"patching_rect" : [ 111.0, 406.5, 296.0, 22.0 ],
 					"text" : "autotrigger 1, allowrepeatmarkers 1, play 0, period 0 1"
 				}
 
@@ -1740,6 +1764,21 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"midpoints" : [ 12.0, 594.0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -1937,7 +1976,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-104", 1 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-39", 3 ]
 				}
 
@@ -1969,7 +2008,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-50", 1 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-39", 3 ]
 				}
 

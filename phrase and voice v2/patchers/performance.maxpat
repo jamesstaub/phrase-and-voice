@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 82.0, 1434.0, 887.0 ],
+		"rect" : [ 34.0, 81.0, 1612.0, 886.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-49",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 858.0, 520.815063999999893, 260.0, 100.0 ],
+					"text" : "TODO: concatenate descriptors for small onsets to query longer segments from KNN\n\n(number of onsets in cluster could correspond to something like low autocorrelation or amplitude std/dev to select matches for dynamics, duration as well as timbre)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "tonal", "descriptor", "yin" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -57,7 +69,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 380.999999999999886, 365.111297999999806, 462.500000000000114, 696.407532000000174 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 315.092468000000054, 827.0, 589.0 ],
+					"presentation_rect" : [ 5.0, 353.938621974533135, 827.0, 589.0 ],
 					"varname" : "ATC-tonal",
 					"viewvisibility" : 1
 				}
@@ -326,7 +338,7 @@
 					"outlettype" : [ "", "", "bang", "" ],
 					"patching_rect" : [ 7.0, 788.0, 343.0, 408.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 519.0, -24.0, 324.0, 356.092468000000054 ],
+					"presentation_rect" : [ 519.0, -24.0, 324.0, 375.938621974533135 ],
 					"viewvisibility" : 1
 				}
 
@@ -389,8 +401,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -435,8 +447,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -658,8 +670,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1041,7 +1053,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-39",
-					"items" : [ "moog.mubu", ",", "pbass-traynor.mubu", ",", "piano-in-progress.mubu", ",", "piano-synth-traynor.mubu", ",", "taylor-memos.mubu" ],
+					"items" : [ "cello-harmonics.mubu", ",", "moog.mubu", ",", "pbass-traynor.mubu", ",", "piano-in-progress.mubu", ",", "piano-synth-traynor.mubu", ",", "taylor-memos.mubu" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1087,8 +1099,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1326,8 +1338,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1752,8 +1764,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1854,8 +1866,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 2,
+															"minor" : 3,
+															"revision" : 1,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2080,8 +2092,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 2,
-																			"revision" : 2,
+																			"minor" : 3,
+																			"revision" : 1,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -2818,8 +2830,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3310,8 +3322,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3524,7 +3536,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-26",
-									"items" : [ "PreSonus AudioBox iTwo MIDI OUT", ",", "to Max 1", ",", "to Max 2" ],
+									"items" : [ "to Max 1", ",", "to Max 2", ",", "PreSonus AudioBox iTwo MIDI OUT" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -3626,6 +3638,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 178.0, 546.0, 150.0, 22.0 ]
 								}
 
@@ -3971,13 +3984,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -4076,8 +4089,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4206,7 +4219,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1195.0, 1269.092467999999826, 293.0, 47.0 ],
+					"patching_rect" : [ 1192.0, 1289.092467999999826, 293.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1002.0, 721.092468000000054, 405.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
@@ -4317,14 +4330,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
+						"rect" : [ 34.0, 115.0, 1612.0, 852.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4493,8 +4506,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4563,8 +4576,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5094,13 +5107,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -5239,14 +5252,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 35.0, 115.0, 1612.0, 873.0 ],
+						"rect" : [ 34.0, 115.0, 1612.0, 852.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5448,8 +5461,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 647.5, 317.5, 89.0, 22.0 ],
-					"text" : "MFCC Chroma"
+					"patching_rect" : [ 647.099999999999909, 290.349991000000045, 390.0, 22.0 ],
+					"text" : "MFCC Chroma PerceptualSpectralVariation PerceptualSpectralCentroid"
 				}
 
 			}
@@ -5472,7 +5485,7 @@
 					"outlettype" : [ "", "", "bang", "" ],
 					"patching_rect" : [ 7.0, 335.907531999999946, 343.0, 358.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 193.0, -24.0, 324.0, 356.092468000000054 ],
+					"presentation_rect" : [ 193.0, -24.0, 324.0, 375.938621974533135 ],
 					"viewvisibility" : 1
 				}
 
@@ -5530,7 +5543,7 @@
 					"outlettype" : [ "int", "int", "int" ],
 					"patching_rect" : [ 393.75, 23.5, 156.0, 247.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 25.0, 182.0, 323.092468000000054 ],
+					"presentation_rect" : [ 5.0, 25.0, 182.0, 326.938621974533135 ],
 					"varname" : "yin-gate[1]",
 					"viewvisibility" : 1
 				}
@@ -5547,14 +5560,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 115.0, 1612.0, 853.0 ],
+						"rect" : [ 34.0, 115.0, 1612.0, 852.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5666,6 +5679,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 176.745605000000069, 33.0, 161.0, 21.0 ],
 									"text_width" : 110.0
 								}
@@ -5681,6 +5695,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 176.745605000000069, 148.0, 161.0, 21.0 ],
 									"text_width" : 110.0
 								}
@@ -5696,6 +5711,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 176.745605000000069, 119.0, 161.0, 21.0 ],
 									"text_width" : 110.0
 								}
@@ -5711,6 +5727,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 176.745605000000069, 90.0, 161.0, 21.0 ],
 									"text_width" : 110.0
 								}
@@ -5726,6 +5743,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 176.745605000000069, 62.0, 161.0, 21.0 ],
 									"text_width" : 110.0
 								}
@@ -5882,6 +5900,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 176.745605000000069, 189.75, 205.0, 22.0 ]
 								}
 
@@ -6040,7 +6059,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 647.5, 286.5, 58.0, 22.0 ],
+					"patching_rect" : [ 647.099999999999909, 264.349991000000045, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -6055,7 +6074,7 @@
 					"patching_rect" : [ 2046.0, 159.747131000000024, 56.0, 22.0 ],
 					"restore" : 					{
 						"live.gain~" : [ -12.794978457881456 ],
-						"mc.live.gain~" : [ -2.187900073641856 ]
+						"mc.live.gain~" : [ -1.196446598021396 ]
 					}
 ,
 					"text" : "autopattr",
@@ -6190,6 +6209,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 1267.5, 1110.073637999999846, 135.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 845.0, 714.092468000000054, 155.0, 22.0 ],
@@ -6217,6 +6237,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 1267.5, 1140.073637999999846, 135.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 845.0, 741.092468000000054, 155.0, 22.0 ],
@@ -6231,7 +6252,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 855.0, 615.815063999999893, 262.0, 33.0 ],
+					"patching_rect" : [ 858.0, 485.815063999999893, 262.0, 33.0 ],
 					"text" : "The stack output should also be poly voice aware, output in chunks or sequencers"
 				}
 
@@ -6270,8 +6291,8 @@
 					"id" : "obj-13",
 					"maxclass" : "preset",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "preset", "int", "preset", "int", "" ],
 					"patching_rect" : [ 1812.0, 49.5, 263.0, 53.0 ],
 					"pattrstorage" : "patternBanks",
 					"presentation" : 1,
@@ -6534,8 +6555,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6608,6 +6629,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 494.460204999999974, 461.0, 156.0, 21.0 ]
 								}
 
@@ -6636,6 +6658,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 494.460204999999974, 426.0, 156.0, 21.0 ]
 								}
 
@@ -6650,6 +6673,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 497.460205000000087, 364.983856511718841, 156.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 494.460205000000087, 364.983856511718841, 156.0, 21.0 ]
@@ -6666,6 +6690,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 497.460205000000087, 306.983856511718841, 156.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 814.460205000000087, 253.699982000000091, 156.0, 21.0 ]
@@ -6682,6 +6707,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 497.460205000000087, 272.28387451171875, 156.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 814.460205000000087, 219.0, 156.0, 21.0 ]
@@ -6698,6 +6724,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 497.460205000000087, 237.28387451171875, 156.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 814.460205000000087, 184.0, 156.0, 21.0 ]
@@ -6714,6 +6741,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 497.460205000000087, 167.28387451171875, 156.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 814.460205000000087, 114.0, 156.0, 21.0 ]
@@ -6730,6 +6758,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 497.460205000000087, 202.28387451171875, 156.0, 21.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 814.460205000000087, 149.0, 156.0, 21.0 ]
@@ -7021,6 +7050,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 128.0, 9.5, 150.0, 22.0 ]
 				}
 
@@ -7270,7 +7300,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"order" : 1,
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-52", 0 ],
+					"order" : 0,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -7871,7 +7910,7 @@
 				"obj-8::obj-28" : 				{
 					"parameter_invisible" : 0,
 					"parameter_modmode" : 0,
-					"parameter_range" : [ "MANUAL", "MATCH INPUT", "TIMBRE SETS PRESET ", "FIT_TO_CORPUS" ],
+					"parameter_range" : [ "MANUAL", "MATCH INPUT", "TIMBRE SETS PRESET " ],
 					"parameter_type" : 2,
 					"parameter_unitstyle" : 9
 				}
@@ -8314,13 +8353,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}

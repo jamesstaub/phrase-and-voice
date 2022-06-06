@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 171.0, 1612.0, 796.0 ],
+		"rect" : [ 34.0, 115.0, 1612.0, 852.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -79,20 +79,6 @@
 			}
 , 			{
 				"box" : 				{
-					"contdata" : 1,
-					"id" : "obj-6",
-					"maxclass" : "multislider",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 45.0, 145.0, 181.0, 57.0 ],
-					"size" : 12
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 4,
@@ -124,7 +110,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1026.0, 663.0, 78.0, 22.0 ],
+					"patching_rect" : [ 1012.69439697265625, 671.0, 78.0, 22.0 ],
 					"text" : "route alldone"
 				}
 
@@ -136,7 +122,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "int", "" ],
-					"patching_rect" : [ 688.0, 624.0, 345.0, 22.0 ],
+					"patching_rect" : [ 682.0, 625.0, 345.0, 22.0 ],
 					"text" : "mubu.process #0-target audio ircamdescriptor @name descr  "
 				}
 
@@ -174,7 +160,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 712.69439697265625, 116.0, 407.0, 47.0 ],
+					"patching_rect" : [ 737.69439697265625, 95.0, 407.0, 47.0 ],
 					"text" : "MAYBE: \ncould re-use this version where audio is read/written so changes in descriptors dont require new audio recording"
 				}
 
@@ -373,7 +359,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 257.5, 478.0, 151.0, 60.0 ],
+					"patching_rect" : [ 234.5, 533.0, 151.0, 60.0 ],
 					"text" : "then scale the normalized list to 0-1 range (based on the min/max of recorded sample)"
 				}
 
@@ -389,14 +375,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -145.0, -965.0, 1852.0, 882.0 ],
+						"rect" : [ 34.0, 115.0, 1612.0, 852.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -693,7 +679,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 114.5833740234375, 398.0, 65.0, 22.0 ],
+					"patching_rect" : [ 114.5833740234375, 437.0, 65.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -716,14 +702,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -145.0, -965.0, 1852.0, 882.0 ],
+						"rect" : [ 34.0, 115.0, 1406.0, 852.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -949,7 +935,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 244.0833740234375, 401.0, 58.0, 22.0 ],
+					"patching_rect" : [ 228.0833740234375, 437.0, 58.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -982,14 +968,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -145.0, -965.0, 1852.0, 882.0 ],
+						"rect" : [ 34.0, 115.0, 1612.0, 852.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1422,7 +1408,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 114.36114501953125, 471.0, 82.0, 22.0 ],
+					"patching_rect" : [ 114.5833740234375, 524.0, 82.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1477,7 +1463,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 114.36114501953125, 539.75, 30.0, 30.0 ]
+					"patching_rect" : [ 114.36114501953125, 568.75, 30.0, 30.0 ]
 				}
 
 			}
@@ -1530,14 +1516,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -145.0, -965.0, 1852.0, 882.0 ],
+						"rect" : [ 34.0, 115.0, 1612.0, 852.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1859,7 +1845,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 45.0, 111.5, 177.4166259765625, 23.0 ],
+					"patching_rect" : [ 7.5833740234375, 152.5, 177.4166259765625, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 30.0, 105.97216797265628, 23.0 ],
 					"textjustification" : 1
@@ -2137,13 +2123,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-42", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-145", 3 ],
 					"order" : 0,
 					"source" : [ "obj-64", 1 ]
@@ -2298,13 +2277,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
@@ -2361,8 +2340,8 @@
 				"name" : "tap-dark",
 				"default" : 				{
 					"editing_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
-					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"fontname" : [ "Ableton Sans Light Regular" ],
+					"locked_bgcolor" : [ 0.133333, 0.133333, 0.133333, 1.0 ],
 					"textcolor" : [ 0.847058823529412, 0.847058823529412, 0.847058823529412, 1.0 ]
 				}
 ,

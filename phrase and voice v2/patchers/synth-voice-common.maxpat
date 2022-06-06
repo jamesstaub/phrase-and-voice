@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 171.0, 1612.0, 845.0 ],
+		"rect" : [ 34.0, 115.0, 1612.0, 852.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1134,7 +1134,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
+						"rect" : [ 34.0, 116.0, 1612.0, 853.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1171,7 +1171,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 263.0, 461.0, 50.0, 35.0 ],
-									"text" : "-24.133158"
+									"text" : "42167.437642"
 								}
 
 							}
@@ -1206,7 +1206,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 319.0, 174.0, 72.0, 22.0 ],
+									"patching_rect" : [ 319.0, 174.0, 72.0, 49.0 ],
 									"text" : "s #3-update"
 								}
 
@@ -1242,7 +1242,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 785.0, 356.0, 150.0, 22.0 ],
+									"patching_rect" : [ 785.0, 356.0, 150.0, 49.0 ],
 									"text" : "s #3-markers-for-segment "
 								}
 
@@ -1254,7 +1254,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 795.0, 282.5, 145.0, 22.0 ],
+									"patching_rect" : [ 795.0, 282.5, 145.0, 49.0 ],
 									"text" : "s #3-markers-tracknames"
 								}
 
@@ -1278,7 +1278,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 82.0, 255.5, 173.0, 22.0 ],
+									"patching_rect" : [ 82.0, 262.5, 173.0, 49.0 ],
 									"text" : "s #3-yin-segments-tracknames"
 								}
 
@@ -1313,7 +1313,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 289.0, 178.0, 22.0 ],
+									"patching_rect" : [ 50.0, 326.0, 178.0, 49.0 ],
 									"text" : "s #3-yin-segments-for-segment "
 								}
 
@@ -2093,7 +2093,7 @@
 									"destination" : [ "obj-58", 0 ],
 									"source" : [ "obj-20", 0 ],
 									"watchpoint_flags" : 1,
-									"watchpoint_id" : 1
+									"watchpoint_id" : 12
 								}
 
 							}
@@ -2444,8 +2444,8 @@
 					"numinlets" : 4,
 					"numoutlets" : 3,
 					"outlettype" : [ "float", "float", "float" ],
-					"patching_rect" : [ 327.899902000000111, 686.5, 118.0, 22.0 ],
-					"text" : "makenote 60 200 12"
+					"patching_rect" : [ 327.899902000000111, 686.5, 111.0, 22.0 ],
+					"text" : "makenote 60 200 1"
 				}
 
 			}

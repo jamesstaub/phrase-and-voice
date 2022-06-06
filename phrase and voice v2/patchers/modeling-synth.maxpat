@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1612.0, 880.0 ],
+		"rect" : [ 34.0, 115.0, 1273.0, 852.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 22.0, 499.5, 111.0, 49.0 ],
+					"text" : "note concat bufferindex 1 markerindex 99"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-81",
 					"maxclass" : "newobj",
@@ -328,7 +341,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 156.25, 603.5, 29.5, 22.0 ],
+					"patching_rect" : [ 150.5, 650.5, 29.5, 22.0 ],
 					"text" : "t l b"
 				}
 
@@ -340,7 +353,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 22.0, 397.0, 38.0, 22.0 ],
+					"patching_rect" : [ 22.0, 362.0, 38.0, 22.0 ],
 					"text" : "zl reg"
 				}
 
@@ -3601,7 +3614,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 170.75, 641.5, 49.0, 22.0 ],
+					"patching_rect" : [ 164.75, 694.0, 49.0, 22.0 ],
 					"text" : "target 0"
 				}
 
@@ -3797,12 +3810,12 @@
 					"restore" : 					{
 						"1060-model-frequency[1]" : [ 0.0 ],
 						"1060-model-frequency[2]" : [ 0.0 ],
-						"1060-model-frequency[3]" : [ 1.0 ],
-						"1060-model-timing" : [ 1.0 ],
-						"concatenative synth" : [ -70.0 ],
-						"granular" : [ -2.666875803871108 ],
-						"live.dial" : [ 5.0 ],
-						"live.tab" : [ 1.0 ]
+						"1060-model-frequency[3]" : [ 0.0 ],
+						"1060-model-timing" : [ 0.0 ],
+						"concatenative synth" : [ -1.18110236220474 ],
+						"granular" : [ -5.496376697932689 ],
+						"live.dial" : [ 0.0 ],
+						"live.tab" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -4694,7 +4707,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-141", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-69", 0 ]
 				}
 
@@ -4703,6 +4716,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-21", 1 ],
 					"order" : 0,
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 1 ],
+					"order" : 1,
 					"source" : [ "obj-69", 0 ]
 				}
 
