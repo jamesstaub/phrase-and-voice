@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 5,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 103.0, 1401.0, 833.0 ],
+		"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -51,17 +51,22 @@
 					"bufferchooser_shape" : "buttons",
 					"bufferchooser_size" : 24,
 					"bufferchooser_visible" : 1,
+					"cursor_circleedgecolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"cursor_circlefillcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"cursor_circlefilled" : 1,
 					"cursor_circleheight" : 3.0,
 					"cursor_circlewidth" : 3.0,
 					"cursor_color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"cursor_followmouse" : 0,
+					"cursor_nearest" : 0,
+					"cursor_nearestcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"cursor_noringoffset" : 0,
 					"cursor_position" : -1.0,
 					"cursor_shape" : "bar",
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 0,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ 0.0, 9188.525323741137981 ],
+					"domain_bounds" : [ 0.0, 1.0 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 1,
@@ -78,6 +83,7 @@
 					"id" : "obj-19",
 					"layout" : 0,
 					"maxclass" : "imubu",
+					"mousewheelscroll" : 0,
 					"name" : "temporal-model",
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -263,8 +269,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 5,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -422,13 +428,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -483,6 +489,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-47",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "midi-map.maxpat",
 					"numinlets" : 0,
@@ -570,14 +577,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 5,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 822.0, -1001.0, 892.0, 967.0 ],
+						"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -625,7 +632,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 744.75, 291.774993999999992, 30.0, 30.0 ],
+									"patching_rect" : [ 745.75, 243.0, 30.0, 30.0 ],
 									"varname" : "u994001257[1]"
 								}
 
@@ -1601,13 +1608,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -1627,7 +1634,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 149.0, 92.0, 48.0, 22.0 ],
+					"patching_rect" : [ 149.0, 83.25, 48.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1674,14 +1681,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 5,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 292.0, 94.0, 1133.0, 814.0 ],
+						"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2264,7 +2271,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 918.0, 19.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"descriptor-matrix" : [ 0, 11, 1 ]
+						"descriptor-matrix" : [ 0, 0, 0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -2320,8 +2327,8 @@
 					"id" : "obj-6",
 					"maxclass" : "preset",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "preset", "int", "preset", "int", "" ],
 					"patching_rect" : [ 565.0, 51.75, 85.0, 85.0 ],
 					"pattrstorage" : "temporal-model-#0",
 					"presentation" : 1,
@@ -2339,10 +2346,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 565.0, 143.5, 177.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 45, 358, 173 ],
+						"client_rect" : [ 0, 116, 1680, 969 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
+						"storage_rect" : [ 0, 116, 1680, 969 ]
 					}
 ,
 					"text" : "pattrstorage temporal-model-#0",
@@ -2455,14 +2462,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 5,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 276.0, -854.0, 1176.0, 730.0 ],
+						"rect" : [ 34.0, 143.0, 1612.0, 873.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2498,7 +2505,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 133.0, 399.0, 24.0, 24.0 ]
+									"patching_rect" : [ 136.0, 390.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -2509,7 +2516,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 154.0, 494.0, 141.0, 22.0 ],
+									"patching_rect" : [ 166.0, 467.0, 141.0, 22.0 ],
 									"text" : "view 1 colormode fgcolor"
 								}
 
@@ -2533,7 +2540,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 154.0, 452.0, 409.0, 22.0 ],
+									"patching_rect" : [ 166.0, 425.0, 409.0, 22.0 ],
 									"text" : "mubu.stats.marker.track temporal-model descriptors onsets desc-segments"
 								}
 
@@ -2546,7 +2553,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 154.0, 533.0, 25.0, 25.0 ]
+									"patching_rect" : [ 166.0, 506.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -2691,6 +2698,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 426.5, 30.0, 235.999999999999972, 22.0 ]
 								}
 
@@ -2821,13 +2829,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -2956,7 +2964,7 @@
 					"autosize" : 1,
 					"bgcolor" : [ 0.2, 0.2, 0.2, 0.02 ],
 					"color" : [ 1.0, 0.345098039215686, 0.298039215686275, 1.0 ],
-					"columns" : 7,
+					"columns" : 3,
 					"elementcolor" : [ 0.364705882352941, 0.364705882352941, 0.364705882352941, 0.39 ],
 					"horizontalspacing" : 24,
 					"id" : "obj-27",
@@ -2966,9 +2974,9 @@
 					"one/row" : 1,
 					"outlettype" : [ "list", "list" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 676.0, 289.5, 282.0, 420.0 ],
+					"patching_rect" : [ 676.0, 289.5, 122.0, 420.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 118.0, 345.5, 282.0, 420.0 ],
+					"presentation_rect" : [ 118.0, 345.5, 122.0, 420.0 ],
 					"rows" : 21,
 					"varname" : "descriptor-matrix",
 					"verticalmargin" : 0,
@@ -2984,6 +2992,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 918.0, 143.5, 150.0, 22.0 ]
 				}
 
@@ -2996,6 +3005,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 918.0, 92.0, 150.0, 22.0 ]
 				}
 
@@ -3033,6 +3043,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 918.0, 119.5, 150.0, 22.0 ]
 				}
 
@@ -3041,7 +3052,7 @@
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"border" : 0,
-					"cols" : 7,
+					"cols" : 3,
 					"colwidth" : 40,
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -3053,7 +3064,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "", "", "" ],
-					"patching_rect" : [ 725.0, 239.5, 510.0, 35.0 ],
+					"patching_rect" : [ 691.0, 227.5, 510.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 112.0, 320.5, 403.0, 21.0 ],
 					"rowheight" : 20,
@@ -3479,13 +3490,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}

@@ -290,27 +290,6 @@
 			}
 , 			{
 				"box" : 				{
-					"autorestore" : "tonal-weights.json",
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 361.0, 26.0, 209.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"client_rect" : [ 0, 116, 1680, 969 ],
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0,
-						"storage_rect" : [ 0, 116, 1680, 969 ]
-					}
-,
-					"text" : "pattrstorage #1-weights @greedy 1",
-					"varname" : "tonal-weights[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-53",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -394,7 +373,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 844.0, 621.669978231191635, 29.5, 22.0 ],
+					"patching_rect" : [ 827.0, 661.669978231191635, 29.5, 22.0 ],
 					"text" : "+ 1"
 				}
 
@@ -406,7 +385,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 844.0, 650.669978231191635, 52.0, 22.0 ],
+					"patching_rect" : [ 827.0, 690.669978231191635, 52.0, 22.0 ],
 					"text" : "switch 2"
 				}
 
@@ -520,11 +499,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
-									"linecount" : 34,
+									"linecount" : 33,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 518.5, 40.000029995612977, 344.0, 462.0 ],
+									"patching_rect" : [ 518.5, 40.000029995612977, 347.0, 449.0 ],
 									"text" : "this patch saves a collection of MFCC weights indexed by the lowest distance  KNN match for that weight setting.\n\nwhen a new KNN weight is set from the slider above, this patch takes the average of the lower half of the saved MFCCs and multiples the user-set weights by that distance-modelled weight\n\n\nthe idea is that it will influence the weights which are more responsive in the corpus\n\n\na major improvement to this would be persist the low-distance weights for every unique combination of [includes 1 2 3] messages that are sent to the KNN object.\n\ncurrently the collection of low-distance MFCC are cleared every time the knn includes change, because new buffers will have different knn matches\n\n\nanother improvement would be to completely pre-calculate all of this\n\nuse the normalization buffer for the input descriptors, then loop over each permutation of buffers  (simply concatenate the [include 1 2 3] buffer numbers into a unique index [123],\n\nthen store the averaged weight every time the currently selected included buffers changes\n\nthis would model the whole corpus better, not just whichever segments recently triggered "
 								}
 
@@ -1521,7 +1500,7 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 67.568727771441218, 740.770494908094406, 173.0, 69.0 ],
-					"setminmax" : [ 0.0, 29.0 ],
+					"setminmax" : [ 0.0, 5433.0 ],
 					"setstyle" : 3
 				}
 
@@ -1586,7 +1565,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 618.513010650873184, 32.0, 22.0 ],
+					"patching_rect" : [ 49.0, 617.513010650873184, 32.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -1598,7 +1577,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.0, 332.922589629888535, 111.0, 22.0 ],
+					"patching_rect" : [ 49.0, 332.922589629888535, 130.0, 22.0 ],
 					"text" : "r #0_weights_list"
 				}
 
@@ -1756,13 +1735,13 @@
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-17",
-					"linecount" : 25,
+					"linecount" : 29,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1455.033296346664429, 180.899483323097229, 110.0, 288.0 ],
-					"text" : "MFCC0Mean MFCC1Mean MFCC2Mean MFCC3Mean MFCC4Mean MFCC5Mean MFCC6Mean MFCC7Mean MFCC8Mean MFCC9Mean MFCC10Mean MFCC11Mean MFCC12Mean Chroma0Mean Chroma1Mean Chroma2Mean Chroma3Mean Chroma4Mean Chroma5Mean Chroma6Mean Chroma7Mean Chroma8Mean Chroma9Mean Chroma10Mean Chroma11Mean"
+					"patching_rect" : [ 1461.033296346664429, 91.430411100387573, 110.0, 332.0 ],
+					"text" : "MFCC0Mean MFCC1Mean MFCC2Mean MFCC3Mean MFCC4Mean MFCC5Mean MFCC6Mean MFCC7Mean MFCC8Mean MFCC9Mean MFCC10Mean MFCC11Mean MFCC12Mean Chroma0Mean Chroma1Mean Chroma2Mean Chroma3Mean Chroma4Mean Chroma5Mean Chroma6Mean Chroma7Mean Chroma8Mean Chroma9Mean Chroma10Mean Chroma11Mean PerceptualSpectralVariationMean PerceptualSpectralCentroidMean"
 				}
 
 			}
@@ -1784,7 +1763,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 632.340205550193787, 134.0, 113.0, 22.0 ],
+					"patching_rect" : [ 632.340205550193787, 134.0, 132.0, 22.0 ],
 					"text" : "s #0_weights_list"
 				}
 
@@ -1796,7 +1775,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 937.5, 198.75, 179.0, 22.0 ],
+					"patching_rect" : [ 937.5, 198.75, 198.0, 22.0 ],
 					"text" : "r #0_on_change_target_track"
 				}
 
@@ -1807,7 +1786,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 224.357385158538818, 210.079894423484802, 181.0, 22.0 ],
+					"patching_rect" : [ 224.357385158538818, 210.079894423484802, 200.0, 22.0 ],
 					"text" : "s #0_on_change_target_track"
 				}
 
@@ -1818,7 +1797,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 985.5, 314.12374472618103, 160.0, 22.0 ],
+					"patching_rect" : [ 985.5, 314.12374472618103, 179.0, 22.0 ],
 					"text" : "s #0_number_of_columns"
 				}
 
@@ -1830,7 +1809,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 970.350516676902771, 623.234660655260086, 113.0, 22.0 ],
+					"patching_rect" : [ 970.350516676902771, 623.234660655260086, 132.0, 22.0 ],
 					"text" : "r #0_target_track"
 				}
 
@@ -1842,7 +1821,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1013.623711109161377, 244.868555545806885, 113.0, 22.0 ],
+					"patching_rect" : [ 1013.623711109161377, 244.868555545806885, 132.0, 22.0 ],
 					"text" : "r #0_target_track"
 				}
 
@@ -1853,7 +1832,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 263.036077737808228, 180.899483323097229, 115.0, 22.0 ],
+					"patching_rect" : [ 263.036077737808228, 180.899483323097229, 134.0, 22.0 ],
 					"text" : "s #0_target_track"
 				}
 
@@ -2459,13 +2438,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 224.165412882963892, 26.0, 130.0, 22.0 ],
+					"patching_rect" : [ 224.165412882963892, 26.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"knn-track-toggle" : [ 0 ],
 						"live.tab" : [ 0.0 ]
 					}
 ,
-					"text" : "autopattr #1-weights",
+					"text" : "autopattr",
 					"varname" : "tonal-weights"
 				}
 
@@ -2583,7 +2562,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 844.0, 677.770494908094406, 99.0, 22.0 ],
+					"patching_rect" : [ 827.0, 717.770494908094406, 99.0, 22.0 ],
 					"text" : "prepend weights"
 				}
 

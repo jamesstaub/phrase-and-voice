@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 115.0, 1273.0, 852.0 ],
+		"rect" : [ 35.0, 115.0, 1612.0, 873.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -116,8 +116,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -537,8 +537,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3808,10 +3808,10 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 365.5, 26.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"1060-model-frequency[1]" : [ 0.0 ],
-						"1060-model-frequency[2]" : [ 0.0 ],
-						"1060-model-frequency[3]" : [ 0.0 ],
-						"1060-model-timing" : [ 0.0 ],
+						"1069-model-frequency[1]" : [ 0.0 ],
+						"1069-model-frequency[2]" : [ 0.0 ],
+						"1069-model-frequency[3]" : [ 0.0 ],
+						"1069-model-timing" : [ 0.0 ],
 						"concatenative synth" : [ -1.18110236220474 ],
 						"granular" : [ -5.496376697932689 ],
 						"live.dial" : [ 0.0 ],
@@ -4125,6 +4125,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 541.0, 67.5, 131.0, 22.0 ],
 					"text_width" : 74.0,
 					"varname" : "attrui"
@@ -4139,6 +4140,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 688.0, 68.5, 150.0, 22.0 ]
 				}
 
@@ -4151,6 +4153,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 1341.0, 465.0, 150.0, 22.0 ]
 				}
 
@@ -4833,13 +4836,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}

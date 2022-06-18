@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 8,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1612.0, 900.0 ],
+		"rect" : [ 34.0, 115.0, 1612.0, 873.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,10 +45,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1556.501989682515614, 108.0, 250.0, 395.0 ],
+					"patching_rect" : [ 1556.501989682515614, 108.0, 252.0, 395.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 20,
-					"presentation_rect" : [ 781.0, 21.0, 357.0, 288.0 ],
+					"presentation_rect" : [ 781.0, 21.0, 360.0, 288.0 ],
 					"text" : "Load a corpus of audio, analyze descriptors  of that corpus\nthen input a live signal, which is analyzed with the same descriptors, then use that analyzed input to lookup segments from the corpus in real time. \n\nA pre-recorded temporal model can be configured to either trigger segments from the corpus, or to apply synthesis playback parameters to segments that are triggered by the live input.\n\nThe temporal model gets recorded in another patch (see temporalmodel-sketch), then javascripts are run to create columns in the TM mubu container correspondign to parameters of the mubu.concat synth object. The analysis of the audio recorded into the TM gets mapped into synthesis parameters.\n\nFor example, the loudness descriptor of audio recorded into the TM gets mapped into a timeseries of the \"level\" parameter, which gets segmented and then applied to the concat synth  when triggered inside the poly voice.\n \n"
 				}
 
@@ -64,8 +64,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -323,7 +323,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 373.0, 413.75, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 443.0, 30.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 372.0, 269.5, 150.0, 20.0 ],
 					"text" : "weighted by input"
 				}
 
@@ -338,7 +338,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 347.0, 413.75, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 417.0, 30.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 346.0, 269.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -568,8 +568,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -772,7 +772,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1828.994390368461609, 75.0, 472.0, 570.0 ],
+					"patching_rect" : [ 1828.994390368461609, 75.0, 474.0, 570.0 ],
 					"text" : "allow tonal-specific concerns (such as filtering + quantizing by fundamental freq as described below)\n\nother instances of Voice could be timbre or rhythm specific instead of tonal\n\nTODO synth wrapper\n- create a UI of range sliders to control the temporal model playback for each voice\n- [--rslider-] [trigger on bang, trigger on midi clock]\n- roundrobin vs unison \n- sustain mode where the synth keeps retriggering as long as there are more steps in the temporal model\n\n\nCreate an additional track inside the tonal mubu container for YIN analysis (using mubu.stats for segmenting). then use mubu.javascript to iterate over the segments and delete any segments from the chroma-segments track (or whatever the knn is using) if they are below a certain desired threshold of periodicity. \n\nthis should occur in the \"tonal voice\" not generic voice scope (maybe this patch, maybe a wrapper)\n\ntry to create this threshold filter script in a generalizable fashion. it should then delete any temporary mubu tracks created in the process\n\nthe same script should also add a transposiiton column cents_to_c\nfor the transposition value (in steps) for the given segment to be tuned to the note C. this should only happen if the periodicity is above a threshold\n\nTODO:\nhow best to use the TimbreID of input signal to switch up how the temporal model values are passed to the synth voice\nThis could happen in another config dict, which could also set parameters about how the temporal model values are generated. \nvery TBD\n\n\nthe temporal model's resampling value is a pitch class of the desired transposition frequency (in semitones) \nwhen a KNN segment is selected add the \"cents_to_c\" value + the resampling value to achieve the desired resampling transposition value for a given pitch (same process for MIDI note in)\n"
 				}
 
@@ -853,8 +853,8 @@
 					"id" : "obj-30",
 					"maxclass" : "preset",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"numoutlets" : 5,
+					"outlettype" : [ "preset", "int", "preset", "int", "" ],
 					"patching_rect" : [ 409.0, 506.0, 85.0, 85.0 ],
 					"pattrstorage" : "#1-#2-#3",
 					"presentation" : 1,
@@ -871,10 +871,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 409.0, 636.0, 137.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1057, 45, 1440, 407 ],
+						"client_rect" : [ 0, 116, 1680, 969 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 583, 69, 1034, 197 ]
+						"storage_rect" : [ 0, 116, 1680, 969 ]
 					}
 ,
 					"text" : "pattrstorage #1-#2-#3",
@@ -962,7 +962,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 520.0, 12.0, 199.0, 22.0 ],
+					"patching_rect" : [ 531.0, 73.0, 199.0, 22.0 ],
 					"text" : "prepend ircamdescriptor.descriptors"
 				}
 
@@ -1062,8 +1062,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1419,6 +1419,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 766.5, 579.0, 117.0, 22.0 ],
 					"text_width" : 69.099999999999994
 				}
@@ -1432,6 +1433,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 766.5, 606.0, 144.0, 22.0 ]
 				}
 
@@ -1499,9 +1501,10 @@
 					"enablevscroll" : 0,
 					"id" : "obj-64",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "knn-lookup.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "list", "list", "list" ],
@@ -1524,7 +1527,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 402.0, 195.0, 219.0, 43.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 187.5, 324.5, 46.0 ],
+					"presentation_rect" : [ 0.0, 187.5, 325.0, 46.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"size" : 25
@@ -1544,10 +1547,15 @@
 					"bufferchooser_shape" : "buttons",
 					"bufferchooser_size" : 24,
 					"bufferchooser_visible" : 1,
+					"cursor_circleedgecolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"cursor_circlefillcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"cursor_circlefilled" : 1,
 					"cursor_circleheight" : 3.0,
 					"cursor_circlewidth" : 3.0,
 					"cursor_color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"cursor_followmouse" : 0,
+					"cursor_nearest" : 0,
+					"cursor_nearestcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"cursor_noringoffset" : 0,
 					"cursor_position" : -1.0,
 					"cursor_shape" : "bar",
@@ -1571,6 +1579,7 @@
 					"id" : "obj-35",
 					"layout" : 0,
 					"maxclass" : "imubu",
+					"mousewheelscroll" : 0,
 					"name" : "#1",
 					"numinlets" : 1,
 					"numoutlets" : 1,
@@ -1621,6 +1630,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
 					"patching_rect" : [ 0.0, 730.5, 161.0, 22.0 ]
 				}
 
@@ -1635,6 +1645,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-3",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "corpus-analyze.maxpat",
 					"numinlets" : 2,
@@ -1735,6 +1746,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-26",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "input.maxpat",
 					"numinlets" : 2,
@@ -2153,12 +2165,13 @@
 			"obj-22.1::obj-53" : [ "live.tab[3]", "live.tab", 0 ],
 			"obj-22.2::obj-43" : [ "live.tab[4]", "live.tab", 0 ],
 			"obj-22.2::obj-53" : [ "live.tab[5]", "live.tab", 0 ],
-			"obj-22.3::obj-43" : [ "live.tab[6]", "live.tab", 0 ],
-			"obj-22.3::obj-53" : [ "live.tab[7]", "live.tab", 0 ],
-			"obj-22.4::obj-43" : [ "live.tab[8]", "live.tab", 0 ],
+			"obj-22.3::obj-43" : [ "live.tab[7]", "live.tab", 0 ],
+			"obj-22.3::obj-53" : [ "live.tab[8]", "live.tab", 0 ],
+			"obj-22.4::obj-43" : [ "live.tab[12]", "live.tab", 0 ],
 			"obj-22.4::obj-53" : [ "live.tab[11]", "live.tab", 0 ],
 			"obj-34" : [ "live.tab[10]", "live.tab", 0 ],
 			"obj-53" : [ "live.tab[9]", "live.tab", 0 ],
+			"obj-64::obj-10" : [ "live.tab[6]", "live.tab[2]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2173,15 +2186,15 @@
 				}
 ,
 				"obj-22.3::obj-43" : 				{
-					"parameter_longname" : "live.tab[6]"
-				}
-,
-				"obj-22.3::obj-53" : 				{
 					"parameter_longname" : "live.tab[7]"
 				}
 ,
-				"obj-22.4::obj-43" : 				{
+				"obj-22.3::obj-53" : 				{
 					"parameter_longname" : "live.tab[8]"
+				}
+,
+				"obj-22.4::obj-43" : 				{
+					"parameter_longname" : "live.tab[12]"
 				}
 ,
 				"obj-22.4::obj-53" : 				{
@@ -2194,25 +2207,58 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "input.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"name" : "_js_mutate_descriptors.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "input-normalize.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"name" : "analysis_descriptor_menu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "corpus-analyze.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "input-normalize.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "input.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "knn-lookup.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mubu.concat~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.knn.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "mubu.stats.marker.track.maxpat",
@@ -2222,54 +2268,26 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "knn-lookup.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "poly-concat.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice 2/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
+				"name" : "pipo.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "pipo~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
+				"name" : "poly-concat.maxpat",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "pipo.ircamdescriptor.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.knn.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.concat~.mxo",
-				"type" : "iLaX"
+				"name" : "tonal-weights.json",
+				"bootpath" : "~/Documents/Max 8/Projects/phrase-and-voice/phrase and voice v2/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0,
@@ -2277,13 +2295,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
