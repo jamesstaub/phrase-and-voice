@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 171.0, 1605.0, 797.0 ],
+		"rect" : [ 34.0, 115.0, 1612.0, 853.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -47,11 +47,11 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 326.0, 5.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"chroma-weights" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
-						"mfcc_weights" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.721804511278195, 1.0, 1.0, 1.0, 1.0 ],
+						"chroma-weights" : [ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.948148148148148, 0.0, 0.0, 0.0 ],
+						"mfcc_weights" : [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ],
 						"multislider" : [ 1.0 ],
 						"multislider[1]" : [ 1.0 ],
-						"multislider[2]" : [ 0.400000005960464 ],
+						"multislider[2]" : [ 0.75 ],
 						"multislider[3]" : [ 0.5 ],
 						"multislider[4]" : [ 0.5 ],
 						"multislider[5]" : [ 0.5 ],
@@ -87,7 +87,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 945.0, 564.5, 30.0, 30.0 ]
+					"patching_rect" : [ 945.0, 510.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -10900,7 +10900,7 @@
 					"presentation_rect" : [ 2.0, 401.0, 231.0, 135.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 12,
+					"size" : 13,
 					"slidercolor" : [ 0.929411764705882, 0.941176470588235, 0.956862745098039, 1.0 ],
 					"varname" : "chroma-weights"
 				}
