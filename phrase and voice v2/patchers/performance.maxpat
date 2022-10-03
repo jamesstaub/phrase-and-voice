@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 81.0, 1612.0, 887.0 ],
+		"rect" : [ 34.0, 109.0, 1612.0, 859.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -80,7 +80,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 485.0, 1397.0, 61.0, 22.0 ],
+					"patching_rect" : [ 478.0, 1395.0, 61.0, 22.0 ],
 					"text" : "zl group 4"
 				}
 
@@ -428,7 +428,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 115.0, 1612.0, 853.0 ],
+						"rect" : [ 34.0, 143.0, 1612.0, 825.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2449,7 +2449,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-39",
-					"items" : [ "cello-harmonics.mubu", ",", "moog.mubu", ",", "pbass-traynor.mubu", ",", "piano-in-progress.mubu", ",", "piano-synth-traynor.mubu", ",", "taylor-memos.mubu" ],
+					"items" : [ "cello-harmonics.mubu", ",", "moog.mubu" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -7423,7 +7423,7 @@
 					"restore" : 					{
 						"live.gain~" : [ -12.794978457881456 ],
 						"mc.live.gain~" : [ -2.187900073641856 ],
-						"mubu-corpus-preset" : [ "cello-harmonics.mubu" ]
+						"mubu-corpus-preset" : [ "moog.mubu" ]
 					}
 ,
 					"text" : "autopattr",

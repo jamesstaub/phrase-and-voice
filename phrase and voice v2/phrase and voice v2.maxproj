@@ -2,8 +2,8 @@
 	"name" : "phrase and voice v2",
 	"version" : 1,
 	"creationdate" : 3682245889,
-	"modificationdate" : 3731533416,
-	"viewrect" : [ 0.0, 115.0, 1680.0, 901.0 ],
+	"modificationdate" : 3743772192,
+	"viewrect" : [ 0.0, 115.0, 1680.0, 853.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -15,12 +15,12 @@
 				"local" : 1
 			}
 ,
-			"input.maxpat" : 			{
+			"_js_mutate_descriptors.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"input-normalize.maxpat" : 			{
+			"analysis_descriptor_menu.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -30,7 +30,12 @@
 				"local" : 1
 			}
 ,
-			"_js_mutate_descriptors.maxpat" : 			{
+			"input-normalize.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"input.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -96,11 +101,6 @@
 				"local" : 1
 			}
 ,
-			"analysis_descriptor_menu.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"get_track_for_segment.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -116,6 +116,11 @@
 				"local" : 1
 			}
 ,
+			"synth-voice-common.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"imubu-scatterplot.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -126,7 +131,7 @@
 				"local" : 1
 			}
 ,
-			"synth-voice-common.maxpat" : 			{
+			"corpus-umap.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
